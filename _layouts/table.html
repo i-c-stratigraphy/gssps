@@ -97,11 +97,11 @@
         }
 
         #banner {
-            background: url("/images/banner-01.png") no-repeat;
+            background: url("/images/banner-gssps2.png") no-repeat;
             display: block;
-            height:270px;
+            height:100px;
             background-size: contain;
-            margin-bottom: 30px;
+            margin-bottom: 0px;
         }
 
         #body-grid {
@@ -111,8 +111,7 @@
 
         #container-content {
             padding: 0 20px 0 20px;
-            overflow: hidden;
-            max-width:980px;
+            overflow: hidden;    
         }
 
         footer {
@@ -145,25 +144,34 @@
         .caption {
             font-size: small;
         }
-    </style>
-    <script>
-        const imagesArray = [
-            "/images/banner-01.png",
-            "/images/banner-02.png",
-            "/images/banner-03.png",
-            "/images/banner-04.png",
-            "/images/banner-05.png",
-            "/images/banner-06.png",
-            "/images/banner-07.png",
-            "/images/banner-08.png"
-        ];
 
-        function displayImage(){
-          const num = Math.floor(Math.random() * 5); // 0...6
-          document.getElementById('banner').style.backgroundImage = "url('" + imagesArray[num] + "')";
+
+        table.ages {
+            width: 100%;
+            border-collapse: collapse;
+            margin:10px;
+            width:980px;
         }
-        setInterval(displayImage, 7000);
-  </script>
+        tr, th, td {
+            min-height:50px;
+            border: solid 1px black;
+            text-align: center;
+        }
+        th {
+            font-size: small;
+        }
+        td {
+            padding: 3px;
+            font-size: smaller;
+        }
+        tr.headerRow {
+            background: #BFBFBF;
+        }
+
+        #tables h4 {
+            margin-left:10px;
+        }
+    </style>
 </head>
 <body>
     <div id="widther">
@@ -177,8 +185,3844 @@
                 </div>
             </div>
         </div>
-        <div id="container-content">
-            {{ content }}
+        <div id="banner"></div>
+        <div id="body-grid">
+            <div id="sidebar" style="grid-column: 1;">
+                {% include menu.html %}
+            </div>
+            <div id="container-content" style="grid-column: 2;">
+                {{ content }}
+            </div>            
+        </div>
+        <div id="tables">
+            <h3 style="text-align: center;">GSSP Tables</h3>
+            <a id="quaternary"></a>
+            <h4>Quaternary</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F2F91D;">
+                        Cenozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F9F97F;">
+                        Quaternary Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FEF2E0;">
+                        Holocene Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FEF2EC;">
+                        <a href="/holocene">Holocene Stage</a>
+                    </td>
+                    <td>
+                        0.011784
+                    </td>
+                    <td>
+                        NorthGRIP ice core, central Greenland
+                    </td>
+                    <td>
+                        75.1000&deg;N 42.3200&deg;W
+                    </td>
+                    <td>
+                        1492.45m depth in Borehole NGRIP2
+                    </td>
+                    <td>
+                        Climatic - End of the Younger Dryas cold spell, which is reflected in a shift in deuterium excess values
+                    </td>
+                    <td>
+                        Ratified 2008
+                    </td>
+                    <td>
+                        Episodes 31/2, 2008; <a href="/holocene.pdf">J. Quaternary Sci., Vol. 24 pp. 3-17, 2009</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FFF2AE;">
+                        Pleistocene Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFF2D3;">
+                        Upper Stage
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFF2C7;">
+                        Middle Stage
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFF2BA;">
+                        <a href="/calabrian">Calabrian Stage</a>
+                    </td>
+                    <td>
+                        1.80
+                    </td>
+                    <td>
+                        Vrica, Italy
+                    </td>
+                    <td>
+                        39.0385&deg;N 17.1348&deg;E
+                    </td>
+                    <td>
+                        base of the marine claystone overlying the sapropelic marker Bed 'e' (Mediterranean Precession Related Sapropel, MPRS 176)
+                    </td>
+                    <td>
+                        Magnetic - ~15 kyr after end of Olduvai (C2n) normal polarity chron
+                    </td>
+                    <td>
+                        Ratified 1985 as base of Pleistocene; Ratified 2011 as base of Calabrian
+                    </td>
+                    <td>
+                        <a href="/calabrian1.pdf">Episodes 8/2, p. 116 - 120, 1985</a>; <a href="/calabrian2.pdf">Episodes 35/3, p. 388-397, 2012</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFEDB3;">
+                        <a href="/gelasian">Gelasian Stage</a>
+                    </td>
+                    <td>
+                        2.58
+                    </td>
+                    <td>
+                        Monte San Nicola, Sicily, Italy
+                    </td>
+                    <td>
+                        37.1469&deg;N 14.2035&deg;E
+                    </td>
+                    <td>
+                        base of marly layer overlying sapropel MPRS 250
+                    </td>
+                    <td>
+                        Magnetic - Matuyama/Gauss boundary (C2r/C2An) is 1m below GSSP. GSSP level is within Marine Isotope Stage 103.
+                    </td>
+                    <td>
+                        Ratified 1996 as base of Gelasian; Ratified 2009 as base of Pleistocene and Quaternary
+                    </td>
+                    <td>
+                        <a href="/gelasian.pdf">Episodes 21/2, p. 82 - 87, 1998</a>
+                        <a href="/quaternary-pleistocene.pdf">Episodes 33/3, p. 152-158, 2010</a>
+                    </td>
+                </tr>
+            </table>
+            <a id="neogene"></a>
+            <h4>Neogene</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F2F91D;">
+                        Cenozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FFE619;">
+                        Neogene Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FFFF99;">
+                        Pliocene Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFFFBF;">
+                        <p class=Default style="text-align:justify;text-justify:inter-ideograph">
+                            <a href="/piacenzian">Piacenzian Stage</a>
+                    </td>
+                    <td>
+                        3.6
+                    </td>
+                    <td>
+                        Punta Piccola, Sicily, Italy
+                    </td>
+                    <td>
+                        37.2889&deg;N 13.4933&deg;E
+                    </td>
+                    <td>
+                        base of the beige marl bed of small-scale carbonate cycle 77 (MPRS 347)
+                    </td>
+                    <td>
+                        Magnetic - Gauss/Gilbert (C2An/C2Ar) magnetic reversal is recorded immediately above the GSSP
+                    </td>
+                    <td>
+                        Ratified 1997
+                    </td>
+                    <td>
+                        <a href="/piacenzian.pdf">Episodes 21/2, p. 88 - 93, 1998</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFFFB3;">
+                        <a href="/zanclean">Zanclean Stage</a>
+                    </td>
+                    <td>
+                        5.333
+                    </td>
+                    <td>
+                        Eraclea Minoa, Sicily, Italy
+                    </td>
+                    <td>
+                        37.3917&deg;N 13.2806&deg;E
+                    </td>
+                    <td>
+                        base of the Trubi Formation which corresponds to Insolation cycle 510
+                    </td>
+                    <td>
+                        Magnetic - base of the Thvera magnetic event (C3n.4n) is only 96 kyr (5 precession cycles) younger than the GSSP.
+                    </td>
+                    <td>
+                        Ratified 2000
+                    </td>
+                    <td>
+                        <a href="/zanclean.pdf">Episodes 23/3, p. 179 - 187, 2000</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:yellow;">
+                        Miocene Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFFF73;">
+                        <a href="/messinian">Messinian Stage</a>
+                    </td>
+                    <td>
+                        7.246
+                    </td>
+                    <td>
+                        Oued Akrech, Morocco
+                    </td>
+                    <td>
+                        33.9369&deg;N 6.8125&deg;W
+                    </td>
+                    <td>
+                        reddish layer of sedimentary cycle number 15
+                    </td>
+                    <td>
+                        Planktonic foraminifer first regular occurrence of <i>Globorotalia miotumida</i>, and calcareous nannofossil FAD <i>Amaurolithus delicatus</i>        </td>
+                    <td>
+                        Ratified 2000
+                    </td>
+                    <td>
+                        <a href="/messinian.pdf">Episodes 23/3, p. 172 - 178, 2000</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFFF66;">
+                        <a href="/tortonian">Tortonian Stage</a>
+                    </td>
+                    <td>
+                        11.63
+                    </td>
+                    <td>
+                        Monte dei Corvi Beach, near Ancona, Italy
+                    </td>
+                    <td>
+                        43.5867&deg;N 13.5694&deg;E
+                    </td>
+                    <td>
+                        mid-point of sapropel layer of basic cycle number 76.
+                    </td>
+                    <td>
+                        Calcareous nannofossil last common occurrence of <i>Discoaster kugleri</i>        </td>
+                    <td>
+                        Ratified 2003
+                    </td>
+                    <td>
+                        <a href="/tortonian.pdf">Episodes 28/1, p. 6 - 17, 2005</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFFF59;">
+                        <a href="/serravallian">Serravallian Stage</a>
+                    </td>
+                    <td>
+                        13.82
+                    </td>
+                    <td>
+                        Ras il Pellegrin section, Fomm Ir- Rih Bay, west coast of Malta
+                    </td>
+                    <td>
+                        35.9139&deg;N 14.3361&deg;E
+                    </td>
+                    <td>
+                        formation boundary between the Globigerina Limestone and Blue Clay
+                    </td>
+                    <td>
+                        Oxygen-isotopic event (global cooling episode) Mi3b; near calcareous nannofossil LAD of <i>Sphenolithus heteromorphus</i>        </td>
+                    <td>
+                        Ratified 2007
+                    </td>
+                    <td>
+                        <a href="/serravallian.pdf">Episodes, 32/3, 152 - 166, 2009</a>;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFFF4D;">
+                        Langhian Stage
+                    </td>
+                    <td>
+                        15.97
+                    </td>
+                    <td>
+                        Potentially in astronomicallytuned ODP core (Leg 154) or in Italy (Moria or La Vedova )
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Near planktonic foraminifer FAD of <i>Praeorbulina glomerosa</i> and top of magnetic polarity chronozone C5Cn.1n
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFFF41;">
+                        Burdigalian Stage
+                    </td>
+                    <td>
+                        20.44
+                    </td>
+                    <td>
+                        Potentially in astronomicallytuned ODP core
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Near planktonic foraminifer FAD of <i>Globigerinoides altiaperturus</i> or near top of magnetic polarity chronozone C6An
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FFFF33;">
+                        <a href="/aquitanian">Aquitanian Stage</a>
+                    </td>
+                    <td>
+                        23.03
+                    </td>
+                    <td>
+                        Lemme-Carrioso Section, Allessandria Province, Italy
+                    </td>
+                    <td>
+                        44.6589&deg;N 8.8364&deg;E
+                    </td>
+                    <td>
+                        35m from the top of the section
+                    </td>
+                    <td>
+                        Magnetic - base of Chron C6Cn.2n; planktonic foraminifer FAD of <i>Paragloborotalia kugleri</i>; calcareous nannofossil near LAD <i>Reticulofenestra bisecta </i>(base Zone NN1); Oxygen isotopic event Mi-1.
+                    </td>
+                    <td>
+                        Ratified 1996
+                    </td>
+                    <td>
+                        <a href="/aquitanian.pdf">Episodes 20/1, p. 23 - 28, 1997</a>
+                    </td>
+                </tr>
+            </table>
+            <a id="paleogene"></a>
+            <h4>Paleogene</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F2F91D;">
+                        Cenozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FD9A52;">
+                        Paleogene Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FDC07A;">
+                        Oligocene Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FEE6AA;">
+                        Chattian Stage
+                    </td>
+                    <td>
+                        28.1
+                    </td>
+                    <td>
+                        Possibly Monte Cagnero, Umbria-Marche region, Italy
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Potentially extinction of planktonic foraminifer <i>Chiloguembelina</i> (base Foram Zone P21b); or an isotopic/climatic event
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FED99A;">
+                        <a href="/rupelian">Rupelian Stage</a>
+                    </td>
+                    <td>
+                        33.9
+                    </td>
+                    <td>
+                        Massignano, near Ancona, Italy
+                    </td>
+                    <td>
+                        43.5328&deg;N 13.6011&deg;E
+                    </td>
+                    <td>
+                        base of a 0.5m thick greenishgrey marl bed 19m above base of section
+                    </td>
+                    <td>
+                        Foraminifer LAD <i>Hantkenina</i> and <i>Cribrohantkenina</i>        </td>
+                    <td>
+                        Ratified 1992
+                    </td>
+                    <td>
+                        <a href="/rupelian.pdf">Episodes 16/3, p.379 - 382, 2001</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FDB46C;">
+                        Eocene Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FDCDA1;">
+                        Priabonian Stage
+                    </td>
+                    <td>
+                        37.8
+                    </td>
+                    <td>
+                        Alano section, Piave River; Veneto Prealps, Belluno province, N. Italy
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Tiziano Bed
+                    </td>
+                    <td>
+                        Calcareous nannofossil near FAD <i>Chiasmolithus oamaruensis </i>(base Zone NP18)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FDC091;">
+                        Bartonian Stage
+                    </td>
+                    <td>
+                        41.2
+                    </td>
+                    <td>
+                        Contessa highway section near Gubio, Central Apennines, Italy
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Calcareous nannofossil near LAD <i>Reticulofenestra reticulata</i>        </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FCB482;">
+                        <a href="/lutetian">Lutetian Stage</a>
+                    </td>
+                    <td>
+                        47.8
+                    </td>
+                    <td>
+                        Gorrondatxe section, Basque Country, Spain
+                    </td>
+                    <td>
+                        43&deg;22'46.47&quot;N, 3&deg;00'51.61&quot;W
+                    </td>
+                    <td>
+                        dark marl at 167.85 m in Gorrondatxe sea-cliff section
+                    </td>
+                    <td>
+                        LO of calcareous nannofossil Blackites inflatus (CP12a/b boundary); middle of polarity Chron C21r
+                    </td>
+                    <td>
+                        Ratified 2011
+                    </td>
+                    <td>
+                        <a href="/lutetian.pdf">Episodes 34/2, p.86 - 108, 2011</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FCA773;">
+                        <a href="/ypresian">Ypresian Stage</a>
+                    </td>
+                    <td>
+                        56.0
+                    </td>
+                    <td>
+                        Dababiya, near Luxor, Egypt
+                    </td>
+                    <td>
+                        25.5000&deg;N 32.5311&deg;E
+                    </td>
+                    <td>
+                        Base of Bed 1 in DBH subsection
+                    </td>
+                    <td>
+                        Carbon Isotope Excursion base, initiation of basal Eocene Thermal maximum ("PETM")
+                    </td>
+                    <td>
+                        Ratified 2003
+                    </td>
+                    <td>
+                        Micropaleontology 49/1, p.41 - 59, 2003; <a href="/ypresian.pdf">Episodes 30/4, p. 271 - 286,
+            2007</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FDA75F;">
+                        Paleocene Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FDBF6F;">
+                        <a href="/thanetian">Thanetian Stage</a>
+                    </td>
+                    <td>
+                        59.2
+                    </td>
+                    <td>
+                        Zumaia section, northern Spain
+                    </td>
+                    <td>
+                        43.3006&deg;N 2.2594&deg;W
+                    </td>
+                    <td>
+                        30.5m above the base of Itzurun Formation
+                    </td>
+                    <td>
+                        Magnetic - Base of Chron C26n
+                    </td>
+                    <td>
+                        Ratified 2008
+                    </td>
+                    <td>
+                        <a href="/selandian-thanetian.pdf">Episodes 34/4, p.220 - 243, 2011</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FEBF65;">
+                        <a href="/selandian">Selandian Stage</a>
+                    </td>
+                    <td>
+                        61.6
+                    </td>
+                    <td>
+                        Zumaia section, northern Spain
+                    </td>
+                    <td>
+                        43.3006&deg;N 2.2594&deg;W
+                    </td>
+                    <td>
+                        base of the red marls of Itzurun Formation
+                    </td>
+                    <td>
+                        2nd radiation of the calcareous nannofossil group Fasciculithus and sea-level fall
+                    </td>
+                    <td>
+                        Ratified 2008
+                    </td>
+                    <td>
+                        <a href="/selandian-thanetian.pdf">Episodes 34/4, p.220 - 243, 2011</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FDB462;">
+                        <a href="/danian">Danian Stage</a>
+                    </td>
+                    <td>
+                        66.0
+                    </td>
+                    <td>
+                        Oued Djerfane, west of El Kef, Tunisia
+                    </td>
+                    <td>
+                        36.1537&deg;N 8.6486&deg;E
+                    </td>
+                    <td>
+                        reddish layer at the base of the 50cm thick, dark boundary clay
+                    </td>
+                    <td>
+                        Iridium geochemical anomaly. Associated with a major extinction horizon (dinosaurs, ammonites, foraminifers, etc.)
+                    </td>
+                    <td>
+                        Ratified 1991
+                    </td>
+                    <td>
+                        <a href="/danian.pdf">Episodes 29/4, p. 263 - 278, 2006</a>
+                    </td>
+                </tr>
+            </table>
+            <a id="cretaceous"></a>
+            <h4>Cretaceous</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#67C5CA;">
+                        Mesozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#7FC64E;">
+                        Cretaceous Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#A6D84A;">
+                        Upper Cretaceous Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F2FA8C;">
+                        <a href="/maastrichtian">Maastrichtian Stage</a>
+                    </td>
+                    <td>
+                        72.1&#177;0.2
+                    </td>
+                    <td>
+                        Tercis les Bains, Landes, France
+                    </td>
+                    <td>
+                        43.6795&deg;N 1.1133&deg;W
+                    </td>
+                    <td>
+                        level 115.2 on platform IV of the geological site at Tercis les Bains
+                    </td>
+                    <td>
+                        Mean of 12 biostratigraphic criteria of equal importance. Closely above is FAD of ammonite <i>Pachydiscus neubergicus</i>. Boreal proxy is FAD of belemnite <i>Belemnella lanceolata</i>.
+                    </td>
+                    <td>
+                        Ratified 2001
+                    </td>
+                    <td>
+                        <a href="/maastrichtian.pdf">Episodes 24/4, p. 229 - 238, 2001</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E6F47F;">
+                        Campanian Stage
+                    </td>
+                    <td>
+                        83.6&#177;0.2
+                    </td>
+                    <td>
+                        candidates are in southern England and in Texas
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Crinoid LAD <i>Marsupites testudinarius</i>        </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#D9EF74;">
+                        <a href="/santonian">Santonian Stage</a>
+                    </td>
+                    <td>
+                        86.3 &#177; 0.5
+                    </td>
+                    <td>
+                        Olazagutia, Navarra, Spain
+                    </td>
+                    <td>
+                        <a name="OLE_LINK4"></a><a name="OLE_LINK3">42.8668&deg;N
+            2.1968&deg;W</a>
+                    </td>
+                    <td>
+                        94.4 m in the Cantera de Margas quarry section
+                    </td>
+                    <td>
+                        the FO of the inoceramid bivalve <i>Platyceramus undulatoplicatus</i>        </td>
+                    <td>
+                        Ratified 2013
+                    </td>
+                    <td>
+                        <a href="/santonian.pdf">Episodes 37/1, p. 2 - 13, 2014</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#CCE968;">
+                        Coniacian Stage
+                    </td>
+                    <td>
+                        89.8 &#177; 0.3
+                    </td>
+                    <td>
+                        candidates are in Poland (Slupia Nadbrzena), USA (Pueblo, Colorado), and Germany (Salzgitter-Sadler Quarry)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Inoceramid bivalve FAD <i>Cremnoceramus rotundatus</i> (sensu Tr&ouml;ger non Fiege)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFE35D;">
+                        <a href="/turonian">Turonian Stage</a>
+                    </td>
+                    <td>
+                        93.9
+                    </td>
+                    <td>
+                        Pueblo, Colorado, USA
+                    </td>
+                    <td>
+                        <a name="OLE_LINK2"></a><a name="OLE_LINK1">38.2822&deg;N
+            104.7275&deg;W</a>
+                    </td>
+                    <td>
+                        base of Bed 86 of the Bridge Creek Limestone Member
+                    </td>
+                    <td>
+                        Ammonite FAD <i>Watinoceras devonense</i>        </td>
+                    <td>
+                        Ratified 2003
+                    </td>
+                    <td>
+                        <a href="/turonian.pdf">Episodes 28/2,p. 93 - 104, 2005</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#B3DE53;">
+                        <a href="/cenomanian">Cenomanian Stage</a>
+                    </td>
+                    <td>
+                        100.5
+                    </td>
+                    <td>
+                        Mount Risou, Hautes-Alpes, France
+                    </td>
+                    <td>
+                        44.3925&deg;N 5.5119&deg;E
+                    </td>
+                    <td>
+                        36 meters below the top of the Marnes Bleues Formation on the south side of Mont Risou
+                    </td>
+                    <td>
+                        Planktonic foraminifer FAD <i>Rotalipora globotruncanoides</i>        </td>
+                    <td>
+                        Ratified 2002
+                    </td>
+                    <td>
+                        <a href="/cenomanian.pdf">Episodes 27/1, p. 21 - 32, 2004</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#8CCD57;">
+                        Lower Cretaceous Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#CCEA97;">
+                        Albian Stage
+                    </td>
+                    <td>
+                        ~113.0
+                    </td>
+                    <td>
+                        Southeastern France
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Candidates include: (1) calcareous nannofossil FAD of <i>Praediscosphaera columnata</i> (= <i>P. cretacea</i> of some earlier studies), (2) carbon-isotope excursion (black-shale episode), (3) ammonite
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFE48A;">
+                        Aptian Stage
+                    </td>
+                    <td>
+                        ~125.0
+                    </td>
+                    <td>
+                        candidate is Gorgo a Cerbara, Piobbico, Umbria-Marche, central Italy
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Magnetic - base of Chron M0r; near FAD of <i>Paradeshayesites oglanlensis</i> ammonite zone
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#B3DF7F;">
+                        Barremian Stage
+                    </td>
+                    <td>
+                        ~129.4
+                    </td>
+                    <td>
+                        candidate is R&iacute;o Argos near Caravaca, Murcia Province, Spain
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ammonite FAD <i>Spitidiscus hugii - Spitidiscus vandeckii </i>group
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#A6D975;">
+                        Hauterivian Stage
+                    </td>
+                    <td>
+                        ~132.9
+                    </td>
+                    <td>
+                        candidate is La Charce village, Dr&ocirc;me Province, southeast France
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ammonite FAD of genus <i>Acanthodiscus </i>(especially <i>A. radiatus</i>)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#99D36A;">
+                        Valanginian Stage
+                    </td>
+                    <td>
+                        ~139.8
+                    </td>
+                    <td>
+                        candidates are near Montbrunles- Bains (Dr&ocirc;me province, SE France) and Ca&ntilde;ada Luenga (Betic Cordillera, S. Spain)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Calpionellid FAD <i>Calpionellites
+            darderi </i>(base of Calpionellid Zone E); followed by ammonite FAD <i>"Thurmanniceras"
+            pertransiens</i>        </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#8CCD60;">
+                        Berriasian Stage
+                    </td>
+                    <td>
+                        ~145.0
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Candidates include: (1) Magnetic - base of Chron M18r, (2) Base of Calpionellid zone B, (3) ammonite FAD of <i>Berriasella
+            jacobi</i>        </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+            <a id="jurassic"></a>
+            <h4>Jurassic</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#67C5CA;">
+                        Mesozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#34B2C9;">
+                        Jurassic Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#B3E3EE;">
+                        Upper Jurassic Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#D9F1F7;">
+                        Tithonian Stage
+                    </td>
+                    <td>
+                        152.1 &#177; 0.9
+                    </td>
+                    <td>
+                        candidates are Mt. Crussol or Canjuers (SE France) and Fornazzo (Sicily, S. Italy)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Near base of <i>Hybonoticeras hybonotum </i>ammonite zone and lowest occurrence of <i>Gravesia genus</i>, and the base of magnetic polarity Chron M22An
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#CCECF4;">
+                        Kimmeridgian Stage
+                    </td>
+                    <td>
+                        157.3 &#177; 1.0
+                    </td>
+                    <td>
+                        candidate is Flodigarry (Isle of Skye, NW Scotland)
+                    </td>
+                    <td>
+                        57.6000&deg;N 6.2000&deg;W
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ammonite near base of <i>Pictonia baylei</i> ammonite zone of Boreal realm
+                    </td>
+                    <td>
+                        Anticipated 2009
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFE7F1;">
+                        Oxfordian Stage
+                    </td>
+                    <td>
+                        163.5 &#177; 1.0
+                    </td>
+                    <td>
+                        candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ammonite <i>Cardioceras redcliffense</i> Horizon at base of the <i>Cardioceras scarburgense</i> Subzone (<i>Quenstedtoceras
+            mariae</i> Zone)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#80CFD8;">
+                        Middle Jurassic Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFE7E5;">
+                        Callovian Stage
+                    </td>
+                    <td>
+                        166.1 &#177; 1.2
+                    </td>
+                    <td>
+                        candidates are Pfeffingen (Swabian Alb, SW Germany) and in Russia
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ammonite FAD of the genus <i>Kepplerites (Kosmoceratidae)</i>            <i>&nbsp;</i>(defines base of <i>Macrocephalites herveyi </i>Zone in sub-Boreal province of Great Britain to southwest Germany)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#B3E2E3;">
+                        <a href="/bathonian">Bathonian Stage</a>
+                    </td>
+                    <td>
+                        168.3 &#177; 1.3
+                    </td>
+                    <td>
+                        Ravin du B&egrave;s, Bas-Auran area, Alpes de Haute Provence, France
+                    </td>
+                    <td>
+                        43.9606&deg;N 6.3153&deg;E
+                    </td>
+                    <td>
+                        base of limestone bed RB07
+                    </td>
+                    <td>
+                        Ammonite FAD <i>Gonolkite convergens</i> (defines base of <i>Zigzagiceras zigzag</i> Zone)
+                    </td>
+                    <td>
+                        Ratified 2008
+                    </td>
+                    <td>
+                        <a href="/bathonian.pdf">Episodes 32/4, p. 222 - 248, 2009</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#A6DDE0;">
+                        <a href="/bajocian">Bajocian Stage</a>
+                    </td>
+                    <td>
+                        170.3 &#177; 1.4
+                    </td>
+                    <td>
+                        Murtinheira Section, Cabo Mondego, Portugal
+                    </td>
+                    <td>
+                        40.1992&deg;N 8.9042&deg;W
+                    </td>
+                    <td>
+                        base of Bed AB 11
+                    </td>
+                    <td>
+                        Ammonite FAD <i>Hyperlioceras mundum, Hyperlioceras furcatum, Braunsina aspera</i>, and <i>Braunsina elegantula</i>        </td>
+                    <td>
+                        Ratified 1996
+                    </td>
+                    <td>
+                        <a href="/bajocian.pdf">Episodes 20/1, p.16 - 22, 1997</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#9AD9DD;">
+                        <a href="/aalenian">Aalenian Stage</a>
+                    </td>
+                    <td>
+                        174.1 &#177; 1.0
+                    </td>
+                    <td>
+                        Fuentelsaz, Spain
+                    </td>
+                    <td>
+                        41.1708&deg;N 1.8333&deg;W
+                    </td>
+                    <td>
+                        base of Bed FZ 107
+                    </td>
+                    <td>
+                        Ammonite FAD <i>Leioceras opalinum </i>and <i>Leioceras lineatum</i>        </td>
+                    <td>
+                        Ratified 2000
+                    </td>
+                    <td>
+                        <a href="/aalenian.pdf">Episodes 24/3, p.166 - 175, 2001</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#42AED0;">
+                        Lower Jurassic Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#99CEE3;">
+                        <a href="/toarcian">Toarcian Stage</a>
+                    </td>
+                    <td>
+                        182.7 &#177; 0.7
+                    </td>
+                    <td>
+                        Peniche (Portugal)
+                    </td>
+                    <td>
+                        39.3708&ordm;N 9.3853&ordm;W
+                    </td>
+                    <td>
+                        base of bed 15e (Couches de passage), uppermost Lemede Formation
+                    </td>
+                    <td>
+                        FO of the ammonite <i>D. (E.) simplex</i> co-occurring with <i>D.
+            (E.) pseudocommune </i>and<i> D. (E.) polymorphum</i> .
+                    </td>
+                    <td>
+                        Ratified 2014
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#80C5DD;">
+                        <a href="/pliensbachian">Pliensbachian Stage</a>
+                    </td>
+                    <td>
+                        190.8 &#177; 1.0
+                    </td>
+                    <td>
+                        Wine Haven, Robin Hood's Bay, Yorkshire Coast, England
+                    </td>
+                    <td>
+                        54.4069&deg;N 0.4975&deg;W
+                    </td>
+                    <td>
+                        base of Bed 73b
+                    </td>
+                    <td>
+                        Ammonite association of <i>Bifericeras donovani </i>and <i>Apoderoceras</i> sp.
+                    </td>
+                    <td>
+                        Ratified 2005
+                    </td>
+                    <td>
+                        <a href="/pliensbachian.pdf">Episodes 29/2, p. 93 - 106, 2006</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#67BCD8;">
+                        <a href="/sinemurian">Sinemurian Stage</a>
+                    </td>
+                    <td>
+                        199.3 &#177; 0.3
+                    </td>
+                    <td>
+                        East Quantoxhead, SW England
+                    </td>
+                    <td>
+                        51.1909&deg;N 3.2364&deg;W
+                    </td>
+                    <td>
+                        0.90 m above the base of Bed 145
+                    </td>
+                    <td>
+                        Ammonite FAD <i>Vermiceras quantoxense, Vermiceras palmeri</i>        </td>
+                    <td>
+                        Ratified 2000
+                    </td>
+                    <td>
+                        <a href="/sinemurian.pdf">Episodes 25/1, p. 22-28, 2002</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#4EB3D3;">
+                        <a href="/hettangian">Hettangian Stage</a>
+                    </td>
+                    <td>
+                        201.3 &#177; 0.2
+                    </td>
+                    <td>
+                        Kuhjoch section, Tyrol, Austria
+                    </td>
+                    <td>
+                        47.4839&deg;N 11.5306&deg;E
+                    </td>
+                    <td>
+                        5.80 m above top of Koessen Formation
+                    </td>
+                    <td>
+                        FO of ammonite <i>Psiloceras spelae tirolicum</i>, FO of aragonitic foraminifer <i>Praegubkinella turgescens</i>        </td>
+                    <td>
+                        Ratified 2010
+                    </td>
+                    <td>
+                        <a href="/hettangian.pdf">Episodes 36/3, p. 162-198, 2013</a>
+                    </td>
+                </tr>
+            </table>
+            <a id="triassic"></a>
+            <h4>Triassic</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#67C5CA;">
+                        Mesozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#812B92;">
+                        Triassic Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#BD8CC3;">
+                        Upper Triassic Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E3B9DB;">
+                        Rhaetian Stage
+                    </td>
+                    <td>
+                        ~208.5
+                    </td>
+                    <td>
+                        Key sections in Austria, British Columbia (Canada), and Turkey
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Near FAD of ammonite <i>Cochloceras</i>, conodonts <i>Misikella </i>spp. and <i>Epigondolella mosheri</i>, and radiolarian <i>Proparvicingula moniliformis</i>        </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#D6AAD3;">
+                        Norian Stage
+                    </td>
+                    <td>
+                        ~227
+                    </td>
+                    <td>
+                        Candidates are Black Bear Ridge in British Columbia (Canada) and Pizzo Mondello, Sicily (Italy)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Base of <i>Stikinoceras kerri</i> ammonoid zone and near FAD of <i>Metapolygnathus echinatus</i> within the <i>M. communisti</i> conodont zones
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#C99BCB;">
+                        <a href="/carnian">Carnian Stage</a>
+                    </td>
+                    <td>
+                        ~237
+                    </td>
+                    <td>
+                        Prati di Stuores, Dolomites, Italy
+                    </td>
+                    <td>
+                        46.5269&deg;N 11.9303&deg;E
+                    </td>
+                    <td>
+                        base of marly limestone bed SW4, 45m from base of San Cassiano Formation
+                    </td>
+                    <td>
+                        FAD of the ammonoid <i>Daxatina canadensis</i>; just below FO of conodont <i>Paragondolella polygnathiformis</i> and base of normal-polarity magnetic zone S2n
+                    </td>
+                    <td>
+                        Ratified 2008
+                    </td>
+                    <td>
+                        <a href="/carnian.pdf">Episodes 35/3, p. 414 - 430, 2012</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#B168B1;">
+                        Middle Triassic Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#C983BF;">
+                        <a href="/ladinian">Ladinian Stage</a>
+                    </td>
+                    <td>
+                        ~242
+                    </td>
+                    <td>
+                        Bagolino, Province of Brescia, Northern Italy
+                    </td>
+                    <td>
+                        45.8193&deg;N 10.4710&deg;E
+                    </td>
+                    <td>
+                        base of a 15 - 20cm thick limestone bed overlying a distinctive groove ("Chiesense groove") of limestone nodules in a shaly matrix, located about 5m above the base of the Buchenstein Beds
+                    </td>
+                    <td>
+                        Ammonite FAD <i>Eoprotrachyceras curionii
+            </i>(base of the <i>E. curionii</i> zone). Conodont FAD <i>Budurovignathus praehungaricus</i> is in the uppermost Anisian.
+                    </td>
+                    <td>
+                        Ratified 2005
+                    </td>
+                    <td>
+                        <a href="/ladinian.pdf">Episodes 28/4, p. 233 - 244, 2005</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BC75B7;">
+                        Anisian Stage
+                    </td>
+                    <td>
+                        247.2
+                    </td>
+                    <td>
+                        Candidate section at Desli Caira (Dobrogea, Romania); significant sections in Guizhou Province (China) and South Primorye (Russia)
+                    </td>
+                    <td>
+                        45.0742&deg;N 28.8022&deg;E
+                    </td>
+                    <td>
+                        In Section B, the GSSP level will be either the FAD of conodont <i>Chiosella timorensis</i> at the base of Bed GR7 at ca. 7 m; OR the base of magnetozone MT1n at the 5.7 m level.
+                    </td>
+                    <td>
+                        Conodont FAD <i>Chiosella timorensis </i>or Magnetic - base of magnetic polarity MT1n
+                    </td>
+                    <td>
+                        Anticipated 2009
+                    </td>
+                    <td>
+                        Albertiana 36, 2007.
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#983999;">
+                        Lower Triassic Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#B051A5;">
+                        Olenekian Stage
+                    </td>
+                    <td>
+                        251.2
+                    </td>
+                    <td>
+                        Candidate GSSP Mud (Muth) village, Spiti valley, northwest India
+                    </td>
+                    <td>
+                        31.9654&deg;N 78.0246&deg;E
+                    </td>
+                    <td>
+                        base of Bed 13A-2, about 4.8m up in Mikin Formation., Section M04 (~4000 m elevation
+                    </td>
+                    <td>
+                        Conodont FAD <i>Neospathodus waageni</i>, just above base of <i>Rohillites rohilla </i>ammonite zone, and below lowest occurrence of <i>Flemingites</i> and <i>Euflemingites</i> ammonite genera. Within a prominent positive Carbon-13 peak, and just above widely recognizable sequence boundary.
+                    </td>
+                    <td>
+                        Anticipated 2009
+                    </td>
+                    <td>
+                        Albertiana 36, 2007
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#A4469F;">
+                        <a href="/induan">Induan Stage</a>
+                    </td>
+                    <td>
+                        252.17 &#177; 0.06
+                    </td>
+                    <td>
+                        Meishan, Zhejiang Province, China
+                    </td>
+                    <td>
+                        31.0798&deg;N 119.7058&deg;E
+                    </td>
+                    <td>
+                        base of Bed 27c in the Meishan D Section
+                    </td>
+                    <td>
+                        Conodont FAD <i>Hindeodus parvus</i>        </td>
+                    <td>
+                        Ratified 2001
+                    </td>
+                    <td>
+                        <a href="/induan.pdf">Episodes 24/2, p. 102 - 114, 2001</a>
+                    </td>
+                </tr>
+            </table>
+            <a id="permian"></a>
+            <h4>Permian</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99C08D;">
+                        Paleozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F04028;">
+                        Permian Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FBA794;">
+                        Lopingian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FCC0B2;">
+                        <p  align=left style="margin-right:-5.35pt;text-align:left;
+            text-autospace:none"><a href="/changhsingian">Changhsingian Stage</a>
+                    </td>
+                    <td>
+                        254.14 &#177; 0.07
+                    </td>
+                    <td>
+                        Meishan, Zhejiang Province, China
+                    </td>
+                    <td>
+                        31.0819&deg;N 119.7064&deg;E
+                    </td>
+                    <td>
+                        base of Bed 4a- 2, 88 cm above the base of the Changxing Limestone at the Meishan D Section
+                    </td>
+                    <td>
+                        Conodont FAD <i>Clarkina wangi</i>        </td>
+                    <td>
+                        Ratified 2005
+                    </td>
+                    <td>
+                        <a href="/changhsiangian.pdf">Episodes 29/3, p. 175-182, 2006</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FCB4A2;">
+                        <p  align=left style="margin-right:-5.35pt;text-align:left;
+            text-autospace:none"><a href="/wuchiapingian">Wuchiapingian Stage</a>
+                    </td>
+                    <td>
+                        259.8 &#177; 0.4
+                    </td>
+                    <td>
+                        Penglaitan, Guanxi Province, South China
+                    </td>
+                    <td>
+                        23.6953&deg;N 109.3211&deg;E
+                    </td>
+                    <td>
+                        base of Bed 6k in the Penglaitan Section
+                    </td>
+                    <td>
+                        Conodont FAD <i>Clarkina postbitteri postbitteri</i>        </td>
+                    <td>
+                        Ratified 2004
+                    </td>
+                    <td>
+                        <a href="/wuchiapingian.pdf">Episodes 29/4, p. 253-262, 2006</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FB745C;">
+                        Guadalupian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FB9A85;">
+                        <a href="/capitanian">Capitanian Stage</a>
+                    </td>
+                    <td>
+                        265.1 &#177; 0.4
+                    </td>
+                    <td>
+                        Nipple Hill, SE Guadalupe Mountains, Texas, U.S.A
+                    </td>
+                    <td>
+                        31.9091&deg;N 104.7892&deg;W
+                    </td>
+                    <td>
+                        4.5m above the base of the outcrop section of the Pinery Limestone Member of the Bell Canyon Formation
+                    </td>
+                    <td>
+                        Conodont FAD <i>Jinogondolella postserrata</i>        </td>
+                    <td>
+                        Ratified 2001
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FB8D76;">
+                        <a href="/wordian">Wordian Stage</a>
+                    </td>
+                    <td>
+                        268.8 &#177; 0.5
+                    </td>
+                    <td>
+                        Guadalupe Pass, Texas, U.S.A
+                    </td>
+                    <td>
+                        31.8658&deg;N 104.8328&deg;W
+                    </td>
+                    <td>
+                        7.6m above the base of the Getaway Ledge outcrop Section of the Getaway Limestone Member of the Cherry Canyon Formation
+                    </td>
+                    <td>
+                        Conodont FAD <i>Jinogondolella aserrata</i>        </td>
+                    <td>
+                        Ratified 2001
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FB8069;">
+                        <a href="/roadian">Roadian Stage</a>
+                    </td>
+                    <td>
+                        272.3 &#177; 0.5
+                    </td>
+                    <td>
+                        Stratotype Canyon, Texas, U.S.A
+                    </td>
+                    <td>
+                        31.8767&deg;N 104.8768&deg;W
+                    </td>
+                    <td>
+                        42.7m above the base of the Cutoff Formation
+                    </td>
+                    <td>
+                        Conodont FAD <i>Jinogondolella nankingensis</i>        </td>
+                    <td>
+                        Ratified 2001
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#EF5845;">
+                        Cisuralian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E38776;">
+                        Kungurian Stage
+                    </td>
+                    <td>
+                        283.5 &#177; 0.6
+                    </td>
+                    <td>
+                        candidates are in southern Ural Mtns.
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Near conodont FAD <i>Neostreptognathus pnevi - N. exculptus</i>        </td>
+                    <td>
+                        Anticipated 2009
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E37B68;">
+                        Artinskian Stage
+                    </td>
+                    <td>
+                        290.1 &#177; 0.26
+                    </td>
+                    <td>
+                        candidates are in southern Ural Mtns.
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Conodont FAD <i>Sweetognathus whitei</i>        </td>
+                    <td>
+                        Anticipated 2009
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E36F5C;">
+                        Sakmarian Stage
+                    </td>
+                    <td>
+                        295.0 &#177; 0.18
+                    </td>
+                    <td>
+                        candidate is at Kondurovsky, Orenburg Province, Russia.
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Near conodont FAD <i>Sweetognathus merrelli</i>        </td>
+                    <td>
+                        Anticipated 2009
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E36350;">
+                        <a href="/asselian">Asselian Stage</a>
+                    </td>
+                    <td>
+                        298.9 &#177; 0.15
+                    </td>
+                    <td>
+                        Aidaralash Creek, Kazakhstan
+                    </td>
+                    <td>
+                        50.2458&deg;N 57.8914&deg;E
+                    </td>
+                    <td>
+                        27m above the base of Bed 19, Aidaralash Creek
+                    </td>
+                    <td>
+                        Conodont FAD of isolated-nodular morphotype of <i>Streptognathodus &quot;wabaunsensis&quot;</i>        </td>
+                    <td>
+                        Ratified 1996
+                    </td>
+                    <td>
+                        <a href="/asselian.pdf">Episodes 21/1, p. 11-18, 1998</a>
+                    </td>
+                </tr>
+            </table>
+            <a id="carboniferous"></a>
+            <h4>Carboniferous</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99C08D;">
+                        Paleozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#67A599;">
+                        Carboniferous Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99C2B5;">
+                        Pennsylvanian SubPeriod (series Classification Approved In 2004)
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#BFD0BA;">
+                        Upper Pennsylvanian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#CCD4C7;">
+                        Gzhelian Stage
+                    </td>
+                    <td>
+                        303.7 &#177; 0.1
+                    </td>
+                    <td>
+                        candidates are in southern Urals or Nashui (south China).
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Conodont FAD <i>Idiognathodus simulator </i>(s.str.). Close to FAD of ammonoid <i>Shumardites</i>.
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFD0C5;">
+                        Kasimovian Stage
+                    </td>
+                    <td>
+                        307.0 &#177; 0.1
+                    </td>
+                    <td>
+                        candidates are in southern Urals, southwest USA and Nashui (south China).
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Fusulinid FAD <i>Protriticites</i>, which is near ammonoid FAD <i>Eothalossoceras</i>. Alternative (higher) base is fusulinid FAD <i>Montiparus montiparus</i>, which is near conodont FAD <i>Idiognathodus
+            sagittalis</i>. Stage given here is the higher version; the lower one is about 1 myr older.
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#A6C7B7;">
+                        Middle Pennsylvanian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#B3CBB9;">
+                        Moscovian Stage
+                    </td>
+                    <td>
+                        315.2 &#177; 0.2
+                    </td>
+                    <td>
+                        candidates are in southern Urals or Nashui (south China).
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Either conodont FAD <i>Idiognathoides postsulcatus</i> or <i>Declinognathodus donetzianus</i>.
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#8CBEB4;">
+                        Lower Pennsylvanian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#99C2B5;">
+                        <a href="/bashkirian">Bashkirian Stage</a>
+                    </td>
+                    <td>
+                        323.2 &#177; 0.4
+                    </td>
+                    <td>
+                        Arrow Canyon, Nevada
+                    </td>
+                    <td>
+                        36.7333&deg;N 114.7778&deg;W
+                    </td>
+                    <td>
+                        82.9m above the top of the Battleship Formation in the lower Bird Spring Formation
+                    </td>
+                    <td>
+                        Conodont FAD <i>Declinognathodus noduliferus</i>        </td>
+                    <td>
+                        Ratified 1996
+                    </td>
+                    <td>
+                        <a href="/bashkirian.pdf">Episodes 22/4, p. 272-283, 1999</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#678F66;">
+                        Mississippian SubPeriod
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#B3BE6C;">
+                        Upper Mississippian Series (series Classification Approved In 2004)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFC26B;">
+                        Serpukhovian Stage
+                    </td>
+                    <td>
+                        330.9 &#177; 0.2
+                    </td>
+                    <td>
+                        candidates are Verkhnyaya Kardailovka (Urals) or Nashui (China)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Conodont FAD <i>Lochriea ziegleri</i>        </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99B46C;">
+                        Middle Mississippian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#A6B96C;">
+                        <a href="/visean">Visean Stage</a>
+                    </td>
+                    <td>
+                        346.7 &#177; 0.4
+                    </td>
+                    <td>
+                        Pengchong, south China
+                    </td>
+                    <td>
+                        24.4333&deg;N 109.4500&deg;E
+                    </td>
+                    <td>
+                        base of bed 83 in the Pengchong Section
+                    </td>
+                    <td>
+                        Benthic Foraminifer FAD <i>Eoparastaffella simplex</i>        </td>
+                    <td>
+                        Ratified 2008
+                    </td>
+                    <td>
+                        <a href="/visean.pdf">Episodes 26/2, p. 105 - 115, 2003</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#80AB6C;">
+                        Lower Mississippian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#8CB06C;">
+                        <a href="/tournaisian">Tournaisian Stage</a>
+                    </td>
+                    <td>
+                        358.9 &#177; 0.4
+                    </td>
+                    <td>
+                        La Serre, France
+                    </td>
+                    <td>
+                        43.5555&deg;N 3.3573&deg;E
+                    </td>
+                    <td>
+                        base of Bed 89 in Trench E' at La Serre, (but FAD now known to be at base of Bed 85)
+                    </td>
+                    <td>
+                        Conodont FAD <i>Siphonodella sulcata </i>IMPRECISE (GSSP discovered in 2006 to have biostratigraphic problems, and can not be correlated with precision.)
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        <a href="/tournaisian.pdf">Episodes
+            14/4, p. 331-336, 1991</a>; Newsletters on Stratigraphy, 43/2, p. 195 - 205, 2009
+                    </td>
+                </tr>
+            </table>
+            <a id="devonian"></a>
+            <h4>Devonian</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99C08D;">
+                        Paleozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#CB8C37;">
+                        Devonian Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F1E19D;">
+                        Upper Devonian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F2EDC5;">
+                        <a href="/famennian">Famennian Stage</a>
+                    </td>
+                    <td>
+                        372.2 &#177; 1.6
+                    </td>
+                    <td>
+                        Coumiac Quarry, near Cessenon, Montagne Noire, France
+                    </td>
+                    <td>
+                        43.4613&deg;N 3.0403&deg;E
+                    </td>
+                    <td>
+                        Base of Bed 32a
+                    </td>
+                    <td>
+                        Conodont FAD <i>Palmatolepis triangularis</i>, just above a major extinction horizon (Kellwasser Event) with conodont LADs <i>Ancyrodella</i> and <i>Ozarkodina</i>, and Goniatite LADs of <i>Gephuroceratidae</i> and <i>Beloceratidae</i>        </td>
+                    <td>
+                        Ratified 1993
+                    </td>
+                    <td>
+                        <a href="/famennian.pdf">Episodes 16/4, p. 433-441, 1993</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F2EDAD;">
+                        <a href="/frasnian">Frasnian </a>
+                        <a href="/frasnian">Stage</a>
+                    </td>
+                    <td>
+                        382.7 &#177; 1.6
+                    </td>
+                    <td>
+                        Col du Puech de la Suque, Montage Noire, France
+                    </td>
+                    <td>
+                        43.5032&deg;N 3.0868&deg;E
+                    </td>
+                    <td>
+                        base of Bed 42' at Col du Puech de la Suque section E
+                    </td>
+                    <td>
+                        Conodont FAD <i>Ancyrodella rotundiloba</i>        </td>
+                    <td>
+                        Ratified 1986
+                    </td>
+                    <td>
+                        <a href="/frasnian.pdf">Episodes 10/2, p. 97-101, 1987</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F1C868;">
+                        Middle Devonian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F1E185;">
+                        <a href="/givetian">Givetian Stage</a>
+                    </td>
+                    <td>
+                        387.7 &#177; 0.8
+                    </td>
+                    <td>
+                        Jebel Mech Irdane, Morocco
+                    </td>
+                    <td>
+                        31.2374&deg;N 4.3541&deg;W
+                    </td>
+                    <td>
+                        base of Bed 123
+                    </td>
+                    <td>
+                        Conodont FAD <i>Polygnathus hemiansatus</i>        </td>
+                    <td>
+                        Ratified 1994
+                    </td>
+                    <td>
+                        <a href="/givetian.pdf">Episodes 18/3, p. 107-115, 1995</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F1D576;">
+                        <a href="/eifelian">Eifelian Stage</a>
+                    </td>
+                    <td>
+                        393.3 &#177; 1.2
+                    </td>
+                    <td>
+                        Wetteldorf, Eifel Hills, Germany
+                    </td>
+                    <td>
+                        50.1496&deg;N 6.4716&deg;E
+                    </td>
+                    <td>
+                        21.25m above the base of the exposed section, base of sample station WP30
+                    </td>
+                    <td>
+                        Conodont FAD <i>Polygnathus costatus partitus</i>        </td>
+                    <td>
+                        Ratified 1985
+                    </td>
+                    <td>
+                        <a href="/eifelian.pdf">Episodes 8/2, p. 104-109, 1985</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#E5AC4D;">
+                        Lower Devonian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E5D075;">
+                        <a href="/emsian">Emsian Stage</a>
+                    </td>
+                    <td>
+                        407.6 &#177; 2.6
+                    </td>
+                    <td>
+                        Zinzil'ban Gorge in the Kitab State Geological Reserve, Uzbekistan
+                    </td>
+                    <td>
+                        39.2000&deg;N 67.3056&deg;E
+                    </td>
+                    <td>
+                        base of Bed 9/5
+                    </td>
+                    <td>
+                        Conodont FAD <i>Polygnathus kitabicus</i>        </td>
+                    <td>
+                        Ratified 1995
+                    </td>
+                    <td>
+                        <a href="/emsian.pdf">Episodes 20/4, p. 235-240, 1997</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E5C468;">
+                        <a href="/pragian">Pragian Stage</a>
+                    </td>
+                    <td>
+                        410.8 &#177; 2.8
+                    </td>
+                    <td>
+                        Velk&aacute; Chuchle, Prague, Czech Republic
+                    </td>
+                    <td>
+                        50.0147&deg;N 14.3726&deg;E
+                    </td>
+                    <td>
+                        base of Bed 12 in Velk&aacute; Chuchle Quarry
+                    </td>
+                    <td>
+                        Conodont FAD <i>Eognathodus sulcatus sulcatus</i> and <i>Latericriodus steinachensis Morph beta</i>        </td>
+                    <td>
+                        Ratified 1989
+                    </td>
+                    <td>
+                        <a href="/pragian.pdf">Episodes 12/2, p. 109-113, 1989</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E5B75A;">
+                        <a href="/lochkovian">Lochkovian Stage</a>
+                    </td>
+                    <td>
+                        419.2 &#177; 3.2
+                    </td>
+                    <td>
+                        Klonk, near Prague, Czech Republic
+                    </td>
+                    <td>
+                        49.8550&deg;N 13.7920&deg;E
+                    </td>
+                    <td>
+                        within Bed 20
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Monograptus uniformis</i>        </td>
+                    <td>
+                        Ratified 1972
+                    </td>
+                    <td>
+                        IUGS Series A, 5, p. 96-109, 1977
+                    </td>
+                </tr>
+            </table>
+            <a id="silurian"></a>
+            <h4>Silurian</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99C08D;">
+                        Paleozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#B3E1B6;">
+                        Silurian Period
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E6F5E1;">
+                        <a href="/pridoli">P&#345;&iacute;dol&iacute; Series</a>
+                    </td>
+                    <td>
+                        423.0 &#177; 2.3
+                    </td>
+                    <td>
+                        Po&#382;&aacute;ry Section, Reporyje, Prague, Czech Republic
+                    </td>
+                    <td>
+                        50.0277&deg;N 14.3249&deg;E
+                    </td>
+                    <td>
+                        within Bed 96
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Monograptus parultimus</i>        </td>
+                    <td>
+                        Ratified 1984
+                    </td>
+                    <td>
+                        <a href="/rhu-tely-pridoli.pdf">Episodes
+            8/2, p. 101-103, 1985</a>; Geol. Series, Nat. Mus. Wales, 9, p. 90 - 100, 1989
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#BFE6CF;">
+                        Ludlow Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#D9F0DF;">
+                        <a href="/ludfordian">Ludfordian Stage</a>
+                    </td>
+                    <td>
+                        425.6 &#177; 0.9
+                    </td>
+                    <td>
+                        near Ludlow, UK
+                    </td>
+                    <td>
+                        52.3592&deg;N 2.7772&deg;W
+                    </td>
+                    <td>
+                        coincident with the base of the Leintwardine Formation
+                    </td>
+                    <td>
+                        Imprecise. May be near base of Saetograptus <i>leintwardinensis </i>Graptolite zone.
+                    </td>
+                    <td>
+                        Ratified 1980
+                    </td>
+                    <td>
+                        Lethaia 14; <a href="/sheinwoodian-ludfordian.pdf">Episodes
+            5/3, p. 21-23, 1982</a>; Geol. Series, Nat. Mus. Wales, 9, p. 73 - 90, 1989
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#CCECDD;">
+                        <a href="/gorstian">Gorstian Stage</a>
+                    </td>
+                    <td>
+                        427.4 &#177; 0.5
+                    </td>
+                    <td>
+                        near Ludlow, UK
+                    </td>
+                    <td>
+                        52.3592&deg;N 2.7772&deg;W
+                    </td>
+                    <td>
+                        coincident with the base of the Lower Elton Formation
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Saetograptus (Colonograptus) varians</i>        </td>
+                    <td>
+                        Ratified 1980
+                    </td>
+                    <td>
+                        Lethaia 14; <a href="/sheinwoodian-ludfordian.pdf">Episodes
+            5/3, p. 21-23, 1982</a>; Geol. Series, Nat. Mus. Wales, 9, p. 73 - 90, 1989
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#B3E1C2;">
+                        Wenlock Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#CCEBD1;">
+                        <a href="/homerian">Homerian Stage</a>
+                    </td>
+                    <td>
+                        430.5 &#177; 0.7
+                    </td>
+                    <td>
+                        Sheinton Brook, Homer, UK
+                    </td>
+                    <td>
+                        52.6156&deg;N 2.5647&deg;W
+                    </td>
+                    <td>
+                        within upper part of the Apedale Member of the Coalbrookdale Formation
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Cyrtograptus lundgreni</i>        </td>
+                    <td>
+                        Ratified 1980
+                    </td>
+                    <td>
+                        Lethaia 14; <a href="/sheinwoodian-ludfordian.pdf">Episodes
+            5/3, p. 21-23, 1982</a>; Geol. Series, Nat. Mus. Wales, 9, p. 51-73, 1989
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFE6C3;">
+                        <a href="/sheinwoodian">Sheinwoodian Stage</a>
+                    </td>
+                    <td>
+                        433.4 &#177; 0.8
+                    </td>
+                    <td>
+                        Hughley Brook, UK
+                    </td>
+                    <td>
+                        52.5811&deg;N 2.6389&deg;W
+                    </td>
+                    <td>
+                        base of the Buildwas Formation
+                    </td>
+                    <td>
+                        Imprecise. Between the base of acritarch biozone 5 and LAD of conodont <i>Pterospathodus amorphognathoides</i>. The current GSSP does not coincide with the base of the <i>Cyrtograptus centrifugus</i> Biozone, as was supposed when the GSSP was defined. Restudy recommends a slightly higher and correlatable level on condonts - the Ireviken datum 2, which coincides approximately with the base of the <i>murchisoni</i> Graptolite Biozone
+                    </td>
+                    <td>
+                        Ratified 1980
+                    </td>
+                    <td>
+                        Lethaia 14; <a href="/sheinwoodian-ludfordian.pdf">Episodes
+            5/3, p. 21-23, 1982</a>; Geol. Series, Nat. Mus. Wales, 9, p. 51-73, 1989
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99D7B3;">
+                        Llandovery Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFE6CF;">
+                        <a href="/telychian">Telychian Stage</a>
+                    </td>
+                    <td>
+                        438.5 &#177; 1.1
+                    </td>
+                    <td>
+                        Cefn-cerig Road Section, Wales, UK
+                    </td>
+                    <td>
+                        51.9700&deg;N 3.7900&deg;W
+                    </td>
+                    <td>
+                        within the Wormwood Formation
+                    </td>
+                    <td>
+                        Just above Brachiopod LAD <i>Eocoelia intermedia </i>and below FAD of <i>Eocoelia curtisi</i>        </td>
+                    <td>
+                        Ratified 1984
+                    </td>
+                    <td>
+                        <a href="/rhu-tely-pridoli.pdf">Episodes
+            8/2, p. 101-103, 1985</a>; Geol. Series, Nat. Mus. Wales, 9, p. 36-50, 1989
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#B3E1C2;">
+                        <a href="/aeronian">Aeronian Stage</a>
+                    </td>
+                    <td>
+                        440.8 &#177; 1.2
+                    </td>
+                    <td>
+                        Trefawr Track Section, Wales, UK
+                    </td>
+                    <td>
+                        52.0300&deg;N 3.7000&deg;W
+                    </td>
+                    <td>
+                        within Trefawar Formation
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Monograptus austerus sequens</i>        </td>
+                    <td>
+                        Ratified 1984
+                    </td>
+                    <td>
+                        <a href="/rhu-tely-pridoli.pdf">Episodes
+            8/2, p. 101-103, 1985</a>; Geol. Series, Nat. Mus. Wales, 9, p. 36-50, 1989
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#A6DCB5;">
+                        <a href="/rhuddanian">Rhuddanian Stage</a>
+                    </td>
+                    <td>
+                        443.8 &#177; 1.5
+                    </td>
+                    <td>
+                        Dob's Linn, Scotland
+                    </td>
+                    <td>
+                        55.4400&deg;N 3.2700&deg;W
+                    </td>
+                    <td>
+                        1.6m above the base of the Birkhill Shale Formation
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Akidograptus ascensus</i>        </td>
+                    <td>
+                        Ratified 1984
+                    </td>
+                    <td>
+                        <a href="/rhu-tely-pridoli.pdf">Episodes
+            8/2, p. 101-103, 1985</a>; Silurian Times No. 14 (2006)
+                    </td>
+                </tr>
+            </table>
+            <a id="ordovician"></a>
+            <h4>Ordovician</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99C08D;">
+                        Paleozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#009270;">
+                        Ordovician Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#7FCA93;">
+                        Upper Ordovician Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#A6DBAB;">
+                        <a href="/hirnantian">Hirnantian Stage</a>
+                    </td>
+                    <td>
+                        445.2 &#177; 1.4
+                    </td>
+                    <td>
+                        Wangjiawan North section, N of Yichang city, Western Hubei Province, China
+                    </td>
+                    <td>
+                        30.9841&deg;N 111.4197&deg;E
+                    </td>
+                    <td>
+                        0.39m below the base of the Kuanyinchiao Bed
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Normalograptus extraordinarius</i>        </td>
+                    <td>
+                        Ratified 2006
+                    </td>
+                    <td>
+                        <a href="/hirnantian.pdf">Episodes 29/3, p. 183-196, 2006</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#99D69F;">
+                        <a href="/katian">Katian Stage</a>
+                    </td>
+                    <td>
+                        453.0 &#177; 0.7
+                    </td>
+                    <td>
+                        Black Knob Ridge Section, Atoka, Oklahoma (USA)
+                    </td>
+                    <td>
+                        34.4305&deg;N 96.0746&deg;W
+                    </td>
+                    <td>
+                        4.0m above the base of the Bigfork Chert
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Diplacanthograptus caudatus</i>        </td>
+                    <td>
+                        Ratified 2006
+                    </td>
+                    <td>
+                        <a href="/katian.pdf">Episodes 30/4, p. 258-270, 2007</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#8CD094;">
+                        <a href="/sandbian">Sandbian Stage</a>
+                    </td>
+                    <td>
+                        458.4 &#177; 0.9
+                    </td>
+                    <td>
+                        Sularp Brook, F&aring;gels&aring;ng, Sweden
+                    </td>
+                    <td>
+                        55.7137&deg;N 13.3255&deg;E
+                    </td>
+                    <td>
+                        1.4m below a phosphorite marker bed in the E14b outcrop
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Nemagraptus gracilis</i>        </td>
+                    <td>
+                        Ratified 2002
+                    </td>
+                    <td>
+                        <a href="/sandbian.pdf">Episodes 23/2, p. 102-109, 2000</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#4DB47E;">
+                        Middle Ordovician Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#74C69C;">
+                        <a href="/darriwilian">Darriwilian Stage</a>
+                    </td>
+                    <td>
+                        467.3 &#177; 1.1
+                    </td>
+                    <td>
+                        Huangnitang section, Changshan, Zhejiang Province, SE China
+                    </td>
+                    <td>
+                        28.8539&deg;N 118.4897&deg;E
+                    </td>
+                    <td>
+                        base of Bed AEP 184
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Undulograptus austrodentatus</i>        </td>
+                    <td>
+                        Ratified 1987
+                    </td>
+                    <td>
+                        <a href="/darriwilian.pdf">Episodes 20/3, p. 158-166, 1997</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#66C092;">
+                        <a href="/dapingian">Dapingian Stage</a>
+                    </td>
+                    <td>
+                        470.0 &#177; 1.4
+                    </td>
+                    <td>
+                        Huanghuachang Section, NE of Yichang city, Hubei Province, S. China
+                    </td>
+                    <td>
+                        30.8605&deg;N 110.3740&deg;E
+                    </td>
+                    <td>
+                        10.57 m above base of the Dawan Formation
+                    </td>
+                    <td>
+                        Conodont FAD of <i>Baltoniodus triangularis</i>        </td>
+                    <td>
+                        Ratified 2007
+                    </td>
+                    <td>
+                        <a href="/dapingian1.pdf">Episodes
+            28/2, p. 105 - 117, 2005</a>; <a href="/dapingian2.pdf">Episodes 32/2, p. 96-113,
+            2009</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#1A9D6F;">
+                        Lower Ordovician Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#41B087;">
+                        <a href="/floian">Floian Stage</a>
+                    </td>
+                    <td>
+                        477.7 &#177; 1.4
+                    </td>
+                    <td>
+                        Diabasbrottet, Hunneberg, Sweden
+                    </td>
+                    <td>
+                        58.3589&deg;N 12.5024&deg;E
+                    </td>
+                    <td>
+                        in the lower T&oslash;yen Shale, 2.1m above the top of the Cambrian
+                    </td>
+                    <td>
+                        Graptolite FAD <i>Tetragraptus approximatus</i>        </td>
+                    <td>
+                        Ratified 2002
+                    </td>
+                    <td>
+                        <a href="/floian.pdf">Episodes 27/4, p. 265-272, 2004</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#33A97E;">
+                        <a href="/tremadocian">Tremadocian Stage</a>
+                    </td>
+                    <td>
+                        485.4 &#177; 1.9
+                    </td>
+                    <td>
+                        Green Point Section, western Newfoundland
+                    </td>
+                    <td>
+                        49.6829&deg;N 57.9653&deg;W
+                    </td>
+                    <td>
+                        at the 101.8m level, within Bed 23, in the measured section
+                    </td>
+                    <td>
+                        Conodont FAD <i>Iapetognathus fluctivagus</i>        </td>
+                    <td>
+                        Ratified 2000
+                    </td>
+                    <td>
+                        <a href="/tremadocian.pdf">Episodes 24/1, p. 19 - 28, 2001</a>
+                    </td>
+                </tr>
+            </table>
+            <a id="cambrian"></a>
+            <h4>Cambrian</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#9AD9DD;">
+                        Phanerozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99C08D;">
+                        Paleozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#7FA056;">
+                        Cambrian Period
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#B3E095;">
+                        Furongian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#E6F5C9;">
+                        Stage 10
+                    </td>
+                    <td>
+                        ~489.5
+                    </td>
+                    <td>
+                        candidate section is Duibian (Zhejiang province, China)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Trilobite FAD of <i>Lotagnostus
+            americanus</i>. An internal subStage division might be FAD of <i>Codylodus
+            adesei </i>conodont
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#D9F0BB;">
+                        <a href="/jiangshanian">Jiangshanian Stage</a>
+                    </td>
+                    <td>
+                        ~494
+                    </td>
+                    <td>
+                        Duibian B section, Zhejiang province, China
+                    </td>
+                    <td>
+                        28&deg;48.958'N 118&deg;36.896'E
+                    </td>
+                    <td>
+                        28.2 m in Duibian B section
+                    </td>
+                    <td>
+                        FAD of agnostid trilobite <i>Agnostotes orientalis</i> and the FO of polymerid trilobite <i>Irvingella angustilimbata</i>        </td>
+                    <td>
+                        Ratified 2011
+                    </td>
+                    <td>
+                        <a href="/jiangshanian.pdf">Episodes 35/4, p.462-477, 2012</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#CCEBAE;">
+                        <a href="/paibian">Paibian Stage</a>
+                    </td>
+                    <td>
+                        ~497
+                    </td>
+                    <td>
+                        Wuling Mountains, Huayuan County, NW Hunan Province, Chin
+                    </td>
+                    <td>
+                        28.3895&deg;N 109.5257&deg;E
+                    </td>
+                    <td>
+                        at 396 m in the Huaqiao Formation
+                    </td>
+                    <td>
+                        Trilobite FAD <i>Glyptagnostus reticulatus</i>        </td>
+                    <td>
+                        Ratified 2003
+                    </td>
+                    <td>
+                        <a href="/paibian.pdf">Lethaia 37, p. 365-379, 2004</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#A6CF86;">
+                        Series 3
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#CCDFAA;">
+                        <a href="/guzhangian">Guzhangian Stage</a>
+                    </td>
+                    <td>
+                        ~500.5
+                    </td>
+                    <td>
+                        Louyixi, Guzhang County, NW Hunan Province, S. China
+                    </td>
+                    <td>
+                        28.7200&deg;N 109.9647&deg;E
+                    </td>
+                    <td>
+                        121.3 m above the base of the Huaqiao Formation
+                    </td>
+                    <td>
+                        Trilobite FAD <i>Lejopyge laevigata</i>        </td>
+                    <td>
+                        Ratified 2008
+                    </td>
+                    <td>
+                        <a href="/guzhangian.pdf">Episodes 32/1, p.41-55, 2009</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#BFD99D;">
+                        <a href="/drumian">Drumian Stage</a>
+                    </td>
+                    <td>
+                        ~504.5
+                    </td>
+                    <td>
+                        Drum Mountains, Millard County, Utah, USA
+                    </td>
+                    <td>
+                        39.5117&deg;N 112.9915&deg;W
+                    </td>
+                    <td>
+                        at the base of a dark-gray thinly laminated calcisiltite layer, 62 m above the base of the Wheeler Formation
+                    </td>
+                    <td>
+                        Trilobite FAD <i>Ptychagnostus atavus</i>        </td>
+                    <td>
+                        Ratified 2006
+                    </td>
+                    <td>
+                        <a href="/drumian.pdf">Episodes 30/2,p. 85-95, 2007</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#B3D492;">
+                        Stage 5
+                    </td>
+                    <td>
+                        ~509
+                    </td>
+                    <td>
+                        candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and Split Mountain (Nevada, USA)
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Trilobite, potentially FAD of <i>Oryctocephalus indicus</i>        </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#99C078;">
+                        Series 2
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#B3CA8E;">
+                        Stage 4
+                    </td>
+                    <td>
+                        ~514
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Trilobite FAD <i>Olenellus</i> or <i>Redlichia</i>        </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#A6C583;">
+                        Stage 3
+                    </td>
+                    <td>
+                        ~521
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Trilobites - their FAD
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#8CB06C;">
+                        Terreneuvian Series
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#A6BA80;">
+                        Stage 2
+                    </td>
+                    <td>
+                        ~529
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Small Shelly Fossils, or Archaeocyathid species
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#99B575;">
+                        <a href="/fortunian">Fortunian Stage</a>
+                    </td>
+                    <td>
+                        541.0 &#177; 1.0
+                    </td>
+                    <td>
+                        Fortune Head, SE Newfoundland, Canada
+                    </td>
+                    <td>
+                        47.0762&deg;N 55.8310&deg;W
+                    </td>
+                    <td>
+                        2.4m above the base of Member 2 in the Chapel Island Formation
+                    </td>
+                    <td>
+                        Trace fossil FAD <i>Trichophycus pedum</i>        </td>
+                    <td>
+                        Ratified 1992
+                    </td>
+                    <td>
+                        <a href="/fortunian.pdf">Episodes 17/1&amp;2, p. 95-100, 1994</a>
+                    </td>
+                </tr>
+            </table>
+            <a id="proterozoic"></a>
+            <h4>Proterozoic</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F74370;">
+                        Precambrian Super-Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F73563;">
+                        Proterozoic Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FEB342;">
+                        Neoproterozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FED96A;">
+                        <a href="/ediacaran">Ediacaran Period</a>
+                    </td>
+                    <td>
+                        ~635
+                    </td>
+                    <td>
+                        Enorama Creek, Flinders Ranges, South Australia
+                    </td>
+                    <td>
+                        31.3314&deg;S 138.6334&deg;E
+                    </td>
+                    <td>
+                        base of the Marinoan cap carbonate
+                    </td>
+                    <td>
+                        (1) rapid decay of Marinoan ice sheets and onset of distinct cap carbonates throughout the world, and (2) the beginning of a distinctive pattern of secular changes in carbon isotopes.
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        <a href="/ediacaran.pdf">Lethaia 39, p.13- 30, 2006</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FECC5C;">
+                        Cryogenian Period
+                    </td>
+                    <td>
+                        720
+                    </td>
+                    <td>
+                        Defined chronometrically; but will be replaced by GSSP. First glacial episode occurred after 750 Ma
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FEBF4E;">
+                        Tonian Period
+                    </td>
+                    <td>
+                        1000
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#FDB462;">
+                        Mesoproterozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FED99A;">
+                        Stenian Period
+                    </td>
+                    <td>
+                        1200
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FDCC8A;">
+                        Ectasian Period
+                    </td>
+                    <td>
+                        1400
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#FDC07A;">
+                        Calymmian Period
+                    </td>
+                    <td>
+                        1600
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F74370;">
+                        Paleoproterozoic Erathem
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F875A7;">
+                        Statherian Period
+                    </td>
+                    <td>
+                        1800
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F76898;">
+                        Orosirian Period
+                    </td>
+                    <td>
+                        2050
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F75B89;">
+                        Rhyacian Period
+                    </td>
+                    <td>
+                        2300
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F74F7C;">
+                        Siderian Period
+                    </td>
+                    <td>
+                        2500
+                    </td>
+                    <td>
+                        Defined chronometrically, but it will be replaced by GSSP
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Ratified 1990
+                    </td>
+                    <td>
+                        Episodes 14/2,1991
+                    </td>
+                </tr>
+            </table>
+            <a id="archean"></a>
+            <h4>Archean</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F74370;">
+                        Precambrian Super-Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F0047F;">
+                        Archean Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F99BC1;">
+                        Neoarchean Erathem
+                    </td>
+                    <td>
+                        2800
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Subcomm. decision 1996, but not submitted to ICS
+                    </td>
+                    <td>
+                        Informally in Episodes 15/2, 1992
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F768A9;">
+                        Mesoarchean Erathem
+                    </td>
+                    <td>
+                        3200
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Subcomm. decision 1996, but not submitted to ICS
+                    </td>
+                    <td>
+                        Informally in Episodes 15/2, 1992
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#F4449F;">
+                        Paleoarchean Erathem
+                    </td>
+                    <td>
+                        3600
+                    </td>
+                    <td>
+                        Defined chronometrically
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Subcomm. decision 1996, but not submitted to ICS
+                    </td>
+                    <td>
+                        Informally in Episodes 15/2, 1992
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#DA037F;">
+                        Eoarchean Erathem
+                    </td>
+                    <td>
+                        4000
+                    </td>
+                    <td>
+                        Base is not defined
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Subcomm. decision 1996, but not submitted to ICS
+                    </td>
+                    <td>
+                        Informally in Episodes 15/2, 1992
+                    </td>
+                </tr>
+            </table>
+            <a id="hadean"></a>
+            <h4>Hadean</h4>
+            <table class="ages">
+                <tr class="headerRow">
+                    <th width="5%">
+                        Stage
+                    </th>
+                    <th width="5%">
+                        Age (Ma)
+                    </th>
+                    <th width="16%">
+                        GSSP Location
+                    </th>
+                    <th width="10%">
+                        Latitude, Longitude
+                    </th>
+                    <th width="15%">
+                        Boundary Level
+                    </th>
+                    <th width="26%">
+                        Correlation Events
+                    </th>
+                    <th width="11%">
+                        Status
+                    </th>
+                    <th width="12%">
+                        Reference
+                    </th>
+                </tr>
+                <tr>
+                    <td width="100%" colspan=8 style="background:#F74370;">
+                        Precambrian Super-Eonothem
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#AE027E;">
+                        Hadean Eonothem
+                    </td>
+                    <td>
+                        ~4600
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        Formation of planet Earth. Informal term
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
         </div>
         <footer>
             &copy; 2013-2020 International Commission on Stratigraphy, all rights reserved

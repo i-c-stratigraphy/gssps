@@ -8,6 +8,15 @@
         padding: 3px;
         color: lightgrey;
     }
+
+    #menu li li {
+        border-bottom: solid 1px lightgrey;
+        padding:0px;
+        color: lightgrey;
+    }
+    #menu li li:last-child {
+        border-bottom: none;
+    }
     #menu a {
         color: #444;
         display:block;
@@ -22,7 +31,26 @@
     <li><a href="/executive">Executive</a></li>
     <li><a href="/subcommissions">Subcommissions</a></li>
     <li><a href="/chart">Chart/Time Scale</a></li>
-    <li><a href="/gssps">GSSPs</a></li>
+    <li>
+        <a href="/gssps">GSSP Charts</a>
+        <ul>
+            <li><a href="#quaternary">Quaternary</a></li>
+            <li><a href="#neogene">Neogene</a></li>
+            <li><a href="#paleogene">Paleogene</a></li>
+            <li><a href="#cretaceous">Cretaceous</a></li>
+            <li><a href="#jurassic">Jurassic</a></li>
+            <li><a href="#triassic">Triassic</a></li>
+            <li><a href="#permian">Permian</a></li>
+            <li><a href="#carboniferous">Carboniferous</a></li>
+            <li><a href="#devonian">Devonian</a></li>
+            <li><a href="#silurian">Silurian</a></li>
+            <li><a href="#ordovician">Ordovician</a></li>
+            <li><a href="#cambrian">Cambrian</a></li>
+            <li><a href="#proterozoic">Proterozoic</a></li>
+            <li><a href="#archean">Archean</a></li>
+            <li><a href="#hadean">Hadean</a></li>
+        </ul>
+    </li>
     <li><a href="/archives">Archives</a></li>
     <li><a href="/guide">Stratigraphic Guide</a></li>
     <li><a href="/statutes">Statutes & Guidelines</a></li>

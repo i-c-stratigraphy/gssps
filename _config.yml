@@ -2,8 +2,8 @@ title: Global Boundary Stratotype Section (GSSP)s of the ICS
 email: nicholas.car@surroundaustralia.com
 description: >- # this means to ignore newlines until "baseurl:"
   A Global Boundary Stratotype Section and Point, abbreviated GSSP, is an internationally agreed upon reference point on a stratigraphic section which defines the lower boundary of a stage on the geologic time scale. The effort to define GSSPs is conducted by the International Commission on Stratigraphy, a part of the International Union of Geological Sciences. Most, but not all, GSSPs are based on paleontological changes. 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: ""
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "/"
 github_username:  nicholascar
 
 # Build settings
