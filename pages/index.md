@@ -4,7 +4,7 @@ title: "Home"
 permalink: /
 ---
 ## Global Boundary Stratotype Section and Points
-Global Boundary Stratotype Sections and Points (GSSPs) are reference points on stratigraphic sections of rock which define the lower boundaries of stages on the geologic time scale. Since 1977, the ICS has maintained the international GSSP register.
+Global Boundary Stratotype Sections and Points (GSSPs) are reference points on stratigraphic sections of rock which define the lower boundaries of stages on the geologic timescale. Since 1977, the ICS has maintained the international GSSP register.
 
 ### Rules
 A geologic section has to fulfill a set of criteria to be adapted as a GSSP by the ICS. The following list summarizes the criteria:
@@ -38,7 +38,3 @@ A geologic section has to fulfill a set of criteria to be adapted as a GSSP by t
 * [Archean Eonothem](#archean)
 * [Hadean Eonothem](#hadean)
 -->
-### GSSP Tables
-The tables containing summaries of Period's GSSPs and links to individual Stage's GSSPs are given below. 
-
-Links to each are presented in the menu of the left.

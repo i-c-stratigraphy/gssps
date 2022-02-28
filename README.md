@@ -12,7 +12,7 @@ This is a [Jekyll](https://jekyllrb.com/) *static site generator* website which 
 `bundle exec jekyll serve`
 
 _to fx dependencies:_
-`bundle update && bundle install` then `bundle add webrick`
+`bundle update && bundle install`
 
 
 ## License & Rights
@@ -20,7 +20,7 @@ The content of this repository is licensed using the Creative Commons Attributio
 
 * <https://creativecommons.org/licenses/by/4.0/>
 
-See the [local coy of the license deed](LICENSE) for details.
+See the [local copy of the license deed](LICENSE) for details.
 
 &copy; International Commission on Stratigraphy, all rights reserved
 
