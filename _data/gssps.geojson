@@ -1000,6 +1000,20 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    118.6149,
+                    28.8159
+                ]
+            },
+            "properties": {
+                "title": "Jiangshanian Stage",
+                "marker-color": "#D9F0BB"
+            }
+        },        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     109.5257,
                     28.389
                 ]
