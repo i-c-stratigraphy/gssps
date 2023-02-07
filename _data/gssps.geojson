@@ -300,6 +300,20 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    12.5828,
+                    43.3627
+                ]
+            },
+            "properties": {
+                "title": "Campanian Stage",
+                "marker-color": "#E6F47F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     2.1968,
                     42.866
                 ]
