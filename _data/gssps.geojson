@@ -35,7 +35,7 @@
                 "type": "Point",
                 "coordinates": [
                     -42.32,
-                    75.1
+                    37.2889
                 ]
             },
             "properties": {
@@ -300,20 +300,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.5828,
-                    43.3627
-                ]
-            },
-            "properties": {
-                "title": "Campanian Stage",
-                "marker-color": "#E6F47F"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     2.1968,
                     42.866
                 ]
@@ -370,8 +356,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    5.311767,
-                    44.496606
+                    5.29725,
+                    44.507861
                 ]
             },
             "properties": {
@@ -725,7 +711,7 @@
                 ]
             },
             "properties": {
-                "title": "Frasnian  Stage",
+                "title": "Frasnian Stage",
                 "marker-color": "#F2EDAD"
             }
         },
@@ -1022,7 +1008,7 @@
                 "title": "Jiangshanian Stage",
                 "marker-color": "#D9F0BB"
             }
-        },        
+        },
         {
             "type": "Feature",
             "geometry": {
@@ -1091,6 +1077,20 @@
             "properties": {
                 "title": "Ediacaran Period",
                 "marker-color": "#FED96A"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.56229,
+                    43.59193
+                ]
+            },
+            "properties": {
+                "title": "Langhian Stage",
+                "marker-color": "#FFFF4D"
             }
         }
     ]
