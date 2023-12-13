@@ -6,10 +6,14 @@ This is a [Jekyll](https://jekyllrb.com/) *static site generator* website which 
 
 ### Jekyll Commands
 #### Launch new site
-`jekyll new . --force`
+```
+jekyll new . --force
+```
 
 #### Serve locally
-`bundle exec jekyll serve`
+```
+bundle exec jekyll serve
+```
 
 _to fx dependencies:_
 `bundle update && bundle install`
@@ -28,4 +32,4 @@ See the [local copy of the license deed](LICENSE) for details.
 ## Support and contacts
 *For website technical matters:*  
 **Nicholas Car**  
-<nicholas.car@surroundaustralia.com>  
+<nick@kurrawong.ai>
