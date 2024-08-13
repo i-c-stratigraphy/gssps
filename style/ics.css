@@ -167,3 +167,30 @@ tr.headerRow {
 #tables h4 {
     margin-left:10px;
 }
+
+.bib { 
+    text-indent: -36px; 
+    padding-left: 36px; 
+}
+
+.complete {
+    display:none;
+}
+
+.more {
+    color: #095197;
+    padding: 3px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.complete2 {
+    display:none;
+}
+
+.more2 {
+    color: #095197;
+    padding: 3px;
+    cursor: pointer;
+    font-style: italic;
+}
