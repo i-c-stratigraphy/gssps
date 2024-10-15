@@ -16,7 +16,9 @@ bundle exec jekyll serve
 ```
 
 _to fx dependencies:_
-`bundle update && bundle install`
+```
+bundle update && bundle install
+```
 
 
 ## License & Rights
