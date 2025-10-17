@@ -1,0 +1,1480 @@
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX gssp: <http://linked.data.gov.au/def/gssps/gssp/>
+PREFIX gssps: <http://linked.data.gov.au/def/gssps/>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+gssp:Aalenian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed FZ 107" ;
+    gssps:correlationEvents "Ammonite FAD Leioceras opalinum and Leioceras lineatum" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(41.1708 -1.8333)"^^geo:wktLiteral ;
+        ] ;
+    schema:description "Fuentelsaz, Spain" ;
+    schema:name "Aalenian Stage GSSP" ;
+.
+
+gssp:Aeronian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "within Želkovice Formation, 1.38 m above base" ;
+    gssps:correlationEvents "Graptolite FAD Demirastrites Triangulates" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(49.9230 -14.2119)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ;
+    schema:description "Hlásná Třebaň, Bohemia, Czech Republic" ;
+    schema:name "Aeronian Stage GSSP" ;
+.
+
+gssp:Albian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "37.4 m above the base of the section and 0.4 m above the base of the laminated Niveau Kilian bed" ;
+    gssps:correlationEvents "Lowest occurrence of the planktonic foraminifer Microhedbergella renilaevis" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(44.5079 5.2973)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2017/v40i3/017021"^^xsd:anyURI ;
+    schema:description "Col de Pré-Guittard, Department of Drôme, southeastern France" ;
+    schema:name "Albian Stage GSSP" ;
+.
+
+gssp:Anisian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "In Section B, the GSSP level will be either the FAD of conodont Chiosella timorensis at the base of Bed GR7 at ca. 7 m; OR the base of magnetozone MT1n at the 5.7 m level." ;
+    gssps:correlationEvents "Conodont FAD Chiosella timorensis or Magnetic - base of magnetic polarity MT1n" ;
+    schema:description "Candidate section at Desli Caira (Dobrogea, Romania); significant sections in Guizhou Province (China) and South Primorye (Russia)" ;
+    schema:name "Anisian Stage GSSP" ;
+.
+
+gssp:Aptian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Magnetic - base of Chron M0r; near FAD of Paradeshayesites oglanlensis ammonite zone" ;
+    schema:description "candidate is Gorgo a Cerbara, Piobbico, Umbria-Marche, central Italy" ;
+    schema:name "Aptian Stage GSSP" ;
+.
+
+gssp:Aquitanian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "35m from the top of the section" ;
+    gssps:correlationEvents "Magnetic - base of Chron C6Cn.2n; planktonic foraminifer FAD of Paragloborotalia kugleri; calcareous nannofossil near LAD Reticulofenestra bisecta (base Zone NN1); Oxygen isotopic event Mi-1." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(44.6589 8.8364)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/aquitanian.pdf"^^xsd:anyURI ;
+    schema:description "Lemme-Carrosio Section, Allessandria Province, Italy" ;
+    schema:name "Aquitanian Stage GSSP" ;
+.
+
+gssp:Artinskian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "0.6m above the base of bed 4b at the Dal'ny Tulkas section in the southern Urals of Russia" ;
+    gssps:correlationEvents "Conodont FAD Sweetognathus asymmetricus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(53.88847 56.51615)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2023/023015"^^xsd:anyURI ;
+    schema:description "Dalny Tulkas section, Southern Ural Mts, Russia" ;
+    schema:name "Artinskian Stage GSSP" ;
+.
+
+gssp:Asselian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "27m above the base of Bed 19, Aidaralash Creek" ;
+    gssps:correlationEvents "Conodont FAD Streptognathodus isolatus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(50.2458 57.8914)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/asselian.pdf"^^xsd:anyURI ;
+    schema:description "Aidaralash Creek, Kazakhstan" ;
+    schema:name "Asselian Stage GSSP" ;
+.
+
+gssp:Bajocian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed AB 11" ;
+    gssps:correlationEvents "Ammonite FAD Hyperlioceras mundum, Hyperlioceras furcatum, Braunsina aspera, and Braunsina elegantula" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(40.1992 -8.9042)"^^geo:wktLiteral ;
+        ] ;
+    schema:description "Murtinheira Section, Cabo Mondego, Portugal" ;
+    schema:name "Bajocian Stage GSSP" ;
+.
+
+gssp:Barremian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 171" ;
+    gssps:correlationEvents "FAD of ammonite species Taveraidiscus hugii (Spitidiscus hugii - Spitidiscus vandeckii group), within calcareous nannofossil Subzone NC5C and in the lowermost part of polarity chron M3r." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(38.0704 -1.9484)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2023/02330"^^xsd:anyURI ;
+    schema:description "Río Argos section near Caravaca, Murcia Province, Spain" ;
+    schema:name "Barremian Stage GSSP" ;
+.
+
+gssp:Bartonian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Calcareous nannofossil near LAD Reticulofenestra reticulata" ;
+    schema:description "Contessa highway section near Gubio, Central Apennines, Italy" ;
+    schema:name "Bartonian Stage GSSP" ;
+.
+
+gssp:Bashkirian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "82.9m above the top of the Battleship Formation in the lower Bird Spring Formation" ;
+    gssps:correlationEvents """Conodont FAD Declinognathodus noduliferus
+""" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(36.7333 -114.7778)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/bashkirian.pdf"^^xsd:anyURI ;
+    schema:description "Arrow Canyon, Nevada" ;
+    schema:name "Bashkirian Stage GSSP" ;
+.
+
+gssp:Bathonian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of limestone bed RB07" ;
+    gssps:correlationEvents "Ammonite FAD Gonolkite convergens (defines base of Zigzagiceras zigzag Zone)" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.9606 6.3153)"^^geo:wktLiteral ;
+        ] ;
+    schema:description "Ravin du Bès, Bas-Auran area, Alpes de Haute Provence, France" ;
+    schema:name "Bathonian Stage GSSP" ;
+.
+
+gssp:Berriasian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Candidates include: (1) Magnetic - base of Chron M18r, (2) Base of Calpionellid zone B, (3) ammonite FAD of Berriasella jacobi" ;
+    schema:description "NaN"^^xsd:double ;
+    schema:name "Berriasian Stage GSSP" ;
+.
+
+gssp:Burdigalian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Near planktonic foraminifer FAD of Globigerinoides altiaperturus or near top of magnetic polarity chronozone C6An" ;
+    schema:description "Potentially in astronomicallytuned ODP core" ;
+    schema:name "Burdigalian Stage GSSP" ;
+.
+
+gssp:Calabrian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of the marine claystone overlying the sapropelic marker Bed 'e' (Mediterranean Precession Related Sapropel, MPRS 176)" ;
+    gssps:correlationEvents "Magnetic - ∼8m below the observed top of the Olduvai (C2n) normal polarity subchron. GSSP level coincides with the transition from MIS 65 to 64" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(39.0385 17.1348 )"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.1016/j.quaint.2019.05.018"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/calabrian1.pdf"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/calabrian2.pdf"^^xsd:anyURI ;
+    schema:description "Vrica, Italy" ;
+    schema:name "Calabrian Stage GSSP" ;
+.
+
+gssp:Callovian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Ammonite FAD of the genus Kepplerites (Kosmoceratidae)  (defines base of Macrocephalites herveyi Zone in sub-Boreal province of Great Britain to southwest Germany)" ;
+    schema:description "candidates are Pfeffingen (Swabian Alb, SW Germany) and in Russia" ;
+    schema:name "Callovian Stage GSSP" ;
+.
+
+gssp:Calymmian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Calymmian System GSSP" ;
+.
+
+gssp:CambrianSeries2
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Trilobites - their FAD" ;
+    schema:description "NaN"^^xsd:double ;
+    schema:name "Stage 3 GSSP" ;
+.
+
+gssp:CambrianStage10
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Trilobite FAD of Lotagnostus americanus. An internal subStage division might be FAD of Codylodus adesei conodont" ;
+    schema:description "candidate section is Duibian (Zhejiang province, China)" ;
+    schema:name "Stage 10 GSSP" ;
+.
+
+gssp:CambrianStage2
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Small Shelly Fossils, or Archaeocyathid species" ;
+    schema:description "NaN"^^xsd:double ;
+    schema:name "Stage 2 GSSP" ;
+.
+
+gssp:CambrianStage3
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Trilobite FAD Olenellus or Redlichia" ;
+    schema:description "NaN"^^xsd:double ;
+    schema:name "Stage 4 GSSP" ;
+.
+
+gssp:CambrianStage4
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Trilobite, potentially FAD of Oryctocephalus indicus" ;
+    schema:description "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and Split Mountain (Nevada, USA)" ;
+    schema:name "Stage 5 GSSP" ;
+.
+
+gssp:Campanian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "Level 221.53 m in the Bottaccione Gorge section at Gubbio, Umbria-Marche Basin, Italy" ;
+    gssps:correlationEvents "The magnetic polarity reversal from Chron 34n (top of the Long Cretaceous Normal Polarity-Chron) to Chron C33r." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.36267 12.58283)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.18814/epiiugs/2022/022048"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/campanian.pdf"^^xsd:anyURI ;
+    schema:description "1.4 km NNE from the town of Gubbio, central Italy" ;
+    schema:name "Campanian Stage GSSP" ;
+.
+
+gssp:Capitanian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "4.5m above the base of the outcrop section of the Pinery Limestone Member of the Bell Canyon Formation" ;
+    gssps:correlationEvents "Conodont FAD Jinogondolella postserrata" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(31.9091 -104.7892)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
+        "https://doi.org/10.18814/epiiugs/2022/022004"^^xsd:anyURI ;
+    schema:description "Nipple Hill, SE Guadalupe Mountains, Texas, U.S.A" ;
+    schema:name "Capitanian Stage GSSP" ;
+.
+
+gssp:Carnian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of marly limestone bed SW4, 45m from base of San Cassiano Formation" ;
+    gssps:correlationEvents "FAD of the ammonoid Daxatina canadensis; just below FO of conodont Paragondolella polygnathiformis and base of normal-polarity magnetic zone S2n" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(46.5269 11.9303)"^^geo:wktLiteral ;
+        ] ;
+    schema:description "Prati di Stuores, Dolomites, Italy" ;
+    schema:name "Carnian Stage GSSP" ;
+.
+
+gssp:Cenomanian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "36 meters below the top of the Marnes Bleues Formation on the south side of Mont Risou" ;
+    gssps:correlationEvents "Planktonic foraminifer FAD Rotalipora globotruncanoides" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(44.3925 5.5119)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/cenomanian.pdf"^^xsd:anyURI ;
+    schema:description "Mount Risou, Hautes-Alpes, France" ;
+    schema:name "Cenomanian Stage GSSP" ;
+.
+
+gssp:Changhsingian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 4a- 2, 88 cm above the base of the Changxing Limestone at the Meishan D Section" ;
+    gssps:correlationEvents "Conodont FAD Clarkina wangi" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(31.0819 119.7064)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/changhsiangian.pdf"^^xsd:anyURI ;
+    schema:description "Meishan, Zhejiang Province, China" ;
+    schema:name "Changhsingian Stage GSSP" ;
+.
+
+gssp:Chattian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "Highest common occurrence (HCO) of Chiloguembelina cubensis" ;
+    gssps:correlationEvents "Oxygen isotope excursion possibly related to the Oi2a glaciation event" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.646614 12.467731)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2018/v41i1/018003"^^xsd:anyURI ;
+    schema:description "Monte Cagnero, Umbria-Marche region, Italy" ;
+    schema:name "Chattian Stage GSSP" ;
+.
+
+gssp:Chibanian
+    a gssps:GSSP ;
+    gssps:boundaryLevel
+        "NaN"^^xsd:double ,
+        "lower boundary of the Byk-E tephra bed" ;
+    gssps:correlationEvents
+        "Magnetic - GSSP is 1.1 m below the directional midpoint of the Matuyama/Brunhes paleomagnetic reversal and occurs immediately below the top of Marine Isotope Substage (MIS) 19c." ,
+        "SABS holds high-resolution C and O stratigraphy and a sapropel bed through Termination IX and MIS 19c; peaking 10Be/9Be ratio at the Matuyama/Brunhes boundary interval; regional tephra beds." ;
+    geo:hasGeometry 
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(40.2910 16.5518)"^^geo:wktLiteral ;
+        ] ,
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(35.2943 140.1465)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.18814/epiiugs/2020/020080"^^xsd:anyURI ,
+        "https://doi.org/10.18814/epiiugs/2023/023022"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/chibanian.pdf"^^xsd:anyURI ;
+    schema:description
+        "Chiba section, Japan" ,
+        "Ideale Section, Montalbano Jonico succession, Basilicata, S Italy " ;
+    schema:name "Chibanian Stage GSSP" ;
+.
+
+gssp:Coniacian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 46 in the Salzgitter-Salder section" ;
+    gssps:correlationEvents "first occurrence of the inoceramid Cremnoceramus deformis erectus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(52.1243 10.3295)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.18814/epiiugs/2021/021022"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/coniacian.pdf"^^xsd:anyURI ;
+    schema:description "Salzgitter-Salder, Lower Saxony, Germany" ;
+    schema:name "Coniacian Stage GSSP" ;
+.
+
+gssp:Cryogenian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Will be placed at a that lies stratigraphically beneath the first appearance of widespread glaciation and is assigned in the interim a 'calibrated age' of circa 720 Ma" ;
+    schema:name "Cryogenian System GSSP" ;
+.
+
+gssp:Danian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "reddish layer at the base of the 50cm thick, dark boundary clay" ;
+    gssps:correlationEvents "Iridium geochemical anomaly. Associated with a major extinction horizon (dinosaurs, ammonites, foraminifers, etc.)" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(36.1537 8.6486)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/danian.pdf"^^xsd:anyURI ;
+    schema:description "Oued Djerfane, west of El Kef, Tunisia" ;
+    schema:name "Danian Stage GSSP" ;
+.
+
+gssp:Dapingian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "10.57 m above base of the Dawan Formation" ;
+    gssps:correlationEvents "Conodont FAD of Baltoniodus triangularis" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(30.8605 110.3740)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://stratigraphy.org/gssps/files/dapingian1.pdf"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/dapingian2.pdf"^^xsd:anyURI ;
+    schema:description "Huanghuachang Section, NE of Yichang city, Hubei Province, S. China" ;
+    schema:name "Dapingian Stage GSSP" ;
+.
+
+gssp:Darriwilian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed AEP 184" ;
+    gssps:correlationEvents "Graptolite FAD Undulograptus austrodentatus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(28.8539 118.4897)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/darriwilian.pdf"^^xsd:anyURI ;
+    schema:description "Huangnitang section, Changshan, Zhejiang Province, SE China" ;
+    schema:name "Darriwilian Stage GSSP" ;
+.
+
+gssp:Drumian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "at the base of a dark-gray thinly laminated calcisiltite layer, 62 m above the base of the Wheeler Formation" ;
+    gssps:correlationEvents "Trilobite FAD Ptychagnostus atavus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(39.5117 -112.9915)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/drumian.pdf"^^xsd:anyURI ;
+    schema:description "Drum Mountains, Millard County, Utah, USA" ;
+    schema:name "Drumian Stage GSSP" ;
+.
+
+gssp:Ectasian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Ectasian System GSSP" ;
+.
+
+gssp:Ediacaran
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of the Marinoan cap carbonate" ;
+    gssps:correlationEvents "(1) rapid decay of Marinoan ice sheets and onset of distinct cap carbonates throughout the world, and (2) the beginning of a distinctive pattern of secular changes in carbon isotopes." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(-31.3314 138.6334)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/ediacaran.pdf"^^xsd:anyURI ;
+    schema:description "Enorama Creek, Flinders Ranges, South Australia" ;
+    schema:name "Ediacaran System GSSP" ;
+.
+
+gssp:Eifelian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "21.25m above the base of the exposed section, base of sample station WP30" ;
+    gssps:correlationEvents "Conodont FAD Polygnathus costatus partitus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(50.1496 6.4716)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/eifelian.pdf"^^xsd:anyURI ;
+    schema:description "Wetteldorf, Eifel Hills, Germany" ;
+    schema:name "Eifelian Stage GSSP" ;
+.
+
+gssp:Emsian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 9/5" ;
+    gssps:correlationEvents "Conodont FAD Polygnathus kitabicus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(39.2000 67.3056)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/emsian.pdf"^^xsd:anyURI ;
+    schema:description "Zinzil'ban Gorge in the Kitab State Geological Reserve, Uzbekistan" ;
+    schema:name "Emsian Stage GSSP" ;
+.
+
+gssp:Eoarchean
+    a gssps:GSSP ;
+    gssps:boundaryLevel "Acasta Gneiss Complex Fm., Slave Province, Canadian Shield" ;
+    gssps:correlationEvents "Ten oldest zircon U-Pb ages" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(65.1738 -115.5538)"^^geo:wktLiteral ;
+        ] ;
+    schema:description """defined chronometrically
+
+along Acasta River, Northwestern Territory, Canada""" ;
+    schema:name "Eoarchean Erathem GSSP" ;
+.
+
+gssp:Famennian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "Base of Bed 32a" ;
+    gssps:correlationEvents "Conodont FAD Palmatolepis triangularis, just above a major extinction horizon (Kellwasser Event) with conodont LADs Ancyrodella and Ozarkodina, and Goniatite LADs of Gephuroceratidae and Beloceratidae" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.4613 3.0403)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/famennian.pdf"^^xsd:anyURI ;
+    schema:description "Coumiac Quarry, near Cessenon, Montagne Noire, France" ;
+    schema:name "Famennian Stage GSSP" ;
+.
+
+gssp:Floian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "in the lower Tøyen Shale, 2.1m above the top of the Cambrian" ;
+    gssps:correlationEvents "Graptolite FAD Tetragraptus approximatus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(58.3589 12.5024)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/floian.pdf"^^xsd:anyURI ;
+    schema:description "Diabasbrottet, Hunneberg, Sweden" ;
+    schema:name "Floian Stage GSSP" ;
+.
+
+gssp:Fortunian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "2.4m above the base of Member 2 in the Chapel Island Formation" ;
+    gssps:correlationEvents "Trace fossil FAD Trichophycus pedum" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(47.0762 -55.8310)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/fortunian.pdf"^^xsd:anyURI ;
+    schema:description "Fortune Head, SE Newfoundland, Canada" ;
+    schema:name "Fortunian Stage GSSP" ;
+.
+
+gssp:Frasnian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 42' at Col du Puech de la Suque section E" ;
+    gssps:correlationEvents "Conodont FAD Ancyrodella rotundiloba" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.5032 3.0868)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/frasnian.pdf"^^xsd:anyURI ;
+    schema:description "Col du Puech de la Suque, Montage Noire, France" ;
+    schema:name "Frasnian Stage GSSP" ;
+.
+
+gssp:Gelasian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of marly layer overlying sapropel MPRS 250" ;
+    gssps:correlationEvents "Magnetic - Matuyama/Gauss boundary (C2r/C2An) is between ~0 and ~3 m above GSSP (Head, 2019) not ∼1 m (20 kyr) below it as reported by Rio et al. (1994, 1998). GSSP level is within Marine Isotope Stage 103." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(37.1469 14.2035)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.1016/j.quaint.2019.05.018"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/calabrian1.pdf"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/quaternary-pleistocene.pdf"^^xsd:anyURI ;
+    schema:description "Monte San Nicola, Sicily, Italy" ;
+    schema:name "Gelasian Stage GSSP" ;
+.
+
+gssp:Givetian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 123" ;
+    gssps:correlationEvents "Conodont FAD Polygnathus hemiansatus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(31.2374 -4.3541)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/givetian.pdf"^^xsd:anyURI ;
+    schema:description "Jebel Mech Irdane, Morocco" ;
+    schema:name "Givetian Stage GSSP" ;
+.
+
+gssp:Gorstian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "coincident with the base of the Lower Elton Formation" ;
+    gssps:correlationEvents "Graptolite FAD Saetograptus (Colonograptus) varians" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(52.3592 -2.7772)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ;
+    schema:description "near Ludlow, UK" ;
+    schema:name "Gorstian Stage GSSP" ;
+.
+
+gssp:Greenlandian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "1492.45 m in the NGRIP2 ice core" ;
+    gssps:correlationEvents "Climatic - End of the Younger Dryas Chron which is reflected in an abrupt shift to lower deuterium excess values" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(75.1000 -42.3200)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.18814/epiiugs/2008/v31i2/016"^^xsd:anyURI ,
+        "https://doi.org/10.18814/epiiugs/2018/018016"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/meghalayan.pdf"^^xsd:anyURI ;
+    schema:description "North Greenland Ice Core Project, core NGRIP2, central Greenland ice sheet" ;
+    schema:name "Greenlandian Stage GSSP" ;
+.
+
+gssp:Guzhangian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "121.3 m above the base of the Huaqiao Formation" ;
+    gssps:correlationEvents "Trilobite FAD Lejopyge laevigata" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(28.7200 109.9647)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/guzhangian.pdf"^^xsd:anyURI ;
+    schema:description "Louyixi, Guzhang County, NW Hunan Province, S. China" ;
+    schema:name "Guzhangian Stage GSSP" ;
+.
+
+gssp:Gzhelian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Conodont FAD Idiognathodus simulator (s.str.). Close to FAD of ammonoid Shumardites." ;
+    schema:description "candidates are in southern Urals or Nashui (south China)." ;
+    schema:name "Gzhelian Stage GSSP" ;
+.
+
+gssp:Hadean
+    a gssps:GSSP ;
+    gssps:boundaryLevel "Formation of planet Earth and sister Solar planets (protoplanetary disk), by proxy of ages obtained from primitive meteorites" ;
+    gssps:correlationEvents "U-corrected Pb–Pb age for Calcium-Aluminium Inclusions (CAIs) in class CBa meteorite" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(Allende meteorite (1969, Chihuahua, Mexico) Gujba meteorite (1984, Bogga Dingar, igeria))"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2024/024002"^^xsd:anyURI ;
+    schema:description """defined chronometrically
+
+Data in Amelin et al., 2010 (Allende); Connelly et. al., 2012 (Gujba).""" ;
+    schema:name "Hadean Eonothem GSSP" ;
+.
+
+gssp:Hauterivian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of bed 189 in the La Charce section" ;
+    gssps:correlationEvents "First occurrence of the ammonite genus Acanthodiscus which marks the base of the Acanthodiscus radiatus ammonite Zone" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(44.4694 5.4437)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2020/020072"^^xsd:anyURI ;
+    schema:description "La Charce, Department of Drôme, southeastern France" ;
+    schema:name "Hauterivian Stage GSSP" ;
+.
+
+gssp:Hettangian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "5.80 m above top of Koessen Formation" ;
+    gssps:correlationEvents "FO of ammonite Psiloceras spelae tirolicum, FO of aragonitic foraminifer Praegubkinella turgescens" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(47.4839 11.5306)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/hettangian.pdf"^^xsd:anyURI ;
+    schema:description "Kuhjoch section, Tyrol, Austria" ;
+    schema:name "Hettangian Stage GSSP" ;
+.
+
+gssp:Hirnantian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "0.39m below the base of the Kuanyinchiao Bed" ;
+    gssps:correlationEvents "Graptolite FAD Normalograptus extraordinarius" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(30.9841 111.4197)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/hirnantian.pdf"^^xsd:anyURI ;
+    schema:description "Wangjiawan North section, N of Yichang city, Western Hubei Province, China" ;
+    schema:name "Hirnantian Stage GSSP" ;
+.
+
+gssp:Homerian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "within upper part of the Apedale Member of the Coalbrookdale Formation" ;
+    gssps:correlationEvents "Graptolite FAD Cyrtograptus lundgreni" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(52.6156 -2.5647)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ;
+    schema:description "Sheinton Brook, Homer, UK" ;
+    schema:name "Homerian Stage GSSP" ;
+.
+
+gssp:Induan
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 27c in the Meishan D Section" ;
+    gssps:correlationEvents "Conodont FAD Hindeodus parvus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(31.0798 119.7058)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/induan.pdf"^^xsd:anyURI ;
+    schema:description "Meishan, Zhejiang Province, China" ;
+    schema:name "Induan Stage GSSP" ;
+.
+
+gssp:Jiangshanian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "28.2 m in Duibian B section" ;
+    gssps:correlationEvents "FAD of agnostid trilobite Agnostotes orientalis and the FO of polymerid trilobite Irvingella angustilimbata" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(28.8158 118.6149)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/jiangshanian.pdf"^^xsd:anyURI ;
+    schema:description "Duibian B section, Zhejiang province, China" ;
+    schema:name "Jiangshanian Stage GSSP" ;
+.
+
+gssp:Kasimovian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Fusulinid FAD Protriticites, which is near ammonoid FAD Eothalossoceras. Alternative (higher) base is fusulinid FAD Montiparus montiparus, which is near Conodont FAD Idiognathodus sagittalis. Stage given here is the higher version; the lower one is about 1 myr older." ;
+    schema:description "candidates are in southern Urals, southwest USA and Nashui (south China)." ;
+    schema:name "Kasimovian Stage GSSP" ;
+.
+
+gssp:Katian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "4.0m above the base of the Bigfork Chert" ;
+    gssps:correlationEvents "Graptolite FAD Diplacanthograptus caudatus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(34.4305 -96.0746)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/katian.pdf"^^xsd:anyURI ;
+    schema:description "Black Knob Ridge Section, Atoka, Oklahoma (USA)" ;
+    schema:name "Katian Stage GSSP" ;
+.
+
+gssp:Kimmeridgian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Base of Subboreal ammonite Baylei Zone, Base of Densicostata Subzone marked by the base of the flodigarriensis horizon; Base of Boreal ammonite Bauhini Zone." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(57.6610 -6.2455)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2022/022046"^^xsd:anyURI ;
+    schema:description "Flodigarry, Isle of Skye, NW Scotland" ;
+    schema:name "Kimmeridgian Stage GSSP" ;
+.
+
+gssp:Kungurian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Candidate is Rockland, Nevada" ;
+    schema:name "Kungurian Stage GSSP" ;
+.
+
+gssp:Ladinian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of a 15 - 20cm thick limestone bed overlying a distinctive groove (\"Chiesense groove\") of limestone nodules in a shaly matrix, located about 5m above the base of the Buchenstein Beds" ;
+    gssps:correlationEvents """Ammonite FAD Eoprotrachyceras curionii (base of the E. curionii zone). Conodont FAD.
+
+Budurovignathus praehungaricus is in the uppermost Anisian.""" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(45.8193 10.4710)"^^geo:wktLiteral ;
+        ] ;
+    schema:description "Bagolino, Province of Brescia, Northern Italy" ;
+    schema:name "Ladinian Stage GSSP" ;
+.
+
+gssp:Langhian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "Mid-point of the darker marly interval above 'Megabed IV'" ;
+    gssps:correlationEvents "Closely to the top of magnetic polarity chronozone C5Cn.1n." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.59193 13.56229)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2023/023024"^^xsd:anyURI ;
+    schema:description "'Lower La Vedova Beach' section, near Ancona, Italy" ;
+    schema:name "Langhian Stage GSSP" ;
+.
+
+gssp:Lochkovian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "within Bed 20" ;
+    gssps:correlationEvents "Graptolite FAD Monograptus uniformis" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(49.9008 14.0611)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.1007/BF02539792"^^xsd:anyURI ,
+        "https://doi.org/10.1127/nos/25/1991/115"^^xsd:anyURI ,
+        "https://www.elsevier.com/books/geologic-time-scale-2020/gradstein/978-0-12-8243619"^^xsd:anyURI ,
+        "https://www.schweizerbart.de/publications/detail/isbn/9783510560035"^^xsd:anyURI ;
+    schema:description "Klonk, near Prague, Czech Republic" ;
+    schema:name "Lochkovian Stage GSSP" ;
+.
+
+gssp:Ludfordian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "coincident with the base of the Leintwardine Formation" ;
+    gssps:correlationEvents "Imprecise. May be near base of Saetograptus leintwardinensis Graptolite zone." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(52.3592 -2.7772)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ;
+    schema:description "near Ludlow, UK" ;
+    schema:name "Ludfordian Stage GSSP" ;
+.
+
+gssp:Lutetian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "dark marl at 167.85 m in Gorrondatxe sea-cliff section" ;
+    gssps:correlationEvents "LO of calcareous nannofossil Blackites inflatus (CP12a/b boundary); middle of polarity Chron C21r" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.3796 -3.0143)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/lutetian.pdf"^^xsd:anyURI ;
+    schema:description "Gorrondatxe section, Basque Country, Spain" ;
+    schema:name "Lutetian Stage GSSP" ;
+.
+
+gssp:Maastrichtian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "level 115.2 on platform IV of the geological site at Tercis les Bains" ;
+    gssps:correlationEvents "Mean of 12 biostratigraphic criteria of equal importance. Closely above is FAD of ammonite Pachydiscus neubergicus. Boreal proxy is FAD of belemnite Belemnella lanceolata." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.6795 -1.1133)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/maastrichtian.pdf"^^xsd:anyURI ;
+    schema:description "Tercis les Bains, Landes, France" ;
+    schema:name "Maastrichtian Stage GSSP" ;
+.
+
+gssp:Meghalayan
+    a gssps:GSSP ;
+    gssps:boundaryLevel "depth 7.45 mm in the speleothem KM-A" ;
+    gssps:correlationEvents "Climatic - 4.2 ka event" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(2502622 91.7150)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.18814/epiiugs/2018/018016"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/meghalayan.pdf"^^xsd:anyURI ;
+    schema:description "Mawmluh Cave, Meghalaya, India" ;
+    schema:name "Meghalayan Stage GSSP" ;
+.
+
+gssp:Mesoarchean
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Mesoarchean Erathem GSSP" ;
+.
+
+gssp:Messinian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "reddish layer of sedimentary cycle number 15" ;
+    gssps:correlationEvents "Planktonic foraminifer first regular occurrence of Globorotalia miotumida, and calcareous nannofossil FAD Amaurolithus delicatus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(33.9369 -6.8125)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/messinian.pdf"^^xsd:anyURI ;
+    schema:description "Oued Akrech, Morocco" ;
+    schema:name "Messinian Stage GSSP" ;
+.
+
+gssp:Moscovian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Either Conodont FAD Idiognathoides postsulcatus or Declinognathodus donetzianus." ;
+    schema:description "candidates are in southern Urals or Nashui (south China)." ;
+    schema:name "Moscovian Stage GSSP" ;
+.
+
+gssp:Neoarchean
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Neoarchean Erathem GSSP" ;
+.
+
+gssp:Norian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Base of Stikinoceras kerri ammonoid zone and near FAD of Metapolygnathus echinatus within the M. communisti conodont zones" ;
+    schema:description "Candidates are Black Bear Ridge in British Columbia (Canada) and Pizzo Mondello, Sicily (Italy)" ;
+    schema:name "Norian Stage GSSP" ;
+.
+
+gssp:Northgrippian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "1228.67 m in the NGRIP1 ice core" ;
+    gssps:correlationEvents "Climatic – 8.2 ka event" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(75.1000 -42.3200)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.18814/epiiugs/2018/018016"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/meghalayan.pdf"^^xsd:anyURI ;
+    schema:description "North Greenland Ice Core Project, core NGRIP1, central Greenland ice sheet" ;
+    schema:name "Northgrippian Stage GSSP" ;
+.
+
+gssp:Olenekian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 13A-2, about 4.8m up in Mikin Formation., Section M04 (~4000 m elevation" ;
+    gssps:correlationEvents "Conodont FAD Neospathodus waageni, just above base of Rohillites rohilla ammonite zone, and below lowest occurrence of Flemingites and Euflemingites ammonite genera. Within a prominent positive Carbon-13 peak, and just above widely recognizable sequence boundary." ;
+    schema:description "Candidate GSSP Mud (Muth) village, Spiti valley, northwest India" ;
+    schema:name "Olenekian Stage GSSP" ;
+.
+
+gssp:Orosirian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Orosirian System GSSP" ;
+.
+
+gssp:Oxfordian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Ammonite Cardioceras redcliffense Horizon at base of the Cardioceras scarburgense Subzone (Quenstedtoceras mariae Zone)" ;
+    schema:description "candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)" ;
+    schema:name "Oxfordian Stage GSSP" ;
+.
+
+gssp:Paibian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "at 396 m in the Huaqiao Formation" ;
+    gssps:correlationEvents "Trilobite FAD Glyptagnostus reticulatus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(28.3895 109.5257)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/paibian.pdf"^^xsd:anyURI ;
+    schema:description "Wuling Mountains, Huayuan County, NW Hunan Province, Chin" ;
+    schema:name "Paibian Stage GSSP" ;
+.
+
+gssp:Paleoarchean
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Paleoarchean Erathem GSSP" ;
+.
+
+gssp:Piacenzian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of the beige marl bed of small-scale carbonate cycle 77 (MPRS 347)" ;
+    gssps:correlationEvents "Magnetic - Gauss/Gilbert (C2An/C2Ar) magnetic reversal is recorded immediately above the GSSP" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(37.2889 13.4933)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/piacenzian.pdf"^^xsd:anyURI ;
+    schema:description "Punta Piccola, Sicily, Italy" ;
+    schema:name "Piacenzian Stage GSSP" ;
+.
+
+gssp:Pliensbachian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 73b" ;
+    gssps:correlationEvents "Ammonite association of Bifericeras donovani and Apoderoceras sp." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(54.4069 -0.4975)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/pliensbachian.pdf"^^xsd:anyURI ;
+    schema:description "Wine Haven, Robin Hood's Bay, Yorkshire Coast, England" ;
+    schema:name "Pliensbachian Stage GSSP" ;
+.
+
+gssp:Pragian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 12 in Velká Chuchle Quarry" ;
+    gssps:correlationEvents "Conodont FAD Eognathodus sulcatus sulcatus and Latericriodus steinachensis Morph beta" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(50.0147 14.3726)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/pragian.pdf"^^xsd:anyURI ;
+    schema:description "Velká Chuchle, Prague, Czech Republic" ;
+    schema:name "Pragian Stage GSSP" ;
+.
+
+gssp:Priabonian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "The base of a prominent crystal tuff layer, the Tiziano bed, at meter 63.57" ;
+    gssps:correlationEvents "Extinction of large acarininids and Morozovelloides crassatus; the Base of common and continuous Cribrocentrum erbae and the Top of Chiasmolithus grandis; the Base of Chron C17n and Subchron C17n.2n" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(45.9142 11.9180)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2020/020074"^^xsd:anyURI ;
+    schema:description "Alano section, Piave River; Veneto Prealps, Belluno province, N. Italy" ;
+    schema:name "Priabonian Stage GSSP" ;
+.
+
+gssp:Pridoli
+    a gssps:GSSP ;
+    gssps:boundaryLevel "within Bed 96" ;
+    gssps:correlationEvents "Graptolite FAD Monograptus parultimus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(50.0277 14.3249)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ;
+    schema:description "Požáry Section, Reporyje, Prague, Czech Republic" ;
+    schema:name "Přídolí Series GSSP" ;
+.
+
+gssp:Rhaetian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Near FAD of ammonite Cochloceras, conodonts Misikella spp. and Epigondolella mosheri, and radiolarian Proparvicingula moniliformis" ;
+    schema:description "Key sections in Austria, British Columbia (Canada), and Turkey" ;
+    schema:name "Rhaetian Stage GSSP" ;
+.
+
+gssp:Rhuddanian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "1.6m above the base of the Birkhill Shale Formation" ;
+    gssps:correlationEvents "Graptolite FAD Akidograptus ascensus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(55.4400 -3.2700)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ;
+    schema:description "Dob's Linn, Scotland" ;
+    schema:name "Rhuddanian Stage GSSP" ;
+.
+
+gssp:Rhyacian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Rhyacian System GSSP" ;
+.
+
+gssp:Roadian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "42.7m above the base of the Cutoff Formation" ;
+    gssps:correlationEvents "Conodont FAD Jinogondolella nankingensis" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(31.8767 -104.8768)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
+        "https://doi.org/10.1016/j.earscirev.2020.103412"^^xsd:anyURI ;
+    schema:description "Stratotype Canyon, Texas, U.S.A" ;
+    schema:name "Roadian Stage GSSP" ;
+.
+
+gssp:Rupelian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of a 0.5m thick greenishgrey marl bed 19m above base of section" ;
+    gssps:correlationEvents "Foraminifer LAD Hantkenina and Cribrohantkenina" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.5328 13.6011)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/rupelian.pdf"^^xsd:anyURI ;
+    schema:description "Massignano, near Ancona, Italy" ;
+    schema:name "Rupelian Stage GSSP" ;
+.
+
+gssp:Sakmarian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "55.4 m (Bed 26/3) in the Usolka section" ;
+    gssps:correlationEvents "Conodont FAD Mesogondolella monstra" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(53.9247 56.7287)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://doi.org/10.18814/epiiugs/2020/020059"^^xsd:anyURI ;
+    schema:description "Usolka section, Southern Ural Mts, Russia" ;
+    schema:name "Sakmarian Stage GSSP" ;
+.
+
+gssp:Sandbian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "1.4m below a phosphorite marker bed in the E14b outcrop" ;
+    gssps:correlationEvents "Graptolite FAD Nemagraptus gracilis" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(55.7137 13.3255)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/sandbian.pdf"^^xsd:anyURI ;
+    schema:description "Sularp Brook, Fågelsång, Sweden" ;
+    schema:name "Sandbian Stage GSSP" ;
+.
+
+gssp:Santonian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "94.4 m in the Cantera de Margas quarry section" ;
+    gssps:correlationEvents "the FO of the inoceramid bivalve Platyceramus undulatoplicatus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(42.8668 -2.1968)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/santonian.pdf"^^xsd:anyURI ;
+    schema:description "Olazagutia, Navarra, Spain" ;
+    schema:name "Santonian Stage GSSP" ;
+.
+
+gssp:Selandian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of the red marls of Itzurun Formation" ;
+    gssps:correlationEvents "2nd radiation of the calcareous nannofossil group Fasciculithus and sea-level fall" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.3006 -2.2594)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/selandian-thanetian.pdf"^^xsd:anyURI ;
+    schema:description "Zumaia section, northern Spain" ;
+    schema:name "Selandian Stage GSSP" ;
+.
+
+gssp:Serpukhovian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Conodont FAD Lochriea ziegleri" ;
+    schema:description "candidates are Verkhnyaya Kardailovka (Urals) or Nashui (China)" ;
+    schema:name "Serpukhovian Stage GSSP" ;
+.
+
+gssp:Serravallian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "formation boundary between the Globigerina Limestone and Blue Clay" ;
+    gssps:correlationEvents "Oxygen-isotopic event (global cooling episode) Mi3b; near calcareous nannofossil LAD of Sphenolithus heteromorphus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(35.9139 14.3361)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/serravallian.pdf"^^xsd:anyURI ;
+    schema:description "Ras il Pellegrin section, Fomm Ir- Rih Bay, west coast of Malta" ;
+    schema:name "Serravallian Stage GSSP" ;
+.
+
+gssp:Sheinwoodian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of the Buildwas Formation" ;
+    gssps:correlationEvents "Imprecise. Between the base of acritarch biozone 5 and LAD of conodont Pterospathodus amorphognathoides. The current GSSP does not coincide with the base of the Cyrtograptus centrifugus Biozone, as was supposed when the GSSP was defined. Restudy recommends a slightly higher and correlatable level on condonts - the Ireviken datum 2, which coincides approximately with the base of the murchisoni Graptolite Biozone" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(52.5811 -2.6389)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ;
+    schema:description "Hughley Brook, UK" ;
+    schema:name "Sheinwoodian Stage GSSP" ;
+.
+
+gssp:Siderian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically, but it will be replaced by GSSP" ;
+    schema:name "Siderian System GSSP" ;
+.
+
+gssp:Sinemurian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "0.90 m above the base of Bed 145" ;
+    gssps:correlationEvents "Ammonite FAD Vermiceras quantoxense, Vermiceras palmeri" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(51.1909 -3.2364)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/sinemurian.pdf"^^xsd:anyURI ;
+    schema:description "East Quantoxhead, SW England" ;
+    schema:name "Sinemurian Stage GSSP" ;
+.
+
+gssp:Statherian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Statherian System GSSP" ;
+.
+
+gssp:Stenian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Stenian System GSSP" ;
+.
+
+gssp:Telychian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "Unnamed" ;
+    gssps:correlationEvents "Graptolite FADs of Spirograptus guerichi, Monograptus s.s. and Paradiversograptus runcinatus." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(37.9853 -5.9285)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ;
+    schema:description "El Pintado 1 Section, Sierra Norte de Sevilla, Spain" ;
+    schema:name "Telychian Stage GSSP" ;
+.
+
+gssp:Thanetian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "30.5m above the base of Itzurun Formation" ;
+    gssps:correlationEvents "Magnetic - Base of Chron C26n" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.3006 -2.2594)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/selandian-thanetian.pdf"^^xsd:anyURI ;
+    schema:description "Zumaia section, northern Spain" ;
+    schema:name "Thanetian Stage GSSP" ;
+.
+
+gssp:Tithonian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Near base of Hybonoticeras hybonotum ammonite zone and lowest occurrence of Gravesia genus, and the base of magnetic polarity Chron M22An" ;
+    schema:description "candidates are Mt. Crussol or Canjuers (SE France) and Fornazzo (Sicily, S. Italy)" ;
+    schema:name "Tithonian Stage GSSP" ;
+.
+
+gssp:Toarcian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of bed 15e (Couches de passage), uppermost Lemede Formation" ;
+    gssps:correlationEvents "FO of the ammonite D. (E.) simplex co-occurring with D. (E.) pseudocommune and D. (E.) polymorphum ." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(39.3708º -9.3853º)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/toarcian.pdf"^^xsd:anyURI ;
+    schema:description "Peniche (Portugal)" ;
+    schema:name "Toarcian Stage GSSP" ;
+.
+
+gssp:Tonian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "NaN"^^xsd:double ;
+    schema:description "Defined chronometrically" ;
+    schema:name "Tonian System GSSP" ;
+.
+
+gssp:Tortonian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "mid-point of sapropel layer of basic cycle number 76." ;
+    gssps:correlationEvents "Calcareous nannofossil last common occurrence of Discoaster kugleri" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.587292 13.5661724)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/tortonian.pdf"^^xsd:anyURI ;
+    schema:description "Monte dei Corvi Beach, near Ancona, Italy" ;
+    schema:name "Tortonian Stage GSSP" ;
+.
+
+gssp:Tournaisian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 89 in Trench E' at La Serre, (but FAD now known to be at base of Bed 85)" ;
+    gssps:correlationEvents "Conodont FAD Siphonodella sulcata IMPRECISE (GSSP discovered in 2006 to have biostratigraphic problems, and can not be correlated with precision.)" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(43.5555 3.3573)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/tournaisian.pdf"^^xsd:anyURI ;
+    schema:description "La Serre, France" ;
+    schema:name "Tournaisian Stage GSSP" ;
+.
+
+gssp:Tremadocian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "at the 101.8m level, within Bed 23, in the measured section" ;
+    gssps:correlationEvents "Conodont FAD Iapetognathus fluctivagus" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(49.6829 -57.9653)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/tremadocian.pdf"^^xsd:anyURI ;
+    schema:description "Green Point Section, western Newfoundland" ;
+    schema:name "Tremadocian Stage GSSP" ;
+.
+
+gssp:Turonian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed 86 of the Bridge Creek Limestone Member" ;
+    gssps:correlationEvents "Ammonite FAD Watinoceras devonense" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(38.2822 -104.7275)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/turonian.pdf"^^xsd:anyURI ;
+    schema:description "Pueblo, Colorado, USA" ;
+    schema:name "Turonian Stage GSSP" ;
+.
+
+gssp:UpperPleistocene
+    a gssps:GSSP ;
+    gssps:boundaryLevel "-" ;
+    gssps:correlationEvents "Provisionally climatic – Marine Isotope Substage 5e" ;
+    schema:description "GSSP not presently defined" ;
+    schema:name "Upper Stage GSSP" ;
+.
+
+gssp:Valanginian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "NaN"^^xsd:double ;
+    gssps:correlationEvents "Calpionellid FAD Calpionellites darderi (base of Calpionellid Zone E); followed by ammonite FAD \"Thurmanniceras\" pertransiens" ;
+    schema:description "candidates are near Montbrunles- Bains (Drôme province, SE France) and Cañada Luenga (Betic Cordillera, S. Spain)" ;
+    schema:name "Valanginian Stage GSSP" ;
+.
+
+gssp:Visean
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of bed 83 in the Pengchong Section" ;
+    gssps:correlationEvents "Benthic Foraminifer FAD Eoparastaffella simplex" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(24.4333 109.4500)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/visean.pdf"^^xsd:anyURI ;
+    schema:description "Pengchong, south China" ;
+    schema:name "Visean Stage GSSP" ;
+.
+
+gssp:Wordian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "7.6m above the base of the Getaway Ledge outcrop Section of the Getaway Limestone Member of the Cherry Canyon Formation" ;
+    gssps:correlationEvents "Conodont FAD Jinogondolella aserrata" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(31.8658 -104.8328)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
+        "https://doi.org/10.1016/j.palaeo.2020.109668"^^xsd:anyURI ;
+    schema:description "Guadalupe Pass, Texas, U.S.A" ;
+    schema:name "Wordian Stage GSSP" ;
+.
+
+gssp:Wuchiapingian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of Bed n6L in the newly exposed Penglaitan section" ;
+    gssps:correlationEvents "Conodont FAD Clarkina postbitteri" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(23.6953 109.3211)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.18814/epiiugs/2023/023023"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/wuchiapingian.pdf"^^xsd:anyURI ;
+    schema:description "Penglaitan, Guanxi Province, South China" ;
+    schema:name "Wuchiapingian Stage GSSP" ;
+.
+
+gssp:Ypresian
+    a gssps:GSSP ;
+    gssps:boundaryLevel "Base of Bed 1 in DBH subsection" ;
+    gssps:correlationEvents "Carbon Isotope Excursion base, initiation of basal Eocene Thermal maximum (\"PETM\")" ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(25.5000 32.5311)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation
+        "https://doi.org/10.2113/49.Suppl_1.41"^^xsd:anyURI ,
+        "https://stratigraphy.org/gssps/files/ypresian.pdf"^^xsd:anyURI ;
+    schema:description "Dababiya, near Luxor, Egypt" ;
+    schema:name "Ypresian Stage GSSP" ;
+.
+
+gssp:Zanclean
+    a gssps:GSSP ;
+    gssps:boundaryLevel "base of the Trubi Formation which corresponds to Insolation cycle 510" ;
+    gssps:correlationEvents "Magnetic - base of the Thvera magnetic event (C3n.4n) is only 96 kyr (5 precession cycles) younger than the GSSP." ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT(37.3917 13.2806)"^^geo:wktLiteral ;
+        ] ;
+    schema:citation "https://stratigraphy.org/gssps/files/zanclean.pdf"^^xsd:anyURI ;
+    schema:description "Eraclea Minoa, Sicily, Italy" ;
+    schema:name "Zanclean Stage GSSP" ;
+.
