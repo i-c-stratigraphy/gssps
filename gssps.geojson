@@ -6,12 +6,12 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    91.7150,
+                    91.715,
                     25.262222
                 ]
             },
             "properties": {
-                "title": "Meghalayan Stage",
+                "title": "Meghalayan",
                 "marker-color": "#FDEDEC"
             }
         },
@@ -25,7 +25,7 @@
                 ]
             },
             "properties": {
-                "title": "Northgrippian Stage",
+                "title": "Northgrippian",
                 "marker-color": "#FDECE4"
             }
         },
@@ -34,12 +34,12 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -43.32,
-                    76.1
+                    -42.32,
+                    75.1
                 ]
             },
             "properties": {
-                "title": "Greenlandian Stage",
+                "title": "Greenlandian",
                 "marker-color": "#FEECDB"
             }
         },
@@ -48,12 +48,12 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    140.146528,
-                    35.294333
+                    140.1465,
+                    35.2943
                 ]
             },
             "properties": {
-                "title": "Chibanian Stage",
+                "title": "Chibanian",
                 "marker-color": "#FFF2C7"
             }
         },
@@ -67,7 +67,7 @@
                 ]
             },
             "properties": {
-                "title": "Calabrian Stage",
+                "title": "Calabrian",
                 "marker-color": "#FFF2BA"
             }
         },
@@ -81,7 +81,7 @@
                 ]
             },
             "properties": {
-                "title": "Gelasian Stage",
+                "title": "Gelasian",
                 "marker-color": "#FFEDB3"
             }
         },
@@ -95,7 +95,7 @@
                 ]
             },
             "properties": {
-                "title": "Piacenzian Stage",
+                "title": "Piacenzian",
                 "marker-color": "#FFFFBF"
             }
         },
@@ -109,7 +109,7 @@
                 ]
             },
             "properties": {
-                "title": "Zanclean Stage",
+                "title": "Zanclean",
                 "marker-color": "#FFFFB3"
             }
         },
@@ -119,11 +119,11 @@
                 "type": "Point",
                 "coordinates": [
                     -6.8125,
-                    33.936
+                    33.9369
                 ]
             },
             "properties": {
-                "title": "Messinian Stage",
+                "title": "Messinian",
                 "marker-color": "#FFFF73"
             }
         },
@@ -132,12 +132,12 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    13.566172,
+                    13.5661724,
                     43.587292
                 ]
             },
             "properties": {
-                "title": "Tortonian Stage",
+                "title": "Tortonian",
                 "marker-color": "#FFFF66"
             }
         },
@@ -151,7 +151,7 @@
                 ]
             },
             "properties": {
-                "title": "Serravallian Stage",
+                "title": "Serravallian",
                 "marker-color": "#FFFF59"
             }
         },
@@ -160,12 +160,26 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    8.8364,
-                    44.658
+                    13.56229,
+                    43.59193
                 ]
             },
             "properties": {
-                "title": "Aquitanian Stage",
+                "title": "Langhian",
+                "marker-color": "#FFFF4D"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8364,
+                    44.6589
+                ]
+            },
+            "properties": {
+                "title": "Aquitanian",
                 "marker-color": "#FFFF33"
             }
         },
@@ -179,7 +193,7 @@
                 ]
             },
             "properties": {
-                "title": "Chattian Stage",
+                "title": "Chattian",
                 "marker-color": "#FEE6AA"
             }
         },
@@ -193,7 +207,7 @@
                 ]
             },
             "properties": {
-                "title": "Rupelian Stage",
+                "title": "Rupelian",
                 "marker-color": "#FED99A"
             }
         },
@@ -202,12 +216,12 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    11.918019,
-                    45.914167
+                    11.918,
+                    45.9142
                 ]
             },
             "properties": {
-                "title": "Priabonian Stage",
+                "title": "Priabonian",
                 "marker-color": "#FDCDA1"
             }
         },
@@ -216,12 +230,12 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -3.014336,
+                    -3.0143,
                     43.3796
                 ]
             },
             "properties": {
-                "title": "Lutetian Stage",
+                "title": "Lutetian",
                 "marker-color": "#FDB482"
             }
         },
@@ -235,7 +249,7 @@
                 ]
             },
             "properties": {
-                "title": "Ypresian Stage",
+                "title": "Ypresian",
                 "marker-color": "#FCA773"
             }
         },
@@ -245,11 +259,11 @@
                 "type": "Point",
                 "coordinates": [
                     -2.2594,
-                    43.3
+                    43.3006
                 ]
             },
             "properties": {
-                "title": "Thanetian Stage",
+                "title": "Thanetian",
                 "marker-color": "#FDBF6F"
             }
         },
@@ -259,11 +273,11 @@
                 "type": "Point",
                 "coordinates": [
                     -2.2594,
-                    43.3
+                    43.3006
                 ]
             },
             "properties": {
-                "title": "Selandian Stage",
+                "title": "Selandian",
                 "marker-color": "#FEBF65"
             }
         },
@@ -273,11 +287,11 @@
                 "type": "Point",
                 "coordinates": [
                     8.6486,
-                    36.153
+                    36.1537
                 ]
             },
             "properties": {
-                "title": "Danian Stage",
+                "title": "Danian",
                 "marker-color": "#FDB462"
             }
         },
@@ -287,11 +301,11 @@
                 "type": "Point",
                 "coordinates": [
                     -1.1133,
-                    43.679
+                    43.6795
                 ]
             },
             "properties": {
-                "title": "Maastrichtian Stage",
+                "title": "Maastrichtian",
                 "marker-color": "#F2FA8C"
             }
         },
@@ -300,12 +314,26 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.1968,
-                    42.866
+                    12.58283,
+                    43.36267
                 ]
             },
             "properties": {
-                "title": "Santonian Stage",
+                "title": "Campanian",
+                "marker-color": "#E6F47F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.1968,
+                    42.8668
+                ]
+            },
+            "properties": {
+                "title": "Santonian",
                 "marker-color": "#D9EF74"
             }
         },
@@ -315,11 +343,11 @@
                 "type": "Point",
                 "coordinates": [
                     10.3295,
-                    52.124
+                    52.1243
                 ]
             },
             "properties": {
-                "title": "Coniacian Stage",
+                "title": "Coniacian",
                 "marker-color": "#CCE968"
             }
         },
@@ -329,11 +357,11 @@
                 "type": "Point",
                 "coordinates": [
                     -104.7275,
-                    38.282
+                    38.2822
                 ]
             },
             "properties": {
-                "title": "Turonian Stage",
+                "title": "Turonian",
                 "marker-color": "#BFE35D"
             }
         },
@@ -343,11 +371,11 @@
                 "type": "Point",
                 "coordinates": [
                     5.5119,
-                    44.392
+                    44.3925
                 ]
             },
             "properties": {
-                "title": "Cenomanian Stage",
+                "title": "Cenomanian",
                 "marker-color": "#B3DE53"
             }
         },
@@ -356,12 +384,12 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    5.29725,
-                    44.507861
+                    5.2973,
+                    44.5079
                 ]
             },
             "properties": {
-                "title": "Albian Stage",
+                "title": "Albian",
                 "marker-color": "#CCEA97"
             }
         },
@@ -370,12 +398,26 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    5.443722,
-                    44.469444
+                    -1.9484,
+                    38.0704
                 ]
             },
             "properties": {
-                "title": "Hauterivian Stage",
+                "title": "Barremian",
+                "marker-color": "#B3DF7F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.4437,
+                    44.4694
+                ]
+            },
+            "properties": {
+                "title": "Hauterivian",
                 "marker-color": "#A6D975"
             }
         },
@@ -389,7 +431,7 @@
                 ]
             },
             "properties": {
-                "title": "Kimmeridgian Stage",
+                "title": "Kimmeridgian",
                 "marker-color": "#CCECF4"
             }
         },
@@ -403,7 +445,7 @@
                 ]
             },
             "properties": {
-                "title": "Bathonian Stage",
+                "title": "Bathonian",
                 "marker-color": "#B3E2E3"
             }
         },
@@ -417,7 +459,7 @@
                 ]
             },
             "properties": {
-                "title": "Bajocian Stage",
+                "title": "Bajocian",
                 "marker-color": "#A6DDE0"
             }
         },
@@ -431,7 +473,7 @@
                 ]
             },
             "properties": {
-                "title": "Aalenian Stage",
+                "title": "Aalenian",
                 "marker-color": "#9AD9DD"
             }
         },
@@ -445,7 +487,7 @@
                 ]
             },
             "properties": {
-                "title": "Toarcian Stage",
+                "title": "Toarcian",
                 "marker-color": "#99CEE3"
             }
         },
@@ -459,7 +501,7 @@
                 ]
             },
             "properties": {
-                "title": "Pliensbachian Stage",
+                "title": "Pliensbachian",
                 "marker-color": "#80C5DD"
             }
         },
@@ -473,7 +515,7 @@
                 ]
             },
             "properties": {
-                "title": "Sinemurian Stage",
+                "title": "Sinemurian",
                 "marker-color": "#67BCD8"
             }
         },
@@ -487,7 +529,7 @@
                 ]
             },
             "properties": {
-                "title": "Hettangian Stage",
+                "title": "Hettangian",
                 "marker-color": "#4EB3D3"
             }
         },
@@ -501,7 +543,7 @@
                 ]
             },
             "properties": {
-                "title": "Carnian Stage",
+                "title": "Carnian",
                 "marker-color": "#C99BCB"
             }
         },
@@ -515,36 +557,8 @@
                 ]
             },
             "properties": {
-                "title": "Ladinian Stage",
+                "title": "Ladinian",
                 "marker-color": "#C983BF"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    28.8022,
-                    45.0742
-                ]
-            },
-            "properties": {
-                "title": "Anisian Stage",
-                "marker-color": "#BC75B7"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    78.0246,
-                    31.9654
-                ]
-            },
-            "properties": {
-                "title": "Olenekian Stage",
-                "marker-color": "#B051A5"
             }
         },
         {
@@ -557,7 +571,7 @@
                 ]
             },
             "properties": {
-                "title": "Induan Stage",
+                "title": "Induan",
                 "marker-color": "#A4469F"
             }
         },
@@ -571,7 +585,7 @@
                 ]
             },
             "properties": {
-                "title": "Changhsingian Stage",
+                "title": "Changhsingian",
                 "marker-color": "#FCC0B2"
             }
         },
@@ -585,7 +599,7 @@
                 ]
             },
             "properties": {
-                "title": "Wuchiapingian Stage",
+                "title": "Wuchiapingian",
                 "marker-color": "#FCB4A2"
             }
         },
@@ -599,7 +613,7 @@
                 ]
             },
             "properties": {
-                "title": "Capitanian Stage",
+                "title": "Capitanian",
                 "marker-color": "#FB9A85"
             }
         },
@@ -613,7 +627,7 @@
                 ]
             },
             "properties": {
-                "title": "Wordian Stage",
+                "title": "Wordian",
                 "marker-color": "#FB8D76"
             }
         },
@@ -627,8 +641,36 @@
                 ]
             },
             "properties": {
-                "title": "Roadian Stage",
+                "title": "Roadian",
                 "marker-color": "#FB8069"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    56.51615,
+                    53.88847
+                ]
+            },
+            "properties": {
+                "title": "Artinskian",
+                "marker-color": "#E37B68"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    56.7287,
+                    53.9247
+                ]
+            },
+            "properties": {
+                "title": "Sakmarian",
+                "marker-color": "#E36F5C"
             }
         },
         {
@@ -641,7 +683,7 @@
                 ]
             },
             "properties": {
-                "title": "Asselian Stage",
+                "title": "Asselian",
                 "marker-color": "#E36350"
             }
         },
@@ -655,7 +697,7 @@
                 ]
             },
             "properties": {
-                "title": "Bashkirian Stage",
+                "title": "Bashkirian",
                 "marker-color": "#99C2B5"
             }
         },
@@ -669,7 +711,7 @@
                 ]
             },
             "properties": {
-                "title": "Visean Stage",
+                "title": "Visean",
                 "marker-color": "#A6B96C"
             }
         },
@@ -683,7 +725,7 @@
                 ]
             },
             "properties": {
-                "title": "Tournaisian Stage",
+                "title": "Tournaisian",
                 "marker-color": "#8CB06C"
             }
         },
@@ -697,7 +739,7 @@
                 ]
             },
             "properties": {
-                "title": "Famennian Stage",
+                "title": "Famennian",
                 "marker-color": "#F2EDB3"
             }
         },
@@ -711,7 +753,7 @@
                 ]
             },
             "properties": {
-                "title": "Frasnian Stage",
+                "title": "Frasnian",
                 "marker-color": "#F2EDAD"
             }
         },
@@ -725,7 +767,7 @@
                 ]
             },
             "properties": {
-                "title": "Givetian Stage",
+                "title": "Givetian",
                 "marker-color": "#F1E185"
             }
         },
@@ -739,7 +781,7 @@
                 ]
             },
             "properties": {
-                "title": "Eifelian Stage",
+                "title": "Eifelian",
                 "marker-color": "#F1D576"
             }
         },
@@ -753,7 +795,7 @@
                 ]
             },
             "properties": {
-                "title": "Emsian Stage",
+                "title": "Emsian",
                 "marker-color": "#E5D075"
             }
         },
@@ -767,7 +809,7 @@
                 ]
             },
             "properties": {
-                "title": "Pragian Stage",
+                "title": "Pragian",
                 "marker-color": "#E5C468"
             }
         },
@@ -781,7 +823,7 @@
                 ]
             },
             "properties": {
-                "title": "Lochkovian Stage",
+                "title": "Lochkovian",
                 "marker-color": "#E5B75A"
             }
         },
@@ -795,7 +837,7 @@
                 ]
             },
             "properties": {
-                "title": "P\u0159\u00eddol\u00ed Series",
+                "title": "Pridoli",
                 "marker-color": "#E6F5E1"
             }
         },
@@ -809,7 +851,7 @@
                 ]
             },
             "properties": {
-                "title": "Ludfordian Stage",
+                "title": "Ludfordian",
                 "marker-color": "#D9F0DF"
             }
         },
@@ -823,7 +865,7 @@
                 ]
             },
             "properties": {
-                "title": "Gorstian Stage",
+                "title": "Gorstian",
                 "marker-color": "#CCECDD"
             }
         },
@@ -837,7 +879,7 @@
                 ]
             },
             "properties": {
-                "title": "Homerian Stage",
+                "title": "Homerian",
                 "marker-color": "#CCEBD1"
             }
         },
@@ -851,7 +893,7 @@
                 ]
             },
             "properties": {
-                "title": "Sheinwoodian Stage",
+                "title": "Sheinwoodian",
                 "marker-color": "#BFE6C3"
             }
         },
@@ -865,7 +907,7 @@
                 ]
             },
             "properties": {
-                "title": "Telychian Stage",
+                "title": "Telychian",
                 "marker-color": "#BFE6CF"
             }
         },
@@ -874,12 +916,12 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    14.2119,
-                    49.9230
+                    -14.2119,
+                    49.923
                 ]
             },
             "properties": {
-                "title": "Aeronian Stage",
+                "title": "Aeronian",
                 "marker-color": "#B3E1C2"
             }
         },
@@ -893,7 +935,7 @@
                 ]
             },
             "properties": {
-                "title": "Rhuddanian Stage",
+                "title": "Rhuddanian",
                 "marker-color": "#A6DCB5"
             }
         },
@@ -903,11 +945,11 @@
                 "type": "Point",
                 "coordinates": [
                     111.4197,
-                    30.984
+                    30.9841
                 ]
             },
             "properties": {
-                "title": "Hirnantian Stage",
+                "title": "Hirnantian",
                 "marker-color": "#A6DBAB"
             }
         },
@@ -921,7 +963,7 @@
                 ]
             },
             "properties": {
-                "title": "Katian Stage",
+                "title": "Katian",
                 "marker-color": "#99D69F"
             }
         },
@@ -935,7 +977,7 @@
                 ]
             },
             "properties": {
-                "title": "Sandbian Stage",
+                "title": "Sandbian",
                 "marker-color": "#8CD094"
             }
         },
@@ -945,11 +987,11 @@
                 "type": "Point",
                 "coordinates": [
                     118.4897,
-                    28.853
+                    28.8539
                 ]
             },
             "properties": {
-                "title": "Darriwilian Stage",
+                "title": "Darriwilian",
                 "marker-color": "#74C69C"
             }
         },
@@ -959,11 +1001,11 @@
                 "type": "Point",
                 "coordinates": [
                     110.374,
-                    30.86
+                    30.8605
                 ]
             },
             "properties": {
-                "title": "Dapingian Stage",
+                "title": "Dapingian",
                 "marker-color": "#66C092"
             }
         },
@@ -977,7 +1019,7 @@
                 ]
             },
             "properties": {
-                "title": "Floian Stage",
+                "title": "Floian",
                 "marker-color": "#41B087"
             }
         },
@@ -991,7 +1033,7 @@
                 ]
             },
             "properties": {
-                "title": "Tremadocian Stage",
+                "title": "Tremadocian",
                 "marker-color": "#33A97E"
             }
         },
@@ -1001,11 +1043,11 @@
                 "type": "Point",
                 "coordinates": [
                     118.6149,
-                    28.8159
+                    28.8158
                 ]
             },
             "properties": {
-                "title": "Jiangshanian Stage",
+                "title": "Jiangshanian",
                 "marker-color": "#D9F0BB"
             }
         },
@@ -1015,12 +1057,12 @@
                 "type": "Point",
                 "coordinates": [
                     109.5257,
-                    28.389
+                    28.3895
                 ]
             },
             "properties": {
-                "title": "Paibian Stage",
-                "marker-color": "#B3E095"
+                "title": "Paibian",
+                "marker-color": "#CCEBAE"
             }
         },
         {
@@ -1033,7 +1075,7 @@
                 ]
             },
             "properties": {
-                "title": "Guzhangian Stage",
+                "title": "Guzhangian",
                 "marker-color": "#CCDFAA"
             }
         },
@@ -1043,11 +1085,11 @@
                 "type": "Point",
                 "coordinates": [
                     -112.9915,
-                    39.511
+                    39.5117
                 ]
             },
             "properties": {
-                "title": "Drumian Stage",
+                "title": "Drumian",
                 "marker-color": "#BFD99D"
             }
         },
@@ -1061,7 +1103,7 @@
                 ]
             },
             "properties": {
-                "title": "Fortunian Stage",
+                "title": "Fortunian",
                 "marker-color": "#99B575"
             }
         },
@@ -1075,22 +1117,8 @@
                 ]
             },
             "properties": {
-                "title": "Ediacaran Period",
+                "title": "Ediacaran",
                 "marker-color": "#FED96A"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    13.56229,
-                    43.59193
-                ]
-            },
-            "properties": {
-                "title": "Langhian Stage",
-                "marker-color": "#FFFF4D"
             }
         }
     ]

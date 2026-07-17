@@ -4,9 +4,21 @@ from rdflib.namespace import OWL, RDF, SKOS, TIME, GEO, SDO, XSD
 from pathlib import Path
 import re
 from datetime import date
+import json
 
 DATASET_IRI = URIRef("https://data.stratigraphy.org/data/gssps")
+GSSP = Namespace("https://data.stratigraphy.org/def/gssp/")
+GSSPS = Namespace("https://data.stratigraphy.org/data/gssps/")
+GTS = Namespace("http://resource.geosciml.org/ontology/timescale/gts#")
+GTS2020 = Namespace("https://data.stratigraphy.org/data/gts2020/")
 
+PREFIXES = {
+    "ds": DATASET_IRI,
+    "gssp": GSSP,
+    "gssps": GSSPS,
+    "gts": GTS,
+    "gts2020": GTS2020,
+}
 
 def coordinates_to_wkt(value: str) -> str:
     COORD_RE = re.compile(
@@ -35,6 +47,26 @@ def coordinates_to_wkt(value: str) -> str:
     return f"POINT ({longitude} {latitude})"
 
 
+def extract_lat_lon(wkt: str) -> tuple[float, float]:
+    POINT_RE = re.compile(
+        r"^\s*POINT\s*\(\s*"
+        r"(?P<longitude>[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?)"
+        r"\s+"
+        r"(?P<latitude>[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?)"
+        r"\s*\)\s*$",
+        re.IGNORECASE,
+    )
+
+    match = POINT_RE.fullmatch(wkt)
+    if not match:
+        raise ValueError(f"Invalid WKT POINT: {wkt!r}")
+
+    longitude = float(match.group("longitude"))
+    latitude = float(match.group("latitude"))
+
+    return latitude, longitude
+
+
 def add_metadata():
     g = Graph()
     today = date.today().isoformat()
@@ -53,96 +85,142 @@ def add_metadata():
     return g
 
 
-GSSP = Namespace('https://data.stratigraphy.org/def/gssp/')
-GSSPS = Namespace('https://data.stratigraphy.org/data/gssps/')
-GTS = Namespace('http://resource.geosciml.org/ontology/timescale/gts#')
-GTS2020 = Namespace('https://data.stratigraphy.org/data/gts2020/')
+def make_gssps() -> Graph:
+    df = pd.read_excel("GSSPs.xlsx", sheet_name="GSSPs")
+    g = Graph()
 
-df = pd.read_excel("GSSPs.xlsx", sheet_name="GSSPs")
-g = Graph()
+    for index, row in df.iterrows():
+        iri = URIRef(row["IRI"])
 
-print(df.columns)
+        if row["Type"] in ["GSSP", "GSSA"]:  # do not process SABS for now
+            g.add((iri, RDF.type, GSSP[row["Type"]]))
 
-for index, row in df.iterrows():
-    iri = URIRef(row["IRI"])
+            g.add((iri, GTS.stratotypeOf, URIRef(row["stratotypeOf"])))
 
-    g.add((iri, RDF.type, GSSP.GSSP))
+            # get name from Chart
+            # g.add((iri, SDO.name, Literal(row["Stage"] + " GSSP")))
 
-    g.add((iri, GTS.stratotypeOf, URIRef(row["stratotypeOf"])))
+            if not pd.isnull(row["Location"]):
+                g.add((iri, SDO.description, Literal(row["Location"])))
+            if not pd.isnull(row["Boundary Level"]):
+                g.add((iri, GSSP.boundaryLevel, Literal(row["Boundary Level"])))
+            if not pd.isnull(row["Correlation Events"]):
+                g.add((iri, GSSP.correlationEvents, Literal(row["Correlation Events"])))
 
-    # get name from Chart
-    # g.add((iri, SDO.name, Literal(row["Stage"] + " GSSP")))
+            if not pd.isnull(row["DOIs"]):
+                dois = [doi.strip() for doi in str(row["DOIs"]).split("http")]
+                for doi in dois:
+                    if doi != "nan" and doi != "":
+                        g.add((iri, SDO.citation, Literal("http" + doi if doi.startswith("s://") else doi, datatype=XSD.anyURI)))
 
-    if not pd.isnull(row["Location"]):
-        g.add((iri, SDO.description, Literal(row["Location"])))
-    if not pd.isnull(row["Boundary Level"]):
-        g.add((iri, GSSP.boundaryLevel, Literal(row["Boundary Level"])))
-    if not pd.isnull(row["Correlation Events"]):
-        g.add((iri, GSSP.correlationEvents, Literal(row["Correlation Events"])))
+            if not pd.isnull(row["PDFs"]):
+                pdfs = [doi.strip() for doi in str(row["PDFs"]).split("http")]
+                for pdf in pdfs:
+                    if pdf != "nan" and pdf != "":
+                        g.add((iri, SDO.citation, Literal("http" + pdf if pdf.startswith("s://") else pdf, datatype=XSD.anyURI)))
 
-    if not pd.isnull(row["DOIs"]):
-        dois = [doi.strip() for doi in str(row["DOIs"]).split("http")]
-        for doi in dois:
-            if doi != "nan" and doi != "":
-                g.add((iri, SDO.citation, Literal("http" + doi if doi.startswith("s://") else doi, datatype=XSD.anyURI)))
+            status = str(row["Status"])
+            if status == "ratified":
+                # g.add((iri, RDF.type, GEO.Feature))
+                if "Defined chronometrically" not in str(row["Location"]):
+                    wkt = coordinates_to_wkt(row["Coordinates"])
+                    geom = BNode()
+                    g.add((iri, GEO.hasGeometry, geom))
+                    g.add((geom, RDF.type, GEO.Geometry))
+                    g.add((geom, GEO.asWKT, Literal(wkt, datatype=GEO.wktLiteral)))
+            else:
+                g.add((iri, SDO.status, Literal(status)))
 
-    if not pd.isnull(row["PDFs"]):
-        pdfs = [doi.strip() for doi in str(row["PDFs"]).split("http")]
-        for pdf in pdfs:
-            if pdf != "nan" and pdf != "":
-                g.add((iri, SDO.citation, Literal("http" + pdf if pdf.startswith("s://") else pdf, datatype=XSD.anyURI)))
+            if not pd.isnull(row["References"]):
+                g.add((iri, SDO.citation, Literal(str(row["References"]))))
 
-    status = str(row["Status"])
-    if status == "ratified":
-        # g.add((iri, RDF.type, GEO.Feature))
-        if "Defined chronometrically" not in str(row["Location"]):
-            wkt = coordinates_to_wkt(row["Coordinates"])
-            geom = BNode()
-            g.add((iri, GEO.hasGeometry, geom))
-            g.add((geom, RDF.type, GEO.Geometry))
-            g.add((geom, GEO.asWKT, Literal(wkt, datatype=GEO.wktLiteral)))
-    else:
-        g.add((iri, SDO.status, Literal(status)))
+            g.add((DATASET_IRI, SDO.hasPart, iri))
 
-    if not pd.isnull(row["References"]):
-        g.add((iri, SDO.citation, Literal(str(row["References"]))))
+    g += add_metadata()
 
-    g.add((DATASET_IRI, SDO.hasPart, iri))
+    for k, v in PREFIXES.items():
+        g.bind(k, v)
 
-
-# g = Graph().parse("chart.ttl")
-# q = """
-#     SELECT ?iri ?mya
-#     WHERE {
-#         ?iri a skos:Concept ;
-#             time:hasBeginning/ischart:inMYA ?mya
-#         .
-#     }
-#     ORDER BY ?mya
-#     """
-# for row in g.query(q, initNs={"time": TIME, "ischart": "http://resource.geosciml.org/classifier/ics/ischart/"}):
-#     print(f'{row["iri"]}')
-
-# add names
-g2 = Graph()
-for t in g:
-    g2.add((t))
-chart_path = Path(__file__).parent / "chart.ttl"
-g2.parse(chart_path)
-
-for s, o in g2.subject_objects(GTS.stratotypeOf):
-    age = URIRef(str(o).replace("Base", ""))
-    for o2 in g2.objects(age, SKOS.prefLabel):
-        if o2.language == "en":
-            name = str(o2)
-    g.add((s, SDO.name, Literal(f"GSSP for the {name}")))
+    g.serialize(destination="gssps.ttl", format="longturtle")
+    print("Made GSSPs RDF")
+    return g
 
 
-g += add_metadata()
+def make_geojson(g):
+    g += Graph().parse(Path(__file__).parents[3] / "supermodel/resources/datasets/geo-times.ttl")
+    g += Graph().parse(Path(__file__).parents[3] / "chart-data/chart.ttl")
 
-g.bind("gssps", GSSPS)
-g.bind("gssp", GSSP)
-g.bind("gts", GTS)
-g.bind("gts2020", GTS2020)
-g.bind("ds", DATASET_IRI)
-g.serialize(destination="gssps.ttl", format="longturtle")
+    q = """
+        PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        PREFIX schema: <https://schema.org/>
+        PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
+        PREFIX time: <http://www.w3.org/2006/time#>
+        PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+        PREFIX gssp: <https://data.stratigraphy.org/def/gssp/>
+        
+        SELECT ?gssp ?wkt ?name ?colour
+        WHERE {
+            {
+                ?gssp 
+                    a gssp:GSSP ;
+                    gts:stratotypeOf ?base ;
+                    geo:hasGeometry/geo:asWKT ?wkt ;
+                .
+        
+                OPTIONAL {
+                    ?t1
+                        gts:rank rank:Age ;
+                        time:hasBeginning ?base ;
+                    .
+                }
+        
+                OPTIONAL {
+                    ?t2
+                        gts:rank rank:Period ;
+                        time:hasBeginning ?base ;
+                    .
+                }
+        
+                BIND (COALESCE(?t1, ?t2) AS ?t)
+            }
+            
+            ?t
+                skos:prefLabel ?name ;
+                schema:color ?colour ;
+            .
+            
+            FILTER (LANG(?name) = "en")
+        }
+        """
+
+    fc = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    for r in g.query(q):
+        lat, long = extract_lat_lon(r["wkt"])
+        fc["features"].append({
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    long,
+                    lat
+                ]
+            },
+            "properties": {
+                "title": r["name"],
+                "marker-color": r["colour"]
+            }
+        })
+
+    # write to the root dir
+    json.dump(fc, open(Path(__file__).parents[2] / "gssps.geojson", "w"), indent=4)
+    print("Made GSSPs GeoJSON")
+
+
+if __name__ == "__main__":
+    g = make_gssps()
+
+    make_geojson(g)
