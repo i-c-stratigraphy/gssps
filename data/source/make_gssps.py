@@ -85,7 +85,7 @@ def add_metadata():
     return g
 
 
-def make_gssps() -> Graph:
+def make_rdf() -> Graph:
     df = pd.read_excel("GSSPs.xlsx", sheet_name="GSSPs")
     g = Graph()
 
@@ -120,16 +120,17 @@ def make_gssps() -> Graph:
                         g.add((iri, SDO.citation, Literal("http" + pdf if pdf.startswith("s://") else pdf, datatype=XSD.anyURI)))
 
             status = str(row["Status"])
-            if status == "ratified":
-                # g.add((iri, RDF.type, GEO.Feature))
-                if "Defined chronometrically" not in str(row["Location"]):
-                    wkt = coordinates_to_wkt(row["Coordinates"])
-                    geom = BNode()
-                    g.add((iri, GEO.hasGeometry, geom))
-                    g.add((geom, RDF.type, GEO.Geometry))
-                    g.add((geom, GEO.asWKT, Literal(wkt, datatype=GEO.wktLiteral)))
+            if status == "Ratified":
+                g.add((iri, SDO.status, Literal(str(row["RatificationNote"]))))
             else:
-                g.add((iri, SDO.status, Literal(status)))
+                g.add((iri, SDO.status, Literal("Proposed")))
+
+            if not pd.isnull(row["Coordinates"]):
+                wkt = coordinates_to_wkt(row["Coordinates"])
+                geom = BNode()
+                g.add((iri, GEO.hasGeometry, geom))
+                g.add((geom, RDF.type, GEO.Geometry))
+                g.add((geom, GEO.asWKT, Literal(wkt, datatype=GEO.wktLiteral)))
 
             if not pd.isnull(row["References"]):
                 g.add((iri, SDO.citation, Literal(str(row["References"]))))
@@ -166,6 +167,7 @@ def make_geojson(g):
                     a gssp:GSSP ;
                     gts:stratotypeOf ?base ;
                     geo:hasGeometry/geo:asWKT ?wkt ;
+                    schema:status ?status ;
                 .
         
                 OPTIONAL {
@@ -191,6 +193,7 @@ def make_geojson(g):
             .
             
             FILTER (LANG(?name) = "en")
+            FILTER (?status != "Proposed")
         }
         """
 
@@ -221,6 +224,6 @@ def make_geojson(g):
 
 
 if __name__ == "__main__":
-    g = make_gssps()
+    g = make_rdf()
 
     make_geojson(g)
