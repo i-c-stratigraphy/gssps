@@ -1,0 +1,1125 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    91.715,
+                    25.262222
+                ]
+            },
+            "properties": {
+                "title": "Meghalayan",
+                "marker-color": "#FDEDEC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -42.32,
+                    75.1
+                ]
+            },
+            "properties": {
+                "title": "Northgrippian",
+                "marker-color": "#FDECE4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -42.32,
+                    75.1
+                ]
+            },
+            "properties": {
+                "title": "Greenlandian",
+                "marker-color": "#FEECDB"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.1465,
+                    35.2943
+                ]
+            },
+            "properties": {
+                "title": "Chibanian",
+                "marker-color": "#FFF2C7"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.1348,
+                    39.0385
+                ]
+            },
+            "properties": {
+                "title": "Calabrian",
+                "marker-color": "#FFF2BA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2035,
+                    37.1469
+                ]
+            },
+            "properties": {
+                "title": "Gelasian",
+                "marker-color": "#FFEDB3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4933,
+                    37.2889
+                ]
+            },
+            "properties": {
+                "title": "Piacenzian",
+                "marker-color": "#FFFFBF"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2806,
+                    37.3917
+                ]
+            },
+            "properties": {
+                "title": "Zanclean",
+                "marker-color": "#FFFFB3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.8125,
+                    33.9369
+                ]
+            },
+            "properties": {
+                "title": "Messinian",
+                "marker-color": "#FFFF73"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5661724,
+                    43.587292
+                ]
+            },
+            "properties": {
+                "title": "Tortonian",
+                "marker-color": "#FFFF66"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3361,
+                    35.9139
+                ]
+            },
+            "properties": {
+                "title": "Serravallian",
+                "marker-color": "#FFFF59"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.56229,
+                    43.59193
+                ]
+            },
+            "properties": {
+                "title": "Langhian",
+                "marker-color": "#FFFF4D"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8364,
+                    44.6589
+                ]
+            },
+            "properties": {
+                "title": "Aquitanian",
+                "marker-color": "#FFFF33"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.467731,
+                    43.646614
+                ]
+            },
+            "properties": {
+                "title": "Chattian",
+                "marker-color": "#FEE6AA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6011,
+                    43.5328
+                ]
+            },
+            "properties": {
+                "title": "Rupelian",
+                "marker-color": "#FED99A"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.918,
+                    45.9142
+                ]
+            },
+            "properties": {
+                "title": "Priabonian",
+                "marker-color": "#FDCDA1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.0143,
+                    43.3796
+                ]
+            },
+            "properties": {
+                "title": "Lutetian",
+                "marker-color": "#FDB482"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5311,
+                    25.5
+                ]
+            },
+            "properties": {
+                "title": "Ypresian",
+                "marker-color": "#FCA773"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.2594,
+                    43.3006
+                ]
+            },
+            "properties": {
+                "title": "Thanetian",
+                "marker-color": "#FDBF6F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.2594,
+                    43.3006
+                ]
+            },
+            "properties": {
+                "title": "Selandian",
+                "marker-color": "#FEBF65"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.6486,
+                    36.1537
+                ]
+            },
+            "properties": {
+                "title": "Danian",
+                "marker-color": "#FDB462"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.1133,
+                    43.6795
+                ]
+            },
+            "properties": {
+                "title": "Maastrichtian",
+                "marker-color": "#F2FA8C"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.58283,
+                    43.36267
+                ]
+            },
+            "properties": {
+                "title": "Campanian",
+                "marker-color": "#E6F47F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.1968,
+                    42.8668
+                ]
+            },
+            "properties": {
+                "title": "Santonian",
+                "marker-color": "#D9EF74"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.3295,
+                    52.1243
+                ]
+            },
+            "properties": {
+                "title": "Coniacian",
+                "marker-color": "#CCE968"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.7275,
+                    38.2822
+                ]
+            },
+            "properties": {
+                "title": "Turonian",
+                "marker-color": "#BFE35D"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.5119,
+                    44.3925
+                ]
+            },
+            "properties": {
+                "title": "Cenomanian",
+                "marker-color": "#B3DE53"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.2973,
+                    44.5079
+                ]
+            },
+            "properties": {
+                "title": "Albian",
+                "marker-color": "#CCEA97"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.9484,
+                    38.0704
+                ]
+            },
+            "properties": {
+                "title": "Barremian",
+                "marker-color": "#B3DF7F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.4437,
+                    44.4694
+                ]
+            },
+            "properties": {
+                "title": "Hauterivian",
+                "marker-color": "#A6D975"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.2455,
+                    57.661
+                ]
+            },
+            "properties": {
+                "title": "Kimmeridgian",
+                "marker-color": "#CCECF4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.3153,
+                    43.9606
+                ]
+            },
+            "properties": {
+                "title": "Bathonian",
+                "marker-color": "#B3E2E3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.9042,
+                    40.1992
+                ]
+            },
+            "properties": {
+                "title": "Bajocian",
+                "marker-color": "#A6DDE0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.8333,
+                    41.1708
+                ]
+            },
+            "properties": {
+                "title": "Aalenian",
+                "marker-color": "#9AD9DD"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.3853,
+                    39.3708
+                ]
+            },
+            "properties": {
+                "title": "Toarcian",
+                "marker-color": "#99CEE3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.4975,
+                    54.4069
+                ]
+            },
+            "properties": {
+                "title": "Pliensbachian",
+                "marker-color": "#80C5DD"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.2364,
+                    51.1909
+                ]
+            },
+            "properties": {
+                "title": "Sinemurian",
+                "marker-color": "#67BCD8"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.5306,
+                    47.4839
+                ]
+            },
+            "properties": {
+                "title": "Hettangian",
+                "marker-color": "#4EB3D3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.9303,
+                    46.5269
+                ]
+            },
+            "properties": {
+                "title": "Carnian",
+                "marker-color": "#C99BCB"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.471,
+                    45.8193
+                ]
+            },
+            "properties": {
+                "title": "Ladinian",
+                "marker-color": "#C983BF"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.7058,
+                    31.0798
+                ]
+            },
+            "properties": {
+                "title": "Induan",
+                "marker-color": "#A4469F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.7064,
+                    31.0819
+                ]
+            },
+            "properties": {
+                "title": "Changhsingian",
+                "marker-color": "#FCC0B2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    109.3211,
+                    23.6953
+                ]
+            },
+            "properties": {
+                "title": "Wuchiapingian",
+                "marker-color": "#FCB4A2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.7892,
+                    31.9091
+                ]
+            },
+            "properties": {
+                "title": "Capitanian",
+                "marker-color": "#FB9A85"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.8328,
+                    31.8658
+                ]
+            },
+            "properties": {
+                "title": "Wordian",
+                "marker-color": "#FB8D76"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.8768,
+                    31.8767
+                ]
+            },
+            "properties": {
+                "title": "Roadian",
+                "marker-color": "#FB8069"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    56.51615,
+                    53.88847
+                ]
+            },
+            "properties": {
+                "title": "Artinskian",
+                "marker-color": "#E37B68"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    56.7287,
+                    53.9247
+                ]
+            },
+            "properties": {
+                "title": "Sakmarian",
+                "marker-color": "#E36F5C"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    57.8914,
+                    50.2458
+                ]
+            },
+            "properties": {
+                "title": "Asselian",
+                "marker-color": "#E36350"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.7778,
+                    36.7333
+                ]
+            },
+            "properties": {
+                "title": "Bashkirian",
+                "marker-color": "#99C2B5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    109.45,
+                    24.4333
+                ]
+            },
+            "properties": {
+                "title": "Visean",
+                "marker-color": "#A6B96C"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.3573,
+                    43.5555
+                ]
+            },
+            "properties": {
+                "title": "Tournaisian",
+                "marker-color": "#8CB06C"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.0403,
+                    43.4613
+                ]
+            },
+            "properties": {
+                "title": "Famennian",
+                "marker-color": "#F2EDB3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.0868,
+                    43.5032
+                ]
+            },
+            "properties": {
+                "title": "Frasnian",
+                "marker-color": "#F2EDAD"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.3541,
+                    31.2374
+                ]
+            },
+            "properties": {
+                "title": "Givetian",
+                "marker-color": "#F1E185"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.4716,
+                    50.1496
+                ]
+            },
+            "properties": {
+                "title": "Eifelian",
+                "marker-color": "#F1D576"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    67.3056,
+                    39.2
+                ]
+            },
+            "properties": {
+                "title": "Emsian",
+                "marker-color": "#E5D075"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3726,
+                    50.0147
+                ]
+            },
+            "properties": {
+                "title": "Pragian",
+                "marker-color": "#E5C468"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0611,
+                    49.9008
+                ]
+            },
+            "properties": {
+                "title": "Lochkovian",
+                "marker-color": "#E5B75A"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3249,
+                    50.0277
+                ]
+            },
+            "properties": {
+                "title": "Pridoli",
+                "marker-color": "#E6F5E1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.7772,
+                    52.3592
+                ]
+            },
+            "properties": {
+                "title": "Ludfordian",
+                "marker-color": "#D9F0DF"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.7772,
+                    52.3592
+                ]
+            },
+            "properties": {
+                "title": "Gorstian",
+                "marker-color": "#CCECDD"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.5647,
+                    52.6156
+                ]
+            },
+            "properties": {
+                "title": "Homerian",
+                "marker-color": "#CCEBD1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.6389,
+                    52.5811
+                ]
+            },
+            "properties": {
+                "title": "Sheinwoodian",
+                "marker-color": "#BFE6C3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.9285,
+                    37.9853
+                ]
+            },
+            "properties": {
+                "title": "Telychian",
+                "marker-color": "#BFE6CF"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -14.2119,
+                    49.923
+                ]
+            },
+            "properties": {
+                "title": "Aeronian",
+                "marker-color": "#B3E1C2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.27,
+                    55.44
+                ]
+            },
+            "properties": {
+                "title": "Rhuddanian",
+                "marker-color": "#A6DCB5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    111.4197,
+                    30.9841
+                ]
+            },
+            "properties": {
+                "title": "Hirnantian",
+                "marker-color": "#A6DBAB"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.0746,
+                    34.4305
+                ]
+            },
+            "properties": {
+                "title": "Katian",
+                "marker-color": "#99D69F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3255,
+                    55.7137
+                ]
+            },
+            "properties": {
+                "title": "Sandbian",
+                "marker-color": "#8CD094"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.4897,
+                    28.8539
+                ]
+            },
+            "properties": {
+                "title": "Darriwilian",
+                "marker-color": "#74C69C"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.374,
+                    30.8605
+                ]
+            },
+            "properties": {
+                "title": "Dapingian",
+                "marker-color": "#66C092"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5024,
+                    58.3589
+                ]
+            },
+            "properties": {
+                "title": "Floian",
+                "marker-color": "#41B087"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -57.9653,
+                    49.6829
+                ]
+            },
+            "properties": {
+                "title": "Tremadocian",
+                "marker-color": "#33A97E"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.6149,
+                    28.8158
+                ]
+            },
+            "properties": {
+                "title": "Jiangshanian",
+                "marker-color": "#D9F0BB"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    109.5257,
+                    28.3895
+                ]
+            },
+            "properties": {
+                "title": "Paibian",
+                "marker-color": "#CCEBAE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    109.9647,
+                    28.72
+                ]
+            },
+            "properties": {
+                "title": "Guzhangian",
+                "marker-color": "#CCDFAA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.9915,
+                    39.5117
+                ]
+            },
+            "properties": {
+                "title": "Drumian",
+                "marker-color": "#BFD99D"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -55.831,
+                    47.0762
+                ]
+            },
+            "properties": {
+                "title": "Fortunian",
+                "marker-color": "#99B575"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.6334,
+                    -31.3314
+                ]
+            },
+            "properties": {
+                "title": "Ediacaran",
+                "marker-color": "#FED96A"
+            }
+        }
+    ]
+}
