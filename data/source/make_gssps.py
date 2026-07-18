@@ -48,6 +48,8 @@ def coordinates_to_wkt(value: str) -> str:
 
 
 def extract_lat_lon(wkt: str) -> tuple[float, float]:
+    """Extracts latitude and longitude from a WKT string"""
+
     POINT_RE = re.compile(
         r"^\s*POINT\s*\(\s*"
         r"(?P<longitude>[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?)"

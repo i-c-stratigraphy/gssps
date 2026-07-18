@@ -1,0 +1,40 @@
+# extracts time elements only per GeochronologicEra from the GTS2020 dataset
+
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX gts2020: <https://data.stratigraphy.org/data/gts2020/>
+CONSTRUCT {
+    ?t
+        a gts:GeochronologicEra ;
+    	gts:rank ?rank ;
+        time:hasBeginning ?hb ;
+        time:hasEnd ?he ;
+        time:intervalIn ?ii ;
+        time:intervalContains ?ic ;
+        time:intervalMeets ?im ;
+        time:intervalMetBy ?imb ;
+        time:intervalStarts ?is ;
+        time:intervalStartedBy ?isb ;
+        time:intervalFinishes ?if ;
+        time:intervalFinishedBy ?ifb ;
+	.
+}
+FROM <http://gts>
+WHERE {
+    ?t
+        a gts:GeochronologicEra ;
+    	gts:rank ?rank ;
+    .
+
+    OPTIONAL { ?t time:hasBeginning ?hb }
+    OPTIONAL { ?t time:hasEnd ?he }
+    OPTIONAL { ?t time:intervalIn ?ii }
+    OPTIONAL { ?t time:intervalContains ?ic }
+    OPTIONAL { ?t time:intervalMeets ?im }
+    OPTIONAL { ?t time:intervalMetBy ?imb }
+    OPTIONAL { ?t time:intervalStarts ?is }
+    OPTIONAL { ?t time:intervalStartedBy ?isb }
+    OPTIONAL { ?t time:intervalFinishes ?if }
+    OPTIONAL { ?t time:intervalFinishedBy ?ifb }
+}
