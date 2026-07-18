@@ -10,14 +10,14 @@ DATASET_IRI = URIRef("https://data.stratigraphy.org/data/gssps")
 GSSP = Namespace("https://data.stratigraphy.org/def/gssp/")
 GSSPS = Namespace("https://data.stratigraphy.org/data/gssps/")
 GTS = Namespace("http://resource.geosciml.org/ontology/timescale/gts#")
-GTS2020 = Namespace("https://data.stratigraphy.org/data/gts2020/")
+GTSD = Namespace("https://data.stratigraphy.org/data/gts/")
 
 PREFIXES = {
     "ds": DATASET_IRI,
     "gssp": GSSP,
     "gssps": GSSPS,
     "gts": GTS,
-    "gts2020": GTS2020,
+    "gtsd": GTSD,
 }
 
 def coordinates_to_wkt(value: str) -> str:
@@ -97,7 +97,7 @@ def make_rdf() -> Graph:
         if row["Type"] in ["GSSP", "GSSA"]:  # do not process SABS for now
             g.add((iri, RDF.type, GSSP[row["Type"]]))
 
-            g.add((iri, GTS.stratotypeOf, URIRef(row["stratotypeOf"])))
+            g.add((iri, GTS.representsBoundary, URIRef(row["representsBoundary"])))
 
             # get name from Chart
             # g.add((iri, SDO.name, Literal(row["Stage"] + " GSSP")))
@@ -150,7 +150,7 @@ def make_rdf() -> Graph:
 
 
 def make_geojson(g):
-    g += Graph().parse(Path(__file__).parents[3] / "supermodel/resources/datasets/geo-times.ttl")
+    g += Graph().parse(Path(__file__).parents[3] / "supermodel/resources/datasets/gtsd.ttl")
     g += Graph().parse(Path(__file__).parents[3] / "chart-data/chart.ttl")
 
     q = """
@@ -167,7 +167,7 @@ def make_geojson(g):
             {
                 ?gssp 
                     a gssp:GSSP ;
-                    gts:stratotypeOf ?base ;
+                    gts:representsBoundary ?base ;
                     geo:hasGeometry/geo:asWKT ?wkt ;
                     schema:status ?status ;
                 .

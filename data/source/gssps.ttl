@@ -3,14 +3,13 @@ PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX gssp: <https://data.stratigraphy.org/def/gssp/>
 PREFIX gssps: <https://data.stratigraphy.org/data/gssps/>
 PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
-PREFIX gts2020: <https://data.stratigraphy.org/data/gts2020/>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ds:
     a schema:Dataset ;
-    schema:dateCreated "2026-07-17"^^xsd:date ;
-    schema:dateModified "2026-07-17"^^xsd:date ;
+    schema:dateCreated "2026-07-18"^^xsd:date ;
+    schema:dateModified "2026-07-18"^^xsd:date ;
     schema:hasPart
         gssps:Aalenian ,
         gssps:Aeronian ,
@@ -134,7 +133,7 @@ ds:
 
 gssps:Aalenian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMiddleJurassic ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleJurassic> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -149,7 +148,7 @@ gssps:Aalenian
 
 gssps:Aeronian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseAeronian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseAeronian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -170,7 +169,7 @@ to replace Trefawr Track, Wales, UK former GSSP""" ;
 
 gssps:Albian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseAlbian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseAlbian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -187,7 +186,7 @@ gssps:Albian
 
 gssps:Anisian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMiddleTriassic ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleTriassic> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -202,7 +201,7 @@ gssps:Anisian
 
 gssps:Aptian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseAptian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseAptian> ;
     gssp:correlationEvents "Magnetic - base of Chron M0r; near FAD of Paradeshayesites oglanlensis ammonite zone" ;
     schema:description "candidate is Gorgo a Cerbara, Piobbico, Umbria-Marche, central Italy" ;
     schema:status "Proposed" ;
@@ -210,7 +209,7 @@ gssps:Aptian
 
 gssps:Aquitanian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseNeogene ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseNeogene> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -227,7 +226,7 @@ gssps:Aquitanian
 
 gssps:Artinskian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseArtinskian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseArtinskian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -244,7 +243,7 @@ gssps:Artinskian
 
 gssps:Asselian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePermian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePermian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -261,7 +260,7 @@ gssps:Asselian
 
 gssps:Bajocian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseBajocian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBajocian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -276,7 +275,7 @@ gssps:Bajocian
 
 gssps:Barremian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseBarremian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBarremian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -293,7 +292,7 @@ gssps:Barremian
 
 gssps:Bartonian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseBartonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBartonian> ;
     gssp:correlationEvents "Calcareous nannofossil near LAD Reticulofenestra reticulata" ;
     schema:description "Contessa highway section near Gubio, Central Apennines, Italy" ;
     schema:status "Proposed" ;
@@ -301,7 +300,7 @@ gssps:Bartonian
 
 gssps:Bashkirian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePennsylvanian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePennsylvanian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -319,7 +318,7 @@ gssps:Bashkirian
 
 gssps:Bathonian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseBathonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBathonian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -334,14 +333,14 @@ gssps:Bathonian
 
 gssps:Berriasian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCretaceous ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCretaceous> ;
     gssp:correlationEvents "Candidates include: (1) Magnetic - base of Chron M18r, (2) Base of Calpionellid zone B, (3) ammonite FAD of Berriasella jacobi" ;
     schema:status "Proposed" ;
 .
 
 gssps:Burdigalian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseBurdigalian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBurdigalian> ;
     gssp:correlationEvents "Near planktonic foraminifer FAD of Globigerinoides altiaperturus or near top of magnetic polarity chronozone C6An" ;
     schema:description "Potentially in astronomicallytuned ODP core" ;
     schema:status "Proposed" ;
@@ -349,7 +348,7 @@ gssps:Burdigalian
 
 gssps:Calabrian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCalabrian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCalabrian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -370,7 +369,7 @@ Head, M.J., 2019""" ;
 
 gssps:Callovian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCallovian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCallovian> ;
     gssp:correlationEvents "Ammonite FAD of the genus Kepplerites (Kosmoceratidae)  (defines base of Macrocephalites herveyi Zone in sub-Boreal province of Great Britain to southwest Germany)" ;
     schema:description "candidates are Pfeffingen (Swabian Alb, SW Germany) and in Russia" ;
     schema:status "Proposed" ;
@@ -378,7 +377,7 @@ gssps:Callovian
 
 gssps:Calymmian
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseCalymmian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCalymmian> ;
     schema:citation "Episodes 1991; 14" ;
     schema:description "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
@@ -386,14 +385,14 @@ gssps:Calymmian
 
 gssps:CambrianSeries2
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCambrianSeries2 ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianSeries2> ;
     gssp:correlationEvents "Trilobites - their FAD" ;
     schema:status "Proposed" ;
 .
 
 gssps:CambrianStage10
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCambrianStage10 ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianStage10> ;
     gssp:correlationEvents "Trilobite FAD of Lotagnostus americanus. An internal subStage division might be FAD of Codylodus adesei conodont" ;
     schema:description "candidate section is Duibian (Zhejiang province, China)" ;
     schema:status "Proposed" ;
@@ -401,21 +400,21 @@ gssps:CambrianStage10
 
 gssps:CambrianStage2
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCambrianStage2 ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianStage2> ;
     gssp:correlationEvents "Small Shelly Fossils, or Archaeocyathid species" ;
     schema:status "Proposed" ;
 .
 
 gssps:CambrianStage3
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCambrianSeries2 ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianSeries2> ;
     gssp:correlationEvents "Trilobite FAD Olenellus or Redlichia" ;
     schema:status "Proposed" ;
 .
 
 gssps:CambrianStage4
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCambrianStage4 ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianStage4> ;
     gssp:correlationEvents "Trilobite, potentially FAD of Oryctocephalus indicus" ;
     schema:description "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and Split Mountain (Nevada, USA)" ;
     schema:status "Proposed" ;
@@ -423,7 +422,7 @@ gssps:CambrianStage4
 
 gssps:Campanian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCampanian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCampanian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -441,7 +440,7 @@ gssps:Campanian
 
 gssps:Capitanian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCapitanian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCapitanian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -459,7 +458,7 @@ gssps:Capitanian
 
 gssps:Carnian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLateTriassic ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateTriassic> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -474,7 +473,7 @@ gssps:Carnian
 
 gssps:Cenomanian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLateCretaceous ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateCretaceous> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -491,7 +490,7 @@ gssps:Cenomanian
 
 gssps:Changhsingian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseChanghsingian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseChanghsingian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -508,7 +507,7 @@ gssps:Changhsingian
 
 gssps:Chattian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseChattian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseChattian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -525,7 +524,7 @@ gssps:Chattian
 
 gssps:Chibanian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseChibanian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseChibanian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -543,7 +542,7 @@ gssps:Chibanian
 
 gssps:Coniacian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseConiacian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseConiacian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -561,7 +560,7 @@ gssps:Coniacian
 
 gssps:Cryogenian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCryogenian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCryogenian> ;
     schema:citation "Episodes 2019; 39" ;
     schema:description "Will be placed at a that lies stratigraphically beneath the first appearance of widespread glaciation and is assigned in the interim a 'calibrated age' of circa 720 Ma" ;
     schema:status "Proposed" ;
@@ -569,7 +568,7 @@ gssps:Cryogenian
 
 gssps:Danian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCenozoic ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCenozoic> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -586,7 +585,7 @@ gssps:Danian
 
 gssps:Dapingian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMiddleOrdovician ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleOrdovician> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -604,7 +603,7 @@ gssps:Dapingian
 
 gssps:Darriwilian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseDarriwilian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseDarriwilian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -621,7 +620,7 @@ gssps:Darriwilian
 
 gssps:Drumian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseDrumian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseDrumian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -638,7 +637,7 @@ gssps:Drumian
 
 gssps:Ectasian
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseEctasian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEctasian> ;
     schema:citation "Episodes 1991; 14" ;
     schema:description "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
@@ -646,7 +645,7 @@ gssps:Ectasian
 
 gssps:Ediacaran
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseEdiacaran ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEdiacaran> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -663,7 +662,7 @@ gssps:Ediacaran
 
 gssps:Eifelian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMiddleDevonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleDevonian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -680,7 +679,7 @@ gssps:Eifelian
 
 gssps:Emsian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseEmsian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEmsian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -697,7 +696,7 @@ gssps:Emsian
 
 gssps:Eoarchean
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseEoarchean ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEoarchean> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -716,7 +715,7 @@ along Acasta River, Northwestern Territory, Canada""" ;
 
 gssps:Famennian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseFamennian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseFamennian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -733,7 +732,7 @@ gssps:Famennian
 
 gssps:Floian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseFloian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseFloian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -750,7 +749,7 @@ gssps:Floian
 
 gssps:Fortunian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePhanerozoic ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePhanerozoic> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -767,7 +766,7 @@ gssps:Fortunian
 
 gssps:Frasnian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLateDevonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateDevonian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -784,7 +783,7 @@ gssps:Frasnian
 
 gssps:Gelasian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseQuaternary ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseQuaternary> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -805,7 +804,7 @@ Quaternary Sci. 2019; 500: 32-51, """ ;
 
 gssps:Givetian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseGivetian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseGivetian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -822,7 +821,7 @@ gssps:Givetian
 
 gssps:Gorstian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLudlow ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLudlow> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -839,7 +838,7 @@ gssps:Gorstian
 
 gssps:Greenlandian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseHolocene ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHolocene> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -860,7 +859,7 @@ Episodes 2018; 41: 213-223""" ;
 
 gssps:Guzhangian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseGuzhangian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseGuzhangian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -877,7 +876,7 @@ gssps:Guzhangian
 
 gssps:Gzhelian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseGzhelian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseGzhelian> ;
     gssp:correlationEvents "Conodont FAD Idiognathodus simulator (s.str.). Close to FAD of ammonoid Shumardites." ;
     schema:description "candidates are in southern Urals or Nashui (south China)." ;
     schema:status "Proposed" ;
@@ -885,7 +884,7 @@ gssps:Gzhelian
 
 gssps:Hadean
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseHadean ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHadean> ;
     gssp:boundaryLevel "Formation of planet Earth and sister Solar planets (protoplanetary disk), by proxy of ages obtained from primitive meteorites" ;
     gssp:correlationEvents "U-corrected Pb–Pb age for Calcium-Aluminium Inclusions (CAIs) in class CBa meteorite" ;
     schema:citation
@@ -901,7 +900,7 @@ Allende meteorite (1969, Chihuahua, Mexico) Gujba meteorite (1984, Bogga Dingar,
 
 gssps:Hauterivian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseHauterivian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHauterivian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -918,7 +917,7 @@ gssps:Hauterivian
 
 gssps:Hettangian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseJurassic ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseJurassic> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -935,7 +934,7 @@ gssps:Hettangian
 
 gssps:Hirnantian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseHirnantian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHirnantian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -952,7 +951,7 @@ gssps:Hirnantian
 
 gssps:Homerian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseHomerian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHomerian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -969,7 +968,7 @@ gssps:Homerian
 
 gssps:Induan
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMesozoic ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMesozoic> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -986,7 +985,7 @@ gssps:Induan
 
 gssps:Jiangshanian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseJiangshanian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseJiangshanian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1003,7 +1002,7 @@ gssps:Jiangshanian
 
 gssps:Kasimovian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLatePennsylvanian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLatePennsylvanian> ;
     gssp:correlationEvents "Fusulinid FAD Protriticites, which is near ammonoid FAD Eothalossoceras. Alternative (higher) base is fusulinid FAD Montiparus montiparus, which is near Conodont FAD Idiognathodus sagittalis. Stage given here is the higher version; the lower one is about 1 myr older." ;
     schema:description "candidates are in southern Urals, southwest USA and Nashui (south China)." ;
     schema:status "Proposed" ;
@@ -1011,7 +1010,7 @@ gssps:Kasimovian
 
 gssps:Katian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseKatian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseKatian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1028,7 +1027,7 @@ gssps:Katian
 
 gssps:Kimmeridgian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseKimmeridgian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseKimmeridgian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1044,14 +1043,14 @@ gssps:Kimmeridgian
 
 gssps:Kungurian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseKungurian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseKungurian> ;
     schema:description "Candidate is Rockland, Nevada" ;
     schema:status "Proposed" ;
 .
 
 gssps:Ladinian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLadinian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLadinian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1068,7 +1067,7 @@ Budurovignathus praehungaricus is in the uppermost Anisian.""" ;
 
 gssps:Langhian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLanghian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLanghian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1085,7 +1084,7 @@ gssps:Langhian
 
 gssps:Lochkovian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseDevonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseDevonian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1111,7 +1110,7 @@ Facies 26, 35–54""" ;
 
 gssps:Ludfordian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLudfordian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLudfordian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1128,7 +1127,7 @@ gssps:Ludfordian
 
 gssps:Lutetian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLutetian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLutetian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1145,7 +1144,7 @@ gssps:Lutetian
 
 gssps:Maastrichtian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMaastrichtian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMaastrichtian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1162,7 +1161,7 @@ gssps:Maastrichtian
 
 gssps:Meghalayan
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMeghalayan ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMeghalayan> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1180,7 +1179,7 @@ gssps:Meghalayan
 
 gssps:Mesoarchean
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseMesoarchean ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMesoarchean> ;
     schema:citation "Informally in Episodes 1992; 15" ;
     schema:description "Defined chronometrically" ;
     schema:status "Proposed" ;
@@ -1188,7 +1187,7 @@ gssps:Mesoarchean
 
 gssps:Messinian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMessinian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMessinian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1205,7 +1204,7 @@ gssps:Messinian
 
 gssps:Moscovian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMiddlePennsylvanian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddlePennsylvanian> ;
     gssp:correlationEvents "Either Conodont FAD Idiognathoides postsulcatus or Declinognathodus donetzianus." ;
     schema:description "candidates are in southern Urals or Nashui (south China)." ;
     schema:status "Proposed" ;
@@ -1213,7 +1212,7 @@ gssps:Moscovian
 
 gssps:Neoarchean
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseNeoarchean ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseNeoarchean> ;
     schema:citation "Informally in Episodes 1992; 15" ;
     schema:description "Defined chronometrically" ;
     schema:status "Proposed" ;
@@ -1221,7 +1220,7 @@ gssps:Neoarchean
 
 gssps:Norian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseNorian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseNorian> ;
     gssp:correlationEvents "Base of Stikinoceras kerri ammonoid zone and near FAD of Metapolygnathus echinatus within the M. communisti conodont zones" ;
     schema:description "Candidates are Black Bear Ridge in British Columbia (Canada) and Pizzo Mondello, Sicily (Italy)" ;
     schema:status "Proposed" ;
@@ -1229,7 +1228,7 @@ gssps:Norian
 
 gssps:Northgrippian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseNorthgrippian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseNorthgrippian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1247,7 +1246,7 @@ gssps:Northgrippian
 
 gssps:Olenekian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseOlenekian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseOlenekian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1262,7 +1261,7 @@ gssps:Olenekian
 
 gssps:Orosirian
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseOrosirian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseOrosirian> ;
     schema:citation "Episodes 1991; 14" ;
     schema:description "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
@@ -1270,7 +1269,7 @@ gssps:Orosirian
 
 gssps:Oxfordian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLateJurassic ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateJurassic> ;
     gssp:correlationEvents "Ammonite Cardioceras redcliffense Horizon at base of the Cardioceras scarburgense Subzone (Quenstedtoceras mariae Zone)" ;
     schema:description "candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)" ;
     schema:status "Proposed" ;
@@ -1278,7 +1277,7 @@ gssps:Oxfordian
 
 gssps:Paibian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseFurongian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseFurongian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1295,7 +1294,7 @@ gssps:Paibian
 
 gssps:Paleoarchean
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BasePaleoarchean ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePaleoarchean> ;
     schema:citation "Informally in Episodes 1992; 15" ;
     schema:description "Defined chronometrically" ;
     schema:status "Proposed" ;
@@ -1303,7 +1302,7 @@ gssps:Paleoarchean
 
 gssps:Piacenzian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePiacenzian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePiacenzian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1320,7 +1319,7 @@ gssps:Piacenzian
 
 gssps:Pliensbachian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePliensbachian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePliensbachian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1337,7 +1336,7 @@ gssps:Pliensbachian
 
 gssps:Pragian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePragian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePragian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1354,7 +1353,7 @@ gssps:Pragian
 
 gssps:Priabonian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePriabonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePriabonian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1371,7 +1370,7 @@ gssps:Priabonian
 
 gssps:Pridoli
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePridoli ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePridoli> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1388,7 +1387,7 @@ gssps:Pridoli
 
 gssps:Rhaetian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseRhaetian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseRhaetian> ;
     gssp:correlationEvents "Near FAD of ammonite Cochloceras, conodonts Misikella spp. and Epigondolella mosheri, and radiolarian Proparvicingula moniliformis" ;
     schema:description "Key sections in Austria, British Columbia (Canada), and Turkey" ;
     schema:status "Proposed" ;
@@ -1396,7 +1395,7 @@ gssps:Rhaetian
 
 gssps:Rhuddanian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseSilurian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSilurian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1413,7 +1412,7 @@ gssps:Rhuddanian
 
 gssps:Rhyacian
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseRhyacian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseRhyacian> ;
     schema:citation "Episodes 1991; 14" ;
     schema:description "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
@@ -1421,7 +1420,7 @@ gssps:Rhyacian
 
 gssps:Roadian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseGuadalupian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseGuadalupian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1439,7 +1438,7 @@ gssps:Roadian
 
 gssps:Rupelian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseOligocene ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseOligocene> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1456,7 +1455,7 @@ gssps:Rupelian
 
 gssps:Sakmarian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseSakmarian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSakmarian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1473,7 +1472,7 @@ gssps:Sakmarian
 
 gssps:Sandbian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLateOrdovician ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateOrdovician> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1490,7 +1489,7 @@ gssps:Sandbian
 
 gssps:Santonian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseSantonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSantonian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1507,7 +1506,7 @@ gssps:Santonian
 
 gssps:Selandian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseSelandian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSelandian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1524,7 +1523,7 @@ gssps:Selandian
 
 gssps:Serpukhovian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLateMississippian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateMississippian> ;
     gssp:correlationEvents "Conodont FAD Lochriea ziegleri" ;
     schema:description "candidates are Verkhnyaya Kardailovka (Urals) or Nashui (China)" ;
     schema:status "Proposed" ;
@@ -1532,7 +1531,7 @@ gssps:Serpukhovian
 
 gssps:Serravallian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseSerravallian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSerravallian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1549,7 +1548,7 @@ gssps:Serravallian
 
 gssps:Sheinwoodian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseWenlock ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseWenlock> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1566,7 +1565,7 @@ gssps:Sheinwoodian
 
 gssps:Siderian
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseSiderian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSiderian> ;
     schema:citation "Episodes 1991; 14" ;
     schema:description "Defined chronometrically, but it will be replaced by GSSP" ;
     schema:status "Ratified 1990" ;
@@ -1574,7 +1573,7 @@ gssps:Siderian
 
 gssps:Sinemurian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseSinemurian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSinemurian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1591,7 +1590,7 @@ gssps:Sinemurian
 
 gssps:Statherian
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseStatherian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseStatherian> ;
     schema:citation "Episodes 1991; 14" ;
     schema:description "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
@@ -1599,7 +1598,7 @@ gssps:Statherian
 
 gssps:Stenian
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseStenian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseStenian> ;
     schema:citation "Episodes 1991; 14" ;
     schema:description "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
@@ -1607,7 +1606,7 @@ gssps:Stenian
 
 gssps:Telychian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseTelychian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTelychian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1628,7 +1627,7 @@ to replace Cefn-Cerig Rd, Wales, UK former GSSP""" ;
 
 gssps:Thanetian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseThanetian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseThanetian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1645,7 +1644,7 @@ gssps:Thanetian
 
 gssps:Tithonian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseTithonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTithonian> ;
     gssp:correlationEvents "Near base of Hybonoticeras hybonotum ammonite zone and lowest occurrence of Gravesia genus, and the base of magnetic polarity Chron M22An" ;
     schema:description "candidates are Mt. Crussol or Canjuers (SE France) and Fornazzo (Sicily, S. Italy)" ;
     schema:status "Proposed" ;
@@ -1653,7 +1652,7 @@ gssps:Tithonian
 
 gssps:Toarcian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseToarcian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseToarcian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1670,7 +1669,7 @@ gssps:Toarcian
 
 gssps:Tonian
     a gssp:GSSA ;
-    gts:stratotypeOf gts2020:BaseTonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTonian> ;
     schema:citation "Episodes 1991; 14" ;
     schema:description "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
@@ -1678,7 +1677,7 @@ gssps:Tonian
 
 gssps:Tortonian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseTortonian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTortonian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1695,7 +1694,7 @@ gssps:Tortonian
 
 gssps:Tournaisian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseCarboniferous ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCarboniferous> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1712,7 +1711,7 @@ gssps:Tournaisian
 
 gssps:Tremadocian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseOrdovician ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseOrdovician> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1729,7 +1728,7 @@ gssps:Tremadocian
 
 gssps:Turonian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseTuronian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTuronian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1746,7 +1745,7 @@ gssps:Turonian
 
 gssps:UpperPleistocene
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLatePleistocene ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLatePleistocene> ;
     gssp:correlationEvents "Provisionally climatic – Marine Isotope Substage 5e" ;
     schema:citation "Head, M.J., Pillans, B., and Zalasiewicz, J.A., [submitted 2020]" ;
     schema:description "GSSP not presently defined" ;
@@ -1755,7 +1754,7 @@ gssps:UpperPleistocene
 
 gssps:Valanginian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseValanginian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseValanginian> ;
     gssp:correlationEvents "Calpionellid FAD Calpionellites darderi (base of Calpionellid Zone E); followed by ammonite FAD \"Thurmanniceras\" pertransiens" ;
     schema:description "candidates are near Montbrunles- Bains (Drôme province, SE France) and Cañada Luenga (Betic Cordillera, S. Spain)" ;
     schema:status "Proposed" ;
@@ -1763,7 +1762,7 @@ gssps:Valanginian
 
 gssps:Visean
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseMiddleMississippian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleMississippian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1780,7 +1779,7 @@ gssps:Visean
 
 gssps:Wordian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseWordian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseWordian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1798,7 +1797,7 @@ gssps:Wordian
 
 gssps:Wuchiapingian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseLopingian ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLopingian> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1816,7 +1815,7 @@ gssps:Wuchiapingian
 
 gssps:Ypresian
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BaseEocene ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEocene> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1834,7 +1833,7 @@ gssps:Ypresian
 
 gssps:Zanclean
     a gssp:GSSP ;
-    gts:stratotypeOf gts2020:BasePliocene ;
+    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePliocene> ;
     geo:hasGeometry
         [
             a geo:Geometry ;
