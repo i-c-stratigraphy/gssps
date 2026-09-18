@@ -53,8 +53,6 @@ $( document ).ready(function() {
     <script>
         L.mapbox.accessToken = 'pk.configure-mapbox-token';
 
-        var url = 'gssps.geojson';
-
         var map = L.mapbox.map('map')
             .setView([40, 0], 1)
             .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'));     
@@ -62,26 +60,9 @@ $( document ).ready(function() {
         // map.addControl(L.mapbox.FullscreenControl());   
         L.control.fullscreen().addTo(map);
         
-        function load() {
-            // Fetch just the contents of a .geojson file from GitHub by passing
-            // `application/vnd.github.v3.raw` to the Accept header
-            // As with any other AJAX request, this technique is subject to the Same Origin Policy:
-            // http://en.wikipedia.org/wiki/Same_origin_policy the server delivering the request should support CORS.
-            $.ajax({
-                headers: {'Accept': 'application/vnd.github.v3.raw'},
-                xhrFields: {
-                withCredentials: false
-                },
-                dataType: 'json',
-                url: url,
-                success: function(geojson) {
-                    // On success add fetched data to the map.
-                    L.mapbox.featureLayer(geojson).addTo(map);
-                }
-            });
-        }    
-
-        $(load);
+        // Embedded by make_html_table.write_jekyll_html from gssps.geojson.
+        var geojson = JSON.parse(document.getElementById('gssps-map-data').textContent);
+        L.mapbox.featureLayer(geojson).addTo(map);
     </script>
     <p style="font-size:smaller; font-style:italic;">Click on the [ ] icon for full-screen map</p>
     <!--

@@ -5,6 +5,8 @@ from dominate import document
 from dominate.tags import a, br, meta, table, tbody, td, th, thead, title, tr, h1, h2, style
 from dominate.util import text
 import re
+import json
+from html import escape
 
 GSSP = Namespace("https://data.stratigraphy.org/def/gssp/")
 GTS = Namespace("http://resource.geosciml.org/ontology/timescale/gts#")
@@ -279,8 +281,7 @@ def write_table(g: Graph, rows: dict, output_path: Path, page_title: str) -> Pat
                                     **{"data-interval": str(node)}):
                                 th(f"{interval_label(g, node)} {rank}", colspan=len(columns), scope="rowgroup")
                         previous = hierarchy
-                        with tr(style=f'background-color:{row["colour"]}' if row["colour"] else "",
-                                **{"data-record": subject}):
+                        with tr(**{"data-record": subject}):
                             for column in columns:
                                 value = row[column]
                                 if column == "cit":
@@ -293,12 +294,95 @@ def write_table(g: Graph, rows: dict, output_path: Path, page_title: str) -> Pat
                                                 a(names[0] if names else str(item), href=str(item))
                                             else:
                                                 text(str(item))
+                                elif column == "name" and row["colour"]:
+                                    td(value, style=f'background-color:{row["colour"]}')
                                 else:
                                     td(value)
     output_path.write_text(doc.render() + "\n", encoding="utf-8")
     return output_path
 
 
+def write_jekyll_html(
+    gssps_html: Path,
+    others_html: Path,
+    gssps_geojson: Path,
+    template_path: Path,
+    output_path: Path | None = None,
+) -> Path:
+    """Combine the standalone tables and map data with the preserved Jekyll frame.
+
+    The template is maintained separately and never extracted from the generated
+    layout on subsequent runs. Jekyll's menu include and content remain intact.
+    """
+    template = Path(template_path).read_text(encoding="utf-8")
+    for marker in ("<!-- GENERATED_TABLES -->", "<!-- GENERATED_GEOJSON -->"):
+        if template.count(marker) != 1:
+            raise ValueError(f"Template must contain exactly one {marker}")
+
+    geojson = json.loads(Path(gssps_geojson).read_text(encoding="utf-8"))
+    if geojson.get("type") != "FeatureCollection" or not isinstance(geojson.get("features"), list):
+        raise ValueError("Map input must be a GeoJSON FeatureCollection")
+    # Prevent a property value from closing the JSON script element.
+    map_data = (json.dumps(geojson, ensure_ascii=True)
+                .replace("<", "\\u003c")
+                .replace("{% endraw %}", "\\u007b% endraw %}"))
+    labels = {
+        "name": "Stage / Interval", "mya": "Age (Ma)",
+        "loc": "GSSP Location", "wkt": "Longitude, Latitude",
+        "bl": "Boundary Level", "ce": "Correlation Events",
+        "s": "Status", "cit": "Reference",
+    }
+    fragments = []
+    used_ids = set()
+    for path, heading in ((gssps_html, "GSSP Tables"), (others_html, "GSSAs & SABS")):
+        source = Path(path).read_text(encoding="utf-8")
+        body = re.search(r"<body\b[^>]*>(.*?)</body>", source, re.DOTALL)
+        if body is None:
+            raise ValueError(f"No HTML body in {path}")
+        fragment = re.sub(r"<h1>.*?</h1>", "", body.group(1), count=1, flags=re.DOTALL)
+
+        def period_heading(match):
+            label = match.group(1)
+            anchor = re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-")
+            if anchor in used_ids:
+                anchor = "others-" + anchor
+            used_ids.add(anchor)
+            return f'<h4 id="{escape(anchor, quote=True)}">{label}</h4>'
+
+        fragment = re.sub(r"<h2>(.*?)</h2>", period_heading, fragment, flags=re.DOTALL)
+        fragment = fragment.replace("<table ", '<table class="ages" ')
+        fragment = re.sub(r"(<thead>\s*)<tr>", r'\1<tr class="headerRow">', fragment)
+        for key, label in labels.items():
+            fragment = fragment.replace(f"<th>{key}</th>", f"<th>{label}</th>")
+        # Preserve the existing sidebar's Proterozoic target even though that
+        # Eon is now split into Period tables.
+        if "proterozoic" not in used_ids:
+            fragment, count = re.subn(
+                r'(<tr\b[^>]*data-interval="https://data.stratigraphy.org/data/gts/Proterozoic")',
+                r'\1 id="proterozoic"', fragment, count=1)
+            if count:
+                used_ids.add("proterozoic")
+        fragments.append(f'<h3 style="text-align: center;">{escape(heading)}</h3>\n{fragment}')
+
+    # These payloads are data, not Liquid templates. Keep any literal Liquid
+    # syntax in citations or GeoJSON properties from being evaluated by Jekyll.
+    def raw(value):
+        return "{% raw %}" + value.replace("{% endraw %}", "&#123;% endraw %}") + "{% endraw %}"
+
+    result = template.replace("<!-- GENERATED_TABLES -->", raw("\n".join(fragments)))
+    result = result.replace("<!-- GENERATED_GEOJSON -->", raw(map_data))
+    output_path = output_path or Path(__file__).parents[2] / "_layouts/table.html"
+    Path(output_path).write_text(result, encoding="utf-8")
+    return Path(output_path)
+
+
 if __name__ == "__main__":
     g = make_graph()
     make_html(g)
+    source_dir = Path(__file__).resolve().parent
+    write_jekyll_html(
+        source_dir / "gssps.html",
+        source_dir / "others.html",
+        source_dir.parents[1] / "gssps.geojson",
+        source_dir / "table_page_template.html",
+    )
