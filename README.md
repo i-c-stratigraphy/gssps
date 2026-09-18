@@ -11,9 +11,25 @@ jekyll new . --force
 ```
 
 #### Serve locally
+Create `.env` in the repository root (see `.env.example`) and set
+`MAPBOX_ACCESS_TOKEN` to your public Mapbox token, then run:
+
 ```
 bundle exec jekyll serve
 ```
+
+The Jekyll plugin reads `.env` automatically. An existing
+`MAPBOX_ACCESS_TOKEN` environment variable takes precedence. Restart Jekyll
+after changing the token. `.env` is ignored by Git and excluded from the site.
+The token is embedded in the browser's map code, so use a public Mapbox token.
+
+#### Deploy to GitHub Pages
+Set the repository Actions secret `MAPBOX_ACCESS_TOKEN` and select **GitHub
+Actions** under **Settings → Pages → Build and deployment → Source**.
+The workflow in `.github/workflows/pages.yml` builds and deploys on pushes to
+`master`, or can be started manually. It passes the secret to the same Jekyll
+plugin; GitHub builds never fall back to `.env`. A missing token fails the build
+with an explanatory message.
 
 _to fx dependencies:_
 ```

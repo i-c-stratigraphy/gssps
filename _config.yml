@@ -10,3 +10,7 @@ github_username:  nicholascar
 theme: minima
 plugins:
   - jekyll-feed
+
+exclude:
+  - .env
+  - .env.example
