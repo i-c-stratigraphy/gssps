@@ -1,10 +1,15 @@
-from rdflib import Graph, URIRef
-from rdflib.namespace import SDO
+from rdflib import Graph, URIRef, Namespace
+from rdflib.namespace import SDO, RDF, SKOS, TIME, GEO
 from pathlib import Path
 from dominate import document
 from dominate.tags import a, br, meta, table, tbody, td, th, thead, title, tr
 from dominate.util import text
 import re
+
+GSSP = Namespace("https://data.stratigraphy.org/def/gssp/")
+GTSD = Namespace("https://data.stratigraphy.org/data/gts/")
+DATASET_IRI = URIRef("https://data.stratigraphy.org/data/gssps")
+COLUMNS = ("name", "mya", "loc", "wkt", "bl", "ce", "s", "colour", "cit")
 
 def make_graph() -> Graph:
     print("Building graph")
@@ -49,7 +54,12 @@ def extract_lat_lon(wkt: str) -> tuple[float, float]:
     return latitude, longitude
 
 
-def make_html(g: Graph, output_path: Path | None = None) -> Path:
+def make_html(
+    g: Graph,
+    output_path: Path | None = None,
+    others_output_path: Path | None = None,
+) -> Path:
+    """Write the main table and a companion table of excluded cited records."""
     print("Making HTML")
     q = """
         PREFIX gtsd: <https://data.stratigraphy.org/data/gts/>
@@ -104,7 +114,7 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
         ORDER BY ?mya    
         """
 
-    columns = ("name", "mya", "loc", "wkt", "bl", "ce", "s", "colour", "cit")
+    columns = COLUMNS
 
     rows = {}
 
@@ -138,10 +148,55 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
         if rows.get(gssp):
             rows[gssp]["cit"].append(r["cit"])
 
+    output_path = output_path or Path(__file__).with_name("gssps.html")
+    others_output_path = others_output_path or output_path.with_name("others.html")
+    write_table(g, rows, output_path, "GSSPs")
+    write_table(g, other_rows(g, set(rows)), others_output_path, "GSSAs & SABS")
+    return output_path
+
+
+def other_rows(g: Graph, included: set[str]) -> dict:
+    """Keep cited GSSPs, GSSAs and SABS absent from the main query."""
+    rows = {}
+    for subject in sorted(g.objects(DATASET_IRI, SDO.hasPart), key=str):
+        citations = sorted(g.objects(subject, SDO.citation), key=str)
+        if str(subject) in included or not citations:
+            continue
+        if not any((subject, RDF.type, kind) in g for kind in (GSSP.GSSP, GSSP.GSSA, GSSP.SABS)):
+            continue
+
+        # Prefer the interval's own IRI: several boundaries begin multiple ranks,
+        # and some workbook boundary names differ from those in chart data.
+        local_name = str(subject).split("#", 1)[0].rsplit("/", 1)[-1]
+        interval = GTSD[local_name]
+        names = sorted(str(name) for name in g.objects(interval, SKOS.prefLabel) if name.language == "en")
+        name = names[0] if names else re.sub(r"(?<=[a-z])(?=[A-Z])", " ", local_name)
+        if (subject, RDF.type, GSSP.SABS) in g:
+            name += " SABS"
+        ages = [age for beginning in g.objects(interval, TIME.hasBeginning) for age in g.objects(beginning, GTSD.inMYA)]
+        geometry = g.value(subject, GEO.hasGeometry)
+        wkt = g.value(geometry, GEO.asWKT) if geometry is not None else None
+        rows[str(subject)] = {
+            "name": name,
+            "mya": str(min(ages, key=float)) if ages else "",
+            "loc": str(g.value(subject, SDO.location) or ""),
+            "wkt": str(wkt).strip().replace("POINT (", "").strip(")").replace(" ", ", ") if wkt is not None else "",
+            "bl": str(g.value(subject, GSSP.boundaryLevel) or ""),
+            "ce": str(g.value(subject, GSSP.correlationEvents) or ""),
+            "s": str(g.value(subject, SDO.status) or ""),
+            "colour": str(g.value(interval, SDO.color) or ""),
+            "cit": citations,
+        }
+    return dict(sorted(rows.items(), key=lambda item: (float(item[1]["mya"]) if item[1]["mya"] else float("inf"), item[1]["name"])))
+
+
+def write_table(g: Graph, rows: dict, output_path: Path, page_title: str) -> Path:
+    """Render both pages with the same columns and citation rules."""
+    columns = COLUMNS
     doc = document(title=None)
     with doc.head:
         meta(charset="utf-8")
-        title("GSSPs")
+        title(page_title)
     with doc:
         with table():
             with thead():
@@ -153,7 +208,7 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
                             th(column)
             with tbody():
                 for i, row in rows.items():
-                    with tr(style=f'background-color:{row["colour"]}'):
+                    with tr(**({"style": f'background-color:{row["colour"]}'} if row["colour"] else {})):
                         for column in columns:
                             value = row[column]
                             if column == "colour":
@@ -175,7 +230,6 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
                             else:
                                 td(value)
 
-    output_path = output_path or Path(__file__).with_name("gssps.html")
     output_path.write_text(doc.render() + "\n", encoding="utf-8")
     return output_path
 

@@ -42,6 +42,7 @@ ds:
         gssps:Changhsingian ,
         gssps:Chattian ,
         gssps:Chibanian ,
+        <https://data.stratigraphy.org/data/gssps/Chibanian#SABS> ,
         gssps:Coniacian ,
         gssps:Cryogenian ,
         gssps:Danian ,
@@ -132,16 +133,6 @@ ds:
     schema:name "ICS Global Boundary Stratotype Section and Points" ;
 .
 
-<https://doi.org/10.18814/epiiugs/2023/023022>
-    a schema:ScholarlyArticle ;
-    schema:datePublished "2024"^^xsd:gYear ;
-    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
-    schema:name "Episodes 2024; 47:121-146" ;
-    schema:pageEnd "146" ;
-    schema:pageStart "121" ;
-.
-
 gssps:Aalenian
     a gssp:GSSP ;
     gts:representsBoundary gtsd:BaseMiddleJurassic ;
@@ -202,7 +193,7 @@ gssps:Anisian
         ] ;
     gssp:boundaryLevel "In Section B, the GSSP level will be either the FAD of conodont Chiosella timorensis at the base of Bed GR7 at ca. 7 m; OR the base of magnetozone MT1n at the 5.7 m level." ;
     gssp:correlationEvents "Conodont FAD Chiosella timorensis or Magnetic - base of magnetic polarity MT1n" ;
-    schema:citation "Albertiana 36, 2007." ;
+    schema:citation "Krystyn, L., Richoz, S., & Bhargava, O. N. (2007). The Induan-Olenekian Boundary (IOB) in Mud–an update of the candidate GSSP section M04. Albertiana, 36, 33-45." ;
     schema:location "Candidate section at Desli Caira (Dobrogea, Romania); significant sections in Guizhou Province (China) and South Primorye (Russia)" ;
     schema:status "Proposed" ;
 .
@@ -516,11 +507,23 @@ gssps:Chibanian
         ] ;
     gssp:boundaryLevel "lower boundary of the Byk-E tephra bed" ;
     gssp:correlationEvents "Magnetic - GSSP is 1.1 m below the directional midpoint of the Matuyama/Brunhes paleomagnetic reversal and occurs immediately below the top of Marine Isotope Substage (MIS) 19c." ;
-    schema:citation
-        <https://doi.org/10.18814/epiiugs/2020/020080> ,
-        <https://stratigraphy.org/gssps/files/chibanian.pdf> ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2020/020080> ;
     schema:location "Chiba section, Japan" ;
     schema:status "Ratified 2020" ;
+.
+
+<https://data.stratigraphy.org/data/gssps/Chibanian#SABS>
+    a gssp:SABS ;
+    gts:representsBoundary gtsd:BaseChibanian ;
+    geo:hasGeometry
+        [
+            a geo:Geometry ;
+            geo:asWKT "POINT (16.5518 40.291)"^^geo:wktLiteral ;
+        ] ;
+    gssp:correlationEvents "SABS holds high-resolution C and O stratigraphy and a sapropel bed through Termination IX and MIS 19c; peaking 10Be/9Be ratio at the Matuyama/Brunhes boundary interval; regional tephra beds." ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2023/023022> ;
+    schema:location "Ideale Section, Montalbano Jonico succession, Basilicata, S Italy " ;
+    schema:status "Ratified 2023" ;
 .
 
 gssps:Coniacian
@@ -1092,9 +1095,7 @@ gssps:Meghalayan
         ] ;
     gssp:boundaryLevel "depth 7.45 mm in the speleothem KM-A" ;
     gssp:correlationEvents "Climatic - 4.2 ka event" ;
-    schema:citation
-        <https://doi.org/10.18814/epiiugs/2018/018016> ,
-        <https://stratigraphy.org/gssps/files/meghalayan.pdf> ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2018/018016> ;
     schema:location "Mawmluh Cave, Meghalaya, India" ;
     schema:status "Ratified 2018" ;
 .
@@ -1156,9 +1157,7 @@ gssps:Northgrippian
         ] ;
     gssp:boundaryLevel "1228.67 m in the NGRIP1 ice core" ;
     gssp:correlationEvents "Climatic – 8.2 ka event" ;
-    schema:citation
-        <https://doi.org/10.18814/epiiugs/2018/018016> ,
-        <https://stratigraphy.org/gssps/files/meghalayan.pdf> ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2018/018016> ;
     schema:location "North Greenland Ice Core Project, core NGRIP1, central Greenland ice sheet" ;
     schema:status "Ratified 2018" ;
 .
@@ -1173,7 +1172,7 @@ gssps:Olenekian
         ] ;
     gssp:boundaryLevel "base of Bed 13A-2, about 4.8m up in Mikin Formation., Section M04 (~4000 m elevation" ;
     gssp:correlationEvents "Conodont FAD Neospathodus waageni, just above base of Rohillites rohilla ammonite zone, and below lowest occurrence of Flemingites and Euflemingites ammonite genera. Within a prominent positive Carbon-13 peak, and just above widely recognizable sequence boundary." ;
-    schema:citation "Albertiana 36, 2007" ;
+    schema:citation "Krystyn, L., Richoz, S., & Bhargava, O. N. (2007). The Induan-Olenekian Boundary (IOB) in Mud–an update of the candidate GSSP section M04. Albertiana, 36, 33-45." ;
     schema:location "Candidate GSSP Mud (Muth) village, Spiti valley, northwest India" ;
     schema:status "Proposed" ;
 .
@@ -1511,7 +1510,7 @@ gssps:Telychian
     gssp:correlationEvents "Graptolite FADs of Spirograptus guerichi, Monograptus s.s. and Paradiversograptus runcinatus." ;
     schema:citation
         <https://doi.org/10.18814/epiiugs/1985/v8i2/005> ,
-        "Cefn-Cerig Rd GSSP:Geol. Series, Nat. Mus. Wales 1989; 9: 36-50" ,
+        "Cefn-Cerig Rd GSSP: Geol. Series, Nat. Mus. Wales 1989; 9: 36-50" ,
         "El Pintado 1 GSSP: Loydell et al., Episodes forthcoming" ;
     schema:location "El Pintado 1 Section, Sierra Norte de Sevilla, Spain" ;
     schema:status """Ratified 2024
@@ -1822,7 +1821,7 @@ gssps:Zanclean
     schema:datePublished "1985"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b20 ;
     schema:name "Episodes 1985; 8: 104-109" ;
     schema:pageEnd "109" ;
     schema:pageStart "104" ;
@@ -1833,7 +1832,7 @@ gssps:Zanclean
     schema:datePublished "1985"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b20 ;
     schema:name "Episodes 1985; 8:116-120" ;
     schema:pageEnd "120" ;
     schema:pageStart "116" ;
@@ -1847,7 +1846,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "10" ;
         ] ;
     schema:name "Episodes 1987; 10: 97-101" ;
@@ -1863,7 +1862,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "12" ;
         ] ;
     schema:name "Episodes 1989; 12: 109-113" ;
@@ -1879,7 +1878,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "14" ;
         ] ;
     schema:name "Episodes 1991; 14: 331-336" ;
@@ -1892,7 +1891,7 @@ gssps:Zanclean
     schema:datePublished "2001"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b24 ;
     schema:name "Episodes 2001; 16: 379-382" ;
     schema:pageEnd "382" ;
     schema:pageStart "379" ;
@@ -1903,7 +1902,7 @@ gssps:Zanclean
     schema:datePublished "1993"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b24 ;
     schema:name "Episodes 1993; 16: 433-441" ;
     schema:pageEnd "441" ;
     schema:pageStart "433" ;
@@ -1917,7 +1916,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "17" ;
         ] ;
     schema:name "Episodes 1994; 17: 95-100" ;
@@ -1933,7 +1932,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "18" ;
         ] ;
     schema:name "Episodes 1995; 18: 107-115" ;
@@ -1946,7 +1945,7 @@ gssps:Zanclean
     schema:datePublished "1997"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b27 ;
     schema:name "Episodes 1997; 20: 16-22" ;
     schema:pageEnd "22" ;
     schema:pageStart "16" ;
@@ -1957,7 +1956,7 @@ gssps:Zanclean
     schema:datePublished "1997"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b27 ;
     schema:name "Episodes 1997; 20: 23-28" ;
     schema:pageEnd "28" ;
     schema:pageStart "23" ;
@@ -1968,7 +1967,7 @@ gssps:Zanclean
     schema:datePublished "1997"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b27 ;
     schema:name "Episodes 1997; 20: 158-166" ;
     schema:pageEnd "166" ;
     schema:pageStart "158" ;
@@ -1979,7 +1978,7 @@ gssps:Zanclean
     schema:datePublished "1997"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b27 ;
     schema:name "Episodes 1997; 20: 235-240" ;
     schema:pageEnd "240" ;
     schema:pageStart "235" ;
@@ -1993,7 +1992,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationIssue ;
-            schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b29 ;
             schema:issueNumber "1" ;
         ] ;
     schema:name "Episodes 21/1, 11-18, 1998" ;
@@ -2006,7 +2005,7 @@ gssps:Zanclean
     schema:datePublished "1998"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b29 ;
     schema:name "Episodes 1998; 21: 82-87" ;
     schema:pageEnd "87" ;
     schema:pageStart "82" ;
@@ -2017,7 +2016,7 @@ gssps:Zanclean
     schema:datePublished "1998"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b29 ;
     schema:name "Episodes 1998; 21: 88-93" ;
     schema:pageEnd "93" ;
     schema:pageStart "88" ;
@@ -2031,7 +2030,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "22" ;
         ] ;
     schema:name "Episodes 1999; 22: 272-283" ;
@@ -2044,7 +2043,7 @@ gssps:Zanclean
     schema:datePublished "2000"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b31 ;
     schema:name "Episodes 2000; 23: 102-109" ;
     schema:pageEnd "109" ;
     schema:pageStart "102" ;
@@ -2055,7 +2054,7 @@ gssps:Zanclean
     schema:datePublished "2000"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b31 ;
     schema:name "Episodes 2000; 23: 172-178" ;
     schema:pageEnd "178" ;
     schema:pageStart "172" ;
@@ -2066,7 +2065,7 @@ gssps:Zanclean
     schema:datePublished "2000"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b31 ;
     schema:name "Episodes 2000; 23: 179-187" ;
     schema:pageEnd "187" ;
     schema:pageStart "179" ;
@@ -2077,7 +2076,7 @@ gssps:Zanclean
     schema:datePublished "2001"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b32 ;
     schema:name "Episodes 2001; 24: 19-28" ;
     schema:pageEnd "28" ;
     schema:pageStart "19" ;
@@ -2088,7 +2087,7 @@ gssps:Zanclean
     schema:datePublished "2001"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b32 ;
     schema:name "Episodes 2001; 24: 102-114" ;
     schema:pageEnd "114" ;
     schema:pageStart "102" ;
@@ -2099,7 +2098,7 @@ gssps:Zanclean
     schema:datePublished "2001"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b32 ;
     schema:name "Episodes 2001; 24: 166-175" ;
     schema:pageEnd "175" ;
     schema:pageStart "166" ;
@@ -2110,7 +2109,7 @@ gssps:Zanclean
     schema:datePublished "2001"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b32 ;
     schema:name "Episodes 2001; 24: 229-238" ;
     schema:pageEnd "238" ;
     schema:pageStart "229" ;
@@ -2124,7 +2123,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "25" ;
         ] ;
     schema:name "Episodes 2002; 25: 22-28" ;
@@ -2140,7 +2139,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "26" ;
         ] ;
     schema:name "Episodes 2003; 26: 105-115" ;
@@ -2153,7 +2152,7 @@ gssps:Zanclean
     schema:datePublished "2004"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b35 ;
     schema:name "Episodes 2004; 27: 21-32" ;
     schema:pageEnd "32" ;
     schema:pageStart "21" ;
@@ -2164,7 +2163,7 @@ gssps:Zanclean
     schema:datePublished "2004"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b35 ;
     schema:name "Episodes 2004; 27: 265-272" ;
     schema:pageEnd "272" ;
     schema:pageStart "265" ;
@@ -2175,7 +2174,7 @@ gssps:Zanclean
     schema:datePublished "2005"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b36 ;
     schema:name "Episodes 2005; 28: 6-17" ;
     schema:pageEnd "17" ;
     schema:pageStart "6" ;
@@ -2186,7 +2185,7 @@ gssps:Zanclean
     schema:datePublished "2005"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b36 ;
     schema:name "Episodes 2005; 28: 93-104" ;
     schema:pageEnd "104" ;
     schema:pageStart "93" ;
@@ -2197,7 +2196,7 @@ gssps:Zanclean
     schema:datePublished "2005"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b36 ;
     schema:name "Episodes 2005; 28: 105-117" ;
     schema:pageEnd "117" ;
     schema:pageStart "105" ;
@@ -2208,7 +2207,7 @@ gssps:Zanclean
     schema:datePublished "2005"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b36 ;
     schema:name "Episodes 2005; 28: 233-244" ;
     schema:pageEnd "244" ;
     schema:pageStart "233" ;
@@ -2219,7 +2218,7 @@ gssps:Zanclean
     schema:datePublished "2006"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b37 ;
     schema:name "Episodes 2006; 29: 93-106" ;
     schema:pageEnd "106" ;
     schema:pageStart "93" ;
@@ -2233,7 +2232,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationIssue ;
-            schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b37 ;
             schema:issueNumber "3" ;
         ] ;
     schema:name "Episodes 29/3 p. 175-182. 2006" ;
@@ -2246,7 +2245,7 @@ gssps:Zanclean
     schema:datePublished "2006"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b37 ;
     schema:name "Episodes 2006; 29: 183-196" ;
     schema:pageEnd "196" ;
     schema:pageStart "183" ;
@@ -2260,7 +2259,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationIssue ;
-            schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b37 ;
             schema:issueNumber "4" ;
         ] ;
     schema:name "Episodes 2006; 29/4:253-262" ;
@@ -2273,7 +2272,7 @@ gssps:Zanclean
     schema:datePublished "2006"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b37 ;
     schema:name "Episodes 2006; 29: 263-278" ;
     schema:pageEnd "278" ;
     schema:pageStart "263" ;
@@ -2284,7 +2283,7 @@ gssps:Zanclean
     schema:datePublished "2007"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b40 ;
     schema:name "Episodes 2007; 30: 85-95" ;
     schema:pageEnd "95" ;
     schema:pageStart "85" ;
@@ -2295,7 +2294,7 @@ gssps:Zanclean
     schema:datePublished "2007"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b40 ;
     schema:name "Episodes 2007; 30: 258-270" ;
     schema:pageEnd "270" ;
     schema:pageStart "258" ;
@@ -2306,7 +2305,7 @@ gssps:Zanclean
     schema:datePublished "2007"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b40 ;
     schema:name "Episodes 2007; 30: 271-286" ;
     schema:pageEnd "286" ;
     schema:pageStart "271" ;
@@ -2319,7 +2318,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "31" ;
         ] ;
     schema:name "Episodes 2008; 31: 264–267" ;
@@ -2332,7 +2331,7 @@ gssps:Zanclean
     schema:datePublished "2009"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b42 ;
     schema:name "Episodes 2009; 32: 41-55" ;
     schema:pageEnd "55" ;
     schema:pageStart "41" ;
@@ -2343,7 +2342,7 @@ gssps:Zanclean
     schema:datePublished "2009"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b42 ;
     schema:name "Episodes 2009; 32: 152-166" ;
     schema:pageEnd "166" ;
     schema:pageStart "152" ;
@@ -2354,7 +2353,7 @@ gssps:Zanclean
     schema:datePublished "2009"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b42 ;
     schema:name "Episodes 2009; 32: 222-248" ;
     schema:pageEnd "248" ;
     schema:pageStart "222" ;
@@ -2368,7 +2367,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "33" ;
         ] ;
     schema:name "Episodes 2010; 33: 152-158" ;
@@ -2381,7 +2380,7 @@ gssps:Zanclean
     schema:datePublished "2011"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b44 ;
     schema:name "Episodes 2011; 34: 86-108" ;
     schema:pageEnd "108" ;
     schema:pageStart "86" ;
@@ -2392,7 +2391,7 @@ gssps:Zanclean
     schema:datePublished "2012"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b45 ;
     schema:name "Episodes 2012; 35: 388-397" ;
     schema:pageEnd "397" ;
     schema:pageStart "388" ;
@@ -2403,7 +2402,7 @@ gssps:Zanclean
     schema:datePublished "2012"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b45 ;
     schema:name "Episodes 2012; 35: 414-430" ;
     schema:pageEnd "430" ;
     schema:pageStart "414" ;
@@ -2414,7 +2413,7 @@ gssps:Zanclean
     schema:datePublished "2012"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b45 ;
     schema:name "Episodes 2012; 35: 462-477" ;
     schema:pageEnd "477" ;
     schema:pageStart "462" ;
@@ -2428,7 +2427,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "36" ;
         ] ;
     schema:name "Episodes 2013; 36: 162-198" ;
@@ -2444,7 +2443,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "37" ;
         ] ;
     schema:name "Episodes 2014; 37: 2-13" ;
@@ -2456,7 +2455,7 @@ gssps:Zanclean
     a schema:ScholarlyArticle ;
     schema:datePublished "2019"^^xsd:gYear ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b48 ;
     schema:name "Episodes 2019; 39" ;
 .
 
@@ -2468,7 +2467,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationIssue ;
-            schema:isPartOf _:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b48 ;
             schema:issueNumber "3" ;
         ] ;
     schema:name "Episodes 2016; 39(3): 460-481" ;
@@ -2486,7 +2485,7 @@ gssps:Zanclean
             schema:isPartOf
                 [
                     a schema:PublicationVolume ;
-                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
                     schema:volumeNumber "40" ;
                 ] ;
             schema:issueNumber "3" ;
@@ -2502,7 +2501,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationIssue ;
-            schema:isPartOf _:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b53 ;
             schema:issueNumber "1" ;
         ] ;
     schema:name "Episodes, 41 (1): 17-32." ;
@@ -2520,7 +2519,7 @@ gssps:Zanclean
             schema:isPartOf
                 [
                     a schema:PublicationVolume ;
-                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
                     schema:volumeNumber "43" ;
                 ] ;
             schema:issueNumber "4" ;
@@ -2534,7 +2533,7 @@ gssps:Zanclean
     a schema:ScholarlyArticle ;
     schema:datePublished "2021"^^xsd:gYear ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b56 ;
     schema:name "Episodes 2021; 44(2): 129-150" ;
     schema:pageEnd "150" ;
     schema:pageStart "129" ;
@@ -2544,7 +2543,7 @@ gssps:Zanclean
     a schema:ScholarlyArticle ;
     schema:datePublished "2021"^^xsd:gYear ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b56 ;
     schema:name "Episodes 2021; 44(2): 151-173" ;
     schema:pageEnd "173" ;
     schema:pageStart "151" ;
@@ -2554,7 +2553,7 @@ gssps:Zanclean
     a schema:ScholarlyArticle ;
     schema:datePublished "2021"^^xsd:gYear ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b70 ;
     schema:name "Episodes 2021; 44:317-347" ;
     schema:pageEnd "347" ;
     schema:pageStart "317" ;
@@ -2571,7 +2570,7 @@ gssps:Zanclean
             schema:isPartOf
                 [
                     a schema:PublicationVolume ;
-                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
                     schema:volumeNumber "42" ;
                 ] ;
             schema:issueNumber "2" ;
@@ -2593,7 +2592,7 @@ gssps:Zanclean
             schema:isPartOf
                 [
                     a schema:PublicationVolume ;
-                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
                     schema:volumeNumber "45" ;
                 ] ;
             schema:issueNumber "3" ;
@@ -2610,7 +2609,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationIssue ;
-            schema:isPartOf _:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b62 ;
             schema:issueNumber "2" ;
         ] ;
     schema:name "Episodes 2023; 46(2): 281-307" ;
@@ -2623,7 +2622,7 @@ gssps:Zanclean
     schema:datePublished "2023-02-01"^^xsd:date ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:name
         "DOI: 10.18814/epiiugs/2022/022048" ,
         "Episodes 2023; 1st February" ;
@@ -2636,7 +2635,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationIssue ;
-            schema:isPartOf _:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b62 ;
             schema:issueNumber "4" ;
         ] ;
     schema:name "Episodes 46/4, p. 623-651. 2023" ;
@@ -2644,11 +2643,21 @@ gssps:Zanclean
     schema:pageStart "623" ;
 .
 
+<https://doi.org/10.18814/epiiugs/2023/023022>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b64 ;
+    schema:name "Episodes 2024; 47:121-146" ;
+    schema:pageEnd "146" ;
+    schema:pageStart "121" ;
+.
+
 <https://doi.org/10.18814/epiiugs/2023/023023>
     a schema:ScholarlyArticle ;
     schema:datePublished "2024"^^xsd:gYear ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b64 ;
     schema:name "Episodes 2024; 47:147-177" ;
     schema:pageEnd "177" ;
     schema:pageStart "147" ;
@@ -2658,7 +2667,7 @@ gssps:Zanclean
     a schema:ScholarlyArticle ;
     schema:datePublished "2024"^^xsd:gYear ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b64 ;
     schema:name "Episodes 2024; 47:311-333" ;
     schema:pageEnd "333" ;
     schema:pageStart "311" ;
@@ -2668,7 +2677,7 @@ gssps:Zanclean
     a schema:ScholarlyArticle ;
     schema:datePublished "2024"^^xsd:gYear ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b64 ;
     schema:name "Episodes 2024; 47:335-379" ;
     schema:pageEnd "379" ;
     schema:pageStart "335" ;
@@ -2681,7 +2690,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationIssue ;
-            schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b64 ;
             schema:issueNumber "2" ;
         ] ;
     schema:name "Episodes 2024; 47(2):381-389" ;
@@ -2694,7 +2703,7 @@ gssps:Zanclean
     schema:datePublished "2009"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b42 ;
     schema:name "Episodes 2009; 32: 96-113" ;
     schema:pageEnd "113" ;
     schema:pageStart "96" ;
@@ -2708,7 +2717,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b67 ;
             schema:volumeNumber "39" ;
         ] ;
     schema:name "Lethaia 39, p.13- 30, 2006" ;
@@ -2724,7 +2733,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b67 ;
             schema:volumeNumber "37" ;
         ] ;
     schema:name "Lethaia 37, p. 365-379, 2004" ;
@@ -2772,9 +2781,7 @@ gssps:Zanclean
                 ] ;
             schema:volumeNumber "500" ;
         ] ;
-    schema:name
-        "Head, M.J., 2019" ,
-        "Quaternary Sci. 2019; 500: 32-51," ;
+    schema:name "Quaternary Sci. 2019; 500: 32-51," ;
     schema:pageEnd "51" ;
     schema:pageStart "32" ;
 .
@@ -2784,7 +2791,7 @@ gssps:Zanclean
     schema:datePublished "2011"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b44 ;
     schema:name "Episodes 2011; 34: 220-243" ;
     schema:pageEnd "243" ;
     schema:pageStart "220" ;
@@ -2814,7 +2821,7 @@ gssps:Zanclean
     a schema:ScholarlyArticle ;
     schema:datePublished "2018"^^xsd:gYear ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b53 ;
     schema:name "Episodes 2018; 41: 213-223" ;
     schema:pageEnd "223" ;
     schema:pageStart "213" ;
@@ -2828,7 +2835,7 @@ gssps:Zanclean
     schema:isPartOf
         [
             a schema:PublicationVolume ;
-            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
             schema:volumeNumber "5" ;
         ] ;
     schema:name "Episodes 1982; 5: 21-23" ;
@@ -2841,132 +2848,132 @@ gssps:Zanclean
     schema:datePublished "1985"^^xsd:gYear ;
     schema:encodingFormat "application/pdf" ;
     schema:isBasedOn <https://stratigraphy.org/gssps/> ;
-    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
-    schema:name "Cefn-Cerig Rd GSSP: Episodes 1985; 8: 101-103" ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b20 ;
+    schema:name "Episodes 1985; 8: 101-103" ;
     schema:pageEnd "103" ;
     schema:pageStart "101" ;
 .
 
-_:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b24
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "16" ;
 .
 
-_:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b35
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
-    schema:volumeNumber "39" ;
-.
-
-_:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71
-    a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
-    schema:volumeNumber "34" ;
-.
-
-_:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99
-    a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "27" ;
 .
 
-_:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b44
+    a schema:PublicationVolume ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
+    schema:volumeNumber "34" ;
+.
+
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b48
+    a schema:PublicationVolume ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
+    schema:volumeNumber "39" ;
+.
+
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b53
+    a schema:PublicationVolume ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
+    schema:volumeNumber "41" ;
+.
+
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b56
     a schema:PublicationIssue ;
-    schema:isPartOf _:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b70 ;
     schema:issueNumber "2" ;
 .
 
-_:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b62
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
-    schema:volumeNumber "44" ;
-.
-
-_:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f
-    a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "46" ;
 .
 
-_:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b67
     a schema:Periodical ;
     schema:name "Lethaia" ;
 .
 
-_:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b70
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
-    schema:volumeNumber "41" ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
+    schema:volumeNumber "44" ;
 .
 
-_:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b20
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
-    schema:volumeNumber "23" ;
-.
-
-_:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee
-    a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
-    schema:volumeNumber "21" ;
-.
-
-_:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0
-    a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "8" ;
 .
 
-_:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b29
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
+    schema:volumeNumber "21" ;
+.
+
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b31
+    a schema:PublicationVolume ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
+    schema:volumeNumber "23" ;
+.
+
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b40
+    a schema:PublicationVolume ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "30" ;
 .
 
-_:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b45
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "35" ;
 .
 
-_:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b27
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
-    schema:volumeNumber "28" ;
-.
-
-_:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3
-    a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "20" ;
 .
 
-_:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b32
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "24" ;
 .
 
-_:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b36
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
+    schema:volumeNumber "28" ;
+.
+
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b42
+    a schema:PublicationVolume ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "32" ;
 .
 
-_:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b37
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "29" ;
 .
 
-_:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b64
     a schema:PublicationVolume ;
-    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:isPartOf _:ne19e3cfc162e4cc598e1e8de55cd3e98b19 ;
     schema:volumeNumber "47" ;
 .
 
-_:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504
+_:ne19e3cfc162e4cc598e1e8de55cd3e98b19
     a schema:Periodical ;
     schema:name "Episodes" ;
 .

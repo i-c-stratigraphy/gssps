@@ -95,7 +95,10 @@ def make_rdf() -> Graph:
     for index, row in df.iterrows():
         iri = URIRef(row["IRI"])
 
-        if row["Type"] in ["GSSP", "GSSA"]:  # do not process SABS for now
+        if row["Type"] in ["GSSP", "GSSA", "SABS"]:
+            if row["Type"] == "SABS":
+                # The workbook uses the associated GSSP's IRI for this separate site.
+                iri = URIRef(f"{iri}#SABS")
             g.add((iri, RDF.type, GSSP[row["Type"]]))
 
             g.add((iri, GTS.representsBoundary, URIRef(row["representsBoundary"])))

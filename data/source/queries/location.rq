@@ -1,7 +1,0 @@
-PREFIX gssp: <https://data.stratigraphy.org/def/gssp/>
-PREFIX gssps: <http://data.stratigraphy.org/def/gssps/>
-
-SELECT (COUNT(?gssp) AS ?count)
-WHERE {
-    ?gssp a gssps:GSSP ;
-}
