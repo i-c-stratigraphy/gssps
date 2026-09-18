@@ -1,0 +1,12 @@
+[project]
+name = "gssp-source"
+version = "0.1.0"
+description = "Processes GSSP source data file into RDF"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dominate>=2.9.1",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "rdflib>=7.2.1",
+]

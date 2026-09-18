@@ -1,0 +1,1258 @@
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Permophiles" ;
+                ] ;
+            schema:volumeNumber "34" ;
+        ] ;
+    schema:name "Permophiles 34 p. 3-11, 1999" ;
+    schema:pageEnd "11" ;
+    schema:pageStart "3" ;
+.
+
+<https://doi.org/10.1007/BF02539792>
+    a schema:ScholarlyArticle ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Facies" ;
+                ] ;
+            schema:volumeNumber "26" ;
+        ] ;
+    schema:name "Facies 26, 35–54" ;
+    schema:pageEnd "54" ;
+    schema:pageStart "35" ;
+.
+
+<https://doi.org/10.1016/j.earscirev.2020.103412>
+    a schema:ScholarlyArticle ;
+    schema:author
+        [
+            a schema:Person ;
+            schema:familyName "Shen" ;
+        ] ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:identifier
+        [
+            a schema:PropertyValue ;
+            schema:propertyID "article number" ;
+            schema:value "103412" ;
+        ] ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Earth-Sci Rev" ;
+                ] ;
+            schema:volumeNumber "211" ;
+        ] ;
+    schema:name "Shen et al. 2020- Earth-Sci Rev 211 103412" ;
+.
+
+<https://doi.org/10.1016/j.palaeo.2020.109668>
+    a schema:ScholarlyArticle ;
+    schema:author
+        [
+            a schema:Person ;
+            schema:familyName "Wu" ;
+        ] ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:identifier
+        [
+            a schema:PropertyValue ;
+            schema:propertyID "article number" ;
+            schema:value "109668" ;
+        ] ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Palaeogeography Palaeoclimatology Palaeoecology" ;
+                ] ;
+            schema:volumeNumber "548" ;
+        ] ;
+    schema:name "Wu et al. 2020 Palaeogeography Palaeoclimatology Palaeoecology 548 109668" ;
+.
+
+<https://doi.org/10.1016/j.quaint.2019.05.018>
+    a schema:ScholarlyArticle ;
+    schema:author
+        [
+            a schema:Person ;
+            schema:familyName "Head" ;
+            schema:givenName "M.J." ;
+        ] ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Quaternary Sci." ;
+                ] ;
+            schema:volumeNumber "500" ;
+        ] ;
+    schema:name "Quaternary Sci. 2019; 500: 32-51," ;
+    schema:pageEnd "51" ;
+    schema:pageStart "32" ;
+.
+
+<https://doi.org/10.1127/nos/25/1991/115>
+    a schema:ScholarlyArticle ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Newsletters on Stratigraphy" ;
+                ] ;
+            schema:volumeNumber "25" ;
+        ] ;
+    schema:name "Newsletters on Stratigraphy 25, 115–125" ;
+    schema:pageEnd "125" ;
+    schema:pageStart "115" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1982/v5i3/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "5" ;
+        ] ;
+    schema:name "Episodes 1982; 5: 21-23" ;
+    schema:pageEnd "23" ;
+    schema:pageStart "21" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1985/v8i2/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
+    schema:name "Episodes 1985; 8: 101-103" ;
+    schema:pageEnd "103" ;
+    schema:pageStart "101" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1985/v8i2/006>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
+    schema:name "Episodes 1985; 8: 104-109" ;
+    schema:pageEnd "109" ;
+    schema:pageStart "104" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1985/v8i2/009>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
+    schema:name "Episodes 1985; 8:116-120" ;
+    schema:pageEnd "120" ;
+    schema:pageStart "116" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1987/v10i2/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "10" ;
+        ] ;
+    schema:name "Episodes 1987; 10: 97-101" ;
+    schema:pageEnd "101" ;
+    schema:pageStart "97" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1989/v12i2/014>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "12" ;
+        ] ;
+    schema:name "Episodes 1989; 12: 109-113" ;
+    schema:pageEnd "113" ;
+    schema:pageStart "109" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1991/v14i4/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "14" ;
+        ] ;
+    schema:name "Episodes 1991; 14: 331-336" ;
+    schema:pageEnd "336" ;
+    schema:pageStart "331" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1993/v16i3/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed ;
+    schema:name "Episodes 2001; 16: 379-382" ;
+    schema:pageEnd "382" ;
+    schema:pageStart "379" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1993/v16i4/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed ;
+    schema:name "Episodes 1993; 16: 433-441" ;
+    schema:pageEnd "441" ;
+    schema:pageStart "433" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1994/v17i1.2/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "17" ;
+        ] ;
+    schema:name "Episodes 1994; 17: 95-100" ;
+    schema:pageEnd "100" ;
+    schema:pageStart "95" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1995/v18i3/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "18" ;
+        ] ;
+    schema:name "Episodes 1995; 18: 107-115" ;
+    schema:pageEnd "115" ;
+    schema:pageStart "107" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1997/v20i1/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:name "Episodes 1997; 20: 16-22" ;
+    schema:pageEnd "22" ;
+    schema:pageStart "16" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1997/v20i1/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:name "Episodes 1997; 20: 23-28" ;
+    schema:pageEnd "28" ;
+    schema:pageStart "23" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1997/v20i3/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:name "Episodes 1997; 20: 158-166" ;
+    schema:pageEnd "166" ;
+    schema:pageStart "158" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1997/v20i4/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:name "Episodes 1997; 20: 235-240" ;
+    schema:pageEnd "240" ;
+    schema:pageStart "235" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1998/v21i1/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+            schema:issueNumber "1" ;
+        ] ;
+    schema:name "Episodes 21/1, 11-18, 1998" ;
+    schema:pageEnd "18" ;
+    schema:pageStart "11" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1998/v21i2/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+    schema:name "Episodes 1998; 21: 82-87" ;
+    schema:pageEnd "87" ;
+    schema:pageStart "82" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1998/v21i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+    schema:name "Episodes 1998; 21: 88-93" ;
+    schema:pageEnd "93" ;
+    schema:pageStart "88" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1999/v22i4/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "22" ;
+        ] ;
+    schema:name "Episodes 1999; 22: 272-283" ;
+    schema:pageEnd "283" ;
+    schema:pageStart "272" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2000/v23i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:name "Episodes 2000; 23: 102-109" ;
+    schema:pageEnd "109" ;
+    schema:pageStart "102" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2000/v23i3/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:name "Episodes 2000; 23: 172-178" ;
+    schema:pageEnd "178" ;
+    schema:pageStart "172" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2000/v23i3/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:name "Episodes 2000; 23: 179-187" ;
+    schema:pageEnd "187" ;
+    schema:pageStart "179" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2001/v24i1/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:name "Episodes 2001; 24: 19-28" ;
+    schema:pageEnd "28" ;
+    schema:pageStart "19" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2001/v24i2/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:name "Episodes 2001; 24: 102-114" ;
+    schema:pageEnd "114" ;
+    schema:pageStart "102" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2001/v24i3/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:name "Episodes 2001; 24: 166-175" ;
+    schema:pageEnd "175" ;
+    schema:pageStart "166" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2001/v24i4/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:name "Episodes 2001; 24: 229-238" ;
+    schema:pageEnd "238" ;
+    schema:pageStart "229" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2002/v25i1/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "25" ;
+        ] ;
+    schema:name "Episodes 2002; 25: 22-28" ;
+    schema:pageEnd "28" ;
+    schema:pageStart "22" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2003/v26i2/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "26" ;
+        ] ;
+    schema:name "Episodes 2003; 26: 105-115" ;
+    schema:pageEnd "115" ;
+    schema:pageStart "105" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2004/v27i1/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99 ;
+    schema:name "Episodes 2004; 27: 21-32" ;
+    schema:pageEnd "32" ;
+    schema:pageStart "21" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2004/v27i4/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99 ;
+    schema:name "Episodes 2004; 27: 265-272" ;
+    schema:pageEnd "272" ;
+    schema:pageStart "265" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2005/v28i1/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:name "Episodes 2005; 28: 6-17" ;
+    schema:pageEnd "17" ;
+    schema:pageStart "6" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2005/v28i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:name "Episodes 2005; 28: 93-104" ;
+    schema:pageEnd "104" ;
+    schema:pageStart "93" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2005/v28i2/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:name "Episodes 2005; 28: 105-117" ;
+    schema:pageEnd "117" ;
+    schema:pageStart "105" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2005/v28i4/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:name "Episodes 2005; 28: 233-244" ;
+    schema:pageEnd "244" ;
+    schema:pageStart "233" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:name "Episodes 2006; 29: 93-106" ;
+    schema:pageEnd "106" ;
+    schema:pageStart "93" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i3/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+            schema:issueNumber "3" ;
+        ] ;
+    schema:name "Episodes 29/3 p. 175-182. 2006" ;
+    schema:pageEnd "182" ;
+    schema:pageStart "175" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i3/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:name "Episodes 2006; 29: 183-196" ;
+    schema:pageEnd "196" ;
+    schema:pageStart "183" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i4/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+            schema:issueNumber "4" ;
+        ] ;
+    schema:name "Episodes 2006; 29/4:253-262" ;
+    schema:pageEnd "262" ;
+    schema:pageStart "253" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i4/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:name "Episodes 2006; 29: 263-278" ;
+    schema:pageEnd "278" ;
+    schema:pageStart "263" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2007/v30i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:name "Episodes 2007; 30: 85-95" ;
+    schema:pageEnd "95" ;
+    schema:pageStart "85" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2007/v30i4/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:name "Episodes 2007; 30: 258-270" ;
+    schema:pageEnd "270" ;
+    schema:pageStart "258" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2007/v30i4/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:name "Episodes 2007; 30: 271-286" ;
+    schema:pageEnd "286" ;
+    schema:pageStart "271" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2008/v31i2/016>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "31" ;
+        ] ;
+    schema:name "Episodes 2008; 31: 264–267" ;
+    schema:pageEnd "267" ;
+    schema:pageStart "264" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2009/v32i1/006>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:name "Episodes 2009; 32: 41-55" ;
+    schema:pageEnd "55" ;
+    schema:pageStart "41" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2009/v32i3/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:name "Episodes 2009; 32: 152-166" ;
+    schema:pageEnd "166" ;
+    schema:pageStart "152" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2009/v32i4/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:name "Episodes 2009; 32: 222-248" ;
+    schema:pageEnd "248" ;
+    schema:pageStart "222" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2010/v33i3/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "33" ;
+        ] ;
+    schema:name "Episodes 2010; 33: 152-158" ;
+    schema:pageEnd "158" ;
+    schema:pageStart "152" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2011/v34i2/006>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71 ;
+    schema:name "Episodes 2011; 34: 86-108" ;
+    schema:pageEnd "108" ;
+    schema:pageStart "86" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2011/v34i4/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71 ;
+    schema:name "Episodes 2011; 34: 220-243" ;
+    schema:pageEnd "243" ;
+    schema:pageStart "220" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2012/v35i3/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:name "Episodes 2012; 35: 388-397" ;
+    schema:pageEnd "397" ;
+    schema:pageStart "388" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2012/v35i3/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:name "Episodes 2012; 35: 414-430" ;
+    schema:pageEnd "430" ;
+    schema:pageStart "414" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2012/v35i4/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:name "Episodes 2012; 35: 462-477" ;
+    schema:pageEnd "477" ;
+    schema:pageStart "462" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2013/v36i3/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "36" ;
+        ] ;
+    schema:name "Episodes 2013; 36: 162-198" ;
+    schema:pageEnd "198" ;
+    schema:pageStart "162" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2014/v37i1/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "37" ;
+        ] ;
+    schema:name "Episodes 2014; 37: 2-13" ;
+    schema:pageEnd "13" ;
+    schema:pageStart "2" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2016/v39i1/89231>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85 ;
+    schema:name "Episodes 2019; 39" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2016/v39i3/99741>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85 ;
+            schema:issueNumber "3" ;
+        ] ;
+    schema:name "Episodes 2016; 39(3): 460-481" ;
+    schema:pageEnd "481" ;
+    schema:pageStart "460" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2017/v40i3/017021>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf
+                [
+                    a schema:PublicationVolume ;
+                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:volumeNumber "40" ;
+                ] ;
+            schema:issueNumber "3" ;
+        ] ;
+    schema:name "Episodes 40/3, p. 177-188, 2017" ;
+    schema:pageEnd "188" ;
+    schema:pageStart "177" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2018/v41i1/018003>
+    a schema:ScholarlyArticle ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c ;
+            schema:issueNumber "1" ;
+        ] ;
+    schema:name "Episodes, 41 (1): 17-32." ;
+    schema:pageEnd "32" ;
+    schema:pageStart "17" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2020/020059>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf
+                [
+                    a schema:PublicationVolume ;
+                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:volumeNumber "43" ;
+                ] ;
+            schema:issueNumber "4" ;
+        ] ;
+    schema:name "Episodes 43/4, 961-979, 2020" ;
+    schema:pageEnd "979" ;
+    schema:pageStart "961" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2020/020072>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2021"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c ;
+    schema:name "Episodes 2021; 44(2): 129-150" ;
+    schema:pageEnd "150" ;
+    schema:pageStart "129" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2020/020074>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2021"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c ;
+    schema:name "Episodes 2021; 44(2): 151-173" ;
+    schema:pageEnd "173" ;
+    schema:pageStart "151" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2021/021022>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2022"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf
+                [
+                    a schema:PublicationVolume ;
+                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:volumeNumber "42" ;
+                ] ;
+            schema:issueNumber "2" ;
+        ] ;
+    schema:name
+        "DOI: 10.18814/epiiugs/2021/021022" ,
+        "Episodes 2022; 42(2): 181-220" ;
+    schema:pageEnd "220" ;
+    schema:pageStart "181" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2022/022004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2022"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf
+                [
+                    a schema:PublicationVolume ;
+                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:volumeNumber "45" ;
+                ] ;
+            schema:issueNumber "3" ;
+        ] ;
+    schema:name "Episodes 45/3 p. 309-331. 2022" ;
+    schema:pageEnd "331" ;
+    schema:pageStart "309" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2022/022046>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2023"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f ;
+            schema:issueNumber "2" ;
+        ] ;
+    schema:name "Episodes 2023; 46(2): 281-307" ;
+    schema:pageEnd "307" ;
+    schema:pageStart "281" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2022/022048>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2023-02-01"^^xsd:date ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:name
+        "DOI: 10.18814/epiiugs/2022/022048" ,
+        "Episodes 2023; 1st February" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/023015>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2023"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f ;
+            schema:issueNumber "4" ;
+        ] ;
+    schema:name "Episodes 46/4, p. 623-651. 2023" ;
+    schema:pageEnd "651" ;
+    schema:pageStart "623" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/023022>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:name "Episodes 2024; 47:121-146" ;
+    schema:pageEnd "146" ;
+    schema:pageStart "121" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/023023>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:name "Episodes 2024; 47:147-177" ;
+    schema:pageEnd "177" ;
+    schema:pageStart "147" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/023024>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:name "Episodes 2024; 47:311-333" ;
+    schema:pageEnd "333" ;
+    schema:pageStart "311" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/02330>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:name "Episodes 2024; 47:335-379" ;
+    schema:pageEnd "379" ;
+    schema:pageStart "335" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2024/024002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+            schema:issueNumber "2" ;
+        ] ;
+    schema:name "Episodes 2024; 47(2):381-389" ;
+    schema:pageEnd "389" ;
+    schema:pageStart "381" ;
+.
+
+<https://stratigraphy.org/gssps/files/dapingian2.pdf>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:name "Episodes 2009; 32: 96-113" ;
+    schema:pageEnd "113" ;
+    schema:pageStart "96" ;
+.
+
+<https://stratigraphy.org/gssps/files/ediacaran.pdf>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37 ;
+            schema:volumeNumber "39" ;
+        ] ;
+    schema:name "Lethaia 39, p.13- 30, 2006" ;
+    schema:pageEnd "30" ;
+    schema:pageStart "13" ;
+.
+
+<https://stratigraphy.org/gssps/files/paibian.pdf>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37 ;
+            schema:volumeNumber "37" ;
+        ] ;
+    schema:name "Lethaia 37, p. 365-379, 2004" ;
+    schema:pageEnd "379" ;
+    schema:pageStart "365" ;
+.
+
+<https://www.elsevier.com/books/geologic-time-scale-2020/gradstein/978-0-12-8243619>
+    a schema:Book ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:name "The Geologic Time Scale 2020" ;
+.
+
+<https://www.schweizerbart.de/publications/detail/isbn/9783510560035>
+    a schema:CreativeWork ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:CreativeWorkSeries ;
+            schema:name "IUGS Series A" ;
+        ] ;
+    schema:name "IUGS Series A, 5, p. 96-109, 1977" ;
+    schema:pageEnd "109" ;
+    schema:pageStart "96" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2018/018016>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c ;
+    schema:name "Episodes 2018; 41: 213-223" ;
+    schema:pageEnd "223" ;
+    schema:pageStart "213" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2020/020080>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2021"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea ;
+    schema:name "Episodes 2021; 44:317-347" ;
+    schema:pageEnd "347" ;
+    schema:pageStart "317" ;
+.
+
+
+
+_:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "16" ;
+.
+
+_:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "39" ;
+.
+
+_:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "34" ;
+.
+
+_:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "27" ;
+.
+
+_:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c
+    a schema:PublicationIssue ;
+    schema:isPartOf _:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea ;
+    schema:issueNumber "2" ;
+.
+
+_:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "44" ;
+.
+
+_:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "46" ;
+.
+
+_:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37
+    a schema:Periodical ;
+    schema:name "Lethaia" ;
+.
+
+_:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "41" ;
+.
+
+_:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "23" ;
+.
+
+_:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "21" ;
+.
+
+_:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "8" ;
+.
+
+_:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "30" ;
+.
+
+_:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "35" ;
+.
+
+_:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "28" ;
+.
+
+_:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "20" ;
+.
+
+_:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "24" ;
+.
+
+_:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "32" ;
+.
+
+_:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "29" ;
+.
+
+_:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "47" ;
+.
+
+_:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504
+    a schema:Periodical ;
+    schema:name "Episodes" ;
+.

@@ -9,8 +9,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ds:
     a schema:Dataset ;
-    schema:dateCreated "2026-07-18"^^xsd:date ;
-    schema:dateModified "2026-07-18"^^xsd:date ;
+    schema:dateCreated "2026-09-18"^^xsd:date ;
+    schema:dateModified "2026-09-18"^^xsd:date ;
     schema:hasPart
         gssps:Aalenian ,
         gssps:Aeronian ,
@@ -129,7 +129,17 @@ ds:
         gssps:Wuchiapingian ,
         gssps:Ypresian ,
         gssps:Zanclean ;
-    schema:name "ICS Global Boundary Stratotype Section and Points Dataset" ;
+    schema:name "ICS Global Boundary Stratotype Section and Points" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/023022>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:name "Episodes 2024; 47:121-146" ;
+    schema:pageEnd "146" ;
+    schema:pageStart "121" ;
 .
 
 gssps:Aalenian
@@ -142,9 +152,8 @@ gssps:Aalenian
         ] ;
     gssp:boundaryLevel "base of Bed FZ 107" ;
     gssp:correlationEvents "Ammonite FAD Leioceras opalinum and Leioceras lineatum" ;
-    schema:citation "Episodes 2001; 24: 166-175" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2001/v24i3/003> ;
     schema:location "Fuentelsaz, Spain" ;
-    schema:name "Aalenian GSSP" ;
     schema:status "Ratified 2000" ;
 .
 
@@ -159,12 +168,10 @@ gssps:Aeronian
     gssp:boundaryLevel "within Želkovice Formation, 1.38 m above base" ;
     gssp:correlationEvents "Graptolite FAD Demirastrites Triangulates" ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ,
-        """Hlásná Třebaň GSSP: Štorch et al., Episodes forthcoming
-
-Trefawr Track GSSP: Episodes 1985; 8: 101-103; Geol. Series, Nat. Mus. Wales 1989; 9: 36-50""" ;
+        <https://doi.org/10.18814/epiiugs/1985/v8i2/005> ,
+        "Hlásná Třebaň GSSP: Štorch et al., Episodes forthcoming" ,
+        "Trefawr Track GSSP: Geol. Series, Nat. Mus. Wales 1989; 9: 36-50" ;
     schema:location "Hlásná Třebaň, Bohemia, Czech Republic" ;
-    schema:name "Aeronian GSSP" ;
     schema:status """Ratified 2024;
 
 to replace Trefawr Track, Wales, UK former GSSP""" ;
@@ -180,11 +187,8 @@ gssps:Albian
         ] ;
     gssp:boundaryLevel "37.4 m above the base of the section and 0.4 m above the base of the laminated Niveau Kilian bed" ;
     gssp:correlationEvents "Lowest occurrence of the planktonic foraminifer Microhedbergella renilaevis" ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2017/v40i3/017021"^^xsd:anyURI ,
-        "Episodes 40/3, p. 177-188, 2017" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2017/v40i3/017021> ;
     schema:location "Col de Pré-Guittard, Department of Drôme, southeastern France" ;
-    schema:name "Albian GSSP" ;
     schema:status "Ratified 2016" ;
 .
 
@@ -200,7 +204,6 @@ gssps:Anisian
     gssp:correlationEvents "Conodont FAD Chiosella timorensis or Magnetic - base of magnetic polarity MT1n" ;
     schema:citation "Albertiana 36, 2007." ;
     schema:location "Candidate section at Desli Caira (Dobrogea, Romania); significant sections in Guizhou Province (China) and South Primorye (Russia)" ;
-    schema:name "Anisian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -209,7 +212,6 @@ gssps:Aptian
     gts:representsBoundary gtsd:BaseAptian ;
     gssp:correlationEvents "Magnetic - base of Chron M0r; near FAD of Paradeshayesites oglanlensis ammonite zone" ;
     schema:location "candidate is Gorgo a Cerbara, Piobbico, Umbria-Marche, central Italy" ;
-    schema:name "Aptian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -223,11 +225,8 @@ gssps:Aquitanian
         ] ;
     gssp:boundaryLevel "35m from the top of the section" ;
     gssp:correlationEvents "Magnetic - base of Chron C6Cn.2n; planktonic foraminifer FAD of Paragloborotalia kugleri; calcareous nannofossil near LAD Reticulofenestra bisecta (base Zone NN1); Oxygen isotopic event Mi-1." ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/aquitanian.pdf"^^xsd:anyURI ,
-        "Episodes 1997; 20: 23-28" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1997/v20i1/005> ;
     schema:location "Lemme-Carrosio Section, Allessandria Province, Italy" ;
-    schema:name "Aquitanian GSSP" ;
     schema:status "Ratified 1996" ;
 .
 
@@ -241,11 +240,8 @@ gssps:Artinskian
         ] ;
     gssp:boundaryLevel "0.6m above the base of bed 4b at the Dal'ny Tulkas section in the southern Urals of Russia" ;
     gssp:correlationEvents "Conodont FAD Sweetognathus asymmetricus" ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2023/023015"^^xsd:anyURI ,
-        "Episodes 46/4, p. 623-651. 2023" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2023/023015> ;
     schema:location "Dalny Tulkas section, Southern Ural Mts, Russia" ;
-    schema:name "Artinskian GSSP" ;
     schema:status "Ratified 2022" ;
 .
 
@@ -259,11 +255,8 @@ gssps:Asselian
         ] ;
     gssp:boundaryLevel "27m above the base of Bed 19, Aidaralash Creek" ;
     gssp:correlationEvents "Conodont FAD Streptognathodus isolatus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/asselian.pdf"^^xsd:anyURI ,
-        "Episodes 21/1, 11-18, 1998" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1998/v21i1/003> ;
     schema:location "Aidaralash Creek, Kazakhstan" ;
-    schema:name "Asselian GSSP" ;
     schema:status "Ratified 1996" ;
 .
 
@@ -277,9 +270,8 @@ gssps:Bajocian
         ] ;
     gssp:boundaryLevel "base of Bed AB 11" ;
     gssp:correlationEvents "Ammonite FAD Hyperlioceras mundum, Hyperlioceras furcatum, Braunsina aspera, and Braunsina elegantula" ;
-    schema:citation "Episodes 1997; 20: 16-22" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1997/v20i1/004> ;
     schema:location "Murtinheira Section, Cabo Mondego, Portugal" ;
-    schema:name "Bajocian GSSP" ;
     schema:status "Ratified 1996" ;
 .
 
@@ -293,11 +285,8 @@ gssps:Barremian
         ] ;
     gssp:boundaryLevel "base of Bed 171" ;
     gssp:correlationEvents "FAD of ammonite species Taveraidiscus hugii (Spitidiscus hugii - Spitidiscus vandeckii group), within calcareous nannofossil Subzone NC5C and in the lowermost part of polarity chron M3r." ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2023/02330"^^xsd:anyURI ,
-        "Episodes 2024; 47:335-379" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2023/02330> ;
     schema:location "Río Argos section near Caravaca, Murcia Province, Spain" ;
-    schema:name "Barremian GSSP" ;
     schema:status "Ratified 2023" ;
 .
 
@@ -306,7 +295,6 @@ gssps:Bartonian
     gts:representsBoundary gtsd:BaseBartonian ;
     gssp:correlationEvents "Calcareous nannofossil near LAD Reticulofenestra reticulata" ;
     schema:location "Contessa highway section near Gubio, Central Apennines, Italy" ;
-    schema:name "Bartonian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -320,11 +308,8 @@ gssps:Bashkirian
         ] ;
     gssp:boundaryLevel "82.9m above the top of the Battleship Formation in the lower Bird Spring Formation" ;
     gssp:correlationEvents "Conodont FAD Declinognathodus noduliferus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/bashkirian.pdf"^^xsd:anyURI ,
-        "Episodes 1999; 22: 272-283" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1999/v22i4/003> ;
     schema:location "Arrow Canyon, Nevada" ;
-    schema:name "Bashkirian GSSP" ;
     schema:status "Ratified 1996" ;
 .
 
@@ -338,9 +323,8 @@ gssps:Bathonian
         ] ;
     gssp:boundaryLevel "base of limestone bed RB07" ;
     gssp:correlationEvents "Ammonite FAD Gonolkite convergens (defines base of Zigzagiceras zigzag Zone)" ;
-    schema:citation "Episodes 2009; 32: 222-248" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2009/v32i4/001> ;
     schema:location "Ravin du Bès, Bas-Auran area, Alpes de Haute Provence, France" ;
-    schema:name "Bathonian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
@@ -348,7 +332,6 @@ gssps:Berriasian
     a gssp:GSSP ;
     gts:representsBoundary gtsd:BaseCretaceous ;
     gssp:correlationEvents "Candidates include: (1) Magnetic - base of Chron M18r, (2) Base of Calpionellid zone B, (3) ammonite FAD of Berriasella jacobi" ;
-    schema:name "Berriasian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -357,7 +340,6 @@ gssps:Burdigalian
     gts:representsBoundary gtsd:BaseBurdigalian ;
     gssp:correlationEvents "Near planktonic foraminifer FAD of Globigerinoides altiaperturus or near top of magnetic polarity chronozone C6An" ;
     schema:location "Potentially in astronomicallytuned ODP core" ;
-    schema:name "Burdigalian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -372,14 +354,10 @@ gssps:Calabrian
     gssp:boundaryLevel "base of the marine claystone overlying the sapropelic marker Bed 'e' (Mediterranean Precession Related Sapropel, MPRS 176)" ;
     gssp:correlationEvents "Magnetic - ∼8m below the observed top of the Olduvai (C2n) normal polarity subchron. GSSP level coincides with the transition from MIS 65 to 64" ;
     schema:citation
-        "https://doi.org/10.1016/j.quaint.2019.05.018"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/calabrian1.pdf"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/calabrian2.pdf"^^xsd:anyURI ,
-        """Episodes 1985; 8:116-120
-Episodes 2012; 35: 388-397
-Head, M.J., 2019""" ;
+        <https://doi.org/10.1016/j.quaint.2019.05.018> ,
+        <https://doi.org/10.18814/epiiugs/1985/v8i2/009> ,
+        <https://doi.org/10.18814/epiiugs/2012/v35i3/001> ;
     schema:location "Vrica, Italy" ;
-    schema:name "Calabrian GSSP" ;
     schema:status "Ratified 1985 as base of Pleistocene; Ratified 2011 as base of Calabrian" ;
 .
 
@@ -388,7 +366,6 @@ gssps:Callovian
     gts:representsBoundary gtsd:BaseCallovian ;
     gssp:correlationEvents "Ammonite FAD of the genus Kepplerites (Kosmoceratidae)  (defines base of Macrocephalites herveyi Zone in sub-Boreal province of Great Britain to southwest Germany)" ;
     schema:location "candidates are Pfeffingen (Swabian Alb, SW Germany) and in Russia" ;
-    schema:name "Callovian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -404,7 +381,6 @@ gssps:CambrianSeries2
     a gssp:GSSP ;
     gts:representsBoundary gtsd:BaseCambrianSeries2 ;
     gssp:correlationEvents "Trilobites - their FAD" ;
-    schema:name "CambrianSeries2 GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -413,7 +389,6 @@ gssps:CambrianStage10
     gts:representsBoundary gtsd:BaseCambrianStage10 ;
     gssp:correlationEvents "Trilobite FAD of Lotagnostus americanus. An internal subStage division might be FAD of Codylodus adesei conodont" ;
     schema:location "candidate section is Duibian (Zhejiang province, China)" ;
-    schema:name "CambrianStage10 GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -421,7 +396,6 @@ gssps:CambrianStage2
     a gssp:GSSP ;
     gts:representsBoundary gtsd:BaseCambrianStage2 ;
     gssp:correlationEvents "Small Shelly Fossils, or Archaeocyathid species" ;
-    schema:name "CambrianStage2 GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -429,7 +403,6 @@ gssps:CambrianStage3
     a gssp:GSSP ;
     gts:representsBoundary gtsd:BaseCambrianSeries2 ;
     gssp:correlationEvents "Trilobite FAD Olenellus or Redlichia" ;
-    schema:name "CambrianStage3 GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -438,7 +411,6 @@ gssps:CambrianStage4
     gts:representsBoundary gtsd:BaseCambrianStage4 ;
     gssp:correlationEvents "Trilobite, potentially FAD of Oryctocephalus indicus" ;
     schema:location "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and Split Mountain (Nevada, USA)" ;
-    schema:name "CambrianStage4 GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -452,12 +424,8 @@ gssps:Campanian
         ] ;
     gssp:boundaryLevel "Level 221.53 m in the Bottaccione Gorge section at Gubbio, Umbria-Marche Basin, Italy" ;
     gssp:correlationEvents "The magnetic polarity reversal from Chron 34n (top of the Long Cretaceous Normal Polarity-Chron) to Chron C33r." ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2022/022048"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/campanian.pdf"^^xsd:anyURI ,
-        "Episodes 2023; 1st February; DOI: 10.18814/epiiugs/2022/022048" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2022/022048> ;
     schema:location "1.4 km NNE from the town of Gubbio, central Italy" ;
-    schema:name "Campanian GSSP" ;
     schema:status "Ratified 2022" ;
 .
 
@@ -472,11 +440,9 @@ gssps:Capitanian
     gssp:boundaryLevel "4.5m above the base of the outcrop section of the Pinery Limestone Member of the Bell Canyon Formation" ;
     gssp:correlationEvents "Conodont FAD Jinogondolella postserrata" ;
     schema:citation
-        "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
-        "https://doi.org/10.18814/epiiugs/2022/022004"^^xsd:anyURI ,
-        "Permophiles 34 p. 3-11, 1999; Episodes 45/3 p. 309-331. 2022" ;
+        <http://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf> ,
+        <https://doi.org/10.18814/epiiugs/2022/022004> ;
     schema:location "Nipple Hill, SE Guadalupe Mountains, Texas, U.S.A" ;
-    schema:name "Capitanian GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
@@ -490,9 +456,8 @@ gssps:Carnian
         ] ;
     gssp:boundaryLevel "base of marly limestone bed SW4, 45m from base of San Cassiano Formation" ;
     gssp:correlationEvents "FAD of the ammonoid Daxatina canadensis; just below FO of conodont Paragondolella polygnathiformis and base of normal-polarity magnetic zone S2n" ;
-    schema:citation "Episodes 2012; 35: 414-430" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2012/v35i3/003> ;
     schema:location "Prati di Stuores, Dolomites, Italy" ;
-    schema:name "Carnian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
@@ -506,11 +471,8 @@ gssps:Cenomanian
         ] ;
     gssp:boundaryLevel "36 meters below the top of the Marnes Bleues Formation on the south side of Mont Risou" ;
     gssp:correlationEvents "Planktonic foraminifer FAD Rotalipora globotruncanoides" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/cenomanian.pdf"^^xsd:anyURI ,
-        "Episodes 2004; 27: 21-32" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2004/v27i1/003> ;
     schema:location "Mount Risou, Hautes-Alpes, France" ;
-    schema:name "Cenomanian GSSP" ;
     schema:status "Ratified 2002" ;
 .
 
@@ -524,11 +486,8 @@ gssps:Changhsingian
         ] ;
     gssp:boundaryLevel "base of Bed 4a- 2, 88 cm above the base of the Changxing Limestone at the Meishan D Section" ;
     gssp:correlationEvents "Conodont FAD Clarkina wangi" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/changhsiangian.pdf"^^xsd:anyURI ,
-        "Episodes 29/3 p. 175-182. 2006" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2006/v29i3/003> ;
     schema:location "Meishan, Zhejiang Province, China" ;
-    schema:name "Changhsingian GSSP" ;
     schema:status "Ratified 2005" ;
 .
 
@@ -542,11 +501,8 @@ gssps:Chattian
         ] ;
     gssp:boundaryLevel "Highest common occurrence (HCO) of Chiloguembelina cubensis" ;
     gssp:correlationEvents "Oxygen isotope excursion possibly related to the Oi2a glaciation event" ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2018/v41i1/018003"^^xsd:anyURI ,
-        "Episodes, 41 (1): 17-32." ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2018/v41i1/018003> ;
     schema:location "Monte Cagnero, Umbria-Marche region, Italy" ;
-    schema:name "Chattian GSSP" ;
     schema:status "Ratified 2016" ;
 .
 
@@ -561,11 +517,9 @@ gssps:Chibanian
     gssp:boundaryLevel "lower boundary of the Byk-E tephra bed" ;
     gssp:correlationEvents "Magnetic - GSSP is 1.1 m below the directional midpoint of the Matuyama/Brunhes paleomagnetic reversal and occurs immediately below the top of Marine Isotope Substage (MIS) 19c." ;
     schema:citation
-        "https://doi.org/10.18814/epiiugs/2020/020080"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/chibanian.pdf"^^xsd:anyURI ,
-        "Episodes 2021; 44:317-347" ;
+        <https://doi.org/10.18814/epiiugs/2020/020080> ,
+        <https://stratigraphy.org/gssps/files/chibanian.pdf> ;
     schema:location "Chiba section, Japan" ;
-    schema:name "Chibanian GSSP" ;
     schema:status "Ratified 2020" ;
 .
 
@@ -579,21 +533,16 @@ gssps:Coniacian
         ] ;
     gssp:boundaryLevel "base of Bed 46 in the Salzgitter-Salder section" ;
     gssp:correlationEvents "first occurrence of the inoceramid Cremnoceramus deformis erectus" ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2021/021022"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/coniacian.pdf"^^xsd:anyURI ,
-        "Episodes 2022; 45(2): 181-220" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2021/021022> ;
     schema:location "Salzgitter-Salder, Lower Saxony, Germany" ;
-    schema:name "Coniacian GSSP" ;
     schema:status "Ratified 2021" ;
 .
 
 gssps:Cryogenian
     a gssp:GSSP ;
     gts:representsBoundary gtsd:BaseCryogenian ;
-    schema:citation "Episodes 2019; 39" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2016/v39i1/89231> ;
     schema:location "Will be placed at a that lies stratigraphically beneath the first appearance of widespread glaciation and is assigned in the interim a 'calibrated age' of circa 720 Ma" ;
-    schema:name "Cryogenian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -607,11 +556,8 @@ gssps:Danian
         ] ;
     gssp:boundaryLevel "reddish layer at the base of the 50cm thick, dark boundary clay" ;
     gssp:correlationEvents "Iridium geochemical anomaly. Associated with a major extinction horizon (dinosaurs, ammonites, foraminifers, etc.)" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/danian.pdf"^^xsd:anyURI ,
-        "Episodes 2006; 29: 263-278" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2006/v29i4/004> ;
     schema:location "Oued Djerfane, west of El Kef, Tunisia" ;
-    schema:name "Danian GSSP" ;
     schema:status "Ratified 1991" ;
 .
 
@@ -626,11 +572,9 @@ gssps:Dapingian
     gssp:boundaryLevel "10.57 m above base of the Dawan Formation" ;
     gssp:correlationEvents "Conodont FAD of Baltoniodus triangularis" ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/dapingian1.pdf"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/dapingian2.pdf"^^xsd:anyURI ,
-        "Episodes 2005; 28: 105-117; Episodes 2009; 32: 96-113" ;
+        <https://doi.org/10.18814/epiiugs/2005/v28i2/004> ,
+        <https://stratigraphy.org/gssps/files/dapingian2.pdf> ;
     schema:location "Huanghuachang Section, NE of Yichang city, Hubei Province, S. China" ;
-    schema:name "Dapingian GSSP" ;
     schema:status "Ratified 2007" ;
 .
 
@@ -644,11 +588,8 @@ gssps:Darriwilian
         ] ;
     gssp:boundaryLevel "base of Bed AEP 184" ;
     gssp:correlationEvents "Graptolite FAD Undulograptus austrodentatus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/darriwilian.pdf"^^xsd:anyURI ,
-        "Episodes 1997; 20: 158-166" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1997/v20i3/003> ;
     schema:location "Huangnitang section, Changshan, Zhejiang Province, SE China" ;
-    schema:name "Darriwilian GSSP" ;
     schema:status "Ratified 1987" ;
 .
 
@@ -662,11 +603,8 @@ gssps:Drumian
         ] ;
     gssp:boundaryLevel "at the base of a dark-gray thinly laminated calcisiltite layer, 62 m above the base of the Wheeler Formation" ;
     gssp:correlationEvents "Trilobite FAD Ptychagnostus atavus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/drumian.pdf"^^xsd:anyURI ,
-        "Episodes 2007; 30: 85-95" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2007/v30i2/003> ;
     schema:location "Drum Mountains, Millard County, Utah, USA" ;
-    schema:name "Drumian GSSP" ;
     schema:status "Ratified 2006" ;
 .
 
@@ -688,11 +626,8 @@ gssps:Ediacaran
         ] ;
     gssp:boundaryLevel "base of the Marinoan cap carbonate" ;
     gssp:correlationEvents "(1) rapid decay of Marinoan ice sheets and onset of distinct cap carbonates throughout the world, and (2) the beginning of a distinctive pattern of secular changes in carbon isotopes." ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/ediacaran.pdf"^^xsd:anyURI ,
-        "Lethaia 39, p.13- 30, 2006" ;
+    schema:citation <https://stratigraphy.org/gssps/files/ediacaran.pdf> ;
     schema:location "Enorama Creek, Flinders Ranges, South Australia" ;
-    schema:name "Ediacaran GSSP" ;
     schema:status "Ratified 1990" ;
 .
 
@@ -706,11 +641,8 @@ gssps:Eifelian
         ] ;
     gssp:boundaryLevel "21.25m above the base of the exposed section, base of sample station WP30" ;
     gssp:correlationEvents "Conodont FAD Polygnathus costatus partitus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/eifelian.pdf"^^xsd:anyURI ,
-        "Episodes 1985; 8: 104-109" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1985/v8i2/006> ;
     schema:location "Wetteldorf, Eifel Hills, Germany" ;
-    schema:name "Eifelian GSSP" ;
     schema:status "Ratified 1985" ;
 .
 
@@ -724,11 +656,8 @@ gssps:Emsian
         ] ;
     gssp:boundaryLevel "base of Bed 9/5" ;
     gssp:correlationEvents "Conodont FAD Polygnathus kitabicus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/emsian.pdf"^^xsd:anyURI ,
-        "Episodes 1997; 20: 235-240" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1997/v20i4/005> ;
     schema:location "Zinzil'ban Gorge in the Kitab State Geological Reserve, Uzbekistan" ;
-    schema:name "Emsian GSSP" ;
     schema:status "Ratified 1995" ;
 .
 
@@ -742,9 +671,9 @@ gssps:Eoarchean
         ] ;
     gssp:boundaryLevel "Acasta Gneiss Complex Fm., Slave Province, Canadian Shield" ;
     gssp:correlationEvents "Ten oldest zircon U-Pb ages" ;
-    schema:citation """Episodes, forthcoming (formal GSSA)
-
-Succeeds Episodes 1992; 15 (informal 4000 Ma).""" ;
+    schema:citation
+        "Episodes, forthcoming (formal GSSA)" ,
+        "Succeeds Episodes 1992; 15 (informal 4000 Ma)." ;
     schema:location """Defined chronometrically
 
 along Acasta River, Northwestern Territory, Canada""" ;
@@ -761,11 +690,8 @@ gssps:Famennian
         ] ;
     gssp:boundaryLevel "Base of Bed 32a" ;
     gssp:correlationEvents "Conodont FAD Palmatolepis triangularis, just above a major extinction horizon (Kellwasser Event) with conodont LADs Ancyrodella and Ozarkodina, and Goniatite LADs of Gephuroceratidae and Beloceratidae" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/famennian.pdf"^^xsd:anyURI ,
-        "Episodes 1993; 16: 433-441" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1993/v16i4/003> ;
     schema:location "Coumiac Quarry, near Cessenon, Montagne Noire, France" ;
-    schema:name "Famennian GSSP" ;
     schema:status "Ratified 1993" ;
 .
 
@@ -779,11 +705,8 @@ gssps:Floian
         ] ;
     gssp:boundaryLevel "in the lower Tøyen Shale, 2.1m above the top of the Cambrian" ;
     gssp:correlationEvents "Graptolite FAD Tetragraptus approximatus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/floian.pdf"^^xsd:anyURI ,
-        "Episodes 2004; 27: 265-272" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2004/v27i4/005> ;
     schema:location "Diabasbrottet, Hunneberg, Sweden" ;
-    schema:name "Floian GSSP" ;
     schema:status "Ratified 2002" ;
 .
 
@@ -797,11 +720,8 @@ gssps:Fortunian
         ] ;
     gssp:boundaryLevel "2.4m above the base of Member 2 in the Chapel Island Formation" ;
     gssp:correlationEvents "Trace fossil FAD Trichophycus pedum" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/fortunian.pdf"^^xsd:anyURI ,
-        "Episodes 1994; 17: 95-100" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1994/v17i1.2/002> ;
     schema:location "Fortune Head, SE Newfoundland, Canada" ;
-    schema:name "Fortunian GSSP" ;
     schema:status "Ratified 1992" ;
 .
 
@@ -815,11 +735,8 @@ gssps:Frasnian
         ] ;
     gssp:boundaryLevel "base of Bed 42' at Col du Puech de la Suque section E" ;
     gssp:correlationEvents "Conodont FAD Ancyrodella rotundiloba" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/frasnian.pdf"^^xsd:anyURI ,
-        "Episodes 1987; 10: 97-101" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1987/v10i2/004> ;
     schema:location "Col du Puech de la Suque, Montage Noire, France" ;
-    schema:name "Frasnian GSSP" ;
     schema:status "Ratified 1986" ;
 .
 
@@ -834,14 +751,10 @@ gssps:Gelasian
     gssp:boundaryLevel "base of marly layer overlying sapropel MPRS 250" ;
     gssp:correlationEvents "Magnetic - Matuyama/Gauss boundary (C2r/C2An) is between ~0 and ~3 m above GSSP (Head, 2019) not ∼1 m (20 kyr) below it as reported by Rio et al. (1994, 1998). GSSP level is within Marine Isotope Stage 103." ;
     schema:citation
-        "https://doi.org/10.1016/j.quaint.2019.05.018"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/gelasian.pdf"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/quaternary-pleistocene.pdf"^^xsd:anyURI ,
-        """Episodes 1998; 21: 82-87
-Episodes 2010; 33: 152-158
-Quaternary Sci. 2019; 500: 32-51, """ ;
+        <https://doi.org/10.1016/j.quaint.2019.05.018> ,
+        <https://doi.org/10.18814/epiiugs/1998/v21i2/002> ,
+        <https://doi.org/10.18814/epiiugs/2010/v33i3/002> ;
     schema:location "Monte San Nicola, Sicily, Italy" ;
-    schema:name "Gelasian GSSP" ;
     schema:status "Ratified 1996 as base of Gelasian; Ratified 2009 as base of Pleistocene and Quaternary" ;
 .
 
@@ -855,11 +768,8 @@ gssps:Givetian
         ] ;
     gssp:boundaryLevel "base of Bed 123" ;
     gssp:correlationEvents "Conodont FAD Polygnathus hemiansatus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/givetian.pdf"^^xsd:anyURI ,
-        "Episodes 1995; 18: 107-115" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1995/v18i3/002> ;
     schema:location "Jebel Mech Irdane, Morocco" ;
-    schema:name "Givetian GSSP" ;
     schema:status "Ratified 1994" ;
 .
 
@@ -874,10 +784,10 @@ gssps:Gorstian
     gssp:boundaryLevel "coincident with the base of the Lower Elton Formation" ;
     gssp:correlationEvents "Graptolite FAD Saetograptus (Colonograptus) varians" ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ,
-        "Lethaia 14; Episodes 1982; 5: 21-23; Geol. Series, Nat. Mus. Wales 1989; 9: 73-90" ;
+        <https://doi.org/10.18814/epiiugs/1982/v5i3/004> ,
+        "Geol. Series, Nat. Mus. Wales 1989; 9: 73-90" ,
+        "Lethaia 14" ;
     schema:location "near Ludlow, UK" ;
-    schema:name "Gorstian GSSP" ;
     schema:status "Ratified 1980" ;
 .
 
@@ -892,14 +802,10 @@ gssps:Greenlandian
     gssp:boundaryLevel "1492.45 m in the NGRIP2 ice core" ;
     gssp:correlationEvents "Climatic - End of the Younger Dryas Chron which is reflected in an abrupt shift to lower deuterium excess values" ;
     schema:citation
-        "https://doi.org/10.18814/epiiugs/2008/v31i2/016"^^xsd:anyURI ,
-        "https://doi.org/10.18814/epiiugs/2018/018016"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/meghalayan.pdf"^^xsd:anyURI ,
-        """Episodes 2008; 31: 264–267
-
-Episodes 2018; 41: 213-223""" ;
+        <https://doi.org/10.18814/epiiugs/2008/v31i2/016> ,
+        <https://doi.org/10.18814/epiiugs/2018/018016> ,
+        <https://stratigraphy.org/gssps/files/meghalayan.pdf> ;
     schema:location "North Greenland Ice Core Project, core NGRIP2, central Greenland ice sheet" ;
-    schema:name "Greenlandian GSSP" ;
     schema:status "Holocene GSSP ratifed 2008; Lower Holocene Subseries and Greenlandian Stage ratified: 2018" ;
 .
 
@@ -913,11 +819,8 @@ gssps:Guzhangian
         ] ;
     gssp:boundaryLevel "121.3 m above the base of the Huaqiao Formation" ;
     gssp:correlationEvents "Trilobite FAD Lejopyge laevigata" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/guzhangian.pdf"^^xsd:anyURI ,
-        "Episodes 2009; 32: 41-55" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2009/v32i1/006> ;
     schema:location "Louyixi, Guzhang County, NW Hunan Province, S. China" ;
-    schema:name "Guzhangian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
@@ -926,7 +829,6 @@ gssps:Gzhelian
     gts:representsBoundary gtsd:BaseGzhelian ;
     gssp:correlationEvents "Conodont FAD Idiognathodus simulator (s.str.). Close to FAD of ammonoid Shumardites." ;
     schema:location "candidates are in southern Urals or Nashui (south China)." ;
-    schema:name "Gzhelian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -935,9 +837,7 @@ gssps:Hadean
     gts:representsBoundary gtsd:BaseHadean ;
     gssp:boundaryLevel "Formation of planet Earth and sister Solar planets (protoplanetary disk), by proxy of ages obtained from primitive meteorites" ;
     gssp:correlationEvents "U-corrected Pb–Pb age for Calcium-Aluminium Inclusions (CAIs) in class CBa meteorite" ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2024/024002"^^xsd:anyURI ,
-        "Episodes 2024; 47(2):381-389" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2024/024002> ;
     schema:location """Defined chronometrically
 
 Data in Amelin et al., 2010 (Allende); Connelly et. al., 2012 (Gujba).
@@ -956,11 +856,8 @@ gssps:Hauterivian
         ] ;
     gssp:boundaryLevel "base of bed 189 in the La Charce section" ;
     gssp:correlationEvents "First occurrence of the ammonite genus Acanthodiscus which marks the base of the Acanthodiscus radiatus ammonite Zone" ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2020/020072"^^xsd:anyURI ,
-        "Episodes 2021; 44(2): 129-150" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2020/020072> ;
     schema:location "La Charce, Department of Drôme, southeastern France" ;
-    schema:name "Hauterivian GSSP" ;
     schema:status "Ratified 2019" ;
 .
 
@@ -974,11 +871,8 @@ gssps:Hettangian
         ] ;
     gssp:boundaryLevel "5.80 m above top of Koessen Formation" ;
     gssp:correlationEvents "FO of ammonite Psiloceras spelae tirolicum, FO of aragonitic foraminifer Praegubkinella turgescens" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/hettangian.pdf"^^xsd:anyURI ,
-        "Episodes 2013; 36: 162-198" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2013/v36i3/001> ;
     schema:location "Kuhjoch section, Tyrol, Austria" ;
-    schema:name "Hettangian GSSP" ;
     schema:status "Ratified 2010" ;
 .
 
@@ -992,11 +886,8 @@ gssps:Hirnantian
         ] ;
     gssp:boundaryLevel "0.39m below the base of the Kuanyinchiao Bed" ;
     gssp:correlationEvents "Graptolite FAD Normalograptus extraordinarius" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/hirnantian.pdf"^^xsd:anyURI ,
-        "Episodes 2006; 29: 183-196" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2006/v29i3/004> ;
     schema:location "Wangjiawan North section, N of Yichang city, Western Hubei Province, China" ;
-    schema:name "Hirnantian GSSP" ;
     schema:status "Ratified 2006" ;
 .
 
@@ -1011,10 +902,10 @@ gssps:Homerian
     gssp:boundaryLevel "within upper part of the Apedale Member of the Coalbrookdale Formation" ;
     gssp:correlationEvents "Graptolite FAD Cyrtograptus lundgreni" ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ,
-        "Lethaia 14; Episodes 1982; 5: 21-23; Geol. Series, Nat. Mus. Wales 1989; 9: p. 51-73" ;
+        <https://doi.org/10.18814/epiiugs/1982/v5i3/004> ,
+        "Geol. Series, Nat. Mus. Wales 1989; 9: p. 51-73" ,
+        "Lethaia 14" ;
     schema:location "Sheinton Brook, Homer, UK" ;
-    schema:name "Homerian GSSP" ;
     schema:status "Ratified 1980" ;
 .
 
@@ -1028,11 +919,8 @@ gssps:Induan
         ] ;
     gssp:boundaryLevel "base of Bed 27c in the Meishan D Section" ;
     gssp:correlationEvents "Conodont FAD Hindeodus parvus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/induan.pdf"^^xsd:anyURI ,
-        "Episodes 2001; 24: 102-114" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2001/v24i2/004> ;
     schema:location "Meishan, Zhejiang Province, China" ;
-    schema:name "Induan GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
@@ -1046,11 +934,8 @@ gssps:Jiangshanian
         ] ;
     gssp:boundaryLevel "28.2 m in Duibian B section" ;
     gssp:correlationEvents "FAD of agnostid trilobite Agnostotes orientalis and the FO of polymerid trilobite Irvingella angustilimbata" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/jiangshanian.pdf"^^xsd:anyURI ,
-        "Episodes 2012; 35: 462-477" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2012/v35i4/002> ;
     schema:location "Duibian B section, Zhejiang province, China" ;
-    schema:name "Jiangshanian GSSP" ;
     schema:status "Ratified 2011" ;
 .
 
@@ -1059,7 +944,6 @@ gssps:Kasimovian
     gts:representsBoundary gtsd:BaseLatePennsylvanian ;
     gssp:correlationEvents "Fusulinid FAD Protriticites, which is near ammonoid FAD Eothalossoceras. Alternative (higher) base is fusulinid FAD Montiparus montiparus, which is near Conodont FAD Idiognathodus sagittalis. Stage given here is the higher version; the lower one is about 1 myr older." ;
     schema:location "candidates are in southern Urals, southwest USA and Nashui (south China)." ;
-    schema:name "Kasimovian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1073,11 +957,8 @@ gssps:Katian
         ] ;
     gssp:boundaryLevel "4.0m above the base of the Bigfork Chert" ;
     gssp:correlationEvents "Graptolite FAD Diplacanthograptus caudatus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/katian.pdf"^^xsd:anyURI ,
-        "Episodes 2007; 30: 258-270" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2007/v30i4/002> ;
     schema:location "Black Knob Ridge Section, Atoka, Oklahoma (USA)" ;
-    schema:name "Katian GSSP" ;
     schema:status "Ratified 2006" ;
 .
 
@@ -1090,11 +971,8 @@ gssps:Kimmeridgian
             geo:asWKT "POINT (-6.2455 57.661)"^^geo:wktLiteral ;
         ] ;
     gssp:correlationEvents "Base of Subboreal ammonite Baylei Zone, Base of Densicostata Subzone marked by the base of the flodigarriensis horizon; Base of Boreal ammonite Bauhini Zone." ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2022/022046"^^xsd:anyURI ,
-        "Episodes 2023; 46(2): 281-307" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2022/022046> ;
     schema:location "Flodigarry, Isle of Skye, NW Scotland" ;
-    schema:name "Kimmeridgian GSSP" ;
     schema:status "Ratified 2021" ;
 .
 
@@ -1102,7 +980,6 @@ gssps:Kungurian
     a gssp:GSSP ;
     gts:representsBoundary gtsd:BaseKungurian ;
     schema:location "Candidate is Rockland, Nevada" ;
-    schema:name "Kungurian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1118,9 +995,8 @@ gssps:Ladinian
     gssp:correlationEvents """Ammonite FAD Eoprotrachyceras curionii (base of the E. curionii zone). Conodont FAD.
 
 Budurovignathus praehungaricus is in the uppermost Anisian.""" ;
-    schema:citation "Episodes 2005; 28: 233-244" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2005/v28i4/001> ;
     schema:location "Bagolino, Province of Brescia, Northern Italy" ;
-    schema:name "Ladinian GSSP" ;
     schema:status "Ratified 2005" ;
 .
 
@@ -1134,11 +1010,8 @@ gssps:Langhian
         ] ;
     gssp:boundaryLevel "Mid-point of the darker marly interval above 'Megabed IV'" ;
     gssp:correlationEvents "Closely to the top of magnetic polarity chronozone C5Cn.1n." ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2023/023024"^^xsd:anyURI ,
-        "Episodes 2024; 47:311-333" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2023/023024> ;
     schema:location "'Lower La Vedova Beach' section, near Ancona, Italy" ;
-    schema:name "Langhian GSSP" ;
     schema:status "Ratified 2023" ;
 .
 
@@ -1153,19 +1026,11 @@ gssps:Lochkovian
     gssp:boundaryLevel "within Bed 20" ;
     gssp:correlationEvents "Graptolite FAD Monograptus uniformis" ;
     schema:citation
-        "https://doi.org/10.1007/BF02539792"^^xsd:anyURI ,
-        "https://doi.org/10.1127/nos/25/1991/115"^^xsd:anyURI ,
-        "https://www.elsevier.com/books/geologic-time-scale-2020/gradstein/978-0-12-8243619"^^xsd:anyURI ,
-        "https://www.schweizerbart.de/publications/detail/isbn/9783510560035"^^xsd:anyURI ,
-        """The Geologic Time Scale 2020;
-
-IUGS Series A, 5, p. 96-109, 1977;
-
-Newsletters on Stratigraphy 25, 115–125
-
-Facies 26, 35–54""" ;
+        <https://doi.org/10.1007/BF02539792> ,
+        <https://doi.org/10.1127/nos/25/1991/115> ,
+        <https://www.elsevier.com/books/geologic-time-scale-2020/gradstein/978-0-12-8243619> ,
+        <https://www.schweizerbart.de/publications/detail/isbn/9783510560035> ;
     schema:location "Klonk, near Prague, Czech Republic" ;
-    schema:name "Lochkovian GSSP" ;
     schema:status "Ratified 1972" ;
 .
 
@@ -1180,10 +1045,10 @@ gssps:Ludfordian
     gssp:boundaryLevel "coincident with the base of the Leintwardine Formation" ;
     gssp:correlationEvents "Imprecise. May be near base of Saetograptus leintwardinensis Graptolite zone." ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ,
-        "Lethaia 14; Episodes 1982; 5: 21-23; Geol. Series, Nat. Mus. Wales 1989; 9: 73-90" ;
+        <https://doi.org/10.18814/epiiugs/1982/v5i3/004> ,
+        "Geol. Series, Nat. Mus. Wales 1989; 9: 73-90" ,
+        "Lethaia 14" ;
     schema:location "near Ludlow, UK" ;
-    schema:name "Ludfordian GSSP" ;
     schema:status "Ratified 1980" ;
 .
 
@@ -1197,11 +1062,8 @@ gssps:Lutetian
         ] ;
     gssp:boundaryLevel "dark marl at 167.85 m in Gorrondatxe sea-cliff section" ;
     gssp:correlationEvents "LO of calcareous nannofossil Blackites inflatus (CP12a/b boundary); middle of polarity Chron C21r" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/lutetian.pdf"^^xsd:anyURI ,
-        "Episodes 2011; 34: 86-108" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2011/v34i2/006> ;
     schema:location "Gorrondatxe section, Basque Country, Spain" ;
-    schema:name "Lutetian GSSP" ;
     schema:status "Ratified 2011" ;
 .
 
@@ -1215,11 +1077,8 @@ gssps:Maastrichtian
         ] ;
     gssp:boundaryLevel "level 115.2 on platform IV of the geological site at Tercis les Bains" ;
     gssp:correlationEvents "Mean of 12 biostratigraphic criteria of equal importance. Closely above is FAD of ammonite Pachydiscus neubergicus. Boreal proxy is FAD of belemnite Belemnella lanceolata." ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/maastrichtian.pdf"^^xsd:anyURI ,
-        "Episodes 2001; 24: 229-238" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2001/v24i4/002> ;
     schema:location "Tercis les Bains, Landes, France" ;
-    schema:name "Maastrichtian GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
@@ -1234,11 +1093,9 @@ gssps:Meghalayan
     gssp:boundaryLevel "depth 7.45 mm in the speleothem KM-A" ;
     gssp:correlationEvents "Climatic - 4.2 ka event" ;
     schema:citation
-        "https://doi.org/10.18814/epiiugs/2018/018016"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/meghalayan.pdf"^^xsd:anyURI ,
-        "Episodes 2018; 41: 213-223. (PDF)" ;
+        <https://doi.org/10.18814/epiiugs/2018/018016> ,
+        <https://stratigraphy.org/gssps/files/meghalayan.pdf> ;
     schema:location "Mawmluh Cave, Meghalaya, India" ;
-    schema:name "Meghalayan GSSP" ;
     schema:status "Ratified 2018" ;
 .
 
@@ -1260,11 +1117,8 @@ gssps:Messinian
         ] ;
     gssp:boundaryLevel "reddish layer of sedimentary cycle number 15" ;
     gssp:correlationEvents "Planktonic foraminifer first regular occurrence of Globorotalia miotumida, and calcareous nannofossil FAD Amaurolithus delicatus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/messinian.pdf"^^xsd:anyURI ,
-        "Episodes 2000; 23: 172-178" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2000/v23i3/004> ;
     schema:location "Oued Akrech, Morocco" ;
-    schema:name "Messinian GSSP" ;
     schema:status "Ratified 2000" ;
 .
 
@@ -1273,7 +1127,6 @@ gssps:Moscovian
     gts:representsBoundary gtsd:BaseMiddlePennsylvanian ;
     gssp:correlationEvents "Either Conodont FAD Idiognathoides postsulcatus or Declinognathodus donetzianus." ;
     schema:location "candidates are in southern Urals or Nashui (south China)." ;
-    schema:name "Moscovian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1290,7 +1143,6 @@ gssps:Norian
     gts:representsBoundary gtsd:BaseNorian ;
     gssp:correlationEvents "Base of Stikinoceras kerri ammonoid zone and near FAD of Metapolygnathus echinatus within the M. communisti conodont zones" ;
     schema:location "Candidates are Black Bear Ridge in British Columbia (Canada) and Pizzo Mondello, Sicily (Italy)" ;
-    schema:name "Norian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1305,11 +1157,9 @@ gssps:Northgrippian
     gssp:boundaryLevel "1228.67 m in the NGRIP1 ice core" ;
     gssp:correlationEvents "Climatic – 8.2 ka event" ;
     schema:citation
-        "https://doi.org/10.18814/epiiugs/2018/018016"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/meghalayan.pdf"^^xsd:anyURI ,
-        "Episodes 2018; 41: 213-223. (PDF)" ;
+        <https://doi.org/10.18814/epiiugs/2018/018016> ,
+        <https://stratigraphy.org/gssps/files/meghalayan.pdf> ;
     schema:location "North Greenland Ice Core Project, core NGRIP1, central Greenland ice sheet" ;
-    schema:name "Northgrippian GSSP" ;
     schema:status "Ratified 2018" ;
 .
 
@@ -1325,7 +1175,6 @@ gssps:Olenekian
     gssp:correlationEvents "Conodont FAD Neospathodus waageni, just above base of Rohillites rohilla ammonite zone, and below lowest occurrence of Flemingites and Euflemingites ammonite genera. Within a prominent positive Carbon-13 peak, and just above widely recognizable sequence boundary." ;
     schema:citation "Albertiana 36, 2007" ;
     schema:location "Candidate GSSP Mud (Muth) village, Spiti valley, northwest India" ;
-    schema:name "Olenekian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1342,7 +1191,6 @@ gssps:Oxfordian
     gts:representsBoundary gtsd:BaseLateJurassic ;
     gssp:correlationEvents "Ammonite Cardioceras redcliffense Horizon at base of the Cardioceras scarburgense Subzone (Quenstedtoceras mariae Zone)" ;
     schema:location "candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)" ;
-    schema:name "Oxfordian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1356,11 +1204,8 @@ gssps:Paibian
         ] ;
     gssp:boundaryLevel "at 396 m in the Huaqiao Formation" ;
     gssp:correlationEvents "Trilobite FAD Glyptagnostus reticulatus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/paibian.pdf"^^xsd:anyURI ,
-        "Lethaia 37, p. 365-379, 2004" ;
+    schema:citation <https://stratigraphy.org/gssps/files/paibian.pdf> ;
     schema:location "Wuling Mountains, Huayuan County, NW Hunan Province, Chin" ;
-    schema:name "Paibian GSSP" ;
     schema:status "Ratified 2003" ;
 .
 
@@ -1382,11 +1227,8 @@ gssps:Piacenzian
         ] ;
     gssp:boundaryLevel "base of the beige marl bed of small-scale carbonate cycle 77 (MPRS 347)" ;
     gssp:correlationEvents "Magnetic - Gauss/Gilbert (C2An/C2Ar) magnetic reversal is recorded immediately above the GSSP" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/piacenzian.pdf"^^xsd:anyURI ,
-        "Episodes 1998; 21: 88-93" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1998/v21i2/003> ;
     schema:location "Punta Piccola, Sicily, Italy" ;
-    schema:name "Piacenzian GSSP" ;
     schema:status "Ratified 1997" ;
 .
 
@@ -1400,11 +1242,8 @@ gssps:Pliensbachian
         ] ;
     gssp:boundaryLevel "base of Bed 73b" ;
     gssp:correlationEvents "Ammonite association of Bifericeras donovani and Apoderoceras sp." ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/pliensbachian.pdf"^^xsd:anyURI ,
-        "Episodes 2006; 29: 93-106" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2006/v29i2/003> ;
     schema:location "Wine Haven, Robin Hood's Bay, Yorkshire Coast, England" ;
-    schema:name "Pliensbachian GSSP" ;
     schema:status "Ratified 2005" ;
 .
 
@@ -1418,11 +1257,8 @@ gssps:Pragian
         ] ;
     gssp:boundaryLevel "base of Bed 12 in Velká Chuchle Quarry" ;
     gssp:correlationEvents "Conodont FAD Eognathodus sulcatus sulcatus and Latericriodus steinachensis Morph beta" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/pragian.pdf"^^xsd:anyURI ,
-        "Episodes 1989; 12: 109-113" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1989/v12i2/014> ;
     schema:location "Velká Chuchle, Prague, Czech Republic" ;
-    schema:name "Pragian GSSP" ;
     schema:status "Ratified 1989" ;
 .
 
@@ -1436,11 +1272,8 @@ gssps:Priabonian
         ] ;
     gssp:boundaryLevel "The base of a prominent crystal tuff layer, the Tiziano bed, at meter 63.57" ;
     gssp:correlationEvents "Extinction of large acarininids and Morozovelloides crassatus; the Base of common and continuous Cribrocentrum erbae and the Top of Chiasmolithus grandis; the Base of Chron C17n and Subchron C17n.2n" ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2020/020074"^^xsd:anyURI ,
-        "Episodes 2021; 44(2): 151-173" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2020/020074> ;
     schema:location "Alano section, Piave River; Veneto Prealps, Belluno province, N. Italy" ;
-    schema:name "Priabonian GSSP" ;
     schema:status "Ratified 2020" ;
 .
 
@@ -1455,10 +1288,9 @@ gssps:Pridoli
     gssp:boundaryLevel "within Bed 96" ;
     gssp:correlationEvents "Graptolite FAD Monograptus parultimus" ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ,
-        "Episodes 1985; 8: 101-103; Geol. Series, Nat. Mus. Wales, 9, p. 90 - 100, 1989" ;
+        <https://doi.org/10.18814/epiiugs/1985/v8i2/005> ,
+        "Geol. Series, Nat. Mus. Wales, 9, p. 90 - 100, 1989" ;
     schema:location "Požáry Section, Reporyje, Prague, Czech Republic" ;
-    schema:name "Pridoli GSSP" ;
     schema:status "Ratified 1984" ;
 .
 
@@ -1467,7 +1299,6 @@ gssps:Rhaetian
     gts:representsBoundary gtsd:BaseRhaetian ;
     gssp:correlationEvents "Near FAD of ammonite Cochloceras, conodonts Misikella spp. and Epigondolella mosheri, and radiolarian Proparvicingula moniliformis" ;
     schema:location "Key sections in Austria, British Columbia (Canada), and Turkey" ;
-    schema:name "Rhaetian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1482,10 +1313,9 @@ gssps:Rhuddanian
     gssp:boundaryLevel "1.6m above the base of the Birkhill Shale Formation" ;
     gssp:correlationEvents "Graptolite FAD Akidograptus ascensus" ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ,
-        "Episodes 1985; 8: 101-103; Silurian Times No. 14 (2006)" ;
+        <https://doi.org/10.18814/epiiugs/1985/v8i2/005> ,
+        "Silurian Times No. 14 (2006)" ;
     schema:location "Dob's Linn, Scotland" ;
-    schema:name "Rhuddanian GSSP" ;
     schema:status "Ratified 1984" ;
 .
 
@@ -1508,11 +1338,9 @@ gssps:Roadian
     gssp:boundaryLevel "42.7m above the base of the Cutoff Formation" ;
     gssp:correlationEvents "Conodont FAD Jinogondolella nankingensis" ;
     schema:citation
-        "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
-        "https://doi.org/10.1016/j.earscirev.2020.103412"^^xsd:anyURI ,
-        "Permophiles 34 p. 3-11, 1999; Shen et al. 2020- Earth-Sci Rev 211 103412" ;
+        <http://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf> ,
+        <https://doi.org/10.1016/j.earscirev.2020.103412> ;
     schema:location "Stratotype Canyon, Texas, U.S.A" ;
-    schema:name "Roadian GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
@@ -1526,11 +1354,8 @@ gssps:Rupelian
         ] ;
     gssp:boundaryLevel "base of a 0.5m thick greenishgrey marl bed 19m above base of section" ;
     gssp:correlationEvents "Foraminifer LAD Hantkenina and Cribrohantkenina" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/rupelian.pdf"^^xsd:anyURI ,
-        "Episodes 2001; 16: 379-382" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/1993/v16i3/002> ;
     schema:location "Massignano, near Ancona, Italy" ;
-    schema:name "Rupelian GSSP" ;
     schema:status "Ratified 1992" ;
 .
 
@@ -1544,11 +1369,8 @@ gssps:Sakmarian
         ] ;
     gssp:boundaryLevel "55.4 m (Bed 26/3) in the Usolka section" ;
     gssp:correlationEvents "Conodont FAD Mesogondolella monstra" ;
-    schema:citation
-        "https://doi.org/10.18814/epiiugs/2020/020059"^^xsd:anyURI ,
-        "Episodes 43/4, 961-979, 2020" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2020/020059> ;
     schema:location "Usolka section, Southern Ural Mts, Russia" ;
-    schema:name "Sakmarian GSSP" ;
     schema:status "Ratified 2018" ;
 .
 
@@ -1562,11 +1384,8 @@ gssps:Sandbian
         ] ;
     gssp:boundaryLevel "1.4m below a phosphorite marker bed in the E14b outcrop" ;
     gssp:correlationEvents "Graptolite FAD Nemagraptus gracilis" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/sandbian.pdf"^^xsd:anyURI ,
-        "Episodes 2000; 23: 102-109" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2000/v23i2/003> ;
     schema:location "Sularp Brook, Fågelsång, Sweden" ;
-    schema:name "Sandbian GSSP" ;
     schema:status "Ratified 2002" ;
 .
 
@@ -1580,11 +1399,8 @@ gssps:Santonian
         ] ;
     gssp:boundaryLevel "94.4 m in the Cantera de Margas quarry section" ;
     gssp:correlationEvents "the FO of the inoceramid bivalve Platyceramus undulatoplicatus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/santonian.pdf"^^xsd:anyURI ,
-        "Episodes 2014; 37: 2-13" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2014/v37i1/001> ;
     schema:location "Olazagutia, Navarra, Spain" ;
-    schema:name "Santonian GSSP" ;
     schema:status "Ratified 2013" ;
 .
 
@@ -1598,11 +1414,8 @@ gssps:Selandian
         ] ;
     gssp:boundaryLevel "base of the red marls of Itzurun Formation" ;
     gssp:correlationEvents "2nd radiation of the calcareous nannofossil group Fasciculithus and sea-level fall" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/selandian-thanetian.pdf"^^xsd:anyURI ,
-        "Episodes 2011; 34: 220-243" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2011/v34i4/002> ;
     schema:location "Zumaia section, northern Spain" ;
-    schema:name "Selandian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
@@ -1611,7 +1424,6 @@ gssps:Serpukhovian
     gts:representsBoundary gtsd:BaseLateMississippian ;
     gssp:correlationEvents "Conodont FAD Lochriea ziegleri" ;
     schema:location "candidates are Verkhnyaya Kardailovka (Urals) or Nashui (China)" ;
-    schema:name "Serpukhovian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1625,11 +1437,8 @@ gssps:Serravallian
         ] ;
     gssp:boundaryLevel "formation boundary between the Globigerina Limestone and Blue Clay" ;
     gssp:correlationEvents "Oxygen-isotopic event (global cooling episode) Mi3b; near calcareous nannofossil LAD of Sphenolithus heteromorphus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/serravallian.pdf"^^xsd:anyURI ,
-        "Episodes 2009; 32: 152-166;" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2009/v32i3/002> ;
     schema:location "Ras il Pellegrin section, Fomm Ir- Rih Bay, west coast of Malta" ;
-    schema:name "Serravallian GSSP" ;
     schema:status "Ratified 2007" ;
 .
 
@@ -1644,10 +1453,10 @@ gssps:Sheinwoodian
     gssp:boundaryLevel "base of the Buildwas Formation" ;
     gssp:correlationEvents "Imprecise. Between the base of acritarch biozone 5 and LAD of conodont Pterospathodus amorphognathoides. The current GSSP does not coincide with the base of the Cyrtograptus centrifugus Biozone, as was supposed when the GSSP was defined. Restudy recommends a slightly higher and correlatable level on condonts - the Ireviken datum 2, which coincides approximately with the base of the murchisoni Graptolite Biozone" ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ,
-        "Lethaia 14; Episodes 1982; 5: 21-23; Geol. Series, Nat. Mus. Wales 1989; 9: p. 51-73" ;
+        <https://doi.org/10.18814/epiiugs/1982/v5i3/004> ,
+        "Geol. Series, Nat. Mus. Wales 1989; 9: p. 51-73" ,
+        "Lethaia 14" ;
     schema:location "Hughley Brook, UK" ;
-    schema:name "Sheinwoodian GSSP" ;
     schema:status "Ratified 1980" ;
 .
 
@@ -1669,11 +1478,8 @@ gssps:Sinemurian
         ] ;
     gssp:boundaryLevel "0.90 m above the base of Bed 145" ;
     gssp:correlationEvents "Ammonite FAD Vermiceras quantoxense, Vermiceras palmeri" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/sinemurian.pdf"^^xsd:anyURI ,
-        "Episodes 2002; 25: 22-28" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2002/v25i1/003> ;
     schema:location "East Quantoxhead, SW England" ;
-    schema:name "Sinemurian GSSP" ;
     schema:status "Ratified 2000" ;
 .
 
@@ -1704,12 +1510,10 @@ gssps:Telychian
     gssp:boundaryLevel "Unnamed" ;
     gssp:correlationEvents "Graptolite FADs of Spirograptus guerichi, Monograptus s.s. and Paradiversograptus runcinatus." ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ,
-        """El Pintado 1 GSSP: Loydell et al., Episodes forthcoming;
-
-Cefn-Cerig Rd GSSP: Episodes 1985; 8: 101-103; Geol. Series, Nat. Mus. Wales 1989; 9: 36-50""" ;
+        <https://doi.org/10.18814/epiiugs/1985/v8i2/005> ,
+        "Cefn-Cerig Rd GSSP:Geol. Series, Nat. Mus. Wales 1989; 9: 36-50" ,
+        "El Pintado 1 GSSP: Loydell et al., Episodes forthcoming" ;
     schema:location "El Pintado 1 Section, Sierra Norte de Sevilla, Spain" ;
-    schema:name "Telychian GSSP" ;
     schema:status """Ratified 2024
 
 to replace Cefn-Cerig Rd, Wales, UK former GSSP""" ;
@@ -1725,11 +1529,8 @@ gssps:Thanetian
         ] ;
     gssp:boundaryLevel "30.5m above the base of Itzurun Formation" ;
     gssp:correlationEvents "Magnetic - Base of Chron C26n" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/selandian-thanetian.pdf"^^xsd:anyURI ,
-        "Episodes 2011; 34: 220-243" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2011/v34i4/002> ;
     schema:location "Zumaia section, northern Spain" ;
-    schema:name "Thanetian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
@@ -1738,7 +1539,6 @@ gssps:Tithonian
     gts:representsBoundary gtsd:BaseTithonian ;
     gssp:correlationEvents "Near base of Hybonoticeras hybonotum ammonite zone and lowest occurrence of Gravesia genus, and the base of magnetic polarity Chron M22An" ;
     schema:location "candidates are Mt. Crussol or Canjuers (SE France) and Fornazzo (Sicily, S. Italy)" ;
-    schema:name "Tithonian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1752,11 +1552,8 @@ gssps:Toarcian
         ] ;
     gssp:boundaryLevel "base of bed 15e (Couches de passage), uppermost Lemede Formation" ;
     gssp:correlationEvents "FO of the ammonite D. (E.) simplex co-occurring with D. (E.) pseudocommune and D. (E.) polymorphum ." ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/toarcian.pdf"^^xsd:anyURI ,
-        "Episodes 2016; 39(3): 460-481" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2016/v39i3/99741> ;
     schema:location "Peniche (Portugal)" ;
-    schema:name "Toarcian GSSP" ;
     schema:status "Ratified 2014" ;
 .
 
@@ -1778,11 +1575,8 @@ gssps:Tortonian
         ] ;
     gssp:boundaryLevel "mid-point of sapropel layer of basic cycle number 76." ;
     gssp:correlationEvents "Calcareous nannofossil last common occurrence of Discoaster kugleri" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/tortonian.pdf"^^xsd:anyURI ,
-        "Episodes 2005; 28: 6-17" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2005/v28i1/001> ;
     schema:location "Monte dei Corvi Beach, near Ancona, Italy" ;
-    schema:name "Tortonian GSSP" ;
     schema:status "Ratified 2003" ;
 .
 
@@ -1797,10 +1591,9 @@ gssps:Tournaisian
     gssp:boundaryLevel "base of Bed 89 in Trench E' at La Serre, (but FAD now known to be at base of Bed 85)" ;
     gssp:correlationEvents "Conodont FAD Siphonodella sulcata IMPRECISE (GSSP discovered in 2006 to have biostratigraphic problems, and can not be correlated with precision.)" ;
     schema:citation
-        "https://stratigraphy.org/gssps/files/tournaisian.pdf"^^xsd:anyURI ,
-        "Episodes 1991; 14: 331-336; Newsletters on Stratigraphy 2009; 43: 195-205" ;
+        <https://doi.org/10.18814/epiiugs/1991/v14i4/004> ,
+        "Newsletters on Stratigraphy 2009; 43: 195-205" ;
     schema:location "La Serre, France" ;
-    schema:name "Tournaisian GSSP" ;
     schema:status "Ratified 1990" ;
 .
 
@@ -1814,11 +1607,8 @@ gssps:Tremadocian
         ] ;
     gssp:boundaryLevel "at the 101.8m level, within Bed 23, in the measured section" ;
     gssp:correlationEvents "Conodont FAD Iapetognathus fluctivagus" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/tremadocian.pdf"^^xsd:anyURI ,
-        "Episodes 2001; 24: 19-28" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2001/v24i1/005> ;
     schema:location "Green Point Section, western Newfoundland" ;
-    schema:name "Tremadocian GSSP" ;
     schema:status "Ratified 2000" ;
 .
 
@@ -1832,11 +1622,8 @@ gssps:Turonian
         ] ;
     gssp:boundaryLevel "base of Bed 86 of the Bridge Creek Limestone Member" ;
     gssp:correlationEvents "Ammonite FAD Watinoceras devonense" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/turonian.pdf"^^xsd:anyURI ,
-        "Episodes 2005; 28: 93-104" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2005/v28i2/003> ;
     schema:location "Pueblo, Colorado, USA" ;
-    schema:name "Turonian GSSP" ;
     schema:status "Ratified 2003" ;
 .
 
@@ -1846,7 +1633,6 @@ gssps:UpperPleistocene
     gssp:correlationEvents "Provisionally climatic – Marine Isotope Substage 5e" ;
     schema:citation "Head, M.J., Pillans, B., and Zalasiewicz, J.A., [submitted 2020]" ;
     schema:location "GSSP not presently defined" ;
-    schema:name "UpperPleistocene GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1855,7 +1641,6 @@ gssps:Valanginian
     gts:representsBoundary gtsd:BaseValanginian ;
     gssp:correlationEvents "Calpionellid FAD Calpionellites darderi (base of Calpionellid Zone E); followed by ammonite FAD \"Thurmanniceras\" pertransiens" ;
     schema:location "candidates are near Montbrunles- Bains (Drôme province, SE France) and Cañada Luenga (Betic Cordillera, S. Spain)" ;
-    schema:name "Valanginian GSSP" ;
     schema:status "Proposed" ;
 .
 
@@ -1869,11 +1654,8 @@ gssps:Visean
         ] ;
     gssp:boundaryLevel "base of bed 83 in the Pengchong Section" ;
     gssp:correlationEvents "Benthic Foraminifer FAD Eoparastaffella simplex" ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/visean.pdf"^^xsd:anyURI ,
-        "Episodes 2003; 26: 105-115" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2003/v26i2/004> ;
     schema:location "Pengchong, south China" ;
-    schema:name "Visean GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
@@ -1888,11 +1670,9 @@ gssps:Wordian
     gssp:boundaryLevel "7.6m above the base of the Getaway Ledge outcrop Section of the Getaway Limestone Member of the Cherry Canyon Formation" ;
     gssp:correlationEvents "Conodont FAD Jinogondolella aserrata" ;
     schema:citation
-        "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
-        "https://doi.org/10.1016/j.palaeo.2020.109668"^^xsd:anyURI ,
-        "Permophiles 34 p. 3-11, 1999; Wu et al. 2020 Palaeogeography Palaeoclimatology Palaeoecology 548 109668" ;
+        <http://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf> ,
+        <https://doi.org/10.1016/j.palaeo.2020.109668> ;
     schema:location "Guadalupe Pass, Texas, U.S.A" ;
-    schema:name "Wordian GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
@@ -1907,11 +1687,9 @@ gssps:Wuchiapingian
     gssp:boundaryLevel "base of Bed n6L in the newly exposed Penglaitan section" ;
     gssp:correlationEvents "Conodont FAD Clarkina postbitteri" ;
     schema:citation
-        "https://doi.org/10.18814/epiiugs/2023/023023"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/wuchiapingian.pdf"^^xsd:anyURI ,
-        "Episodes 2006; 29/4:253-262; Episodes 2024; 47:147-177" ;
+        <https://doi.org/10.18814/epiiugs/2006/v29i4/003> ,
+        <https://doi.org/10.18814/epiiugs/2023/023023> ;
     schema:location "Penglaitan, Guanxi Province, South China" ;
-    schema:name "Wuchiapingian GSSP" ;
     schema:status "Ratified 2004, Redefinition ratified 2023" ;
 .
 
@@ -1926,11 +1704,9 @@ gssps:Ypresian
     gssp:boundaryLevel "Base of Bed 1 in DBH subsection" ;
     gssp:correlationEvents "Carbon Isotope Excursion base, initiation of basal Eocene Thermal maximum (\"PETM\")" ;
     schema:citation
-        "https://doi.org/10.18814/epiiugs/2007/v30i4/003"^^xsd:anyURI ,
-        "https://stratigraphy.org/gssps/files/ypresian.pdf"^^xsd:anyURI ,
-        "Micropaleontology 49/1, p.41 - 59, 2003; Episodes 2007; 30: 271-286" ;
+        <https://doi.org/10.18814/epiiugs/2007/v30i4/003> ,
+        "Micropaleontology 49/1, p.41 - 59, 2003" ;
     schema:location "Dababiya, near Luxor, Egypt" ;
-    schema:name "Ypresian GSSP" ;
     schema:status "Ratified 2003" ;
 .
 
@@ -1944,10 +1720,1253 @@ gssps:Zanclean
         ] ;
     gssp:boundaryLevel "base of the Trubi Formation which corresponds to Insolation cycle 510" ;
     gssp:correlationEvents "Magnetic - base of the Thvera magnetic event (C3n.4n) is only 96 kyr (5 precession cycles) younger than the GSSP." ;
-    schema:citation
-        "https://stratigraphy.org/gssps/files/zanclean.pdf"^^xsd:anyURI ,
-        "Episodes 2000; 23: 179-187" ;
+    schema:citation <https://doi.org/10.18814/epiiugs/2000/v23i3/005> ;
     schema:location "Eraclea Minoa, Sicily, Italy" ;
-    schema:name "Zanclean GSSP" ;
     schema:status "Ratified 2000" ;
+.
+
+<https://doi.org/10.1007/BF02539792>
+    a schema:ScholarlyArticle ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Facies" ;
+                ] ;
+            schema:volumeNumber "26" ;
+        ] ;
+    schema:name "Facies 26, 35–54" ;
+    schema:pageEnd "54" ;
+    schema:pageStart "35" ;
+.
+
+<https://doi.org/10.1016/j.earscirev.2020.103412>
+    a schema:ScholarlyArticle ;
+    schema:author
+        [
+            a schema:Person ;
+            schema:familyName "Shen" ;
+        ] ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:identifier
+        [
+            a schema:PropertyValue ;
+            schema:propertyID "article number" ;
+            schema:value "103412" ;
+        ] ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Earth-Sci Rev" ;
+                ] ;
+            schema:volumeNumber "211" ;
+        ] ;
+    schema:name "Shen et al. 2020- Earth-Sci Rev 211 103412" ;
+.
+
+<https://doi.org/10.1016/j.palaeo.2020.109668>
+    a schema:ScholarlyArticle ;
+    schema:author
+        [
+            a schema:Person ;
+            schema:familyName "Wu" ;
+        ] ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:identifier
+        [
+            a schema:PropertyValue ;
+            schema:propertyID "article number" ;
+            schema:value "109668" ;
+        ] ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Palaeogeography Palaeoclimatology Palaeoecology" ;
+                ] ;
+            schema:volumeNumber "548" ;
+        ] ;
+    schema:name "Wu et al. 2020 Palaeogeography Palaeoclimatology Palaeoecology 548 109668" ;
+.
+
+<https://doi.org/10.1127/nos/25/1991/115>
+    a schema:ScholarlyArticle ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Newsletters on Stratigraphy" ;
+                ] ;
+            schema:volumeNumber "25" ;
+        ] ;
+    schema:name "Newsletters on Stratigraphy 25, 115–125" ;
+    schema:pageEnd "125" ;
+    schema:pageStart "115" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1985/v8i2/006>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
+    schema:name "Episodes 1985; 8: 104-109" ;
+    schema:pageEnd "109" ;
+    schema:pageStart "104" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1985/v8i2/009>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
+    schema:name "Episodes 1985; 8:116-120" ;
+    schema:pageEnd "120" ;
+    schema:pageStart "116" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1987/v10i2/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "10" ;
+        ] ;
+    schema:name "Episodes 1987; 10: 97-101" ;
+    schema:pageEnd "101" ;
+    schema:pageStart "97" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1989/v12i2/014>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "12" ;
+        ] ;
+    schema:name "Episodes 1989; 12: 109-113" ;
+    schema:pageEnd "113" ;
+    schema:pageStart "109" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1991/v14i4/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "14" ;
+        ] ;
+    schema:name "Episodes 1991; 14: 331-336" ;
+    schema:pageEnd "336" ;
+    schema:pageStart "331" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1993/v16i3/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed ;
+    schema:name "Episodes 2001; 16: 379-382" ;
+    schema:pageEnd "382" ;
+    schema:pageStart "379" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1993/v16i4/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed ;
+    schema:name "Episodes 1993; 16: 433-441" ;
+    schema:pageEnd "441" ;
+    schema:pageStart "433" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1994/v17i1.2/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "17" ;
+        ] ;
+    schema:name "Episodes 1994; 17: 95-100" ;
+    schema:pageEnd "100" ;
+    schema:pageStart "95" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1995/v18i3/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "18" ;
+        ] ;
+    schema:name "Episodes 1995; 18: 107-115" ;
+    schema:pageEnd "115" ;
+    schema:pageStart "107" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1997/v20i1/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:name "Episodes 1997; 20: 16-22" ;
+    schema:pageEnd "22" ;
+    schema:pageStart "16" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1997/v20i1/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:name "Episodes 1997; 20: 23-28" ;
+    schema:pageEnd "28" ;
+    schema:pageStart "23" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1997/v20i3/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:name "Episodes 1997; 20: 158-166" ;
+    schema:pageEnd "166" ;
+    schema:pageStart "158" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1997/v20i4/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3 ;
+    schema:name "Episodes 1997; 20: 235-240" ;
+    schema:pageEnd "240" ;
+    schema:pageStart "235" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1998/v21i1/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+            schema:issueNumber "1" ;
+        ] ;
+    schema:name "Episodes 21/1, 11-18, 1998" ;
+    schema:pageEnd "18" ;
+    schema:pageStart "11" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1998/v21i2/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+    schema:name "Episodes 1998; 21: 82-87" ;
+    schema:pageEnd "87" ;
+    schema:pageStart "82" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1998/v21i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee ;
+    schema:name "Episodes 1998; 21: 88-93" ;
+    schema:pageEnd "93" ;
+    schema:pageStart "88" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1999/v22i4/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "22" ;
+        ] ;
+    schema:name "Episodes 1999; 22: 272-283" ;
+    schema:pageEnd "283" ;
+    schema:pageStart "272" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2000/v23i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:name "Episodes 2000; 23: 102-109" ;
+    schema:pageEnd "109" ;
+    schema:pageStart "102" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2000/v23i3/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:name "Episodes 2000; 23: 172-178" ;
+    schema:pageEnd "178" ;
+    schema:pageStart "172" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2000/v23i3/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054 ;
+    schema:name "Episodes 2000; 23: 179-187" ;
+    schema:pageEnd "187" ;
+    schema:pageStart "179" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2001/v24i1/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:name "Episodes 2001; 24: 19-28" ;
+    schema:pageEnd "28" ;
+    schema:pageStart "19" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2001/v24i2/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:name "Episodes 2001; 24: 102-114" ;
+    schema:pageEnd "114" ;
+    schema:pageStart "102" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2001/v24i3/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:name "Episodes 2001; 24: 166-175" ;
+    schema:pageEnd "175" ;
+    schema:pageStart "166" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2001/v24i4/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118 ;
+    schema:name "Episodes 2001; 24: 229-238" ;
+    schema:pageEnd "238" ;
+    schema:pageStart "229" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2002/v25i1/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "25" ;
+        ] ;
+    schema:name "Episodes 2002; 25: 22-28" ;
+    schema:pageEnd "28" ;
+    schema:pageStart "22" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2003/v26i2/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "26" ;
+        ] ;
+    schema:name "Episodes 2003; 26: 105-115" ;
+    schema:pageEnd "115" ;
+    schema:pageStart "105" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2004/v27i1/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99 ;
+    schema:name "Episodes 2004; 27: 21-32" ;
+    schema:pageEnd "32" ;
+    schema:pageStart "21" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2004/v27i4/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99 ;
+    schema:name "Episodes 2004; 27: 265-272" ;
+    schema:pageEnd "272" ;
+    schema:pageStart "265" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2005/v28i1/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:name "Episodes 2005; 28: 6-17" ;
+    schema:pageEnd "17" ;
+    schema:pageStart "6" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2005/v28i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:name "Episodes 2005; 28: 93-104" ;
+    schema:pageEnd "104" ;
+    schema:pageStart "93" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2005/v28i2/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:name "Episodes 2005; 28: 105-117" ;
+    schema:pageEnd "117" ;
+    schema:pageStart "105" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2005/v28i4/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96 ;
+    schema:name "Episodes 2005; 28: 233-244" ;
+    schema:pageEnd "244" ;
+    schema:pageStart "233" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:name "Episodes 2006; 29: 93-106" ;
+    schema:pageEnd "106" ;
+    schema:pageStart "93" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i3/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+            schema:issueNumber "3" ;
+        ] ;
+    schema:name "Episodes 29/3 p. 175-182. 2006" ;
+    schema:pageEnd "182" ;
+    schema:pageStart "175" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i3/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:name "Episodes 2006; 29: 183-196" ;
+    schema:pageEnd "196" ;
+    schema:pageStart "183" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i4/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+            schema:issueNumber "4" ;
+        ] ;
+    schema:name "Episodes 2006; 29/4:253-262" ;
+    schema:pageEnd "262" ;
+    schema:pageStart "253" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2006/v29i4/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e ;
+    schema:name "Episodes 2006; 29: 263-278" ;
+    schema:pageEnd "278" ;
+    schema:pageStart "263" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2007/v30i2/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:name "Episodes 2007; 30: 85-95" ;
+    schema:pageEnd "95" ;
+    schema:pageStart "85" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2007/v30i4/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:name "Episodes 2007; 30: 258-270" ;
+    schema:pageEnd "270" ;
+    schema:pageStart "258" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2007/v30i4/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256 ;
+    schema:name "Episodes 2007; 30: 271-286" ;
+    schema:pageEnd "286" ;
+    schema:pageStart "271" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2008/v31i2/016>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "31" ;
+        ] ;
+    schema:name "Episodes 2008; 31: 264–267" ;
+    schema:pageEnd "267" ;
+    schema:pageStart "264" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2009/v32i1/006>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:name "Episodes 2009; 32: 41-55" ;
+    schema:pageEnd "55" ;
+    schema:pageStart "41" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2009/v32i3/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:name "Episodes 2009; 32: 152-166" ;
+    schema:pageEnd "166" ;
+    schema:pageStart "152" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2009/v32i4/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:name "Episodes 2009; 32: 222-248" ;
+    schema:pageEnd "248" ;
+    schema:pageStart "222" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2010/v33i3/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "33" ;
+        ] ;
+    schema:name "Episodes 2010; 33: 152-158" ;
+    schema:pageEnd "158" ;
+    schema:pageStart "152" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2011/v34i2/006>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71 ;
+    schema:name "Episodes 2011; 34: 86-108" ;
+    schema:pageEnd "108" ;
+    schema:pageStart "86" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2012/v35i3/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:name "Episodes 2012; 35: 388-397" ;
+    schema:pageEnd "397" ;
+    schema:pageStart "388" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2012/v35i3/003>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:name "Episodes 2012; 35: 414-430" ;
+    schema:pageEnd "430" ;
+    schema:pageStart "414" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2012/v35i4/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77 ;
+    schema:name "Episodes 2012; 35: 462-477" ;
+    schema:pageEnd "477" ;
+    schema:pageStart "462" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2013/v36i3/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "36" ;
+        ] ;
+    schema:name "Episodes 2013; 36: 162-198" ;
+    schema:pageEnd "198" ;
+    schema:pageStart "162" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2014/v37i1/001>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "37" ;
+        ] ;
+    schema:name "Episodes 2014; 37: 2-13" ;
+    schema:pageEnd "13" ;
+    schema:pageStart "2" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2016/v39i1/89231>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85 ;
+    schema:name "Episodes 2019; 39" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2016/v39i3/99741>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85 ;
+            schema:issueNumber "3" ;
+        ] ;
+    schema:name "Episodes 2016; 39(3): 460-481" ;
+    schema:pageEnd "481" ;
+    schema:pageStart "460" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2017/v40i3/017021>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf
+                [
+                    a schema:PublicationVolume ;
+                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:volumeNumber "40" ;
+                ] ;
+            schema:issueNumber "3" ;
+        ] ;
+    schema:name "Episodes 40/3, p. 177-188, 2017" ;
+    schema:pageEnd "188" ;
+    schema:pageStart "177" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2018/v41i1/018003>
+    a schema:ScholarlyArticle ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c ;
+            schema:issueNumber "1" ;
+        ] ;
+    schema:name "Episodes, 41 (1): 17-32." ;
+    schema:pageEnd "32" ;
+    schema:pageStart "17" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2020/020059>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf
+                [
+                    a schema:PublicationVolume ;
+                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:volumeNumber "43" ;
+                ] ;
+            schema:issueNumber "4" ;
+        ] ;
+    schema:name "Episodes 43/4, 961-979, 2020" ;
+    schema:pageEnd "979" ;
+    schema:pageStart "961" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2020/020072>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2021"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c ;
+    schema:name "Episodes 2021; 44(2): 129-150" ;
+    schema:pageEnd "150" ;
+    schema:pageStart "129" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2020/020074>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2021"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c ;
+    schema:name "Episodes 2021; 44(2): 151-173" ;
+    schema:pageEnd "173" ;
+    schema:pageStart "151" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2020/020080>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2021"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea ;
+    schema:name "Episodes 2021; 44:317-347" ;
+    schema:pageEnd "347" ;
+    schema:pageStart "317" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2021/021022>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2022"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf
+                [
+                    a schema:PublicationVolume ;
+                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:volumeNumber "42" ;
+                ] ;
+            schema:issueNumber "2" ;
+        ] ;
+    schema:name
+        "DOI: 10.18814/epiiugs/2021/021022" ,
+        "Episodes 2022; 42(2): 181-220" ;
+    schema:pageEnd "220" ;
+    schema:pageStart "181" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2022/022004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2022"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf
+                [
+                    a schema:PublicationVolume ;
+                    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+                    schema:volumeNumber "45" ;
+                ] ;
+            schema:issueNumber "3" ;
+        ] ;
+    schema:name "Episodes 45/3 p. 309-331. 2022" ;
+    schema:pageEnd "331" ;
+    schema:pageStart "309" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2022/022046>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2023"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f ;
+            schema:issueNumber "2" ;
+        ] ;
+    schema:name "Episodes 2023; 46(2): 281-307" ;
+    schema:pageEnd "307" ;
+    schema:pageStart "281" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2022/022048>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2023-02-01"^^xsd:date ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:name
+        "DOI: 10.18814/epiiugs/2022/022048" ,
+        "Episodes 2023; 1st February" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/023015>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2023"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f ;
+            schema:issueNumber "4" ;
+        ] ;
+    schema:name "Episodes 46/4, p. 623-651. 2023" ;
+    schema:pageEnd "651" ;
+    schema:pageStart "623" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/023023>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:name "Episodes 2024; 47:147-177" ;
+    schema:pageEnd "177" ;
+    schema:pageStart "147" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/023024>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:name "Episodes 2024; 47:311-333" ;
+    schema:pageEnd "333" ;
+    schema:pageStart "311" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2023/02330>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+    schema:name "Episodes 2024; 47:335-379" ;
+    schema:pageEnd "379" ;
+    schema:pageStart "335" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2024/024002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationIssue ;
+            schema:isPartOf _:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3 ;
+            schema:issueNumber "2" ;
+        ] ;
+    schema:name "Episodes 2024; 47(2):381-389" ;
+    schema:pageEnd "389" ;
+    schema:pageStart "381" ;
+.
+
+<https://stratigraphy.org/gssps/files/dapingian2.pdf>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748 ;
+    schema:name "Episodes 2009; 32: 96-113" ;
+    schema:pageEnd "113" ;
+    schema:pageStart "96" ;
+.
+
+<https://stratigraphy.org/gssps/files/ediacaran.pdf>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37 ;
+            schema:volumeNumber "39" ;
+        ] ;
+    schema:name "Lethaia 39, p.13- 30, 2006" ;
+    schema:pageEnd "30" ;
+    schema:pageStart "13" ;
+.
+
+<https://stratigraphy.org/gssps/files/paibian.pdf>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37 ;
+            schema:volumeNumber "37" ;
+        ] ;
+    schema:name "Lethaia 37, p. 365-379, 2004" ;
+    schema:pageEnd "379" ;
+    schema:pageStart "365" ;
+.
+
+<https://www.elsevier.com/books/geologic-time-scale-2020/gradstein/978-0-12-8243619>
+    a schema:Book ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:name "The Geologic Time Scale 2020" ;
+.
+
+<https://www.schweizerbart.de/publications/detail/isbn/9783510560035>
+    a schema:CreativeWork ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:CreativeWorkSeries ;
+            schema:name "IUGS Series A" ;
+        ] ;
+    schema:name "IUGS Series A, 5, p. 96-109, 1977" ;
+    schema:pageEnd "109" ;
+    schema:pageStart "96" ;
+.
+
+<https://doi.org/10.1016/j.quaint.2019.05.018>
+    a schema:ScholarlyArticle ;
+    schema:author
+        [
+            a schema:Person ;
+            schema:familyName "Head" ;
+            schema:givenName "M.J." ;
+        ] ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Quaternary Sci." ;
+                ] ;
+            schema:volumeNumber "500" ;
+        ] ;
+    schema:name
+        "Head, M.J., 2019" ,
+        "Quaternary Sci. 2019; 500: 32-51," ;
+    schema:pageEnd "51" ;
+    schema:pageStart "32" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2011/v34i4/002>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71 ;
+    schema:name "Episodes 2011; 34: 220-243" ;
+    schema:pageEnd "243" ;
+    schema:pageStart "220" ;
+.
+
+<http://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf
+                [
+                    a schema:Periodical ;
+                    schema:name "Permophiles" ;
+                ] ;
+            schema:volumeNumber "34" ;
+        ] ;
+    schema:name "Permophiles 34 p. 3-11, 1999" ;
+    schema:pageEnd "11" ;
+    schema:pageStart "3" ;
+.
+
+<https://doi.org/10.18814/epiiugs/2018/018016>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c ;
+    schema:name "Episodes 2018; 41: 213-223" ;
+    schema:pageEnd "223" ;
+    schema:pageStart "213" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1982/v5i3/004>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf
+        [
+            a schema:PublicationVolume ;
+            schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+            schema:volumeNumber "5" ;
+        ] ;
+    schema:name "Episodes 1982; 5: 21-23" ;
+    schema:pageEnd "23" ;
+    schema:pageStart "21" ;
+.
+
+<https://doi.org/10.18814/epiiugs/1985/v8i2/005>
+    a schema:ScholarlyArticle ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:encodingFormat "application/pdf" ;
+    schema:isBasedOn <https://stratigraphy.org/gssps/> ;
+    schema:isPartOf _:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0 ;
+    schema:name "Cefn-Cerig Rd GSSP: Episodes 1985; 8: 101-103" ;
+    schema:pageEnd "103" ;
+    schema:pageStart "101" ;
+.
+
+_:cb120ee87bc831aa80be4112c8766957d8b92d3b6e6ebbea93f22a40f218dddb2ed
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "16" ;
+.
+
+_:cb12c474ce0154e11cdbd2de4170993c1c5cd95c23baa0251f3f10732af1bfb8c85
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "39" ;
+.
+
+_:cb17472419318566f96920626ee65ec83c9e85935b7ec9ad1cf6c8ebf72cd9beb71
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "34" ;
+.
+
+_:cb19f92ec1b3fd9118b12b3aa1b06764f3d36df82f8555e58f1624afd24655adb99
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "27" ;
+.
+
+_:cb1aaf54144cb4c6d5521376d7b1edcfc7025982883895e4a7085d87b9e577c712c
+    a schema:PublicationIssue ;
+    schema:isPartOf _:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea ;
+    schema:issueNumber "2" ;
+.
+
+_:cb3fc05377df5a5caee592d46a84b7bcb5113aaff2736f5db68a3b70f66afd27ea
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "44" ;
+.
+
+_:cb7612067662fa60475b5375ca77135090d154714088bc2ef483964ab4c60d233f
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "46" ;
+.
+
+_:cbcce9d708c860f84d8291ec211ab667e77fee2039f9ab72570adf1f49f6e6b37
+    a schema:Periodical ;
+    schema:name "Lethaia" ;
+.
+
+_:cbdd2458b5e43419681c13f51722a37b2a9a52fafe0d6de67456431b329ce4ab9c
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "41" ;
+.
+
+_:cb15848d2ff5f6e64ca53dc6595e21f25a25e24c824c4e2885b9514f43e2cbe7054
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "23" ;
+.
+
+_:cb198713e4d585d2990d25ceec5b23a57d4ca926569ff6caa7c3d52e702338e66ee
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "21" ;
+.
+
+_:cb24a1fef229445ff1c1a210db8a08bb3dd010c97f2ca182b9b5e97ed7d2f6d08c0
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "8" ;
+.
+
+_:cb26a14be78c2df1f80906cb1090370854cfa78517b256390abdce88eac9e401256
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "30" ;
+.
+
+_:cbc053fd40d23353ac90b45a53f36bfa866b4eb83b56c5fcf23942402c50708c77
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "35" ;
+.
+
+_:cb1396d3f86c83f6e1e07b07a59c01d659e52abf41bbf532cb8a51e494c99cc6d96
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "28" ;
+.
+
+_:cb26089797883100034553d66e17659a2567abf8e9169773ccfe6770fc5a2b2e0c3
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "20" ;
+.
+
+_:cb28822f5a706b3e9bea5f5077520eb9213e20516a04864f1b58aa531e1e6c56118
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "24" ;
+.
+
+_:cb30c04475c0dcbd77bd8dac9284dc40fae9245d45a3bb842e243afa10541c86748
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "32" ;
+.
+
+_:cb1972b20b723e530214eff7084f97b319f6b7b8c1c85b90b7d9dfbee9892a2fc9e
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "29" ;
+.
+
+_:cb9c487d50727cc70e92d93ad2577357a6ca122d0b20c244fc9adbf716f4927dc3
+    a schema:PublicationVolume ;
+    schema:isPartOf _:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504 ;
+    schema:volumeNumber "47" ;
+.
+
+_:cbd4d5fd0eb953ff7ccac5b90258c2509903a7e0576a42c70d8d4d21119a33f504
+    a schema:Periodical ;
+    schema:name "Episodes" ;
 .

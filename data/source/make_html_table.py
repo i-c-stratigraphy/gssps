@@ -1,7 +1,8 @@
-from rdflib import Graph
+from rdflib import Graph, URIRef
+from rdflib.namespace import SDO
 from pathlib import Path
 from dominate import document
-from dominate.tags import br, meta, table, tbody, td, th, thead, title, tr
+from dominate.tags import a, br, meta, table, tbody, td, th, thead, title, tr
 from dominate.util import text
 import re
 
@@ -16,7 +17,7 @@ def make_graph() -> Graph:
     g += chart_graph
     print(len(g))
 
-    gts_path = Path(__file__).parents[3] / "supermodel/resources/datasets/gts2020.ttl"
+    gts_path = Path(__file__).parents[3] / "supermodel-data/resources/datasets/gtsd.ttl"
     gts_graph = Graph().parse(gts_path)
     g += gts_graph
     print(len(g))
@@ -49,8 +50,9 @@ def extract_lat_lon(wkt: str) -> tuple[float, float]:
 
 
 def make_html(g: Graph, output_path: Path | None = None) -> Path:
+    print("Making HTML")
     q = """
-        PREFIX gts2020: <https://data.stratigraphy.org/data/gts2020/>
+        PREFIX gtsd: <https://data.stratigraphy.org/data/gts/>
         PREFIX geo: <http://www.opengis.net/ont/geosparql#>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX schema: <https://schema.org/>
@@ -59,19 +61,20 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
         PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
         PREFIX gssp: <https://data.stratigraphy.org/def/gssp/>
         
-        SELECT ?gssp ?name ?mya ?d ?wkt ?bl ?ce ?s ?colour
+        SELECT ?gssp ?name ?mya ?loc ?wkt ?bl ?ce ?s ?colour
         WHERE {
             {
                 ?gssp 
                     a gssp:GSSP ;
-                    gts:stratotypeOf ?base ;
+                    gts:representsBoundary ?base ;
                     geo:hasGeometry/geo:asWKT ?wkt ;
-                    gssp:boundaryLevel ?bl ;
                     gssp:correlationEvents ?ce ;
                     #schema:citation ?cit ;
-                    schema:description ?d ;
+                    schema:location ?loc ;
                     schema:status ?s ;
                 .
+
+                OPTIONAL { ?gssp gssp:boundaryLevel ?bl . }
         
                 OPTIONAL {
                     ?t1
@@ -93,7 +96,7 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
             ?t
                 skos:prefLabel ?name ;
                 schema:color ?colour ;
-                time:hasBeginning/gts2020:inMYA ?mya ;
+                time:hasBeginning/gtsd:inMYA ?mya ;
             .
             
             FILTER (LANG(?name) = "en")
@@ -101,8 +104,7 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
         ORDER BY ?mya    
         """
 
-    columns = ("name", "mya", "d", "wkt", "bl", "ce", "s", "colour", "cit")
-    multi_value_columns = ("cit")
+    columns = ("name", "mya", "loc", "wkt", "bl", "ce", "s", "colour", "cit")
 
     rows = {}
 
@@ -115,7 +117,7 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
             elif column == "wkt":
                 rows[gssp][column] = str(r[column]).strip().replace("POINT (", "").strip(")").replace(" ",", ")
             else:
-                rows[gssp][column] = str(r[column])
+                rows[gssp][column] = str(r[column]) if r[column] is not None else ""
         rows[gssp]["cit"] = []
 
     q2 = """
@@ -134,9 +136,7 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
     for r in g.query(q2):
         gssp = str(r["gssp"])
         if rows.get(gssp):
-            rows[gssp]["cit"].append(str(r["cit"]))
-
-    print(rows["https://data.stratigraphy.org/data/gssps/Zanclean"]['cit'])
+            rows[gssp]["cit"].append(r["cit"])
 
     doc = document(title=None)
     with doc.head:
@@ -158,13 +158,19 @@ def make_html(g: Graph, output_path: Path | None = None) -> Path:
                             value = row[column]
                             if column == "colour":
                                 pass
-                            elif column in multi_value_columns:
+                            elif column == "cit":
                                 with td():
                                     for index, item in enumerate(value):
                                         if index:
                                             br()
+                                        if isinstance(item, URIRef):
+                                            label = str(item)
+                                            names = sorted(str(name) for name in g.objects(item, SDO.name))
+                                            if names:
+                                                label = names[0]
+                                            a(label, href=str(item))
                                         else:
-                                            text(item)
+                                            text(str(item))
 
                             else:
                                 td(value)

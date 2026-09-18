@@ -11,6 +11,7 @@ GSSP = Namespace("https://data.stratigraphy.org/def/gssp/")
 GSSPS = Namespace("https://data.stratigraphy.org/data/gssps/")
 GTS = Namespace("http://resource.geosciml.org/ontology/timescale/gts#")
 GTSD = Namespace("https://data.stratigraphy.org/data/gts/")
+SOURCE_DIR = Path(__file__).resolve().parent
 
 PREFIXES = {
     "ds": DATASET_IRI,
@@ -88,7 +89,7 @@ def add_metadata():
 
 
 def make_rdf() -> Graph:
-    df = pd.read_excel("GSSPs.xlsx", sheet_name="GSSPs")
+    df = pd.read_excel(SOURCE_DIR / "GSSPs.xlsx", sheet_name="GSSPs")
     g = Graph()
 
     for index, row in df.iterrows():
@@ -103,23 +104,22 @@ def make_rdf() -> Graph:
             # g.add((iri, SDO.name, Literal(row["Stage"] + " GSSP")))
 
             if not pd.isnull(row["Location"]):
-                g.add((iri, SDO.description, Literal(row["Location"])))
+                g.add((iri, SDO.location, Literal(row["Location"])))
             if not pd.isnull(row["Boundary Level"]):
                 g.add((iri, GSSP.boundaryLevel, Literal(row["Boundary Level"])))
             if not pd.isnull(row["Correlation Events"]):
-                g.add((iri, GSSP.correlationEvents, Literal(row["Correlation Events"])))
+                g.add((iri, GSSP.correlationEvents, Literal(row["Correlation Events"].strip())))
 
-            if not pd.isnull(row["DOIs"]):
-                dois = [doi.strip() for doi in str(row["DOIs"]).split("http")]
-                for doi in dois:
-                    if doi != "nan" and doi != "":
-                        g.add((iri, SDO.citation, Literal("http" + doi if doi.startswith("s://") else doi, datatype=XSD.anyURI)))
-
-            if not pd.isnull(row["PDFs"]):
-                pdfs = [doi.strip() for doi in str(row["PDFs"]).split("http")]
-                for pdf in pdfs:
-                    if pdf != "nan" and pdf != "":
-                        g.add((iri, SDO.citation, Literal("http" + pdf if pdf.startswith("s://") else pdf, datatype=XSD.anyURI)))
+            if not pd.isnull(row["References"]):
+                for reference in str(row["References"]).splitlines():
+                    reference = reference.strip()
+                    if reference:
+                        citation = (
+                            URIRef(reference)
+                            if reference.startswith(("https://", "http://"))
+                            else Literal(reference)
+                        )
+                        g.add((iri, SDO.citation, citation))
 
             status = str(row["Status"])
             if status == "Ratified":
@@ -134,23 +134,21 @@ def make_rdf() -> Graph:
                 g.add((geom, RDF.type, GEO.Geometry))
                 g.add((geom, GEO.asWKT, Literal(wkt, datatype=GEO.wktLiteral)))
 
-            if not pd.isnull(row["References"]):
-                g.add((iri, SDO.citation, Literal(str(row["References"]))))
-
             g.add((DATASET_IRI, SDO.hasPart, iri))
 
     g += add_metadata()
+    g.parse(SOURCE_DIR / "references.ttl", format="turtle")
 
     for k, v in PREFIXES.items():
         g.bind(k, v)
 
-    g.serialize(destination="gssps.ttl", format="longturtle")
+    g.serialize(destination=SOURCE_DIR / "gssps.ttl", format="longturtle")
     print("Made GSSPs RDF")
     return g
 
 
 def make_geojson(g):
-    g += Graph().parse(Path(__file__).parents[3] / "supermodel/resources/datasets/gtsd.ttl")
+    g += Graph().parse(Path(__file__).parents[3] / "supermodel-data/resources/datasets/gtsd.ttl")
     g += Graph().parse(Path(__file__).parents[3] / "chart-data/chart.ttl")
 
     q = """
