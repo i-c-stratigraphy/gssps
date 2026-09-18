@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>International Commission on Stratigraphy</title>
+    <link href="style/logo-ics.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" type="text/css" href="style/ics.css">
+</head>
+<body>
+    <div id="widther">
+        <div id="header">
+            <div style="text-align:right;">
+                <a href="http://stratigraphy.org"><img src="style/logo-ics-3D-dark.png" alt="ICS logo" style="width:100px" /></a>
+            </div>
+            <div id="innerheader">
+                <div id="headertxt" style="padding: 50px 20px;">
+                    <div id="title">International Commission on Stratigraphy</div>
+                </div>
+            </div>
+        </div>
+        <div id="banner"></div>
+        <div id="body-grid">
+            <div id="sidebar" style="grid-column: 1;">
+                {% include menu.html %}
+            </div>
+            <div id="container-content" style="grid-column: 2;">
+                <script id="gssps-map-data" type="application/json">
+<!-- GENERATED_GEOJSON -->
+                </script>
+                {{ content }}
+            </div>            
+        </div>
+        <div id="tables">
+            <!-- GENERATED_TABLES -->
+        </div>
+        <footer>
+            &copy; 2013-2026 International Commission on Stratigraphy, all rights reserved
+        </footer>
+    </div>
+</body>
+</html>
