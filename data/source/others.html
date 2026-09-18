@@ -3,9 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>GSSAs &amp; SABS</title>
+    <style>
+            body { font-family: sans-serif; margin: 2rem; }
+            table { border-collapse: collapse; width: 100%; margin-bottom: 2rem; }
+            th, td { border: 1px solid #777; padding: .45rem; text-align: left;
+                     vertical-align: top; }
+            thead { background: #eee; }
+            .hierarchy th { padding: .6rem; }
+            td:last-child { min-width: 12rem; overflow-wrap: anywhere; }
+        </style>
   </head>
   <body>
-    <table>
+    <h1>GSSAs &amp; SABS</h1>
+    <h2>Quaternary</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Quaternary">
       <thead>
         <tr>
           <th>name</th>
@@ -19,7 +30,19 @@
         </tr>
       </thead>
       <tbody>
-        <tr style="background-color:#FFF2D3">
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Phanerozoic" style="background-color:#9AD9DD">
+          <th colspan="8" scope="rowgroup">Phanerozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Cenozoic" style="background-color:#F2F91D">
+          <th colspan="8" scope="rowgroup">Cenozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Quaternary" style="background-color:#F9F97F">
+          <th colspan="8" scope="rowgroup">Quaternary Period</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Pleistocene" style="background-color:#FFEFAF">
+          <th colspan="8" scope="rowgroup">Pleistocene Epoch</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/UpperPleistocene" style="background-color:#FFF2D3">
           <td>Upper Pleistocene</td>
           <td>0.129</td>
           <td>GSSP not presently defined</td>
@@ -29,7 +52,7 @@
           <td>Proposed</td>
           <td>Head, M.J., Pillans, B., and Zalasiewicz, J.A., [submitted 2020]</td>
         </tr>
-        <tr style="background-color:#FFF2C7">
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Chibanian#SABS" style="background-color:#FFF2C7">
           <td>Chibanian SABS</td>
           <td>0.774</td>
           <td>Ideale Section, Montalbano Jonico succession, Basilicata, S Italy </td>
@@ -41,7 +64,36 @@
             <a href="https://doi.org/10.18814/epiiugs/2023/023022">Episodes 2024; 47:121-146</a>
           </td>
         </tr>
-        <tr style="background-color:#FECC5C">
+      </tbody>
+    </table>
+    <h2>Cryogenian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Cryogenian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Neoproterozoic" style="background-color:#FEB342">
+          <th colspan="8" scope="rowgroup">Neoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Cryogenian" style="background-color:#FECC5C">
+          <th colspan="8" scope="rowgroup">Cryogenian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Cryogenian" style="background-color:#FECC5C">
           <td>Cryogenian</td>
           <td>720</td>
           <td>Will be placed at a that lies stratigraphically beneath the first appearance of widespread glaciation and is assigned in the interim a 'calibrated age' of circa 720 Ma</td>
@@ -53,7 +105,36 @@
             <a href="https://doi.org/10.18814/epiiugs/2016/v39i1/89231">Episodes 2019; 39</a>
           </td>
         </tr>
-        <tr style="background-color:#FEBF4E">
+      </tbody>
+    </table>
+    <h2>Tonian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Tonian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Neoproterozoic" style="background-color:#FEB342">
+          <th colspan="8" scope="rowgroup">Neoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Tonian" style="background-color:#FEBF4E">
+          <th colspan="8" scope="rowgroup">Tonian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Tonian" style="background-color:#FEBF4E">
           <td>Tonian</td>
           <td>1000</td>
           <td>Defined chronometrically</td>
@@ -63,7 +144,36 @@
           <td>Ratified 1990</td>
           <td>Episodes 1991; 14</td>
         </tr>
-        <tr style="background-color:#FED99A">
+      </tbody>
+    </table>
+    <h2>Stenian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Stenian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Mesoproterozoic" style="background-color:#FDB462">
+          <th colspan="8" scope="rowgroup">Mesoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Stenian" style="background-color:#FED99A">
+          <th colspan="8" scope="rowgroup">Stenian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Stenian" style="background-color:#FED99A">
           <td>Stenian</td>
           <td>1200</td>
           <td>Defined chronometrically</td>
@@ -73,7 +183,36 @@
           <td>Ratified 1990</td>
           <td>Episodes 1991; 14</td>
         </tr>
-        <tr style="background-color:#FDCC8A">
+      </tbody>
+    </table>
+    <h2>Ectasian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Ectasian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Mesoproterozoic" style="background-color:#FDB462">
+          <th colspan="8" scope="rowgroup">Mesoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Ectasian" style="background-color:#FDCC8A">
+          <th colspan="8" scope="rowgroup">Ectasian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Ectasian" style="background-color:#FDCC8A">
           <td>Ectasian</td>
           <td>1400</td>
           <td>Defined chronometrically</td>
@@ -83,7 +222,36 @@
           <td>Ratified 1990</td>
           <td>Episodes 1991; 14</td>
         </tr>
-        <tr style="background-color:#FDC07A">
+      </tbody>
+    </table>
+    <h2>Calymmian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Calymmian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Mesoproterozoic" style="background-color:#FDB462">
+          <th colspan="8" scope="rowgroup">Mesoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Calymmian" style="background-color:#FDC07A">
+          <th colspan="8" scope="rowgroup">Calymmian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Calymmian" style="background-color:#FDC07A">
           <td>Calymmian</td>
           <td>1600</td>
           <td>Defined chronometrically</td>
@@ -93,7 +261,36 @@
           <td>Ratified 1990</td>
           <td>Episodes 1991; 14</td>
         </tr>
-        <tr style="background-color:#F875A7">
+      </tbody>
+    </table>
+    <h2>Statherian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Statherian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Paleoproterozoic" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Paleoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Statherian" style="background-color:#F875A7">
+          <th colspan="8" scope="rowgroup">Statherian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Statherian" style="background-color:#F875A7">
           <td>Statherian</td>
           <td>1800</td>
           <td>Defined chronometrically</td>
@@ -103,7 +300,36 @@
           <td>Ratified 1990</td>
           <td>Episodes 1991; 14</td>
         </tr>
-        <tr style="background-color:#F76898">
+      </tbody>
+    </table>
+    <h2>Orosirian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Orosirian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Paleoproterozoic" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Paleoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Orosirian" style="background-color:#F76898">
+          <th colspan="8" scope="rowgroup">Orosirian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Orosirian" style="background-color:#F76898">
           <td>Orosirian</td>
           <td>2050</td>
           <td>Defined chronometrically</td>
@@ -113,7 +339,36 @@
           <td>Ratified 1990</td>
           <td>Episodes 1991; 14</td>
         </tr>
-        <tr style="background-color:#F75B89">
+      </tbody>
+    </table>
+    <h2>Rhyacian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Rhyacian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Paleoproterozoic" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Paleoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Rhyacian" style="background-color:#F75B89">
+          <th colspan="8" scope="rowgroup">Rhyacian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Rhyacian" style="background-color:#F75B89">
           <td>Rhyacian</td>
           <td>2300</td>
           <td>Defined chronometrically</td>
@@ -123,7 +378,36 @@
           <td>Ratified 1990</td>
           <td>Episodes 1991; 14</td>
         </tr>
-        <tr style="background-color:#F74F7C">
+      </tbody>
+    </table>
+    <h2>Siderian</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Siderian">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Proterozoic" style="background-color:#F73563">
+          <th colspan="8" scope="rowgroup">Proterozoic Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Paleoproterozoic" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Paleoproterozoic Era</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Siderian" style="background-color:#F74F7C">
+          <th colspan="8" scope="rowgroup">Siderian Period</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Siderian" style="background-color:#F74F7C">
           <td>Siderian</td>
           <td>2500</td>
           <td>Defined chronometrically, but it will be replaced by GSSP</td>
@@ -133,7 +417,33 @@
           <td>Ratified 1990</td>
           <td>Episodes 1991; 14</td>
         </tr>
-        <tr style="background-color:#F99BC1">
+      </tbody>
+    </table>
+    <h2>Archean</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Archean">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Archean" style="background-color:#F0047F">
+          <th colspan="8" scope="rowgroup">Archean Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Neoarchean" style="background-color:#F99BC1">
+          <th colspan="8" scope="rowgroup">Neoarchean Era</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Neoarchean" style="background-color:#F99BC1">
           <td>Neoarchean</td>
           <td>2800</td>
           <td>Defined chronometrically</td>
@@ -143,7 +453,10 @@
           <td>Proposed</td>
           <td>Informally in Episodes 1992; 15</td>
         </tr>
-        <tr style="background-color:#F768A9">
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Mesoarchean" style="background-color:#F768A9">
+          <th colspan="8" scope="rowgroup">Mesoarchean Era</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Mesoarchean" style="background-color:#F768A9">
           <td>Mesoarchean</td>
           <td>3200</td>
           <td>Defined chronometrically</td>
@@ -153,7 +466,10 @@
           <td>Proposed</td>
           <td>Informally in Episodes 1992; 15</td>
         </tr>
-        <tr style="background-color:#F4449F">
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Paleoarchean" style="background-color:#F4449F">
+          <th colspan="8" scope="rowgroup">Paleoarchean Era</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Paleoarchean" style="background-color:#F4449F">
           <td>Paleoarchean</td>
           <td>3600</td>
           <td>Defined chronometrically</td>
@@ -163,7 +479,10 @@
           <td>Proposed</td>
           <td>Informally in Episodes 1992; 15</td>
         </tr>
-        <tr style="background-color:#DA037F">
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Eoarchean" style="background-color:#DA037F">
+          <th colspan="8" scope="rowgroup">Eoarchean Era</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Eoarchean" style="background-color:#DA037F">
           <td>Eoarchean</td>
           <td>4031</td>
           <td>Defined chronometrically
@@ -175,7 +494,30 @@ along Acasta River, Northwestern Territory, Canada</td>
           <td>Ratified 2023</td>
           <td>Episodes, forthcoming (formal GSSA)<br>Succeeds Episodes 1992; 15 (informal 4000 Ma).</td>
         </tr>
-        <tr style="background-color:#AE027E">
+      </tbody>
+    </table>
+    <h2>Hadean</h2>
+    <table data-interval="https://data.stratigraphy.org/data/gts/Hadean">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mya</th>
+          <th>loc</th>
+          <th>wkt</th>
+          <th>bl</th>
+          <th>ce</th>
+          <th>s</th>
+          <th>cit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Precambrian" style="background-color:#F74370">
+          <th colspan="8" scope="rowgroup">Precambrian Super-Eon</th>
+        </tr>
+        <tr class="hierarchy" data-interval="https://data.stratigraphy.org/data/gts/Hadean" style="background-color:#AE027E">
+          <th colspan="8" scope="rowgroup">Hadean Eon</th>
+        </tr>
+        <tr data-record="https://data.stratigraphy.org/data/gssps/Hadean" style="background-color:#AE027E">
           <td>Hadean</td>
           <td>4567</td>
           <td>Defined chronometrically

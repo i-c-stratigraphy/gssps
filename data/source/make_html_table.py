@@ -2,11 +2,14 @@ from rdflib import Graph, URIRef, Namespace
 from rdflib.namespace import SDO, RDF, SKOS, TIME, GEO
 from pathlib import Path
 from dominate import document
-from dominate.tags import a, br, meta, table, tbody, td, th, thead, title, tr
+from dominate.tags import a, br, meta, table, tbody, td, th, thead, title, tr, h1, h2, style
 from dominate.util import text
 import re
 
 GSSP = Namespace("https://data.stratigraphy.org/def/gssp/")
+GTS = Namespace("http://resource.geosciml.org/ontology/timescale/gts#")
+RANK = Namespace("http://resource.geosciml.org/ontology/timescale/rank/")
+CONTAINMENT = (TIME.intervalStartedBy, TIME.intervalContains, TIME.intervalFinishedBy)
 GTSD = Namespace("https://data.stratigraphy.org/data/gts/")
 DATASET_IRI = URIRef("https://data.stratigraphy.org/data/gssps")
 COLUMNS = ("name", "mya", "loc", "wkt", "bl", "ce", "s", "colour", "cit")
@@ -71,7 +74,7 @@ def make_html(
         PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
         PREFIX gssp: <https://data.stratigraphy.org/def/gssp/>
         
-        SELECT ?gssp ?name ?mya ?loc ?wkt ?bl ?ce ?s ?colour
+        SELECT ?gssp ?t ?name ?mya ?loc ?wkt ?bl ?ce ?s ?colour
         WHERE {
             {
                 ?gssp 
@@ -129,6 +132,7 @@ def make_html(
             else:
                 rows[gssp][column] = str(r[column]) if r[column] is not None else ""
         rows[gssp]["cit"] = []
+        rows[gssp]["interval"] = r["t"]
 
     q2 = """
         PREFIX schema: <https://schema.org/>
@@ -178,6 +182,7 @@ def other_rows(g: Graph, included: set[str]) -> dict:
         wkt = g.value(geometry, GEO.asWKT) if geometry is not None else None
         rows[str(subject)] = {
             "name": name,
+            "interval": interval,
             "mya": str(min(ages, key=float)) if ages else "",
             "loc": str(g.value(subject, SDO.location) or ""),
             "wkt": str(wkt).strip().replace("POINT (", "").strip(")").replace(" ", ", ") if wkt is not None else "",
@@ -190,46 +195,106 @@ def other_rows(g: Graph, included: set[str]) -> dict:
     return dict(sorted(rows.items(), key=lambda item: (float(item[1]["mya"]) if item[1]["mya"] else float("inf"), item[1]["name"])))
 
 
+def interval_label(g: Graph, interval: URIRef) -> str:
+    names = sorted(str(name) for name in g.objects(interval, SKOS.prefLabel)
+                   if getattr(name, "language", None) == "en")
+    return names[0] if names else re.sub(
+        r"(?<=[a-z])(?=[A-Z])", " ", str(interval).rsplit("/", 1)[-1])
+
+
+def interval_path(g: Graph, interval: URIRef, visited=frozenset()) -> tuple:
+    """Follow the three OWL-Time containment relations from child to parent."""
+    if interval in visited:
+        raise ValueError(f"Cycle in interval hierarchy at {interval}")
+    parents = {parent for relation in CONTAINMENT
+               for parent in g.subjects(relation, interval)
+               if g.value(parent, GTS.rank) is not None}
+    if not parents:
+        # Single-Age Epochs are coextensive: OWL-Time uses intervalEquals
+        # instead of the three strict containment relations. Their intervalIn
+        # assertion still supplies the intended stratigraphic parent.
+        parents = {parent for parent in g.objects(interval, TIME.intervalIn)
+                   if g.value(parent, GTS.rank) is not None}
+    if not parents:
+        return (interval,)
+    paths = [interval_path(g, parent, visited | {interval}) for parent in sorted(parents)]
+    # Prefer the full hierarchy if the graph also supplies a transitive shortcut.
+    return max(paths, key=lambda path: (len(path), tuple(map(str, path)))) + (interval,)
+
+
+def table_groups(g: Graph, rows: dict) -> dict:
+    groups = {}
+    for subject, row in rows.items():
+        path = interval_path(g, row["interval"])
+        periods = [node for node in path if (node, GTS.rank, RANK.Period) in g]
+        # Precambrian Era/Eon records have no Period: group those by Eon,
+        # as the source website does, without inventing a Period membership.
+        eons = [node for node in path if (node, GTS.rank, RANK.Eon) in g]
+        group = periods[-1] if periods else (eons[-1] if eons else path[0])
+        groups.setdefault(group, []).append((subject, row, path))
+    return groups
+
+
 def write_table(g: Graph, rows: dict, output_path: Path, page_title: str) -> Path:
-    """Render both pages with the same columns and citation rules."""
-    columns = COLUMNS
+    """Render Period tables with coloured ancestor and Epoch heading rows."""
+    columns = [column for column in COLUMNS if column != "colour"]
     doc = document(title=None)
     with doc.head:
         meta(charset="utf-8")
         title(page_title)
+        style("""
+            body { font-family: sans-serif; margin: 2rem; }
+            table { border-collapse: collapse; width: 100%; margin-bottom: 2rem; }
+            th, td { border: 1px solid #777; padding: .45rem; text-align: left;
+                     vertical-align: top; }
+            thead { background: #eee; }
+            .hierarchy th { padding: .6rem; }
+            td:last-child { min-width: 12rem; overflow-wrap: anywhere; }
+        """)
     with doc:
-        with table():
-            with thead():
-                with tr():
-                    for column in columns:
-                        if column == "colour":
-                            pass
-                        else:
-                            th(column)
-            with tbody():
-                for i, row in rows.items():
-                    with tr(**({"style": f'background-color:{row["colour"]}'} if row["colour"] else {})):
+        h1(page_title)
+        for group, entries in table_groups(g, rows).items():
+            h2(interval_label(g, group))
+            with table(**{"data-interval": str(group)}):
+                with thead():
+                    with tr():
                         for column in columns:
-                            value = row[column]
-                            if column == "colour":
-                                pass
-                            elif column == "cit":
-                                with td():
-                                    for index, item in enumerate(value):
-                                        if index:
-                                            br()
-                                        if isinstance(item, URIRef):
-                                            label = str(item)
-                                            names = sorted(str(name) for name in g.objects(item, SDO.name))
-                                            if names:
-                                                label = names[0]
-                                            a(label, href=str(item))
-                                        else:
-                                            text(str(item))
-
-                            else:
-                                td(value)
-
+                            th(column)
+                with tbody():
+                    previous = ()
+                    for subject, row, path in entries:
+                        # A Period/Era/Eon can itself have a boundary record;
+                        # retain its data row as well as its hierarchy heading.
+                        hierarchy = tuple(node for node in path
+                                          if (node, GTS.rank, RANK.Age) not in g)
+                        common = 0
+                        for old, new in zip(previous, hierarchy):
+                            if old != new:
+                                break
+                            common += 1
+                        for node in hierarchy[common:]:
+                            colour = str(g.value(node, SDO.color) or "")
+                            rank = str(g.value(node, GTS.rank) or "").rsplit("/", 1)[-1]
+                            with tr(cls="hierarchy", style=f"background-color:{colour}" if colour else "",
+                                    **{"data-interval": str(node)}):
+                                th(f"{interval_label(g, node)} {rank}", colspan=len(columns), scope="rowgroup")
+                        previous = hierarchy
+                        with tr(style=f'background-color:{row["colour"]}' if row["colour"] else "",
+                                **{"data-record": subject}):
+                            for column in columns:
+                                value = row[column]
+                                if column == "cit":
+                                    with td():
+                                        for index, item in enumerate(value):
+                                            if index:
+                                                br()
+                                            if isinstance(item, URIRef):
+                                                names = sorted(str(name) for name in g.objects(item, SDO.name))
+                                                a(names[0] if names else str(item), href=str(item))
+                                            else:
+                                                text(str(item))
+                                else:
+                                    td(value)
     output_path.write_text(doc.render() + "\n", encoding="utf-8")
     return output_path
 
