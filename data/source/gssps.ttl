@@ -3,6 +3,7 @@ PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX gssp: <https://data.stratigraphy.org/def/gssp/>
 PREFIX gssps: <https://data.stratigraphy.org/data/gssps/>
 PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
+PREFIX gtsd: <https://data.stratigraphy.org/data/gts/>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -128,12 +129,12 @@ ds:
         gssps:Wuchiapingian ,
         gssps:Ypresian ,
         gssps:Zanclean ;
-    schema:name "ICS Global Boundary Stratotype Section and Points" ;
+    schema:name "ICS Global Boundary Stratotype Section and Points Dataset" ;
 .
 
 gssps:Aalenian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleJurassic> ;
+    gts:representsBoundary gtsd:BaseMiddleJurassic ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -142,13 +143,14 @@ gssps:Aalenian
     gssp:boundaryLevel "base of Bed FZ 107" ;
     gssp:correlationEvents "Ammonite FAD Leioceras opalinum and Leioceras lineatum" ;
     schema:citation "Episodes 2001; 24: 166-175" ;
-    schema:description "Fuentelsaz, Spain" ;
+    schema:location "Fuentelsaz, Spain" ;
+    schema:name "Aalenian GSSP" ;
     schema:status "Ratified 2000" ;
 .
 
 gssps:Aeronian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseAeronian> ;
+    gts:representsBoundary gtsd:BaseAeronian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -161,7 +163,8 @@ gssps:Aeronian
         """Hlásná Třebaň GSSP: Štorch et al., Episodes forthcoming
 
 Trefawr Track GSSP: Episodes 1985; 8: 101-103; Geol. Series, Nat. Mus. Wales 1989; 9: 36-50""" ;
-    schema:description "Hlásná Třebaň, Bohemia, Czech Republic" ;
+    schema:location "Hlásná Třebaň, Bohemia, Czech Republic" ;
+    schema:name "Aeronian GSSP" ;
     schema:status """Ratified 2024;
 
 to replace Trefawr Track, Wales, UK former GSSP""" ;
@@ -169,7 +172,7 @@ to replace Trefawr Track, Wales, UK former GSSP""" ;
 
 gssps:Albian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseAlbian> ;
+    gts:representsBoundary gtsd:BaseAlbian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -180,13 +183,14 @@ gssps:Albian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2017/v40i3/017021"^^xsd:anyURI ,
         "Episodes 40/3, p. 177-188, 2017" ;
-    schema:description "Col de Pré-Guittard, Department of Drôme, southeastern France" ;
+    schema:location "Col de Pré-Guittard, Department of Drôme, southeastern France" ;
+    schema:name "Albian GSSP" ;
     schema:status "Ratified 2016" ;
 .
 
 gssps:Anisian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleTriassic> ;
+    gts:representsBoundary gtsd:BaseMiddleTriassic ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -195,21 +199,23 @@ gssps:Anisian
     gssp:boundaryLevel "In Section B, the GSSP level will be either the FAD of conodont Chiosella timorensis at the base of Bed GR7 at ca. 7 m; OR the base of magnetozone MT1n at the 5.7 m level." ;
     gssp:correlationEvents "Conodont FAD Chiosella timorensis or Magnetic - base of magnetic polarity MT1n" ;
     schema:citation "Albertiana 36, 2007." ;
-    schema:description "Candidate section at Desli Caira (Dobrogea, Romania); significant sections in Guizhou Province (China) and South Primorye (Russia)" ;
+    schema:location "Candidate section at Desli Caira (Dobrogea, Romania); significant sections in Guizhou Province (China) and South Primorye (Russia)" ;
+    schema:name "Anisian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Aptian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseAptian> ;
+    gts:representsBoundary gtsd:BaseAptian ;
     gssp:correlationEvents "Magnetic - base of Chron M0r; near FAD of Paradeshayesites oglanlensis ammonite zone" ;
-    schema:description "candidate is Gorgo a Cerbara, Piobbico, Umbria-Marche, central Italy" ;
+    schema:location "candidate is Gorgo a Cerbara, Piobbico, Umbria-Marche, central Italy" ;
+    schema:name "Aptian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Aquitanian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseNeogene> ;
+    gts:representsBoundary gtsd:BaseNeogene ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -220,13 +226,14 @@ gssps:Aquitanian
     schema:citation
         "https://stratigraphy.org/gssps/files/aquitanian.pdf"^^xsd:anyURI ,
         "Episodes 1997; 20: 23-28" ;
-    schema:description "Lemme-Carrosio Section, Allessandria Province, Italy" ;
+    schema:location "Lemme-Carrosio Section, Allessandria Province, Italy" ;
+    schema:name "Aquitanian GSSP" ;
     schema:status "Ratified 1996" ;
 .
 
 gssps:Artinskian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseArtinskian> ;
+    gts:representsBoundary gtsd:BaseArtinskian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -237,13 +244,14 @@ gssps:Artinskian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2023/023015"^^xsd:anyURI ,
         "Episodes 46/4, p. 623-651. 2023" ;
-    schema:description "Dalny Tulkas section, Southern Ural Mts, Russia" ;
+    schema:location "Dalny Tulkas section, Southern Ural Mts, Russia" ;
+    schema:name "Artinskian GSSP" ;
     schema:status "Ratified 2022" ;
 .
 
 gssps:Asselian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePermian> ;
+    gts:representsBoundary gtsd:BasePermian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -254,13 +262,14 @@ gssps:Asselian
     schema:citation
         "https://stratigraphy.org/gssps/files/asselian.pdf"^^xsd:anyURI ,
         "Episodes 21/1, 11-18, 1998" ;
-    schema:description "Aidaralash Creek, Kazakhstan" ;
+    schema:location "Aidaralash Creek, Kazakhstan" ;
+    schema:name "Asselian GSSP" ;
     schema:status "Ratified 1996" ;
 .
 
 gssps:Bajocian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBajocian> ;
+    gts:representsBoundary gtsd:BaseBajocian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -269,13 +278,14 @@ gssps:Bajocian
     gssp:boundaryLevel "base of Bed AB 11" ;
     gssp:correlationEvents "Ammonite FAD Hyperlioceras mundum, Hyperlioceras furcatum, Braunsina aspera, and Braunsina elegantula" ;
     schema:citation "Episodes 1997; 20: 16-22" ;
-    schema:description "Murtinheira Section, Cabo Mondego, Portugal" ;
+    schema:location "Murtinheira Section, Cabo Mondego, Portugal" ;
+    schema:name "Bajocian GSSP" ;
     schema:status "Ratified 1996" ;
 .
 
 gssps:Barremian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBarremian> ;
+    gts:representsBoundary gtsd:BaseBarremian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -286,39 +296,41 @@ gssps:Barremian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2023/02330"^^xsd:anyURI ,
         "Episodes 2024; 47:335-379" ;
-    schema:description "Río Argos section near Caravaca, Murcia Province, Spain" ;
+    schema:location "Río Argos section near Caravaca, Murcia Province, Spain" ;
+    schema:name "Barremian GSSP" ;
     schema:status "Ratified 2023" ;
 .
 
 gssps:Bartonian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBartonian> ;
+    gts:representsBoundary gtsd:BaseBartonian ;
     gssp:correlationEvents "Calcareous nannofossil near LAD Reticulofenestra reticulata" ;
-    schema:description "Contessa highway section near Gubio, Central Apennines, Italy" ;
+    schema:location "Contessa highway section near Gubio, Central Apennines, Italy" ;
+    schema:name "Bartonian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Bashkirian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePennsylvanian> ;
+    gts:representsBoundary gtsd:BasePennsylvanian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
             geo:asWKT "POINT (-114.7778 36.7333)"^^geo:wktLiteral ;
         ] ;
     gssp:boundaryLevel "82.9m above the top of the Battleship Formation in the lower Bird Spring Formation" ;
-    gssp:correlationEvents """Conodont FAD Declinognathodus noduliferus
-""" ;
+    gssp:correlationEvents "Conodont FAD Declinognathodus noduliferus" ;
     schema:citation
         "https://stratigraphy.org/gssps/files/bashkirian.pdf"^^xsd:anyURI ,
         "Episodes 1999; 22: 272-283" ;
-    schema:description "Arrow Canyon, Nevada" ;
+    schema:location "Arrow Canyon, Nevada" ;
+    schema:name "Bashkirian GSSP" ;
     schema:status "Ratified 1996" ;
 .
 
 gssps:Bathonian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBathonian> ;
+    gts:representsBoundary gtsd:BaseBathonian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -327,28 +339,31 @@ gssps:Bathonian
     gssp:boundaryLevel "base of limestone bed RB07" ;
     gssp:correlationEvents "Ammonite FAD Gonolkite convergens (defines base of Zigzagiceras zigzag Zone)" ;
     schema:citation "Episodes 2009; 32: 222-248" ;
-    schema:description "Ravin du Bès, Bas-Auran area, Alpes de Haute Provence, France" ;
+    schema:location "Ravin du Bès, Bas-Auran area, Alpes de Haute Provence, France" ;
+    schema:name "Bathonian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
 gssps:Berriasian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCretaceous> ;
+    gts:representsBoundary gtsd:BaseCretaceous ;
     gssp:correlationEvents "Candidates include: (1) Magnetic - base of Chron M18r, (2) Base of Calpionellid zone B, (3) ammonite FAD of Berriasella jacobi" ;
+    schema:name "Berriasian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Burdigalian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseBurdigalian> ;
+    gts:representsBoundary gtsd:BaseBurdigalian ;
     gssp:correlationEvents "Near planktonic foraminifer FAD of Globigerinoides altiaperturus or near top of magnetic polarity chronozone C6An" ;
-    schema:description "Potentially in astronomicallytuned ODP core" ;
+    schema:location "Potentially in astronomicallytuned ODP core" ;
+    schema:name "Burdigalian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Calabrian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCalabrian> ;
+    gts:representsBoundary gtsd:BaseCalabrian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -363,66 +378,73 @@ gssps:Calabrian
         """Episodes 1985; 8:116-120
 Episodes 2012; 35: 388-397
 Head, M.J., 2019""" ;
-    schema:description "Vrica, Italy" ;
+    schema:location "Vrica, Italy" ;
+    schema:name "Calabrian GSSP" ;
     schema:status "Ratified 1985 as base of Pleistocene; Ratified 2011 as base of Calabrian" ;
 .
 
 gssps:Callovian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCallovian> ;
+    gts:representsBoundary gtsd:BaseCallovian ;
     gssp:correlationEvents "Ammonite FAD of the genus Kepplerites (Kosmoceratidae)  (defines base of Macrocephalites herveyi Zone in sub-Boreal province of Great Britain to southwest Germany)" ;
-    schema:description "candidates are Pfeffingen (Swabian Alb, SW Germany) and in Russia" ;
+    schema:location "candidates are Pfeffingen (Swabian Alb, SW Germany) and in Russia" ;
+    schema:name "Callovian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Calymmian
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCalymmian> ;
+    gts:representsBoundary gtsd:BaseCalymmian ;
     schema:citation "Episodes 1991; 14" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:CambrianSeries2
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianSeries2> ;
+    gts:representsBoundary gtsd:BaseCambrianSeries2 ;
     gssp:correlationEvents "Trilobites - their FAD" ;
+    schema:name "CambrianSeries2 GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:CambrianStage10
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianStage10> ;
+    gts:representsBoundary gtsd:BaseCambrianStage10 ;
     gssp:correlationEvents "Trilobite FAD of Lotagnostus americanus. An internal subStage division might be FAD of Codylodus adesei conodont" ;
-    schema:description "candidate section is Duibian (Zhejiang province, China)" ;
+    schema:location "candidate section is Duibian (Zhejiang province, China)" ;
+    schema:name "CambrianStage10 GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:CambrianStage2
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianStage2> ;
+    gts:representsBoundary gtsd:BaseCambrianStage2 ;
     gssp:correlationEvents "Small Shelly Fossils, or Archaeocyathid species" ;
+    schema:name "CambrianStage2 GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:CambrianStage3
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianSeries2> ;
+    gts:representsBoundary gtsd:BaseCambrianSeries2 ;
     gssp:correlationEvents "Trilobite FAD Olenellus or Redlichia" ;
+    schema:name "CambrianStage3 GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:CambrianStage4
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCambrianStage4> ;
+    gts:representsBoundary gtsd:BaseCambrianStage4 ;
     gssp:correlationEvents "Trilobite, potentially FAD of Oryctocephalus indicus" ;
-    schema:description "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and Split Mountain (Nevada, USA)" ;
+    schema:location "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and Split Mountain (Nevada, USA)" ;
+    schema:name "CambrianStage4 GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Campanian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCampanian> ;
+    gts:representsBoundary gtsd:BaseCampanian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -434,13 +456,14 @@ gssps:Campanian
         "https://doi.org/10.18814/epiiugs/2022/022048"^^xsd:anyURI ,
         "https://stratigraphy.org/gssps/files/campanian.pdf"^^xsd:anyURI ,
         "Episodes 2023; 1st February; DOI: 10.18814/epiiugs/2022/022048" ;
-    schema:description "1.4 km NNE from the town of Gubbio, central Italy" ;
+    schema:location "1.4 km NNE from the town of Gubbio, central Italy" ;
+    schema:name "Campanian GSSP" ;
     schema:status "Ratified 2022" ;
 .
 
 gssps:Capitanian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCapitanian> ;
+    gts:representsBoundary gtsd:BaseCapitanian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -452,13 +475,14 @@ gssps:Capitanian
         "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
         "https://doi.org/10.18814/epiiugs/2022/022004"^^xsd:anyURI ,
         "Permophiles 34 p. 3-11, 1999; Episodes 45/3 p. 309-331. 2022" ;
-    schema:description "Nipple Hill, SE Guadalupe Mountains, Texas, U.S.A" ;
+    schema:location "Nipple Hill, SE Guadalupe Mountains, Texas, U.S.A" ;
+    schema:name "Capitanian GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
 gssps:Carnian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateTriassic> ;
+    gts:representsBoundary gtsd:BaseLateTriassic ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -467,13 +491,14 @@ gssps:Carnian
     gssp:boundaryLevel "base of marly limestone bed SW4, 45m from base of San Cassiano Formation" ;
     gssp:correlationEvents "FAD of the ammonoid Daxatina canadensis; just below FO of conodont Paragondolella polygnathiformis and base of normal-polarity magnetic zone S2n" ;
     schema:citation "Episodes 2012; 35: 414-430" ;
-    schema:description "Prati di Stuores, Dolomites, Italy" ;
+    schema:location "Prati di Stuores, Dolomites, Italy" ;
+    schema:name "Carnian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
 gssps:Cenomanian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateCretaceous> ;
+    gts:representsBoundary gtsd:BaseLateCretaceous ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -484,13 +509,14 @@ gssps:Cenomanian
     schema:citation
         "https://stratigraphy.org/gssps/files/cenomanian.pdf"^^xsd:anyURI ,
         "Episodes 2004; 27: 21-32" ;
-    schema:description "Mount Risou, Hautes-Alpes, France" ;
+    schema:location "Mount Risou, Hautes-Alpes, France" ;
+    schema:name "Cenomanian GSSP" ;
     schema:status "Ratified 2002" ;
 .
 
 gssps:Changhsingian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseChanghsingian> ;
+    gts:representsBoundary gtsd:BaseChanghsingian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -501,13 +527,14 @@ gssps:Changhsingian
     schema:citation
         "https://stratigraphy.org/gssps/files/changhsiangian.pdf"^^xsd:anyURI ,
         "Episodes 29/3 p. 175-182. 2006" ;
-    schema:description "Meishan, Zhejiang Province, China" ;
+    schema:location "Meishan, Zhejiang Province, China" ;
+    schema:name "Changhsingian GSSP" ;
     schema:status "Ratified 2005" ;
 .
 
 gssps:Chattian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseChattian> ;
+    gts:representsBoundary gtsd:BaseChattian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -518,13 +545,14 @@ gssps:Chattian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2018/v41i1/018003"^^xsd:anyURI ,
         "Episodes, 41 (1): 17-32." ;
-    schema:description "Monte Cagnero, Umbria-Marche region, Italy" ;
+    schema:location "Monte Cagnero, Umbria-Marche region, Italy" ;
+    schema:name "Chattian GSSP" ;
     schema:status "Ratified 2016" ;
 .
 
 gssps:Chibanian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseChibanian> ;
+    gts:representsBoundary gtsd:BaseChibanian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -536,13 +564,14 @@ gssps:Chibanian
         "https://doi.org/10.18814/epiiugs/2020/020080"^^xsd:anyURI ,
         "https://stratigraphy.org/gssps/files/chibanian.pdf"^^xsd:anyURI ,
         "Episodes 2021; 44:317-347" ;
-    schema:description "Chiba section, Japan" ;
+    schema:location "Chiba section, Japan" ;
+    schema:name "Chibanian GSSP" ;
     schema:status "Ratified 2020" ;
 .
 
 gssps:Coniacian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseConiacian> ;
+    gts:representsBoundary gtsd:BaseConiacian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -554,21 +583,23 @@ gssps:Coniacian
         "https://doi.org/10.18814/epiiugs/2021/021022"^^xsd:anyURI ,
         "https://stratigraphy.org/gssps/files/coniacian.pdf"^^xsd:anyURI ,
         "Episodes 2022; 45(2): 181-220" ;
-    schema:description "Salzgitter-Salder, Lower Saxony, Germany" ;
+    schema:location "Salzgitter-Salder, Lower Saxony, Germany" ;
+    schema:name "Coniacian GSSP" ;
     schema:status "Ratified 2021" ;
 .
 
 gssps:Cryogenian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCryogenian> ;
+    gts:representsBoundary gtsd:BaseCryogenian ;
     schema:citation "Episodes 2019; 39" ;
-    schema:description "Will be placed at a that lies stratigraphically beneath the first appearance of widespread glaciation and is assigned in the interim a 'calibrated age' of circa 720 Ma" ;
+    schema:location "Will be placed at a that lies stratigraphically beneath the first appearance of widespread glaciation and is assigned in the interim a 'calibrated age' of circa 720 Ma" ;
+    schema:name "Cryogenian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Danian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCenozoic> ;
+    gts:representsBoundary gtsd:BaseCenozoic ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -579,13 +610,14 @@ gssps:Danian
     schema:citation
         "https://stratigraphy.org/gssps/files/danian.pdf"^^xsd:anyURI ,
         "Episodes 2006; 29: 263-278" ;
-    schema:description "Oued Djerfane, west of El Kef, Tunisia" ;
+    schema:location "Oued Djerfane, west of El Kef, Tunisia" ;
+    schema:name "Danian GSSP" ;
     schema:status "Ratified 1991" ;
 .
 
 gssps:Dapingian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleOrdovician> ;
+    gts:representsBoundary gtsd:BaseMiddleOrdovician ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -597,13 +629,14 @@ gssps:Dapingian
         "https://stratigraphy.org/gssps/files/dapingian1.pdf"^^xsd:anyURI ,
         "https://stratigraphy.org/gssps/files/dapingian2.pdf"^^xsd:anyURI ,
         "Episodes 2005; 28: 105-117; Episodes 2009; 32: 96-113" ;
-    schema:description "Huanghuachang Section, NE of Yichang city, Hubei Province, S. China" ;
+    schema:location "Huanghuachang Section, NE of Yichang city, Hubei Province, S. China" ;
+    schema:name "Dapingian GSSP" ;
     schema:status "Ratified 2007" ;
 .
 
 gssps:Darriwilian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseDarriwilian> ;
+    gts:representsBoundary gtsd:BaseDarriwilian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -614,13 +647,14 @@ gssps:Darriwilian
     schema:citation
         "https://stratigraphy.org/gssps/files/darriwilian.pdf"^^xsd:anyURI ,
         "Episodes 1997; 20: 158-166" ;
-    schema:description "Huangnitang section, Changshan, Zhejiang Province, SE China" ;
+    schema:location "Huangnitang section, Changshan, Zhejiang Province, SE China" ;
+    schema:name "Darriwilian GSSP" ;
     schema:status "Ratified 1987" ;
 .
 
 gssps:Drumian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseDrumian> ;
+    gts:representsBoundary gtsd:BaseDrumian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -631,21 +665,22 @@ gssps:Drumian
     schema:citation
         "https://stratigraphy.org/gssps/files/drumian.pdf"^^xsd:anyURI ,
         "Episodes 2007; 30: 85-95" ;
-    schema:description "Drum Mountains, Millard County, Utah, USA" ;
+    schema:location "Drum Mountains, Millard County, Utah, USA" ;
+    schema:name "Drumian GSSP" ;
     schema:status "Ratified 2006" ;
 .
 
 gssps:Ectasian
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEctasian> ;
+    gts:representsBoundary gtsd:BaseEctasian ;
     schema:citation "Episodes 1991; 14" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Ediacaran
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEdiacaran> ;
+    gts:representsBoundary gtsd:BaseEdiacaran ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -656,13 +691,14 @@ gssps:Ediacaran
     schema:citation
         "https://stratigraphy.org/gssps/files/ediacaran.pdf"^^xsd:anyURI ,
         "Lethaia 39, p.13- 30, 2006" ;
-    schema:description "Enorama Creek, Flinders Ranges, South Australia" ;
+    schema:location "Enorama Creek, Flinders Ranges, South Australia" ;
+    schema:name "Ediacaran GSSP" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Eifelian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleDevonian> ;
+    gts:representsBoundary gtsd:BaseMiddleDevonian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -673,13 +709,14 @@ gssps:Eifelian
     schema:citation
         "https://stratigraphy.org/gssps/files/eifelian.pdf"^^xsd:anyURI ,
         "Episodes 1985; 8: 104-109" ;
-    schema:description "Wetteldorf, Eifel Hills, Germany" ;
+    schema:location "Wetteldorf, Eifel Hills, Germany" ;
+    schema:name "Eifelian GSSP" ;
     schema:status "Ratified 1985" ;
 .
 
 gssps:Emsian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEmsian> ;
+    gts:representsBoundary gtsd:BaseEmsian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -690,13 +727,14 @@ gssps:Emsian
     schema:citation
         "https://stratigraphy.org/gssps/files/emsian.pdf"^^xsd:anyURI ,
         "Episodes 1997; 20: 235-240" ;
-    schema:description "Zinzil'ban Gorge in the Kitab State Geological Reserve, Uzbekistan" ;
+    schema:location "Zinzil'ban Gorge in the Kitab State Geological Reserve, Uzbekistan" ;
+    schema:name "Emsian GSSP" ;
     schema:status "Ratified 1995" ;
 .
 
 gssps:Eoarchean
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEoarchean> ;
+    gts:representsBoundary gtsd:BaseEoarchean ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -707,7 +745,7 @@ gssps:Eoarchean
     schema:citation """Episodes, forthcoming (formal GSSA)
 
 Succeeds Episodes 1992; 15 (informal 4000 Ma).""" ;
-    schema:description """Defined chronometrically
+    schema:location """Defined chronometrically
 
 along Acasta River, Northwestern Territory, Canada""" ;
     schema:status "Ratified 2023" ;
@@ -715,7 +753,7 @@ along Acasta River, Northwestern Territory, Canada""" ;
 
 gssps:Famennian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseFamennian> ;
+    gts:representsBoundary gtsd:BaseFamennian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -726,13 +764,14 @@ gssps:Famennian
     schema:citation
         "https://stratigraphy.org/gssps/files/famennian.pdf"^^xsd:anyURI ,
         "Episodes 1993; 16: 433-441" ;
-    schema:description "Coumiac Quarry, near Cessenon, Montagne Noire, France" ;
+    schema:location "Coumiac Quarry, near Cessenon, Montagne Noire, France" ;
+    schema:name "Famennian GSSP" ;
     schema:status "Ratified 1993" ;
 .
 
 gssps:Floian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseFloian> ;
+    gts:representsBoundary gtsd:BaseFloian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -743,13 +782,14 @@ gssps:Floian
     schema:citation
         "https://stratigraphy.org/gssps/files/floian.pdf"^^xsd:anyURI ,
         "Episodes 2004; 27: 265-272" ;
-    schema:description "Diabasbrottet, Hunneberg, Sweden" ;
+    schema:location "Diabasbrottet, Hunneberg, Sweden" ;
+    schema:name "Floian GSSP" ;
     schema:status "Ratified 2002" ;
 .
 
 gssps:Fortunian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePhanerozoic> ;
+    gts:representsBoundary gtsd:BasePhanerozoic ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -760,13 +800,14 @@ gssps:Fortunian
     schema:citation
         "https://stratigraphy.org/gssps/files/fortunian.pdf"^^xsd:anyURI ,
         "Episodes 1994; 17: 95-100" ;
-    schema:description "Fortune Head, SE Newfoundland, Canada" ;
+    schema:location "Fortune Head, SE Newfoundland, Canada" ;
+    schema:name "Fortunian GSSP" ;
     schema:status "Ratified 1992" ;
 .
 
 gssps:Frasnian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateDevonian> ;
+    gts:representsBoundary gtsd:BaseLateDevonian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -777,13 +818,14 @@ gssps:Frasnian
     schema:citation
         "https://stratigraphy.org/gssps/files/frasnian.pdf"^^xsd:anyURI ,
         "Episodes 1987; 10: 97-101" ;
-    schema:description "Col du Puech de la Suque, Montage Noire, France" ;
+    schema:location "Col du Puech de la Suque, Montage Noire, France" ;
+    schema:name "Frasnian GSSP" ;
     schema:status "Ratified 1986" ;
 .
 
 gssps:Gelasian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseQuaternary> ;
+    gts:representsBoundary gtsd:BaseQuaternary ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -798,13 +840,14 @@ gssps:Gelasian
         """Episodes 1998; 21: 82-87
 Episodes 2010; 33: 152-158
 Quaternary Sci. 2019; 500: 32-51, """ ;
-    schema:description "Monte San Nicola, Sicily, Italy" ;
+    schema:location "Monte San Nicola, Sicily, Italy" ;
+    schema:name "Gelasian GSSP" ;
     schema:status "Ratified 1996 as base of Gelasian; Ratified 2009 as base of Pleistocene and Quaternary" ;
 .
 
 gssps:Givetian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseGivetian> ;
+    gts:representsBoundary gtsd:BaseGivetian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -815,13 +858,14 @@ gssps:Givetian
     schema:citation
         "https://stratigraphy.org/gssps/files/givetian.pdf"^^xsd:anyURI ,
         "Episodes 1995; 18: 107-115" ;
-    schema:description "Jebel Mech Irdane, Morocco" ;
+    schema:location "Jebel Mech Irdane, Morocco" ;
+    schema:name "Givetian GSSP" ;
     schema:status "Ratified 1994" ;
 .
 
 gssps:Gorstian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLudlow> ;
+    gts:representsBoundary gtsd:BaseLudlow ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -832,13 +876,14 @@ gssps:Gorstian
     schema:citation
         "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ,
         "Lethaia 14; Episodes 1982; 5: 21-23; Geol. Series, Nat. Mus. Wales 1989; 9: 73-90" ;
-    schema:description "near Ludlow, UK" ;
+    schema:location "near Ludlow, UK" ;
+    schema:name "Gorstian GSSP" ;
     schema:status "Ratified 1980" ;
 .
 
 gssps:Greenlandian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHolocene> ;
+    gts:representsBoundary gtsd:BaseHolocene ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -853,13 +898,14 @@ gssps:Greenlandian
         """Episodes 2008; 31: 264–267
 
 Episodes 2018; 41: 213-223""" ;
-    schema:description "North Greenland Ice Core Project, core NGRIP2, central Greenland ice sheet" ;
+    schema:location "North Greenland Ice Core Project, core NGRIP2, central Greenland ice sheet" ;
+    schema:name "Greenlandian GSSP" ;
     schema:status "Holocene GSSP ratifed 2008; Lower Holocene Subseries and Greenlandian Stage ratified: 2018" ;
 .
 
 gssps:Guzhangian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseGuzhangian> ;
+    gts:representsBoundary gtsd:BaseGuzhangian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -870,27 +916,29 @@ gssps:Guzhangian
     schema:citation
         "https://stratigraphy.org/gssps/files/guzhangian.pdf"^^xsd:anyURI ,
         "Episodes 2009; 32: 41-55" ;
-    schema:description "Louyixi, Guzhang County, NW Hunan Province, S. China" ;
+    schema:location "Louyixi, Guzhang County, NW Hunan Province, S. China" ;
+    schema:name "Guzhangian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
 gssps:Gzhelian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseGzhelian> ;
+    gts:representsBoundary gtsd:BaseGzhelian ;
     gssp:correlationEvents "Conodont FAD Idiognathodus simulator (s.str.). Close to FAD of ammonoid Shumardites." ;
-    schema:description "candidates are in southern Urals or Nashui (south China)." ;
+    schema:location "candidates are in southern Urals or Nashui (south China)." ;
+    schema:name "Gzhelian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Hadean
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHadean> ;
+    gts:representsBoundary gtsd:BaseHadean ;
     gssp:boundaryLevel "Formation of planet Earth and sister Solar planets (protoplanetary disk), by proxy of ages obtained from primitive meteorites" ;
     gssp:correlationEvents "U-corrected Pb–Pb age for Calcium-Aluminium Inclusions (CAIs) in class CBa meteorite" ;
     schema:citation
         "https://doi.org/10.18814/epiiugs/2024/024002"^^xsd:anyURI ,
         "Episodes 2024; 47(2):381-389" ;
-    schema:description """Defined chronometrically
+    schema:location """Defined chronometrically
 
 Data in Amelin et al., 2010 (Allende); Connelly et. al., 2012 (Gujba).
 
@@ -900,7 +948,7 @@ Allende meteorite (1969, Chihuahua, Mexico) Gujba meteorite (1984, Bogga Dingar,
 
 gssps:Hauterivian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHauterivian> ;
+    gts:representsBoundary gtsd:BaseHauterivian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -911,13 +959,14 @@ gssps:Hauterivian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2020/020072"^^xsd:anyURI ,
         "Episodes 2021; 44(2): 129-150" ;
-    schema:description "La Charce, Department of Drôme, southeastern France" ;
+    schema:location "La Charce, Department of Drôme, southeastern France" ;
+    schema:name "Hauterivian GSSP" ;
     schema:status "Ratified 2019" ;
 .
 
 gssps:Hettangian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseJurassic> ;
+    gts:representsBoundary gtsd:BaseJurassic ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -928,13 +977,14 @@ gssps:Hettangian
     schema:citation
         "https://stratigraphy.org/gssps/files/hettangian.pdf"^^xsd:anyURI ,
         "Episodes 2013; 36: 162-198" ;
-    schema:description "Kuhjoch section, Tyrol, Austria" ;
+    schema:location "Kuhjoch section, Tyrol, Austria" ;
+    schema:name "Hettangian GSSP" ;
     schema:status "Ratified 2010" ;
 .
 
 gssps:Hirnantian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHirnantian> ;
+    gts:representsBoundary gtsd:BaseHirnantian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -945,13 +995,14 @@ gssps:Hirnantian
     schema:citation
         "https://stratigraphy.org/gssps/files/hirnantian.pdf"^^xsd:anyURI ,
         "Episodes 2006; 29: 183-196" ;
-    schema:description "Wangjiawan North section, N of Yichang city, Western Hubei Province, China" ;
+    schema:location "Wangjiawan North section, N of Yichang city, Western Hubei Province, China" ;
+    schema:name "Hirnantian GSSP" ;
     schema:status "Ratified 2006" ;
 .
 
 gssps:Homerian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseHomerian> ;
+    gts:representsBoundary gtsd:BaseHomerian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -962,13 +1013,14 @@ gssps:Homerian
     schema:citation
         "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ,
         "Lethaia 14; Episodes 1982; 5: 21-23; Geol. Series, Nat. Mus. Wales 1989; 9: p. 51-73" ;
-    schema:description "Sheinton Brook, Homer, UK" ;
+    schema:location "Sheinton Brook, Homer, UK" ;
+    schema:name "Homerian GSSP" ;
     schema:status "Ratified 1980" ;
 .
 
 gssps:Induan
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMesozoic> ;
+    gts:representsBoundary gtsd:BaseMesozoic ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -979,13 +1031,14 @@ gssps:Induan
     schema:citation
         "https://stratigraphy.org/gssps/files/induan.pdf"^^xsd:anyURI ,
         "Episodes 2001; 24: 102-114" ;
-    schema:description "Meishan, Zhejiang Province, China" ;
+    schema:location "Meishan, Zhejiang Province, China" ;
+    schema:name "Induan GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
 gssps:Jiangshanian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseJiangshanian> ;
+    gts:representsBoundary gtsd:BaseJiangshanian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -996,21 +1049,23 @@ gssps:Jiangshanian
     schema:citation
         "https://stratigraphy.org/gssps/files/jiangshanian.pdf"^^xsd:anyURI ,
         "Episodes 2012; 35: 462-477" ;
-    schema:description "Duibian B section, Zhejiang province, China" ;
+    schema:location "Duibian B section, Zhejiang province, China" ;
+    schema:name "Jiangshanian GSSP" ;
     schema:status "Ratified 2011" ;
 .
 
 gssps:Kasimovian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLatePennsylvanian> ;
+    gts:representsBoundary gtsd:BaseLatePennsylvanian ;
     gssp:correlationEvents "Fusulinid FAD Protriticites, which is near ammonoid FAD Eothalossoceras. Alternative (higher) base is fusulinid FAD Montiparus montiparus, which is near Conodont FAD Idiognathodus sagittalis. Stage given here is the higher version; the lower one is about 1 myr older." ;
-    schema:description "candidates are in southern Urals, southwest USA and Nashui (south China)." ;
+    schema:location "candidates are in southern Urals, southwest USA and Nashui (south China)." ;
+    schema:name "Kasimovian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Katian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseKatian> ;
+    gts:representsBoundary gtsd:BaseKatian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1021,13 +1076,14 @@ gssps:Katian
     schema:citation
         "https://stratigraphy.org/gssps/files/katian.pdf"^^xsd:anyURI ,
         "Episodes 2007; 30: 258-270" ;
-    schema:description "Black Knob Ridge Section, Atoka, Oklahoma (USA)" ;
+    schema:location "Black Knob Ridge Section, Atoka, Oklahoma (USA)" ;
+    schema:name "Katian GSSP" ;
     schema:status "Ratified 2006" ;
 .
 
 gssps:Kimmeridgian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseKimmeridgian> ;
+    gts:representsBoundary gtsd:BaseKimmeridgian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1037,20 +1093,22 @@ gssps:Kimmeridgian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2022/022046"^^xsd:anyURI ,
         "Episodes 2023; 46(2): 281-307" ;
-    schema:description "Flodigarry, Isle of Skye, NW Scotland" ;
+    schema:location "Flodigarry, Isle of Skye, NW Scotland" ;
+    schema:name "Kimmeridgian GSSP" ;
     schema:status "Ratified 2021" ;
 .
 
 gssps:Kungurian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseKungurian> ;
-    schema:description "Candidate is Rockland, Nevada" ;
+    gts:representsBoundary gtsd:BaseKungurian ;
+    schema:location "Candidate is Rockland, Nevada" ;
+    schema:name "Kungurian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Ladinian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLadinian> ;
+    gts:representsBoundary gtsd:BaseLadinian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1061,13 +1119,14 @@ gssps:Ladinian
 
 Budurovignathus praehungaricus is in the uppermost Anisian.""" ;
     schema:citation "Episodes 2005; 28: 233-244" ;
-    schema:description "Bagolino, Province of Brescia, Northern Italy" ;
+    schema:location "Bagolino, Province of Brescia, Northern Italy" ;
+    schema:name "Ladinian GSSP" ;
     schema:status "Ratified 2005" ;
 .
 
 gssps:Langhian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLanghian> ;
+    gts:representsBoundary gtsd:BaseLanghian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1078,13 +1137,14 @@ gssps:Langhian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2023/023024"^^xsd:anyURI ,
         "Episodes 2024; 47:311-333" ;
-    schema:description "'Lower La Vedova Beach' section, near Ancona, Italy" ;
+    schema:location "'Lower La Vedova Beach' section, near Ancona, Italy" ;
+    schema:name "Langhian GSSP" ;
     schema:status "Ratified 2023" ;
 .
 
 gssps:Lochkovian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseDevonian> ;
+    gts:representsBoundary gtsd:BaseDevonian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1104,13 +1164,14 @@ IUGS Series A, 5, p. 96-109, 1977;
 Newsletters on Stratigraphy 25, 115–125
 
 Facies 26, 35–54""" ;
-    schema:description "Klonk, near Prague, Czech Republic" ;
+    schema:location "Klonk, near Prague, Czech Republic" ;
+    schema:name "Lochkovian GSSP" ;
     schema:status "Ratified 1972" ;
 .
 
 gssps:Ludfordian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLudfordian> ;
+    gts:representsBoundary gtsd:BaseLudfordian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1121,13 +1182,14 @@ gssps:Ludfordian
     schema:citation
         "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ,
         "Lethaia 14; Episodes 1982; 5: 21-23; Geol. Series, Nat. Mus. Wales 1989; 9: 73-90" ;
-    schema:description "near Ludlow, UK" ;
+    schema:location "near Ludlow, UK" ;
+    schema:name "Ludfordian GSSP" ;
     schema:status "Ratified 1980" ;
 .
 
 gssps:Lutetian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLutetian> ;
+    gts:representsBoundary gtsd:BaseLutetian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1138,13 +1200,14 @@ gssps:Lutetian
     schema:citation
         "https://stratigraphy.org/gssps/files/lutetian.pdf"^^xsd:anyURI ,
         "Episodes 2011; 34: 86-108" ;
-    schema:description "Gorrondatxe section, Basque Country, Spain" ;
+    schema:location "Gorrondatxe section, Basque Country, Spain" ;
+    schema:name "Lutetian GSSP" ;
     schema:status "Ratified 2011" ;
 .
 
 gssps:Maastrichtian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMaastrichtian> ;
+    gts:representsBoundary gtsd:BaseMaastrichtian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1155,13 +1218,14 @@ gssps:Maastrichtian
     schema:citation
         "https://stratigraphy.org/gssps/files/maastrichtian.pdf"^^xsd:anyURI ,
         "Episodes 2001; 24: 229-238" ;
-    schema:description "Tercis les Bains, Landes, France" ;
+    schema:location "Tercis les Bains, Landes, France" ;
+    schema:name "Maastrichtian GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
 gssps:Meghalayan
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMeghalayan> ;
+    gts:representsBoundary gtsd:BaseMeghalayan ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1173,21 +1237,22 @@ gssps:Meghalayan
         "https://doi.org/10.18814/epiiugs/2018/018016"^^xsd:anyURI ,
         "https://stratigraphy.org/gssps/files/meghalayan.pdf"^^xsd:anyURI ,
         "Episodes 2018; 41: 213-223. (PDF)" ;
-    schema:description "Mawmluh Cave, Meghalaya, India" ;
+    schema:location "Mawmluh Cave, Meghalaya, India" ;
+    schema:name "Meghalayan GSSP" ;
     schema:status "Ratified 2018" ;
 .
 
 gssps:Mesoarchean
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMesoarchean> ;
+    gts:representsBoundary gtsd:BaseMesoarchean ;
     schema:citation "Informally in Episodes 1992; 15" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Proposed" ;
 .
 
 gssps:Messinian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMessinian> ;
+    gts:representsBoundary gtsd:BaseMessinian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1198,37 +1263,40 @@ gssps:Messinian
     schema:citation
         "https://stratigraphy.org/gssps/files/messinian.pdf"^^xsd:anyURI ,
         "Episodes 2000; 23: 172-178" ;
-    schema:description "Oued Akrech, Morocco" ;
+    schema:location "Oued Akrech, Morocco" ;
+    schema:name "Messinian GSSP" ;
     schema:status "Ratified 2000" ;
 .
 
 gssps:Moscovian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddlePennsylvanian> ;
+    gts:representsBoundary gtsd:BaseMiddlePennsylvanian ;
     gssp:correlationEvents "Either Conodont FAD Idiognathoides postsulcatus or Declinognathodus donetzianus." ;
-    schema:description "candidates are in southern Urals or Nashui (south China)." ;
+    schema:location "candidates are in southern Urals or Nashui (south China)." ;
+    schema:name "Moscovian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Neoarchean
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseNeoarchean> ;
+    gts:representsBoundary gtsd:BaseNeoarchean ;
     schema:citation "Informally in Episodes 1992; 15" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Proposed" ;
 .
 
 gssps:Norian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseNorian> ;
+    gts:representsBoundary gtsd:BaseNorian ;
     gssp:correlationEvents "Base of Stikinoceras kerri ammonoid zone and near FAD of Metapolygnathus echinatus within the M. communisti conodont zones" ;
-    schema:description "Candidates are Black Bear Ridge in British Columbia (Canada) and Pizzo Mondello, Sicily (Italy)" ;
+    schema:location "Candidates are Black Bear Ridge in British Columbia (Canada) and Pizzo Mondello, Sicily (Italy)" ;
+    schema:name "Norian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Northgrippian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseNorthgrippian> ;
+    gts:representsBoundary gtsd:BaseNorthgrippian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1240,13 +1308,14 @@ gssps:Northgrippian
         "https://doi.org/10.18814/epiiugs/2018/018016"^^xsd:anyURI ,
         "https://stratigraphy.org/gssps/files/meghalayan.pdf"^^xsd:anyURI ,
         "Episodes 2018; 41: 213-223. (PDF)" ;
-    schema:description "North Greenland Ice Core Project, core NGRIP1, central Greenland ice sheet" ;
+    schema:location "North Greenland Ice Core Project, core NGRIP1, central Greenland ice sheet" ;
+    schema:name "Northgrippian GSSP" ;
     schema:status "Ratified 2018" ;
 .
 
 gssps:Olenekian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseOlenekian> ;
+    gts:representsBoundary gtsd:BaseOlenekian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1255,29 +1324,31 @@ gssps:Olenekian
     gssp:boundaryLevel "base of Bed 13A-2, about 4.8m up in Mikin Formation., Section M04 (~4000 m elevation" ;
     gssp:correlationEvents "Conodont FAD Neospathodus waageni, just above base of Rohillites rohilla ammonite zone, and below lowest occurrence of Flemingites and Euflemingites ammonite genera. Within a prominent positive Carbon-13 peak, and just above widely recognizable sequence boundary." ;
     schema:citation "Albertiana 36, 2007" ;
-    schema:description "Candidate GSSP Mud (Muth) village, Spiti valley, northwest India" ;
+    schema:location "Candidate GSSP Mud (Muth) village, Spiti valley, northwest India" ;
+    schema:name "Olenekian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Orosirian
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseOrosirian> ;
+    gts:representsBoundary gtsd:BaseOrosirian ;
     schema:citation "Episodes 1991; 14" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Oxfordian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateJurassic> ;
+    gts:representsBoundary gtsd:BaseLateJurassic ;
     gssp:correlationEvents "Ammonite Cardioceras redcliffense Horizon at base of the Cardioceras scarburgense Subzone (Quenstedtoceras mariae Zone)" ;
-    schema:description "candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)" ;
+    schema:location "candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)" ;
+    schema:name "Oxfordian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Paibian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseFurongian> ;
+    gts:representsBoundary gtsd:BaseFurongian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1288,21 +1359,22 @@ gssps:Paibian
     schema:citation
         "https://stratigraphy.org/gssps/files/paibian.pdf"^^xsd:anyURI ,
         "Lethaia 37, p. 365-379, 2004" ;
-    schema:description "Wuling Mountains, Huayuan County, NW Hunan Province, Chin" ;
+    schema:location "Wuling Mountains, Huayuan County, NW Hunan Province, Chin" ;
+    schema:name "Paibian GSSP" ;
     schema:status "Ratified 2003" ;
 .
 
 gssps:Paleoarchean
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePaleoarchean> ;
+    gts:representsBoundary gtsd:BasePaleoarchean ;
     schema:citation "Informally in Episodes 1992; 15" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Proposed" ;
 .
 
 gssps:Piacenzian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePiacenzian> ;
+    gts:representsBoundary gtsd:BasePiacenzian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1313,13 +1385,14 @@ gssps:Piacenzian
     schema:citation
         "https://stratigraphy.org/gssps/files/piacenzian.pdf"^^xsd:anyURI ,
         "Episodes 1998; 21: 88-93" ;
-    schema:description "Punta Piccola, Sicily, Italy" ;
+    schema:location "Punta Piccola, Sicily, Italy" ;
+    schema:name "Piacenzian GSSP" ;
     schema:status "Ratified 1997" ;
 .
 
 gssps:Pliensbachian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePliensbachian> ;
+    gts:representsBoundary gtsd:BasePliensbachian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1330,13 +1403,14 @@ gssps:Pliensbachian
     schema:citation
         "https://stratigraphy.org/gssps/files/pliensbachian.pdf"^^xsd:anyURI ,
         "Episodes 2006; 29: 93-106" ;
-    schema:description "Wine Haven, Robin Hood's Bay, Yorkshire Coast, England" ;
+    schema:location "Wine Haven, Robin Hood's Bay, Yorkshire Coast, England" ;
+    schema:name "Pliensbachian GSSP" ;
     schema:status "Ratified 2005" ;
 .
 
 gssps:Pragian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePragian> ;
+    gts:representsBoundary gtsd:BasePragian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1347,13 +1421,14 @@ gssps:Pragian
     schema:citation
         "https://stratigraphy.org/gssps/files/pragian.pdf"^^xsd:anyURI ,
         "Episodes 1989; 12: 109-113" ;
-    schema:description "Velká Chuchle, Prague, Czech Republic" ;
+    schema:location "Velká Chuchle, Prague, Czech Republic" ;
+    schema:name "Pragian GSSP" ;
     schema:status "Ratified 1989" ;
 .
 
 gssps:Priabonian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePriabonian> ;
+    gts:representsBoundary gtsd:BasePriabonian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1364,13 +1439,14 @@ gssps:Priabonian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2020/020074"^^xsd:anyURI ,
         "Episodes 2021; 44(2): 151-173" ;
-    schema:description "Alano section, Piave River; Veneto Prealps, Belluno province, N. Italy" ;
+    schema:location "Alano section, Piave River; Veneto Prealps, Belluno province, N. Italy" ;
+    schema:name "Priabonian GSSP" ;
     schema:status "Ratified 2020" ;
 .
 
 gssps:Pridoli
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePridoli> ;
+    gts:representsBoundary gtsd:BasePridoli ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1381,21 +1457,23 @@ gssps:Pridoli
     schema:citation
         "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ,
         "Episodes 1985; 8: 101-103; Geol. Series, Nat. Mus. Wales, 9, p. 90 - 100, 1989" ;
-    schema:description "Požáry Section, Reporyje, Prague, Czech Republic" ;
+    schema:location "Požáry Section, Reporyje, Prague, Czech Republic" ;
+    schema:name "Pridoli GSSP" ;
     schema:status "Ratified 1984" ;
 .
 
 gssps:Rhaetian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseRhaetian> ;
+    gts:representsBoundary gtsd:BaseRhaetian ;
     gssp:correlationEvents "Near FAD of ammonite Cochloceras, conodonts Misikella spp. and Epigondolella mosheri, and radiolarian Proparvicingula moniliformis" ;
-    schema:description "Key sections in Austria, British Columbia (Canada), and Turkey" ;
+    schema:location "Key sections in Austria, British Columbia (Canada), and Turkey" ;
+    schema:name "Rhaetian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Rhuddanian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSilurian> ;
+    gts:representsBoundary gtsd:BaseSilurian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1406,21 +1484,22 @@ gssps:Rhuddanian
     schema:citation
         "https://stratigraphy.org/gssps/files/rhu-tely-pridoli.pdf"^^xsd:anyURI ,
         "Episodes 1985; 8: 101-103; Silurian Times No. 14 (2006)" ;
-    schema:description "Dob's Linn, Scotland" ;
+    schema:location "Dob's Linn, Scotland" ;
+    schema:name "Rhuddanian GSSP" ;
     schema:status "Ratified 1984" ;
 .
 
 gssps:Rhyacian
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseRhyacian> ;
+    gts:representsBoundary gtsd:BaseRhyacian ;
     schema:citation "Episodes 1991; 14" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Roadian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseGuadalupian> ;
+    gts:representsBoundary gtsd:BaseGuadalupian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1432,13 +1511,14 @@ gssps:Roadian
         "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
         "https://doi.org/10.1016/j.earscirev.2020.103412"^^xsd:anyURI ,
         "Permophiles 34 p. 3-11, 1999; Shen et al. 2020- Earth-Sci Rev 211 103412" ;
-    schema:description "Stratotype Canyon, Texas, U.S.A" ;
+    schema:location "Stratotype Canyon, Texas, U.S.A" ;
+    schema:name "Roadian GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
 gssps:Rupelian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseOligocene> ;
+    gts:representsBoundary gtsd:BaseOligocene ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1449,13 +1529,14 @@ gssps:Rupelian
     schema:citation
         "https://stratigraphy.org/gssps/files/rupelian.pdf"^^xsd:anyURI ,
         "Episodes 2001; 16: 379-382" ;
-    schema:description "Massignano, near Ancona, Italy" ;
+    schema:location "Massignano, near Ancona, Italy" ;
+    schema:name "Rupelian GSSP" ;
     schema:status "Ratified 1992" ;
 .
 
 gssps:Sakmarian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSakmarian> ;
+    gts:representsBoundary gtsd:BaseSakmarian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1466,13 +1547,14 @@ gssps:Sakmarian
     schema:citation
         "https://doi.org/10.18814/epiiugs/2020/020059"^^xsd:anyURI ,
         "Episodes 43/4, 961-979, 2020" ;
-    schema:description "Usolka section, Southern Ural Mts, Russia" ;
+    schema:location "Usolka section, Southern Ural Mts, Russia" ;
+    schema:name "Sakmarian GSSP" ;
     schema:status "Ratified 2018" ;
 .
 
 gssps:Sandbian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateOrdovician> ;
+    gts:representsBoundary gtsd:BaseLateOrdovician ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1483,13 +1565,14 @@ gssps:Sandbian
     schema:citation
         "https://stratigraphy.org/gssps/files/sandbian.pdf"^^xsd:anyURI ,
         "Episodes 2000; 23: 102-109" ;
-    schema:description "Sularp Brook, Fågelsång, Sweden" ;
+    schema:location "Sularp Brook, Fågelsång, Sweden" ;
+    schema:name "Sandbian GSSP" ;
     schema:status "Ratified 2002" ;
 .
 
 gssps:Santonian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSantonian> ;
+    gts:representsBoundary gtsd:BaseSantonian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1500,13 +1583,14 @@ gssps:Santonian
     schema:citation
         "https://stratigraphy.org/gssps/files/santonian.pdf"^^xsd:anyURI ,
         "Episodes 2014; 37: 2-13" ;
-    schema:description "Olazagutia, Navarra, Spain" ;
+    schema:location "Olazagutia, Navarra, Spain" ;
+    schema:name "Santonian GSSP" ;
     schema:status "Ratified 2013" ;
 .
 
 gssps:Selandian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSelandian> ;
+    gts:representsBoundary gtsd:BaseSelandian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1517,21 +1601,23 @@ gssps:Selandian
     schema:citation
         "https://stratigraphy.org/gssps/files/selandian-thanetian.pdf"^^xsd:anyURI ,
         "Episodes 2011; 34: 220-243" ;
-    schema:description "Zumaia section, northern Spain" ;
+    schema:location "Zumaia section, northern Spain" ;
+    schema:name "Selandian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
 gssps:Serpukhovian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLateMississippian> ;
+    gts:representsBoundary gtsd:BaseLateMississippian ;
     gssp:correlationEvents "Conodont FAD Lochriea ziegleri" ;
-    schema:description "candidates are Verkhnyaya Kardailovka (Urals) or Nashui (China)" ;
+    schema:location "candidates are Verkhnyaya Kardailovka (Urals) or Nashui (China)" ;
+    schema:name "Serpukhovian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Serravallian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSerravallian> ;
+    gts:representsBoundary gtsd:BaseSerravallian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1542,13 +1628,14 @@ gssps:Serravallian
     schema:citation
         "https://stratigraphy.org/gssps/files/serravallian.pdf"^^xsd:anyURI ,
         "Episodes 2009; 32: 152-166;" ;
-    schema:description "Ras il Pellegrin section, Fomm Ir- Rih Bay, west coast of Malta" ;
+    schema:location "Ras il Pellegrin section, Fomm Ir- Rih Bay, west coast of Malta" ;
+    schema:name "Serravallian GSSP" ;
     schema:status "Ratified 2007" ;
 .
 
 gssps:Sheinwoodian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseWenlock> ;
+    gts:representsBoundary gtsd:BaseWenlock ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1559,21 +1646,22 @@ gssps:Sheinwoodian
     schema:citation
         "https://stratigraphy.org/gssps/files/sheinwoodian-ludfordian.pdf"^^xsd:anyURI ,
         "Lethaia 14; Episodes 1982; 5: 21-23; Geol. Series, Nat. Mus. Wales 1989; 9: p. 51-73" ;
-    schema:description "Hughley Brook, UK" ;
+    schema:location "Hughley Brook, UK" ;
+    schema:name "Sheinwoodian GSSP" ;
     schema:status "Ratified 1980" ;
 .
 
 gssps:Siderian
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSiderian> ;
+    gts:representsBoundary gtsd:BaseSiderian ;
     schema:citation "Episodes 1991; 14" ;
-    schema:description "Defined chronometrically, but it will be replaced by GSSP" ;
+    schema:location "Defined chronometrically, but it will be replaced by GSSP" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Sinemurian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseSinemurian> ;
+    gts:representsBoundary gtsd:BaseSinemurian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1584,29 +1672,30 @@ gssps:Sinemurian
     schema:citation
         "https://stratigraphy.org/gssps/files/sinemurian.pdf"^^xsd:anyURI ,
         "Episodes 2002; 25: 22-28" ;
-    schema:description "East Quantoxhead, SW England" ;
+    schema:location "East Quantoxhead, SW England" ;
+    schema:name "Sinemurian GSSP" ;
     schema:status "Ratified 2000" ;
 .
 
 gssps:Statherian
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseStatherian> ;
+    gts:representsBoundary gtsd:BaseStatherian ;
     schema:citation "Episodes 1991; 14" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Stenian
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseStenian> ;
+    gts:representsBoundary gtsd:BaseStenian ;
     schema:citation "Episodes 1991; 14" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Telychian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTelychian> ;
+    gts:representsBoundary gtsd:BaseTelychian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1619,7 +1708,8 @@ gssps:Telychian
         """El Pintado 1 GSSP: Loydell et al., Episodes forthcoming;
 
 Cefn-Cerig Rd GSSP: Episodes 1985; 8: 101-103; Geol. Series, Nat. Mus. Wales 1989; 9: 36-50""" ;
-    schema:description "El Pintado 1 Section, Sierra Norte de Sevilla, Spain" ;
+    schema:location "El Pintado 1 Section, Sierra Norte de Sevilla, Spain" ;
+    schema:name "Telychian GSSP" ;
     schema:status """Ratified 2024
 
 to replace Cefn-Cerig Rd, Wales, UK former GSSP""" ;
@@ -1627,7 +1717,7 @@ to replace Cefn-Cerig Rd, Wales, UK former GSSP""" ;
 
 gssps:Thanetian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseThanetian> ;
+    gts:representsBoundary gtsd:BaseThanetian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1638,21 +1728,23 @@ gssps:Thanetian
     schema:citation
         "https://stratigraphy.org/gssps/files/selandian-thanetian.pdf"^^xsd:anyURI ,
         "Episodes 2011; 34: 220-243" ;
-    schema:description "Zumaia section, northern Spain" ;
+    schema:location "Zumaia section, northern Spain" ;
+    schema:name "Thanetian GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
 gssps:Tithonian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTithonian> ;
+    gts:representsBoundary gtsd:BaseTithonian ;
     gssp:correlationEvents "Near base of Hybonoticeras hybonotum ammonite zone and lowest occurrence of Gravesia genus, and the base of magnetic polarity Chron M22An" ;
-    schema:description "candidates are Mt. Crussol or Canjuers (SE France) and Fornazzo (Sicily, S. Italy)" ;
+    schema:location "candidates are Mt. Crussol or Canjuers (SE France) and Fornazzo (Sicily, S. Italy)" ;
+    schema:name "Tithonian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Toarcian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseToarcian> ;
+    gts:representsBoundary gtsd:BaseToarcian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1663,21 +1755,22 @@ gssps:Toarcian
     schema:citation
         "https://stratigraphy.org/gssps/files/toarcian.pdf"^^xsd:anyURI ,
         "Episodes 2016; 39(3): 460-481" ;
-    schema:description "Peniche (Portugal)" ;
+    schema:location "Peniche (Portugal)" ;
+    schema:name "Toarcian GSSP" ;
     schema:status "Ratified 2014" ;
 .
 
 gssps:Tonian
     a gssp:GSSA ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTonian> ;
+    gts:representsBoundary gtsd:BaseTonian ;
     schema:citation "Episodes 1991; 14" ;
-    schema:description "Defined chronometrically" ;
+    schema:location "Defined chronometrically" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Tortonian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTortonian> ;
+    gts:representsBoundary gtsd:BaseTortonian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1688,13 +1781,14 @@ gssps:Tortonian
     schema:citation
         "https://stratigraphy.org/gssps/files/tortonian.pdf"^^xsd:anyURI ,
         "Episodes 2005; 28: 6-17" ;
-    schema:description "Monte dei Corvi Beach, near Ancona, Italy" ;
+    schema:location "Monte dei Corvi Beach, near Ancona, Italy" ;
+    schema:name "Tortonian GSSP" ;
     schema:status "Ratified 2003" ;
 .
 
 gssps:Tournaisian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseCarboniferous> ;
+    gts:representsBoundary gtsd:BaseCarboniferous ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1705,13 +1799,14 @@ gssps:Tournaisian
     schema:citation
         "https://stratigraphy.org/gssps/files/tournaisian.pdf"^^xsd:anyURI ,
         "Episodes 1991; 14: 331-336; Newsletters on Stratigraphy 2009; 43: 195-205" ;
-    schema:description "La Serre, France" ;
+    schema:location "La Serre, France" ;
+    schema:name "Tournaisian GSSP" ;
     schema:status "Ratified 1990" ;
 .
 
 gssps:Tremadocian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseOrdovician> ;
+    gts:representsBoundary gtsd:BaseOrdovician ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1722,13 +1817,14 @@ gssps:Tremadocian
     schema:citation
         "https://stratigraphy.org/gssps/files/tremadocian.pdf"^^xsd:anyURI ,
         "Episodes 2001; 24: 19-28" ;
-    schema:description "Green Point Section, western Newfoundland" ;
+    schema:location "Green Point Section, western Newfoundland" ;
+    schema:name "Tremadocian GSSP" ;
     schema:status "Ratified 2000" ;
 .
 
 gssps:Turonian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseTuronian> ;
+    gts:representsBoundary gtsd:BaseTuronian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1739,30 +1835,33 @@ gssps:Turonian
     schema:citation
         "https://stratigraphy.org/gssps/files/turonian.pdf"^^xsd:anyURI ,
         "Episodes 2005; 28: 93-104" ;
-    schema:description "Pueblo, Colorado, USA" ;
+    schema:location "Pueblo, Colorado, USA" ;
+    schema:name "Turonian GSSP" ;
     schema:status "Ratified 2003" ;
 .
 
 gssps:UpperPleistocene
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLatePleistocene> ;
+    gts:representsBoundary gtsd:BaseLatePleistocene ;
     gssp:correlationEvents "Provisionally climatic – Marine Isotope Substage 5e" ;
     schema:citation "Head, M.J., Pillans, B., and Zalasiewicz, J.A., [submitted 2020]" ;
-    schema:description "GSSP not presently defined" ;
+    schema:location "GSSP not presently defined" ;
+    schema:name "UpperPleistocene GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Valanginian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseValanginian> ;
+    gts:representsBoundary gtsd:BaseValanginian ;
     gssp:correlationEvents "Calpionellid FAD Calpionellites darderi (base of Calpionellid Zone E); followed by ammonite FAD \"Thurmanniceras\" pertransiens" ;
-    schema:description "candidates are near Montbrunles- Bains (Drôme province, SE France) and Cañada Luenga (Betic Cordillera, S. Spain)" ;
+    schema:location "candidates are near Montbrunles- Bains (Drôme province, SE France) and Cañada Luenga (Betic Cordillera, S. Spain)" ;
+    schema:name "Valanginian GSSP" ;
     schema:status "Proposed" ;
 .
 
 gssps:Visean
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseMiddleMississippian> ;
+    gts:representsBoundary gtsd:BaseMiddleMississippian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1773,13 +1872,14 @@ gssps:Visean
     schema:citation
         "https://stratigraphy.org/gssps/files/visean.pdf"^^xsd:anyURI ,
         "Episodes 2003; 26: 105-115" ;
-    schema:description "Pengchong, south China" ;
+    schema:location "Pengchong, south China" ;
+    schema:name "Visean GSSP" ;
     schema:status "Ratified 2008" ;
 .
 
 gssps:Wordian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseWordian> ;
+    gts:representsBoundary gtsd:BaseWordian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1791,13 +1891,14 @@ gssps:Wordian
         "://stratigraphy.org/subcommission-permian/files/permophiles/20121027151852022.pdf"^^xsd:anyURI ,
         "https://doi.org/10.1016/j.palaeo.2020.109668"^^xsd:anyURI ,
         "Permophiles 34 p. 3-11, 1999; Wu et al. 2020 Palaeogeography Palaeoclimatology Palaeoecology 548 109668" ;
-    schema:description "Guadalupe Pass, Texas, U.S.A" ;
+    schema:location "Guadalupe Pass, Texas, U.S.A" ;
+    schema:name "Wordian GSSP" ;
     schema:status "Ratified 2001" ;
 .
 
 gssps:Wuchiapingian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseLopingian> ;
+    gts:representsBoundary gtsd:BaseLopingian ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1809,13 +1910,14 @@ gssps:Wuchiapingian
         "https://doi.org/10.18814/epiiugs/2023/023023"^^xsd:anyURI ,
         "https://stratigraphy.org/gssps/files/wuchiapingian.pdf"^^xsd:anyURI ,
         "Episodes 2006; 29/4:253-262; Episodes 2024; 47:147-177" ;
-    schema:description "Penglaitan, Guanxi Province, South China" ;
+    schema:location "Penglaitan, Guanxi Province, South China" ;
+    schema:name "Wuchiapingian GSSP" ;
     schema:status "Ratified 2004, Redefinition ratified 2023" ;
 .
 
 gssps:Ypresian
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BaseEocene> ;
+    gts:representsBoundary gtsd:BaseEocene ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1827,13 +1929,14 @@ gssps:Ypresian
         "https://doi.org/10.18814/epiiugs/2007/v30i4/003"^^xsd:anyURI ,
         "https://stratigraphy.org/gssps/files/ypresian.pdf"^^xsd:anyURI ,
         "Micropaleontology 49/1, p.41 - 59, 2003; Episodes 2007; 30: 271-286" ;
-    schema:description "Dababiya, near Luxor, Egypt" ;
+    schema:location "Dababiya, near Luxor, Egypt" ;
+    schema:name "Ypresian GSSP" ;
     schema:status "Ratified 2003" ;
 .
 
 gssps:Zanclean
     a gssp:GSSP ;
-    gts:representsBoundary <https://data.stratigraphy.org/data/gts2020/BasePliocene> ;
+    gts:representsBoundary gtsd:BasePliocene ;
     geo:hasGeometry
         [
             a geo:Geometry ;
@@ -1844,6 +1947,7 @@ gssps:Zanclean
     schema:citation
         "https://stratigraphy.org/gssps/files/zanclean.pdf"^^xsd:anyURI ,
         "Episodes 2000; 23: 179-187" ;
-    schema:description "Eraclea Minoa, Sicily, Italy" ;
+    schema:location "Eraclea Minoa, Sicily, Italy" ;
+    schema:name "Zanclean GSSP" ;
     schema:status "Ratified 2000" ;
 .
