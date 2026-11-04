@@ -7,9 +7,9 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.0.1"
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5"
+gem "jekyll", "~> 4.3.1"
+# Bulma theme linked from jekyllthemes.io/theme/bulma.
+gem "bulma-clean-theme", "~> 1.3.1"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
@@ -28,11 +28,18 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
+gem "jekyll-redirect-from"
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
+
+gem "liquid", "~> 4.0.4"
+
 
 gem "csv", "~> 3.3"
 
-gem "base64", "~> 0.3.0"
+gem "base64", "~> 0.2.0"
 
-gem "bigdecimal", "~> 4.1"
+gem "jekyll-gfm-admonitions", "~> 1.4"
+
+# Explicit dependency for Ruby 3.4+ (no longer a bundled default in Ruby 3.5).
+gem "logger", "~> 1.6"

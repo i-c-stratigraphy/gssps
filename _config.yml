@@ -1,16 +1,39 @@
+---
 title: Global Boundary Stratotype Section and Points
 email: nicholas.car@surroundaustralia.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Global Boundary Stratotype Sections and Points (GSSPs) are reference points on stratigraphic sections of rock which define the lower boundaries of stages on the geologic time scale. Since 1977, the ICS has maintained the international GSSP register.
-baseurl: "/gssps" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  nicholascar
-
-# Build settings
-theme: minima
+description: Global Boundary Stratotype Sections and Points (GSSPs) are reference
+  points on stratigraphic sections of rock which define the lower boundaries of stages
+  on the geologic time scale. Since 1977, the ICS has maintained the international
+  GSSP register.
+baseurl: "/gssps"
+url: https://stratigraphy.org
+github_username: nicholascar
+theme: bulma-clean-theme
 plugins:
-  - jekyll-feed
-
+- jekyll-feed
+- jekyll-redirect-from
 exclude:
-  - .env
-  - .env.example
+- README.md
+- vendor
+- scripts
+- data
+- legacy-source
+- current-site
+- legacy-site
+- ".env"
+- ".env.example"
+- DEPLOYMENT.md
+lang: en
+force_theme: light
+favicon: "/images/logo-ics.ico"
+hide_share_buttons: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: page
+    show_sidebar: false
+sass:
+  style: compressed
+  silence_deprecations:
+  - import

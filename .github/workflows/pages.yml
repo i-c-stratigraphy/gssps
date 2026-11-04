@@ -1,45 +1,56 @@
-name: Build and deploy Jekyll
-
+name: Publish themed site and legacy archive
 on:
   push:
     branches: [master]
+  pull_request:
   workflow_dispatch:
-
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
 concurrency:
   group: github-pages
   cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+      MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
+      - name: Check out the last published original site
+        uses: actions/checkout@v7
+        with:
+          ref: 9d8d2fc4e1282834d1dd754cfa29a7ec36aafa8f
+          path: legacy-source
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.4'
           bundler-cache: true
-      - uses: actions/configure-pages@v5
-      - name: Build Jekyll with the repository Mapbox token
-        env:
-          JEKYLL_ENV: production
-          MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
-        run: bundle exec jekyll build
-      - uses: actions/upload-pages-artifact@v4
+      - name: Build the themed site
+        run: bundle exec jekyll build --strict_front_matter --destination current-site
+      - name: Build the legacy site with the maintained toolchain
+        run: |
+          ruby scripts/prepare_legacy.rb legacy-source /tmp/legacy-config.yml
+          bundle exec jekyll build --strict_front_matter --source legacy-source --config /tmp/legacy-config.yml --destination legacy-site
+      - name: Validate routes, scientific content and archive rebasing
+        run: |
+          ruby scripts/check_site.rb current-site
+          ruby scripts/test_assemble_sites.rb
+      - name: Assemble current site and /old
+        run: ruby scripts/assemble_sites.rb current-site legacy-site _site /gssps
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
-
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy GitHub Pages
+      - uses: actions/deploy-pages@v5
         id: deployment
-        uses: actions/deploy-pages@v4
