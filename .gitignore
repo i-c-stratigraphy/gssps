@@ -7,3 +7,7 @@ vendor
 .DS_Store
 .idea/
 .env
+
+# Local tooling and generated files
+__pycache__/
+*.py[cod]
